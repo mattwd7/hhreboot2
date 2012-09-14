@@ -2,7 +2,10 @@
 
 <table>
   <tr>
-    <th>Email</th>
+    <th>ID</th>
+    <th>Username</th>
+    <th>Building</th>
+	<th>Admin?</th>
     <th></th>
     <th></th>
     <th></th>
@@ -10,7 +13,10 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.email %></td>
+	<td><%= user.id %></td>
+    <td><%= user.username %></td>
+    <td><%= user.building.name %></td>
+	<td><%= user.forem_admin %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
@@ -19,5 +25,4 @@
 </table>
 
 <br />
-
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'Forums', forem.root_path %>

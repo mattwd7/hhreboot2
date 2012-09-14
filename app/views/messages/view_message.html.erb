@@ -1,0 +1,5 @@
+<%= @message.text %>
+</br>
+</br>
+<%= link_to "Reply to #{User.find(@message.user_id).username}", new_message_path(:recipient => @message.user_id, :re => "RE: #{@message.subject}") %> |
+<%= link_to "Back", :back %>

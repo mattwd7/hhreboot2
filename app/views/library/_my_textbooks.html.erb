@@ -1,0 +1,7 @@
+<%= content_tag_for(:tr, @my_books) do |book| %>
+	<td class="book">$<%= book.price %></td>
+	<td class="book"><%= book.course.field.abbr %> <%= book.course.title[0..15] %>..</td>
+	<td class="book"><%= book.description %></td>
+	<td class="book"><%= book.condition %></td>
+	<td class="book"><%= link_to "Remove", destroy_book_path(:book => book.id, :d_id => dom_id(book)), :remote => true %></td>
+<% end %>

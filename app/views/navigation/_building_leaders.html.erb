@@ -1,0 +1,19 @@
+<% buildings = Building.all %>
+<% buildings.sort! { |a,b| b.posts.count <=> a.posts.count } %>
+
+<div class="right_widget" id="contributions_by_building">
+	<div id="title">Contribution by Building</div>
+
+<table>
+	<col width="80%" />
+	<col width="20%" />
+	<td>Building</td>
+	<td>Posts</td>
+	<% buildings.each do |b| %>
+		<tr>
+			<td align="left"><%= link_to b.name, building_page_path(:building => b.id) %></td>
+			<td align="center"><%= b.posts.count %></td>
+		</tr>
+	<% end %>
+</table>
+</div>

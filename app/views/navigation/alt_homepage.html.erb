@@ -1,0 +1,42 @@
+<body class="main">
+<div id="homepage_wrapper">
+	<span class="title">Hill Heroes</span>
+	<span class="subtitle"><%= @rand_subtitle %></span>
+	
+		<div id="navigation">
+			<%= link_to "About", about_path %> | 
+			<a href="/forums">Forum</a> | 
+			<a href="http://menu.ha.ucla.edu/foodpro/default.asp" target="_blank">Dining Menu</a> | 
+			<%= link_to "Textbooks", find_books_path %> |
+			<a href="http://spottedonbruinwalk.com/" target="_blank">SpottedOB</a>
+		</div>
+	
+	<div class="left">
+			<div id="accordion">
+				<h3 id="top" class="cyclotron"><a href="#">Welcome!</a></h3>
+				<div id="height" style="padding: 0 5px 0 5px;">
+					<a href="/about"><img src="doItLive.png" title="And what that means for YOU!" /></a>
+				</div>
+				<h3><a href="#">Announcements</a></h3>
+				<div>
+					<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+				</div>
+				<h3><a href="#">Hot Topics</a></h3>
+				<div>
+					<%= render :partial => "newest_topics" %>
+				</div>
+			</div>
+	</div>
+	
+	<div class="right">
+		<div id="top_posters">
+			<%= render :partial => "building_leaders" %>
+		</div>
+		<div id="top_posters">
+			<%= render :partial => "top_posters" %>
+		</div>
+	</div>
+
+	<div id="background_image"><img src="superbear.jpg" /></div>
+</div>
+</body>

@@ -1,0 +1,33 @@
+<%= stylesheet_link_tag "sandbox" %>
+
+Manage Classes
+</br></br></br>
+
+
+<body class="main">
+	<span id="quarter">
+		<b>Fall 2012</b>
+	</span>
+	
+	<div id="classes">
+		<table>
+			<col width="800" />
+			<col width="200" />
+				<%= render :partial => "my_courses" %>
+		</table>
+	</div>
+	
+	<div>
+		<div><button id="show_fields">Add Classes</button></div>
+	</div>
+	
+	<div id="selections">
+		<%= form_tag(add_course_to_quarter_path, :remote => true) do %>
+			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+			<%= collection_select(:new_class, :course, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+			<%= submit_tag("Add") %>
+		<% end %>
+	</div>
+</body>
+
+</br></br></br>

@@ -1,0 +1,24 @@
+<h1>My Library</h1>
+
+<%= link_to "Find Books", find_books_path %> | <%= link_to "Book Trades", find_trades_path %>
+
+<h3>My Books for Exchange:</h3>
+<% @books_for_trade.each do |b| %>
+	<li><%= b.course.title %> | <%= link_to "Remove", destroy_book_path(:book => b.id) %></li>
+<% end %>
+
+<h3>Books I'm Looking For:</h3>
+<% @books_seeked.each do |b| %>
+	<li><%= link_to b.course.title, find_books_path(:book => b.course.id) %> | <%= link_to "Remove", destroy_book_path(:book => b.id) %></li>
+<% end %>
+
+</br></br>
+
+<h3>Classes without books:</h3>
+<% @my_courses.each do |c| %>
+	<%= c.title %> | <%= link_to "Have it", add_book_path(:course => c.id, :own_it => true) %> | <%= link_to "Want it", add_book_path(:course => c.id, :own_it => false) %></br>
+<% end %>
+
+</br></br></br>
+
+<%= @test %>

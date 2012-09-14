@@ -1,0 +1,34 @@
+<h2>Classmates</h2>
+
+<h4>Showing classmates for <%= @course.field.abbr %><%= @course.title %></h4>
+<% if @my_courses.empty? %>
+	You must <%= link_to "enter your classes", user_profile_path %> to find classmates!
+<% else %>
+Find classmates in</br>
+
+<% @my_courses.each do |c| %>
+	<%= link_to "#{c.field.abbr}#{c.title}", classmates_path(:course => c.id) %></br>
+<% end %>
+
+</br>
+
+<table width="100%">
+<col width="200" />
+<col width="200" />
+<col width="200" />
+<tr>
+    <th>User</th>
+    <th>Building</th>
+    <th>Contact</th>
+</tr>
+<tr>
+<% @classmates.each do |t| %>
+	<tr align="center">
+	<td><%= t.username %></td>
+	<td><%= t.building.name %></td>
+	<td><%= link_to "Message!", new_message_path(:recipient => t.id, :msg_template => "/messages/templates/classmate"), :target => "_blank" %></td>
+	</tr>
+<% end %>
+</tr>
+</table>
+<% end %>

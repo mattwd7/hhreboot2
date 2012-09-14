@@ -1,0 +1,66 @@
+<!-- :user_id, :course_id, :own_it, :description, :terms_of_exchange -->
+
+<div id="manage_books_wrapper">
+<body class="main">
+
+	<div id="manage_textbooks_title">
+		<h3>Textbook Manager</h3>
+	</div>
+
+	<div>
+		My Books in the <%= link_to "Textbook Exchange", find_books_path %>:
+	</div>
+</br>
+
+<% if @my_books.size > 0 %>
+	<table border=1, id="my_classes">
+		<col width="50" />
+		<col width="200" />
+		<col width="300" />
+		<col width="75" />
+		<tr>
+			<th>Price</th>
+			<th>Course</th>
+			<th>Details</th>
+			<th>Condition</th>
+		</tr>
+		<%= render :partial  => "my_textbooks" %>
+	</table>
+<% else %>
+	<div style="text-align: center;">You have 0 textbooks listed in the <%= link_to "Textbook Exchange", find_books_path %>.</div>
+<% end %>
+
+	</br></br>
+
+	<div>
+		<span style="font-size: 16pt;">Add a textbook to the exchange:</span></br>
+	</div>
+			
+		<div id="add_book">
+
+			<%= form_tag(add_book_path, :remote => true) do %>
+				<div>
+					Course:</br>
+					<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+					<%= collection_select(nil, :course_id, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+				</div>
+				<div>
+					Details (i.e. Title, Author, Edition, etc):</br>
+					<%= text_area_tag :description %>
+				</div>
+				<div>
+					Condition:
+					<%= select(nil, :condition, ["Like New", "Good", "Poor"]) %>
+				</div>
+				<div>
+					Asking Price: $<%= number_field_tag "price", :price, :min => 0 %>
+				</div>
+				<%= hidden_field_tag :own_it, true %>
+				<%= submit_tag "Add Book" %>
+			<% end %>
+		</div>
+
+		NOTE: Submissions must designate a UCLA course and include a valid asking price.
+
+</body>
+</div>

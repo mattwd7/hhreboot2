@@ -1,0 +1,7 @@
+<% File.open("formatted_courses.txt", "r") do |infile| %>
+	<% while (line = infile.gets) %>
+		<%= line %></br>
+		<% temp = Course.new(:title => line, :field_id => params[:f_id]) %>
+		<% temp.save %>
+	<% end %>
+<% end %>

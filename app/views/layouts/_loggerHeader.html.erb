@@ -1,0 +1,20 @@
+<header>
+    <nav>
+        <% if user_signed_in? %>
+            <div align="left"><%= "Signed in as #{current_user.email}" %>
+			| <%= link_to "Profile", main_app.user_profile_path(:user => current_user.id) %>
+			<% if current_user.new_messages == false %>
+				| <%= link_to(image_tag('mail.gif', :size => "20x16"), main_app.my_messages_path) %>
+			<% else %>
+				| <%= link_to(image_tag('new_mail.gif', :size => "20x16"), main_app.my_messages_path) %>
+			<% end %>
+            | <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
+            <% if current_user.forem_admin %>
+                | <%= link_to "Administrate", forem.admin_root_url %></div>
+            <% end %>
+        <% else %>
+            <div align="left"><%= link_to "Sign up", main_app.new_user_registration_path %>
+            | <%= link_to "Sign in", main_app.new_user_session_path %></div>
+        <% end %>
+    </nav>
+</header>

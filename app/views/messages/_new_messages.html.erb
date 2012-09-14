@@ -1,0 +1,37 @@
+<% if @new_messages.count > 0 %>
+
+	<table align="center">
+		<col width="100" />
+		<col width="300" />
+		<col width="150" />
+		<col width="50" />
+		<col width="50" />
+		<tr>
+			<th>From</th>
+			<th>Subject</th>
+			<th>Received</th>
+			<th></th>
+			<th></th>
+		</tr>
+
+		<%= content_tag_for(:tr, @new_messages) do |m| %>
+			<% if m.unread %>
+				<td class="message_details, unread_message"><%= link_to User.find(m.user_id).username, user_profile_path(:user => m.user_id) %></td>
+				<td class="subject, message_details, unread_message"><%= link_to m.subject, view_message_path(:msg_id => m.id) %></td>
+				<td class="message_details, unread_message"><%= time_ago_in_words(m.created_at) %> ago</td>
+			<% else %>
+				<td class="message_details"><%= link_to User.find(m.user_id).username, user_profile_path(:user => m.user_id) %></td>
+				<td class="subject, message_details"><%= link_to m.subject, view_message_path(:msg_id => m.id) %></td>
+				<td class="message_details"><%= time_ago_in_words(m.created_at) %> ago</td>
+			<% end %>
+			<td><%= link_to 'Reply', new_message_path(:recipient => m.user_id, :re => "RE: #{m.subject}") %></td>
+			<td><%= link_to "Discard", trash_message_path(:msg_id => m.id, :d_id => dom_id(m)), :remote => true %></td>
+		
+		<% end %>
+	</table>
+
+<% else %>
+
+	<div class="empty_statement">Your inbox is empty!</div>
+	
+<% end %>

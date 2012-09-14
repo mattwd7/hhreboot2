@@ -1,0 +1,31 @@
+<% if @trashed_messages.count > 0 %>
+
+	<table align="center">
+		<col width="100" />
+		<col width="300" />
+		<col width="100" />
+		<col width="50" />
+		<col width="50" />
+		<tr>
+			<th>To/From</th>
+			<th>Subject</th>
+			<th></th>
+		</tr>
+
+		<%= content_tag_for(:tr, @trashed_messages) do |m| %>
+			<% if m.recipient_id == current_user.id %>
+				<td>From: <%= User.find(m.user_id).username %></td>
+			<% else %>
+				<td>To: <%= m.recipient_id %></td>
+			<% end %>
+			<td class="subject"><%= m.subject %></td>
+			<td><%= link_to "Keep as New", restore_message_path(:msg_id => m.id, :d_id => dom_id(m)), :remote => true %></td>
+			<td><%= link_to 'Destroy', destroy_message_path(:id => m.id), :remote => true %></td>
+		<% end %>
+	</table>
+
+<% else %>
+
+	<div class="empty_statement">Your trash is empty!</div>
+	
+<% end %>
