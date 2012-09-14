@@ -11,7 +11,7 @@ Hhreboot2::Application.routes.draw do
   resources :courses
   resources :buildings
 
-  root :to => 'navigation#alt_homepage'
+  root :to => 'users#index'
   
   match 'new_topics' => 'topics#new_topics'
   
