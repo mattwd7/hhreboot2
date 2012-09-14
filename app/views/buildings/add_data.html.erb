@@ -1,7 +1,0 @@
-<% File.open("buildings.txt", "r") do |infile| %>
-	<% while (line = infile.gets) %>
-		<%= line %></br>
-		<% temp = Building.new(:name => line) %>
-		<% temp.save %>
-	<% end %>
-<% end %>
