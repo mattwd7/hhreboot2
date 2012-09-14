@@ -1,0 +1,6 @@
+<h2>Choose a field of study:</h2>
+
+<% fields = Field.all %>
+<% fields.each do |t| %>
+	<%= link_to t.title, list_courses_path(:field => t, :qtr_id => params[:qtr_id]) %></br>
+<% end %>

@@ -1,0 +1,26 @@
+<h1>Building Profile: <%= @building.name %></h1>
+
+<h3>By the numbers</h3>
+Total residents: <%= "CONTACT MICHELLE ABOUT THESE NUMBERS" %></br>
+Hill Heroes: <%= @building.users.count %></br>
+Percentage of Hill Heroes:</br>
+
+<% @topics.each do |t| %>
+	<%= t.user.building.name %>
+<% end %>
+
+<h4>What <%= @building.name %> is talking about...</h4>
+<hr>
+<% if @topics.count < 10 %>
+	<% @topics.each do |t| %>
+		<% if t.user.building.id == @building.id %>
+			<%= link_to t.subject, forem.forum_topic_path(t.forum.id, t) %> in <%= t.forum.title %> by <%= t.user %></br>
+		<% end %>
+	<% end %>
+<% else %>
+	<% for i in 0..9 %>
+		<% if t.user.building.id == @building.id %>
+			<%= link_to @topics[i].subject, forem.forum_topic_path(@topics[i].forum.id, @topics[i]) %> in <%= @topics[i].forum.title %> by <%= @topics[i].user %></br>
+		<% end %>
+	<% end %>
+<% end %>

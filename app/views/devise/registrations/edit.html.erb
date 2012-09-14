@@ -3,8 +3,24 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+  <div>Username:</br>
+  <%= f.text_field :username %></div></br>
+  
+  <div>
+  Building:</br>
+  <%= collection_select(:user, :building_id, Building.all, :id, :name) %>
+  </div></br>
+  
+  <div>
+  Major:</br>
+  <%= collection_select(:user, :major, Field.all, :title, :title) %></br>
+  <%= link_to "Add additional major or minors...", add_major_minor_path, :remote => true %>
+  </div></br>
+  
+  <div>
+  Year:</br>
+  <%= select(:user, :year, [1, 2, 3, 4, 5, 6]) %>
+  </div></br>
 
   <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
   <%= f.password_field :password, :autocomplete => "off" %></div>

@@ -1,0 +1,56 @@
+<h3><%= link_to "Find Books", find_books_path(:book => params[:book]) %> | Book trades</h3>
+
+<h4>Books I want:</h4>
+<% @books_I_want.each do |b| %>
+	<%= link_to b.course.title, find_trades_path(:book => b.course.id) %></br>
+<% end %>
+
+<hr></br>
+
+<% if params[:book] %>
+	Showing Hill Heroes looking to trade away their</br>
+	<%= Course.find(params[:book]).title %> textbooks:
+<% end %>
+</br></br>
+
+<% if @traders %>
+<table align="center">
+<col width="800" />
+<col width="800" />
+<col width="800" />
+	<% if params[:order] == "by_username" %>
+		<th><%= link_to "Hill Hero", find_trades_path(:book => params[:book], :order => "by_username_desc") %></th>
+		<th>Trade</th>
+		<th><%= link_to "Residence", find_trades_path(:book => params[:book], :order => "by_building") %></th>
+	<% elsif params[:order] == "by_building" %>
+		<th><%= link_to "Hill Hero", find_trades_path(:book => params[:book], :order => "by_username") %></th>
+		<th>Trade</th>
+		<th><%= link_to "Residence", find_trades_path(:book => params[:book], :order => "by_building_desc") %></th>
+	<% else %>
+		<th><%= link_to "Hill Hero", find_trades_path(:book => params[:book], :order => "by_username") %></th>
+		<th>Trade</th>
+		<th><%= link_to "Residence", find_trades_path(:book => params[:book], :order => "by_building") %></th>
+	<% end %>
+	<th>Message</th>
+	
+	<% @traders.each do |t| %>
+		<tr>
+			<td align="center"><%= t.username %></td>
+			<% @book_titles = Array.new %>
+			<% t.textbooks.each do |theirbook| %>
+				<% if @my_books_for_trade.any? {|mybook| mybook == theirbook.course.id} %>
+					<% @book_titles.concat([theirbook.course.title]) %>
+				<% end %>
+			<% end %>
+			<td align="center">
+				<% @book_titles.each do |put| %>
+					<%= put %></br>
+				<% end %>
+			</td>
+			<td align="center"><%=t.building.name %></td>
+			<td align="center"><%= link_to "Message!", new_message_path(:recipient => t.id) %></td>
+		</tr>
+	<% end %>
+	
+</table>
+<% end %>

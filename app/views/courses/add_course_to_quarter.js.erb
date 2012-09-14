@@ -1,0 +1,7 @@
+<% if @error %>
+	$("#errors").show()
+<% else %>
+	$("#errors").hide()
+	$("#classes table tr").remove();
+	$("#classes table").append("<%= escape_javascript(render :partial =>  '/courses/my_courses') %>");
+<% end %>

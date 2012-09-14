@@ -1,0 +1,80 @@
+<div id="find_books_wrapper">
+<body class="main">
+
+<div id="choose_class_panel">
+	<div id="textbook_exchange_title">
+		<h3>Hill Heroes Textbook Exchange</h3>
+	</div>
+	<%= link_to "Manage My Textbooks", manage_textbooks_path %>
+	<h4>My <%= @current_term %> classes</h4>
+
+	<div id="my_classes">
+		<% if @my_classes.size == 0 %>
+			You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
+		<% else %>
+			<% @my_classes.each do |c| %>
+				<%= link_to "#{c.field.abbr} #{c.title}", find_books_path(:book => c.id) %></br>
+			<% end %>
+		<% end %>
+	</div>
+
+	<h4>Other:</h4>
+
+	<div id="other">
+		<%= form_tag(find_books_path) do %>
+			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+			<%= collection_select(nil, :book, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+			<%= submit_tag("Find it!") %>
+		<% end %>
+	</div>
+</div>
+
+<hr>
+
+<div id="book_on_display">
+	<% if params[:book] %>
+		Showing textbooks for</br>
+		<b><%= "#{@course.field.abbr} #{@course.title}" %>:</b>
+	<% else %>
+		<div style="text-align: center;">Select a course above to view available textbooks on the Hill.</div>
+	<% end %>
+</div>
+
+</br></br>
+
+<% if @textbooks.size > 0 %>
+	<table align="center" id="find_books_table">
+	<col width="100" />
+	<col width="300" />
+	<col width="100" />
+	<col width="100" />
+	<col width="100" />
+	<col width="100" />
+		
+		<th><%= link_to "Hill Hero", find_books_path(:book => params[:book], :order => (@current_order == "by_username" ? "by_username_desc" : "by_username")) %></th>
+		<th>Details</th>
+		<th><%= link_to "Price", find_books_path(:book => params[:book], :order => (@current_order == "by_price" ? "by_price_desc" : "by_price")) %></th>
+		<th><%= link_to "Condition", find_books_path(:book => params[:book], :order => (@current_order == "by_condition" ? "by_condition_desc" : "by_condition")) %></th>
+		<th><%= link_to "Residence", find_books_path(:book => params[:book], :order => (@current_order == "by_building" ? "by_building_desc" : "by_building")) %></th>
+
+	
+		<% @textbooks.each do |book| %>
+			<tr>
+				<td align="center"><%= link_to book.user.username, user_profile_path(:user => book.user) %></td>
+				<td align="center"><%= book.description %></td>
+				<td align="center">$<%= book.price %></td>
+				<td align="center"><%= book.condition %></td>
+				<td align="center"><%= book.user.building.name %></td>
+				<td align="center"><%= link_to "Message!", new_message_path(:recipient => book.user.id, :msg_template => "/messages/templates/textbook", :course => book.course.title, :return_url => request.fullpath) %></td>
+			</tr>
+		<% end %>
+	
+	</table>
+<% else %>
+	<% if params[:book] %>
+		<div style="text-align: center;">Textbooks for this course are not available at this time.</div>
+	<% end %>
+<% end %>
+
+</body>
+</div>
