@@ -1,0 +1,11 @@
+<% topics = Forem::Topic.all %>
+
+<% if topics.count < 10 %>
+	<% topics.each do |t| %>
+		<%= link_to t.subject, forem.forum_topic_path(t.forum.id, t) %> in <%= t.forum.title %> by <%= t.user %></br>
+	<% end %>
+<% else %>
+	<% for i in 0..9 %>	<!-- This may have to be 0..9 -->
+		<%= link_to topics[i].subject, forem.forum_topic_path(topics[i].forum.id, topics[i]) %> in <%= topics[i].forum.title %> by <%= topics[i].user %></br>
+	<% end %>
+<% end %>
