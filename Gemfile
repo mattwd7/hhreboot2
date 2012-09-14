@@ -24,6 +24,8 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
+gem 'forem', :git => "git://github.com/radar/forem.git"
+gem 'kaminari'
 
 group :production do
 	gem 'pg', '0.12.2'
