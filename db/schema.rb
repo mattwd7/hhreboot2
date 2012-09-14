@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120914052251) do
+ActiveRecord::Schema.define(:version => 20120914182658) do
+
+  create_table "buildings", :force => true do |t|
+    t.string  "name"
+    t.integer "population"
+  end
+
+  create_table "courses", :force => true do |t|
+    t.string "title"
+  end
+
+  create_table "courses_quarters", :id => false, :force => true do |t|
+    t.integer "course_id"
+    t.integer "quarter_id"
+  end
+
+  add_index "courses_quarters", ["course_id", "quarter_id"], :name => "index_courses_quarters_on_course_id_and_quarter_id"
+
+  create_table "fields", :force => true do |t|
+    t.string "title"
+    t.string "abbr"
+  end
 
   create_table "forem_categories", :force => true do |t|
     t.string   "name",       :null => false
@@ -56,11 +77,11 @@ ActiveRecord::Schema.define(:version => 20120914052251) do
     t.integer  "topic_id"
     t.text     "text"
     t.integer  "user_id"
-    t.datetime "created_at",                                :null => false
-    t.datetime "updated_at",                                :null => false
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
     t.integer  "reply_to_id"
-    t.string   "state",       :default => "pending_review"
     t.boolean  "notified",    :default => false
+    t.string   "state",       :default => "approved"
   end
 
   add_index "forem_posts", ["reply_to_id"], :name => "index_forem_posts_on_reply_to_id"
@@ -77,15 +98,15 @@ ActiveRecord::Schema.define(:version => 20120914052251) do
     t.integer  "forum_id"
     t.integer  "user_id"
     t.string   "subject"
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
-    t.boolean  "locked",       :default => false,            :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.boolean  "locked",       :default => false,      :null => false
     t.boolean  "pinned",       :default => false
     t.boolean  "hidden",       :default => false
     t.datetime "last_post_at"
-    t.string   "state",        :default => "pending_review"
     t.integer  "views_count",  :default => 0
     t.string   "slug"
+    t.string   "state",        :default => "approved"
   end
 
   add_index "forem_topics", ["forum_id"], :name => "index_forem_topics_on_forum_id"
@@ -108,8 +129,42 @@ ActiveRecord::Schema.define(:version => 20120914052251) do
   add_index "forem_views", ["user_id"], :name => "index_forem_views_on_user_id"
   add_index "forem_views", ["viewable_id"], :name => "index_forem_views_on_topic_id"
 
+  create_table "friendships", :force => true do |t|
+    t.integer  "friend_id"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "messages", :force => true do |t|
+    t.integer  "recipient_id"
+    t.integer  "user_id"
+    t.boolean  "unread",       :default => true
+    t.text     "text"
+    t.string   "subject"
+    t.boolean  "replied_to",   :default => false
+    t.boolean  "trashed",      :default => false
+    t.datetime "trash_time"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  create_table "quarters", :force => true do |t|
+    t.string  "term"
+    t.integer "user_id"
+  end
+
+  create_table "textbooks", :force => true do |t|
+    t.integer "user_id"
+    t.integer "course_id"
+    t.boolean "own_it"
+    t.text    "description"
+    t.string  "terms_of_exchange"
+    t.integer "price"
+    t.string  "condition"
+  end
+
   create_table "users", :force => true do |t|
-    t.string   "username"
     t.datetime "created_at",                                           :null => false
     t.datetime "updated_at",                                           :null => false
     t.string   "email",                  :default => "",               :null => false
@@ -129,10 +184,19 @@ ActiveRecord::Schema.define(:version => 20120914052251) do
     t.boolean  "forem_admin",            :default => false
     t.string   "forem_state",            :default => "pending_review"
     t.boolean  "forem_auto_subscribe",   :default => false
+    t.boolean  "new_messages",           :default => false
+    t.string   "username"
+    t.string   "major"
+    t.integer  "year"
+    t.string   "major2"
+    t.string   "minor"
+    t.string   "minor2"
+    t.text     "about_me"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+  add_index "users", ["username"], :name => "index_users_on_username", :unique => true
 
 end
