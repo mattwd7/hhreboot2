@@ -1,0 +1,9033 @@
+38
+1: Introduction to Civil Engineering
+
+38
+15: Introduction to Computing for Civil Engineers
+
+38
+58SL: Climate Change, Water Quality, and Ecosystem Functioning
+
+38
+85: Professional Practice Issues in Structural Engineering
+
+38
+97: Variable Topics in Civil and Environmental Engineering
+
+38
+101: Statics and Dynamics
+
+38
+103: Applied Numerical Computing and Modelingin Civil and Environmental Engineering
+
+38
+105: Technical Communication
+
+38
+106A: Problem Solving in Engineering Economy
+
+38
+108: Introduction to Mechanics of Deformable Solids
+
+38
+110: Introduction to Probability and Statistics forEngineers
+
+38
+120: Principles of Soil Mechanics
+
+38
+121: Design of Foundations and Earth Structures
+
+38
+123: Advanced Geotechnical Design
+
+38
+125: Fundamentals of Earthquake Engineering
+
+38
+128L: Soil Mechanics Laboratory
+
+38
+129: Engineering Geomatics
+
+38
+130: Elementary Structural Mechanics
+
+38
+130L: Experimental Structural Mechanics
+
+38
+135A: Elementary Structural Analysis
+
+38
+135B: Intermediate Structural Analysis
+
+38
+135L: Structural Design and Testing Laboratory
+
+38
+137: Elementary Structural Dynamics
+
+38
+137L: Structural Dynamics Laboratory
+
+38
+140L: Structural Components and Systems Testing Laboratory
+
+38
+141: Steel Structures
+
+38
+142: Design of Reinforced Concrete Structures
+
+38
+142L: Reinforced Concrete Structural Laboratory
+
+38
+143: Design of Prestressed Concrete Structures
+
+38
+144: Structural Systems Design
+
+38
+147: Design and Construction of Tall Buildings
+
+38
+150: Introduction to Hydrology
+
+38
+151: Introduction to Water Resources Engineering
+
+38
+153: Introduction to Environmental EngineeringScience
+
+38
+154: Chemical Fate and Transport in Aquatic Environments
+
+38
+155: Unit Operations and Processes for Water andWastewater Treatment
+
+38
+156A: Environmental Chemistry Laboratory
+
+38
+156B: Environmental Engineering Unit Operationsand Processes Laboratory
+
+38
+157A: Hydrologic Modeling
+
+38
+157B: Design of Water Treatment Plants
+
+38
+157C: Design of Wastewater Treatment Plants
+
+38
+157L: Hydrologic Analysis and Design
+
+38
+157M: Hydrology of Mountain Watersheds
+
+38
+163: Introduction to Atmospheric Chemistry andAir Pollution
+
+38
+164: Hazardous Waste Site Investigation and Remediation
+
+38
+180: Introduction to Transportation Engineering
+
+38
+181: Traffic Engineering Systems: Operations andControl
+
+38
+188: Special Courses in Civil and EnvironmentalEngineering
+
+38
+192: Undergraduate Practicum in Civil and Environmental Engineering
+
+38
+194: Research Group Seminars: Civil and Environmental Engineering
+
+38
+199: Directed Research in Civil and EnvironmentalEngineering
+
+1
+1A - Foundation of U.S. Air Force
+
+1
+19 - Fiat Lux Freshman Seminars
+
+1
+20A - Evolution of U.S. Air Force Air and Space Power
+
+1
+130A - Air Force Leadership Studies
+
+1
+140A - National Security Affairs/Preparation for Active Duty
+
+2
+1A - Elementary Swahili  
+
+2
+2A - Intermediate Swahili  
+
+3
+201A - Africa and Disciplines
+
+5
+102 - Culture, Media, and Los Angeles
+
+5
+104A - Early African American Literature
+
+5
+114E - Malcolm X and Black Liberation
+
+5
+120 - Race, Inequality, and Public Policy
+
+5
+154C - Black Experience in Latin America and Caribbean I
+
+5
+158C - Introduction to Afro-American History
+
+5
+167 - Worker Center Movement: Next Wave Organizing for Justice for Immigrant 
+
+5
+179A - Topics in African American Literature
+
+5
+182A - Language, Literacy, and Human Development Ethnography
+
+5
+183A - Language, Literacy, and Human Development Ethnography
+
+5
+188A - Special Courses in Afro-American Studies
+
+5
+191 - Variable Topics Research Seminars: Afro-American Studies
+
+5
+194A - Language, Literacy, and Human Development Research Group Seminars
+
+5
+197 - Individual Studies in Afro-American Studies
+
+5
+241 - Special Topics in Afro-American Studies
+
+5
+270A - Survey of Afro-American Research
+
+5
+291 - Special Topics in Afro-American Studies
+
+6
+10 - Introduction to American Indian Studies
+
+6
+120 - Working in Tribal Communities: Introduction
+
+6
+145 - Contemporary Indigenous Nations
+
+6
+162 - Language Endangerment and Linguistic Revitalization
+
+6
+187 - Special Topics in American Indian Studies  
+
+6
+200C - Contemporary Issues of American Indians
+
+6
+201 - Topics in American Indian Studies
+
+6
+202 - Qualitative Research Design and Methodology for Indigenous Communities
+
+6
+220 - Working in Tribal Communities: Introduction
+
+6
+228A - Tribal Legal Systems
+
+6
+238B - Tribal Legal Development Clinic
+
+6
+245 - Contemporary Indigenous Nations
+
+6
+265 - Federal Indian Law I
+
+6
+272 - Seminar: Cultural Property Law
+
+6
+375 - Teaching Apprentice Practicum
+
+7
+1 - Elementary American Sign Language
+
+7
+115 - Enforcing Normalcy: Deaf and Disability Studies
+
+8
+10W - Jerusalem: Holy City
+
+8
+101A - Art and Architecture of Ancient Egypt, Predynastic Period to New Kingdom
+
+8
+103A - Ancient Egyptian Civilization
+
+8
+104B - Sumerians
+
+8
+120A - Elementary Ancient Egyptian  
+
+8
+140A - Elementary Sumerian  
+
+8
+167 - Magic in Ancient World
+
+8
+185D - Religions of Ancient Near East
+
+8
+220 - Seminar: Ancient Egypt  
+
+8
+261 - Practical Field Archaeology  
+
+8
+262 - Seminar: Object Archaeology
+
+10
+8 - Archaeology: Introduction
+
+10
+9 - Culture and Society
+
+10
+19 - Fiat Lux Freshman Seminars
+
+10
+33 - Culture and Communication  
+
+10
+89 - Honors Seminars
+
+10
+110P - Principles of Archaeology
+
+10
+116N - Archaeology of Ancient Civilizations: China
+
+10
+117P - Selected Laboratory Topics in Archaeology
+
+10
+119P - Cities Past and Present
+
+10
+124A - Human Behavioral Ecology
+
+10
+128A - Primate Behavior Nonhuman to Human  
+
+10
+129Q - Paleopathology  
+
+10
+135T - Psychoanalysis and Anthropology
+
+10
+137 - Selected Topics in Cultural Anthropology
+
+10
+139 - Field Methods in Cultural Anthropology  
+
+10
+147 - Selected Topics in Linguistic Anthropology
+
+10
+148W - Talk and Body
+
+10
+149SL - Gender and Language across Communities
+
+10
+151 - Marriage, Family, and Kinship
+
+10
+157 - Selected Topics in Social Anthropology
+
+10
+162 - Language Endangerment and Linguistic Revitalization
+
+10
+172B - Change and Continuity among Native North Americans
+
+10
+176 - Culture Area of Middle East
+
+10
+182 - History of Anthropology  
+
+10
+193 - Journal Club Seminars: Anthropology
+
+10
+194 - Research Group Seminars: Anthropology
+
+10
+200 - Conceptualizing Anthropological Research
+
+10
+201A - Graduate Core Seminar: Archaeology
+
+10
+202 - Biological Anthropology Colloquium  
+
+10
+203A - Core Seminar: Sociocultural Anthropology -- Historical and Philosophical Foun...
+
+10
+204 - Core Seminar: Linguistic Anthropology  
+
+10
+212S - Selected Laboratory Topics in Archaeology
+
+10
+230P - Practice Theory and Beyond
+
+10
+235 - Individual in Culture
+
+10
+243A - Language Ideologies: Political Economy of Language Beliefs and Practices
+
+10
+269 - Contemporary Issues of American Indians
+
+10
+285P - Selected Topics in Anthropological/Archaeological Theory
+
+10
+293 - Culture, Brain, and Development Forum
+
+10
+297 - Selected Topics in Anthropology
+
+10
+375 - Teaching Apprentice Practicum
+
+10
+495 - Teaching Anthropology  
+
+11
+10W - Language in Action: Perspectives from Applied Linguistics
+
+11
+19 - Fiat Lux Freshman Seminars
+
+11
+110 - Methodology for Second/Foreign/Heritage Language Education
+
+11
+121SL - Oral History: Latino New Immigrant Youth
+
+11
+153 - Functional Foundations of Language
+
+11
+161W - Talk and Body
+
+11
+179 - Language Politics and Policies in U.S.: Comparative History
+
+11
+200 - Research in Applied Linguistics
+
+11
+201 - Functional Foundations of Language
+
+11
+210 - Methodology for Second/Foreign/Heritage Language Education
+
+11
+232 - Culture, Brain, and Development Forum
+
+11
+258 - Assessment Laboratory
+
+11
+267 - Talk and Body
+
+11
+278 - Discourse Laboratory
+
+11
+291 - Current Issues in Applied Linguistics
+
+11
+375 - Teaching Apprentice Practicum
+
+11
+495 - Training and Supervision of Teaching Assistants
+
+12
+1A - Elementary Standard Arabic
+
+12
+102A - Intermediate Standard Arabic
+
+12
+103A - Advanced Arabic
+
+12
+148 - Contemporary Arab Film and Song
+
+12
+241 - Modern Arabic Literature
+
+12
+250 - Seminar: Premodern Arabic Literature
+
+13
+201A - Graduate Core Seminar: Archaeology
+
+13
+205A - Selected Laboratory Topics in Archaeology
+
+13
+210 - Archaeological Materials Identification and Characterization  
+
+13
+220 - Special Topics in Archaeology
+
+14
+10A - History of Architecture and Urban Design: Prehistory to Mannerism
+
+14
+30 - Introduction to Architectural Studies
+
+14
+122 - Studio II
+
+14
+131 - Issues in Contemporary Design
+
+14
+141 - Technology I: Projections
+
+14
+220 - Introduction to Computers
+
+14
+288 - Renaissance Architecture and Urbanism
+
+14
+289 - Special Topics in Architecture and Urban Design  
+
+14
+290 - Special Topics in Critical Studies in Architectural Culture
+
+14
+291 - Theory of Architectural Programming  
+
+14
+375 - Teaching Apprentice Practicum
+
+14
+401 - Advanced Topics Studio
+
+14
+403A - Research Studio
+
+14
+411 - Introductory Design Studio  
+
+14
+413 - Building Design with Landscape Studio  
+
+14
+431 - Structures I  
+
+14
+436 - Introduction to Building Construction
+
+14
+496 - Special Projects in Architecture  
+
+15
+1A - Elementary Modern Western Armenian
+
+15
+4A - Elementary Modern Eastern Armenian
+
+15
+102A - Intermediate Modern Western Armenian
+
+15
+105A - Intermediate Modern Eastern Armenian
+
+15
+106A - Advanced Modern Eastern Armenian
+
+15
+170 - Armenian Poetry, 1880 to 1930
+
+15
+188 - Variable Topics in Armenian
+
+15
+231A - Intermediate Classical Armenian
+
+16
+1A - Drawing  
+
+16
+1B - Sculpture  
+
+16
+11A - Painting  
+
+16
+11B - Photography  
+
+16
+11D - New Genres  
+
+16
+11E - Ceramics
+
+16
+31A - Modernism
+
+16
+130 - Advanced Drawing  
+
+16
+133 - Advanced Painting  
+
+16
+137 - Advanced New Genres  
+
+16
+140 - Advanced Printmaking  
+
+16
+145 - Advanced Sculpture  
+
+16
+147 - Advanced Photography  
+
+16
+148 - Advanced Ceramics
+
+16
+150 - Senior Studio  
+
+16
+180 - Seminar: Art
+
+16
+185 - Whose Monument Where: Course on Public Art
+
+16
+186A - Beyond Mexican Mural: Beginning Muralism and Community Development
+
+16
+190 - Studio/Research Colloquia in Art
+
+16
+193 - Journal Club Seminars: Current Topics in Art
+
+16
+271 - Graduate Painting
+
+16
+273 - Graduate Sculpture
+
+16
+274 - Graduate Photography
+
+16
+275 - Graduate New Genres
+
+16
+276 - Graduate Group Critique
+
+16
+277 - Graduate Ceramics
+
+16
+278 - Interdisciplinary Studio
+
+16
+280 - Seminar: Art
+
+16
+283 - Special Topics in Art
+
+16
+375 - Teaching Apprentice Practicum
+
+16
+495 - Teaching Assistant Training Practicum
+
+17
+54 - Modern Art
+
+17
+56A - Art of India and Southeast Asia  
+
+17
+101A - Art and Architecture of Ancient Egypt, Predynastic Period to New Kingdom
+
+17
+103F - Art: Fakes, Forgeries, and Authenticity
+
+17
+108A - Northern Renaissance Art  
+
+17
+110A - European Art of 19th Century
+
+17
+110J - Variable Topics in Western Art
+
+17
+114C - Japanese Art  
+
+17
+114E - Arts of Korea  
+
+17
+115B - Advanced Chinese Art  
+
+17
+117E - Colonial Latin American Art
+
+17
+127 - Undergraduate Seminar  
+
+17
+150A - Contemporary Art, 1940s to 1950s
+
+17
+180C - Modern and Contemporary South Asian Art
+
+17
+197 - Individual Studies in Art History
+
+17
+198A - Honors Research in Art History
+
+17
+200 - Art Historical Theories and Methodologies  
+
+17
+203G - Art: Fakes, Forgeries, and Authenticity
+
+17
+218E - Colonial Latin American Art
+
+17
+225 - Medieval Art  
+
+17
+240 - Baroque Art  
+
+17
+241A - Seminar: Modern European History
+
+17
+241B - Seminar: Modern European History
+
+17
+243 - Selected Topics in Korean Art
+
+17
+253 - Modern Art
+
+17
+258 - Advanced Chinese Art  
+
+17
+260B - Chinese Art
+
+17
+260C - Japanese Art  
+
+17
+272 - History and Theory of Photography
+
+17
+280D - Problems in Postcolonial Criticism
+
+17
+375 - Teaching Apprentice Practicum
+
+17
+495 - Teaching Art History
+
+18
+100 - Selected Topics in Arts
+
+18
+102 - Introduction to Arts Education: Theory and Practice
+
+18
+192 - Arts Education Undergraduate Practicum: Preparation, Observation, and Practice
+
+19
+60W - Introduction to Buddhism
+
+19
+216 - Seminar: History and Asia
+
+19
+261C - Current Issues in Buddhist Studies
+
+19
+299 - Independent Study
+
+19
+375 - Teaching Apprentice Practicum
+
+19
+495 - Teaching Asian Languages at College Level
+
+20
+20 - Contemporary Asian American Communities
+
+20
+30 - Asian American Literature and Culture
+
+20
+40 - Asian American Movement
+
+20
+112B - Contemporary Asian American Literary Issues and Criticism
+
+20
+112C - Asian American Creative Writing
+
+20
+113 - Asian Americans and Law
+
+20
+120 - Asian American History through Lens
+
+20
+122B - Gender and Film in Pacific
+
+20
+130A - Chinese American Experience
+
+20
+142A - Ethnocommunications I: Introduction to Creating Community Media
+
+20
+160 - Culture, Media, and Los Angeles
+
+20
+166A - Immigrant Rights, Labor, and Higher Education
+
+20
+166C - Worker Center Movement: Next Wave Organizing for Justice for Immigrant Workers
+
+20
+167 - Immigration and New Second Generation
+
+20
+172C - Transnational Bollywood
+
+20
+187A - Special Courses in Research Methodologies
+
+20
+187B - Special Courses in Asian American Themes
+
+20
+187C - Special Courses in Asian American Populations and Communities
+
+20
+191D - Topics in Comparative Race, Ethnicity, Gender, and Sexuality
+
+20
+191F - Topics in Asian American Literature
+
+20
+199 - Directed Research or Senior Project in Asian American Studies
+
+20
+200A - Critical Issues in Asian American Studies  
+
+20
+239 - Race and Ethnicity as Concept in Practice and Research
+
+20
+260 - Topics in Asian American Literature
+
+20
+297A - Topics in Asian American Studies
+
+20
+297E - Topics in Asian American Studies
+
+20
+375 - Teaching Apprentice Practicum
+
+21
+3 - Nature of Universe
+
+21
+4 - Black Holes and Cosmic Catastrophes
+
+21
+5 - Life in Universe
+
+21
+180 - Astrophysics Laboratory  
+
+21
+270 - Astrophysical Dynamics
+
+21
+271A - Electromagnetic Radiation in Astrophysics I
+
+21
+273 - Diffuse Matter in Space
+
+21
+277A - Astronomy Research Project
+
+21
+278 - Special Topics in Astronomy
+
+21
+279 - Seminar: Current Astronomical Research
+
+21
+284 - Order of Magnitude Astrophysics
+
+21
+296 - Research Topics in Astronomy
+
+21
+297 - Research Tutorial: Astroparticle Physics
+
+21
+375 - Teaching Apprentice Practicum
+
+22
+1 - Climate Change: From Puzzles to Policy
+
+22
+1L - Climate Change: From Puzzles to Policy -- Laboratory
+
+22
+2 - Air Pollution
+
+22
+2L - Air Pollution Laboratory
+
+22
+10 - Introduction to Environmental Science
+
+22
+19 - Fiat Lux Freshman Seminars
+
+22
+100 - Earth and Its Environment
+
+22
+103 - Physical Oceanography
+
+22
+104 - Fundamentals of Air and Water Pollution
+
+22
+105 - Introduction to Chemical Oceanography
+
+22
+106 - Applied Climatology: Principles of Climate Impact on Natural Environment
+
+22
+115 - Mesometeorology
+
+22
+145 - Atmospheric Physics: Radiation, Clouds, and Aerosols
+
+22
+186 - Operational Meteorology
+
+22
+200A - Introduction to Atmospheric and Oceanic Fluid
+
+22
+200B - Introduction to Dynamics of Earth System
+
+22
+201A - Geophysical Fluid Dynamics I
+
+22
+201B - Geophysical Fluid Dynamics II
+
+22
+203A - Introduction to Atmospheric Chemistry
+
+22
+205B - Introduction to Solar-Terrestrial Physics
+
+22
+206 - Introduction to Biophysical Modeling of Land Surface Processes and Land/Atmos...
+
+22
+228 - Mesometeorology
+
+22
+230A - Atmospheric Chemistry I
+
+22
+257 - Radiation Belt Plasma Physics
+
+22
+270 - Seminar: Atmospheric Sciences
+
+22
+271 - Seminar: Atmospheric Dynamics
+
+22
+274 - Seminar: Atmospheric Chemistry
+
+22
+275A - Seminar: Space Physics
+
+22
+276 - Seminar: Mesoscale Processes
+
+22
+296C - Advanced Topics in Atmospheric Sciences: Numerical Mesoscale Modeling
+
+22
+296E - Advanced Topics in Atmospheric Sciences: Numerical Modeling of Atmosphere and...
+
+22
+296F - Advanced Topics in Atmospheric Sciences: Hierarchical Modeling of Ocean/Atmos...
+
+22
+296G - Advanced Topics in Atmospheric Sciences: Upper Atmosphere and Space Physics
+
+22
+296H - Advanced Topics in Atmospheric Sciences: Recent Advances in Atmospheric Chemi...
+
+22
+296L - Advanced Topics in Atmospheric Sciences: Geophysical Fluid Dynamics, Oceanogr...
+
+22
+296M - Advanced Topics in Atmospheric Sciences: Radiation and Remote Sensing
+
+22
+296N - Advanced Topics in Atmospheric Sciences: Tropospheric Chemistry and Climate M...
+
+22
+296P - Advanced Topics in Atmospheric Sciences: Atmospheric Chemistry of Air Polluti...
+
+22
+375 - Teaching Apprentice Practicum
+
+22
+495 - Teaching Atmospheric and Oceanic Sciences
+
+24
+10 - Introduction to Bioengineering
+
+24
+101 - Engineering Principles for Drug Delivery
+
+24
+102 - Basic Human Biology for Bioengineers I
+
+24
+104 - Physical Chemistry of Biomacromolecules
+
+24
+105 - Biopolymer Chemistry and Bioconjugates
+
+24
+106 - Topics in Biophysics, Channels, and Membranes
+
+24
+145 - Molecular Biotechnology for Engineers
+
+24
+147 - Applied Tissue Engineering: Clinical and Industrial Perspective
+
+24
+150 - Introduction to Micromachining and Microelectromechanical Systems (MEMS)
+
+24
+150L - Introduction to Micromachining and Microelectromechanical Systems (MEMS) Labo...
+
+24
+165EW - Bioengineering Ethics
+
+24
+170 - Energy-Tissue Interactions
+
+24
+177A - Bioengineering Capstone Design I
+
+24
+178 - Introduction to Biomaterials
+
+24
+184 - Introduction to Computational and Systems Biology
+
+24
+186 - Computational Systems Biology: Modeling and Simulation of Biological Systems
+
+24
+199 - Directed Research in Bioengineering
+
+24
+201 - Engineering Principles for Drug Delivery
+
+24
+202 - Basic Human Biology for Bioengineers I
+
+24
+204 - Physical Chemistry of Biomacromolecules
+
+24
+205 - Biopolymer Chemistry and Bioconjugates
+
+24
+206 - Topics in Biophysics, Channels, and Membranes
+
+24
+215 - Biochemical Reaction Engineering
+
+24
+220 - Introduction to Medical Informatics
+
+24
+221 - Human Anatomy and Physiology for Medical and Imaging Informatics
+
+24
+223A - Programming Laboratory for Medical and Imaging Informatics I
+
+24
+227 - Medical Information Infrastructures and Internet Technologies
+
+24
+247 - Applied Tissue Engineering: Clinical and Industrial Perspective
+
+24
+250A - Introduction to Micromachining and Microelectromechanical Systems (MEMS)
+
+24
+250L - Introduction to Micromachining and Microelectromechanical Systems (MEMS) Labo...
+
+24
+261A - Evaluation of Research Literature in Neuroengineering
+
+24
+270 - Energy-Tissue Interactions
+
+24
+278 - Introduction to Biomaterials
+
+24
+284 - Functional Neuroimaging: Techniques and Applications
+
+24
+286 - Computational Systems Biology: Modeling and Simulation of Biological Systems
+
+24
+295A - Seminar: Research Topics in Bioengineering -- Biomaterial Research
+
+24
+295B - Seminar: Research Topics in Bioengineering -- Biomaterials and Tissue Enginee...
+
+24
+295D - Seminar: Research Topics in Bioengineering -- Hybrid Device Research
+
+24
+295E - Seminar: Research Topics in Bioengineering -- Molecular Cell Bioengineering R...
+
+24
+295F - Seminar: Research Topics in Bioengineering -- Biopolymer Materials and Chemistry
+
+24
+298 - Special Studies in Bioengineering
+
+24
+299 - Seminar: Bioengineering Topics
+
+24
+495 - Teaching Assistant Training Seminar
+
+26
+191 - Variable Topics Research Seminars: Contemporary Biology
+
+26
+199 - Directed Research or Senior Project in Biological Chemistry
+
+26
+205 - Biological Chemistry and Nutrition Lecture: Dental Students
+
+26
+220A - Research Laboratory Rotations  
+
+26
+251A - Seminar: Transcriptional Regulation
+
+26
+254A - Concepts in Molecular Biosciences
+
+26
+254B - Concepts in Molecular Biosciences
+
+26
+266A - Seminar: Molecular Embryology
+
+26
+296 - Research Seminar Series in Biological Chemistry
+
+26
+375 - Teaching Apprentice Practicum
+
+27
+106 - Introduction to Cellular Modeling  
+
+27
+170A - Introductory Biomathematics for Medical Investigators
+
+27
+200 - Research Frontiers in Biomathematics  
+
+27
+201 - Deterministic Models in Biology
+
+27
+207A - Theoretical Genetic Modeling
+
+27
+210 - Optimization Methods in Biology
+
+27
+234 - Applied Bayesian Inference  
+
+27
+260A - Methodology in Clinical Research I
+
+27
+260C - Methodology in Clinical Research III
+
+27
+261 - Responsible Conduct of Research Involving Humans
+
+27
+271 - Statistical Methods in Computational Biology
+
+27
+281 - Survival Analysis  
+
+27
+299 - Special Topics in Clinical Research
+
+28
+99 - Student Research Program
+
+28
+202A - Applications of Medical Physics to Clinical Problems: Nuclear Medicine
+
+28
+202B - Applications of Medical Physics to Clinical Problems: Diagnostic Radiology
+
+28
+202C - Applications of Medical Physics to Clinical Problems: Radiation Therapy
+
+28
+205 - Physics of Diagnostic Radiology  
+
+28
+210 - Computer Vision in Medical Imaging
+
+28
+216 - Fundamentals of Dosimetry  
+
+28
+217 - Statistics and Data Analysis in Biomedical Physics
+
+28
+218 - Radiologic Functional Anatomy
+
+28
+220C - Laboratory Rotations in Biomedical Physics: Therapeutic Medical Physics
+
+28
+220D - Laboratory Rotations in Biomedical Physics: Radiation Biology and Experimenta...
+
+28
+222 - Advances in Medical Magnetic Resonance: Clinical MR Spectroscopy and Fast MRI...
+
+28
+260A - Seminar: Biomedical Physics
+
+28
+495 - Special Studies in Biomedical Physics
+
+29
+5HA - Biomedical Research: Concepts and Strategies
+
+29
+5HB - Biomedical Research: Essential Skills and Concepts
+
+29
+19 - Fiat Lux Freshman Seminars
+
+29
+193H - Journal Club Seminars: Current Topics in Biomedical Research
+
+29
+194H - Research Group Seminars: Data Presentation in Biomedical Research
+
+30
+100A - Introduction to Biostatistics  
+
+30
+110A - Basic Biostatistics  
+
+30
+201A - Topics in Applied Regression
+
+30
+202A - Theoretical Principles of Biostatistics
+
+30
+208 - Introduction to Demographic Methods
+
+30
+215 - Survival Analysis  
+
+30
+234 - Applied Bayesian Inference  
+
+30
+245 - Advanced Seminar: Biostatistics
+
+30
+250A - Linear Statistical Models  
+
+30
+255 - Advanced Probability in Biostatistics
+
+30
+272 - Theoretical Genetic Modeling
+
+30
+273 - Classification and Regression Trees (CART) and Other Algorithms
+
+30
+400 - Field Studies in Biostatistics  
+
+30
+402B - Biostatistical Consulting  
+
+30
+403A - Computer Management of Health Data
+
+30
+409 - Doctoral Statistical Consulting Seminar
+
+33
+10 - Introduction to Chemical and Biomolecular Engineering
+
+33
+100 - Fundamentals of Chemical and Biomolecular Engineering
+
+33
+101A - Transport Phenomena I
+
+33
+102A - Thermodynamics I
+
+33
+104B - Chemical and Biomolecular Engineering Laboratory II
+
+33
+104D - Molecular Biotechnology Lecture: From Gene to Product
+
+33
+104DL - Molecular Biotechnology Laboratory: From Gene to Product
+
+33
+106 - Chemical Reaction Engineering  
+
+33
+109 - Numerical and Mathematical Methods in Chemical and Biological Engineering
+
+33
+111 - Cryogenics and Low-Temperature Processes  
+
+33
+115 - Biochemical Reaction Engineering
+
+33
+145 - Molecular Biotechnology for Engineers
+
+33
+194 - Research Group Seminars: Chemical Engineering
+
+33
+199 - Directed Research in Chemical Engineering
+
+33
+200 - Advanced Engineering Thermodynamics  
+
+33
+210 - Advanced Chemical Reaction Engineering  
+
+33
+211 - Cryogenics and Low-Temperature Processes  
+
+33
+215 - Biochemical Reaction Engineering
+
+33
+220 - Advanced Mass Transfer  
+
+33
+245 - Molecular Biotechnology for Engineers
+
+33
+280A - Linear Dynamic Systems  
+
+33
+298A - Research Seminar
+
+33
+298B - Research Seminar
+
+33
+298C - Research Seminar
+
+33
+298D - Research Seminar
+
+33
+298F - Research Seminar
+
+33
+298G - Research Seminar
+
+33
+298H - Research Seminar
+
+33
+298J - Research Seminar
+
+33
+298M - Research Seminar
+
+33
+298P - Research Seminar
+
+33
+298T - Research Seminar
+
+33
+298V - Research Seminar
+
+33
+298Z - Research Seminar
+
+33
+299 - Departmental Seminar  
+
+33
+375 - Teaching Apprentice Practicum
+
+33
+495A - Teaching Assistant Training Seminar
+
+34
+14A - Atomic and Molecular Structure, Equilibria, Acids, and Bases
+
+34
+14BL - General and Organic Chemistry Laboratory I
+
+34
+14C - Structure of Organic Molecules
+
+34
+14CL - General and Organic Chemistry Laboratory II
+
+34
+14D - Organic Reactions and Pharmaceuticals
+
+34
+19 - Fiat Lux Freshman Seminars
+
+34
+20A - Chemical Structure
+
+34
+20AH - Chemical Structure (Honors)
+
+34
+20L - General Chemistry Laboratory  
+
+34
+30A - Organic Chemistry I: Structure and Reactivity
+
+34
+30AL - General Chemistry Laboratory II
+
+34
+30B - Organic Chemistry II: Reactivity, Synthesis, and Spectroscopy
+
+34
+30BL - Organic Chemistry Laboratory I
+
+34
+30CL - Organic Chemistry Laboratory II
+
+34
+98XA - PEERS Collaborative Learning Workshops for Life Sciences Majors
+
+34
+98XB - PEERS Collaborative Learning Workshops for Physical Sciences and Engineering ...
+
+34
+110A - Physical Chemistry: Chemical Thermodynamics  
+
+34
+113A - Physical Chemistry: Introduction to Quantum Mechanics  
+
+34
+114 - Physical Chemistry Laboratory  
+
+34
+115A - Quantum Chemistry  
+
+34
+122 - Mathematical Methods for Chemistry
+
+34
+123A - Classical and Statistical Thermodynamics  
+
+34
+125 - Computers in Chemistry  
+
+34
+144 - Practical and Theoretical Introductory Organic Synthesis  
+
+34
+153A - Biochemistry: Introduction to Structure, Enzymes, and Metabolism
+
+34
+153B - Biochemistry: DNA, RNA, and Protein Synthesis
+
+34
+153C - Biochemistry: Biosynthetic and Energy Metabolism and Its Regulation
+
+34
+153L - Biochemical Methods I
+
+34
+154 - Biochemical Methods II
+
+34
+156 - Physical Biochemistry  
+
+34
+160A - Introduction to Bioinformatics
+
+34
+171 - Intermediate Inorganic Chemistry
+
+34
+172 - Advanced Inorganic Chemistry
+
+34
+176 - Group Theory and Applications to Inorganic Chemistry
+
+34
+192A - Undergraduate Practicum in Chemistry and Biochemistry
+
+34
+193A - Journal Club Seminars: UC LEADS and MARC
+
+34
+194 - Research Group Seminars: Chemistry and Biochemistry
+
+34
+196B - Research Apprenticeship in Chemistry and Biochemistry
+
+34
+202 - Bioinformatics Interdisciplinary Research Seminar
+
+34
+203A - Research Integrity and Ethics in Cellular and Molecular Biology Research
+
+34
+204 - Student Research Seminar
+
+34
+206 - Chemistry of Biology Seminar
+
+34
+215A - Quantum Chemistry: Methods
+
+34
+218 - Physical Chemistry Student Seminar  
+
+34
+219E - Seminar: Research in Physical Chemistry -- Dynamics of Molecule-Molecule and ...
+
+34
+219I - Seminar: Research in Physical Chemistry -- Spectroscopy of Isolated Molecules...
+
+34
+219J - Seminar: Research in Physical Chemistry -- Chemistry and Biophysics of Interf...
+
+34
+219K - Seminar: Research in Physical Chemistry -- Statistical Mechanics of Disordere...
+
+34
+219L - Seminar: Research in Physical Chemistry -- Modern Methods for Molecular React...
+
+34
+219N - Seminar: Research in Physical Chemistry -- Cosmochemistry
+
+34
+219Q - Seminar: Research in Physical Chemistry -- Ultrafast Studies of Chemical Reac...
+
+34
+219R - Seminar: Research in Physical Chemistry -- Kinetic, Thermodynamic, and Interf...
+
+34
+219S - Seminar: Research in Physical Chemistry -- Nanoscience
+
+34
+219T - Seminar: Research in Physical Chemistry -- Single-Molecule Spectroscopy in Bi...
+
+34
+219U - Seminar: Research in Physical Chemistry -- Theory and Applications of Magneti...
+
+34
+219V - Seminar: Research in Physical Chemistry -- Complex Fluids: Composition, Struc...
+
+34
+219W - Seminar: Research in Physical Chemistry -- Biophysics and Statistical Mechani...
+
+34
+219X - Seminar: Research in Physical Chemistry -- Dynamic Processes in Chemically Re...
+
+34
+221B - Advanced Topics in Physical Chemistry  
+
+34
+222 - Mathematical Methods for Chemistry
+
+34
+223A - Classical and Statistical Thermodynamics  
+
+34
+228 - Chemical Physics Seminar  
+
+34
+229 - Introduction to Physical Chemistry Research  
+
+34
+235E - Seminar: Research in Organic Chemistry -- Theoretical and Physical Organic Ch...
+
+34
+235F - Seminar: Research in Organic Chemistry -- Synthetic Methods and Synthesis of ...
+
+34
+235G - Seminar: Research in Organic Chemistry -- Organometallic Chemistry and Organi...
+
+34
+235I - Seminar: Research in Organic Chemistry -- Fullerene Chemistry and Materials S...
+
+34
+235K - Seminar: Research in Organic Chemistry -- Organic Chemistry in Organized and ...
+
+34
+235N - Seminar: Research in Organic Chemistry -- Target- and Diversity-Oriented Synt...
+
+34
+235O - Seminar: Research in Organic Chemistry -- Polymer Chemistry and Biomaterials
+
+34
+235P - Seminar: Research in Organic Chemistry -- Reaction Discovery and Total Synthe...
+
+34
+236 - Spectroscopic Methods of Organic Chemistry  
+
+34
+244A - Organic Synthesis: Methodology and Stereochemistry  
+
+34
+247 - Organic Colloquium  
+
+34
+248 - Organic Chemistry Student Seminar  
+
+34
+249A - Problems in Advanced Organic Chemistry
+
+34
+249B - Problems in Advanced Organic Chemistry  
+
+34
+256A - Seminar: Research in Biochemistry -- Biochemistry of Plasma Proteins
+
+34
+256B - Seminar: Research in Biochemistry -- Biochemistry of Protein Function
+
+34
+256C - Seminar: Research in Biochemistry -- Biochemistry and Molecular Genetics of F...
+
+34
+256D - Seminar: Research in Biochemistry -- Transcriptional Control Mechanisms in Dr...
+
+34
+256F - Seminar: Research in Biochemistry -- Current Topics in Prokaryotic Development
+
+34
+256G - Seminar: Research in Biochemistry -- Nucleic Acid Structure Determination by NMR
+
+34
+256H - Seminar: Research in Biochemistry -- Basic Mechanisms of Promoter Activation
+
+34
+256J - Seminar: Research in Biochemistry -- Contractile Proteins in Muscle Contracti...
+
+34
+256K - Seminar: Research in Biochemistry -- Biochemistry and Molecular Biology of Ch...
+
+34
+256L - Seminar: Research in Biochemistry -- Literature of Structural Biology
+
+34
+256M - Seminar: Research in Biochemistry -- Mechanism and Regulation of Transcriptio...
+
+34
+256N - Seminar: Research in Biochemistry -- Advanced Topics in Structural Biology
+
+34
+256O - Seminar: Research in Biochemistry -- Membrane Biophysics
+
+34
+256P - Seminar: Research in Biochemistry -- Analysis of Protein Structure
+
+34
+256Q - Seminar: Research in Biochemistry -- Biochemistry and Function of Ubiquinone ...
+
+34
+256R - Seminar: Research in Biochemistry -- Biomolecular Nuclear Magnetic Resonance ...
+
+34
+256S - Seminar: Research in Biochemistry -- Proteome Bioinformatics
+
+34
+256T - Seminar: Research in Biochemistry -- RNA Processing and RNA Genomics
+
+34
+256U - Seminar: Research in Biochemistry -- Mitochondrial Biogenesis and Link to Dis...
+
+34
+256V - Seminar: Research in Biochemistry -- Proteomics and Mass Spectrometry
+
+34
+256W - Seminar: Research in Biochemistry -- Cytoskeletal Dynamics during Drosophila ...
+
+34
+256X - Seminar: Research in Biochemistry -- Microtubule-Based Structures and Human D...
+
+34
+258 - Advanced Topics in Biochemistry and Molecular Biology
+
+34
+260A - Introduction to Bioinformatics
+
+34
+268 - Biochemistry Research Seminar  
+
+34
+269A - Protein Structure
+
+34
+269B - Biocatalysis and Bioenergetics
+
+34
+269C - Nucleic Acid Structure and Catalysis
+
+34
+269D - Mechanism and Regulation of Gene Expression
+
+34
+269E - Biomolecular Structure, Catalysis, and Regulation
+
+34
+271 - Advanced Topics in Inorganic Chemistry  
+
+34
+272A - Seminar: Research in Inorganic Chemistry -- Chemistry of Materials
+
+34
+272C - Seminar: Research in Inorganic Chemistry -- Inorganic Spectroscopy
+
+34
+272D - Seminar: Research in Inorganic Chemistry -- Bioinorganic Chemistry and Biolog...
+
+34
+272G - Seminar: Research in Inorganic Chemistry -- Issues in Chemical Education
+
+34
+272I - Seminar: Research in Inorganic Chemistry -- Organometallic Chemistry
+
+34
+272J - Seminar: Research in Inorganic Chemistry -- Reticular Chemistry
+
+34
+272K - Seminar: Research in Inorganic Chemistry -- Inorganic Nanostructures: Synthes...
+
+34
+276A - Group Theory and Applications to Inorganic Chemistry
+
+34
+278 - Inorganic Chemistry Student Seminar  
+
+34
+284 - Materials Creation Training Program Brown-Bag Seminar
+
+34
+375 - Teaching Appentice Practicum
+
+34
+495 - Teaching College Chemistry
+
+35
+10A - Introduction to Chicana/Chicano Studies: History and Culture
+
+35
+19 - Fiat Lux Freshman Seminars
+
+35
+89 - Honors Seminars
+
+35
+100SL - Barrio Service Learning
+
+35
+102 - Mexican Americans and Schools
+
+35
+103C - Origins and Evolution of Chicano Theater  
+
+35
+103D - Contemporary Chicano Theater: Beginning of Chicano Theater Movement
+
+35
+105C - Chicana/Chicano Literature since el Movimiento, 1970s to Present
+
+35
+105E - Studies in Chicana/Chicano and/or Latina/Latino Literature
+
+35
+130 - Worker Center Movement: Next Wave Organizing for Justice for Immigrant Workers
+
+35
+139 - Topics in Chicana/Chicano and/or Latina/Latino Literature
+
+35
+144 - Women&#39;s Movement in Latin America
+
+35
+147 - Transnational Women&#39;s Organizing in Americas
+
+35
+156A - Immigrant Rights, Labor, and Higher Education
+
+35
+159A - History of Chicano Peoples
+
+35
+164SL - Oral History: Latino New Immigrant Youth
+
+35
+166 - Paulo Freire for Chicana/Chicano Classroom
+
+35
+174A - Restoring Civility: Understanding, Using, and Resolving Conflict
+
+35
+179 - Language Politics and Policies in U.S.: Comparative History
+
+35
+185 - Whose Monument Where: Course on Public Art
+
+35
+186A - Beyond Mexican Mural: Beginning Muralism and Community Development
+
+35
+188 - Special Courses in Chicana and Chicano Studies
+
+35
+191 - Variable Topics Research Seminars: Chicana and Chicano Studies
+
+35
+200 - Latina/Latino Los Angeles: Survey of Interdisciplinary Methods
+
+35
+255 - Mass Media Research Methods
+
+35
+375 - Teaching Apprentice Practicum
+
+35
+495 - Learner-Centered Teaching in Chicana/Chicano Studies
+
+36
+1 - Elementary Modern Chinese
+
+36
+1A - Elementary Modern Chinese for Advanced Beginners
+
+36
+4 - Intermediate Modern Chinese
+
+36
+4A - Intermediate Modern Chinese for Advanced Students
+
+36
+50 - Chinese Civilization
+
+36
+70 - Classics of Chinese Literature
+
+36
+100A - Advanced Modern Chinese
+
+36
+101A - Advanced Readings in Modern Chinese
+
+36
+110A - Introduction to Classical Chinese
+
+36
+154 - Introduction to Chinese Cinema
+
+36
+175 - Introduction to Chinese Thought
+
+36
+180 - Chinese Mythology and Supernatural
+
+36
+184 - Crime, Law, and Punishment in Traditional China
+
+36
+191B - Variable Topics Research Seminars: 20th-Century China and Taiwan
+
+36
+200A - Research Methods in Chinese
+
+36
+211A - Seminar: Classical Chinese Poetry
+
+36
+213A - Chinese-Language Cinemas
+
+36
+224A - Seminar: Selected Topics in Chinese Linguistics
+
+36
+297B - Seminar: Research Topics in Modern Chinese and Sinophone Culture
+
+37
+95CE - Introduction to Community-Based Internships
+
+37
+100SL - Perspectives on Civic Engagement
+
+37
+122 - Philanthropy as Civic Engagement
+
+37
+195CE - Community and Corporate Internships in Civic Engagement
+
+39
+10 - Discovering Greeks
+
+39
+30 - Classical Mythology
+
+39
+42 - Cinema and Ancient World
+
+39
+142 - Ancient Epic  
+
+39
+143A - Ancient Tragedy
+
+39
+150B - Female in Roman Literature and Culture
+
+39
+167 - Magic in Ancient World
+
+39
+168 - Comparative Mythology
+
+39
+191 - Capstone Seminar: Classics
+
+39
+246 - Greek and Latin Meter  
+
+39
+250 - Topics in Greek and Roman Culture and Literature
+
+39
+287 - Graduate Colloquium in Classical Literature  
+
+39
+375 - Teaching Appentice Practicum
+
+40
+1 - Principles of Oral Communication  
+
+40
+10 - Introduction to Communication Studies  
+
+40
+19 - Fiat Lux Freshman Seminars
+
+40
+89 - Honors Seminars
+
+40
+100 - Communication Theory  
+
+40
+101 - Freedom of Communication  
+
+40
+103A - Forensics
+
+40
+104 - Analysis and Briefing
+
+40
+115 - Dyadic Communication and Interpersonal Relationships  
+
+40
+118 - Language and Music
+
+40
+123W - Talk and Body
+
+40
+126 - Evolution of Interpersonal Communication
+
+40
+132 - Multicultural Television
+
+40
+134 - Organizational Communication
+
+40
+144A - Conversational Structures I
+
+40
+147 - Sociology of Mass Communication  
+
+40
+149 - Media: Gender, Race, Class, and Sexuality
+
+40
+150 - Methodologies in Communication Research
+
+40
+152 - Analysis of Communication Effects  
+
+40
+160 - Political Communication  
+
+40
+163 - Public Diplomacy: Communicating U.S. Ideas to Foreign Citizenry
+
+40
+165 - Agitational Communication
+
+40
+171 - Theories of Freedom of Speech and Press
+
+40
+185 - Field Studies in Communication  
+
+40
+191D - Variable Topics Research Seminars: Political and Legal Communication
+
+40
+198A - Honors Research in Communication Studies
+
+40
+199 - Directed Research or Senior Project in Communication Studies
+
+41
+19 - Fiat Lux Freshman Seminars
+
+41
+60 - Intergroup Dialogue: Peer Dialogue
+
+41
+132 - Health, Disease, and Health Services in Latin America  
+
+41
+161 - Intergroup Dialogue: Training Practicum
+
+41
+179 - Life Skills for College Students
+
+41
+200 - Global Health Problems
+
+41
+208 - Introduction to Demographic Methods
+
+41
+210 - Community Health Sciences
+
+41
+213 - Research in Community and Patient Health Education  
+
+41
+218 - Questionnaire Design and Administration  
+
+41
+219 - Theory-Based Data Analysis
+
+41
+224 - Social Determinants of Nutrition and Health
+
+41
+231 - Maternal and Child Nutrition
+
+41
+234 - Obesity, Physical Activity, and Nutrition Seminar
+
+41
+235 - Influence of Social and Physical Environment on Racial Health Disparities
+
+41
+238 - Evolving Paradigms of Prevention: Interventions in Adolescence
+
+41
+239 - Race and Ethnicity as Concept in Practice and Research
+
+41
+257 - Program Planning in Community Disaster Preparedness
+
+41
+272 - Social Epidemiology  
+
+41
+286 - Doctoral Roundtable in Community Health Sciences
+
+41
+288 - Health Communication in Popular Media
+
+41
+400 - Field Studies in Public Health
+
+41
+411 - Issues in Cancer Prevention and Control
+
+41
+420 - Children with Special Healthcare Needs: Systems Perspective
+
+41
+428 - Child and Family Health Program Community Leadership Seminar
+
+41
+441 - Planning and Evaluation of Global Health Programs
+
+41
+451 - Post-Disaster Community Health
+
+42
+1C - World Literature: Age of Enlightenment to 20th Century
+
+42
+2BW - Survey of Literature: Middle Ages to 17th Century
+
+42
+2CW - Survey of Literature: Age of Enlightenment to 20th Century
+
+42
+4CW - Literature and Writing: Age of Enlightenment to 20th Century
+
+42
+4DW - Literature and Writing: Great Books from World at Large
+
+42
+100 - Introduction to Literary and Critical Theory
+
+42
+148 - Contemporary Arab Film and Song
+
+42
+161 - Fiction and History
+
+42
+170 - Alternate Traditions: In Search of Female Voices in Contemporary Literature
+
+42
+191 - Variable Topics in Comparative Literature
+
+42
+200A - Theory of Comparative Literature
+
+42
+285 - Translation Workshop
+
+42
+290 - Contemporary Theories of Criticism
+
+42
+375 - Teaching Apprentice Practicum
+
+42
+495 - Preparation for Teaching Literature and Composition
+
+43
+184 - Introduction to Computational and Systems Biology
+
+43
+186 - Computational Systems Biology: Modeling and Simulation of Biological Systems
+
+44
+1 - Freshman Computer Science Seminar
+
+44
+31 - Introduction to Computer Science I
+
+44
+33 - Introduction to Computer Organization
+
+44
+35L - Software Construction Laboratory
+
+44
+51A - Logic Design of Digital Systems
+
+44
+118 - Computer Network Fundamentals
+
+44
+121 - Introduction to Bioinformatics
+
+44
+130 - Software Engineering
+
+44
+131 - Programming Languages
+
+44
+132 - Compiler Construction
+
+44
+136 - Introduction to Computer Security
+
+44
+143 - Database Systems
+
+44
+144 - Web Applications
+
+44
+151B - Computer Systems Architecture
+
+44
+152A - Introductory Digital Design Laboratory
+
+44
+152B - Digital Design Project Laboratory
+
+44
+161 - Fundamentals of Artificial Intelligence
+
+44
+180 - Introduction to Algorithms and Complexity
+
+44
+184 - Introduction to Computational and Systems Biology
+
+44
+186 - Computational Systems Biology: Modeling and Simulation of Biological Systems
+
+44
+201 - Computer Science Seminar
+
+44
+211 - Network Protocol and Systems Software Design for Wireless and Mobile
+
+44
+213A - Embedded Systems
+
+44
+213B - Energy-Aware Computing and Cyber-Physical Systems
+
+44
+218 - Advanced Computer Networks  
+
+44
+221 - Introduction to Bioinformatics
+
+44
+229S - Seminar: Current Topics in Bioinformatics
+
+44
+231 - Types and Programming Languages
+
+44
+251A - Advanced Computer Architecture
+
+44
+258A - Design of VLSI Circuits and Systems
+
+44
+259 - Current Topics in Computer Science: System Design/Architecture
+
+44
+260 - Machine Learning Theory
+
+44
+268 - Machine Perception  
+
+44
+276A - Pattern Recognition and Machine Learning
+
+44
+282A - Cryptography
+
+44
+286 - Computational Systems Biology: Modeling and Simulation of Biological Systems
+
+44
+289A - Current Topics in Computer Theory
+
+44
+298 - Research Seminar: Computer Science
+
+44
+375 - Teaching Apprentice Practicum
+
+44
+495 - Teaching Assistant Training Seminar  
+
+45
+120 - Field Methods in Archaeology and Conservation: Readiness, Response, and Recovery
+
+45
+220 - Field Methods in Archaeology and Conservation: Readiness, Response, and Recovery
+
+45
+240 - Environmental Protection of Collections
+
+45
+241 - Deterioration and Conservation of Organic Materials III
+
+46
+187I - Advanced Tutorial Instruction in Czech
+
+46
+187J - Advanced Tutorial Instruction in Czech
+
+47
+1 - Global Perspectives on Dance
+
+47
+6 - Beginning World Arts Practices in Sub-Saharan Africa and Diaspora
+
+47
+10 - Beginning World Arts Practices in East Asia and Diaspora
+
+47
+11 - Beginning World Arts Practices in South Asia and Diaspora
+
+47
+12 - Beginning World Arts Practices in Southeast Asia and Diaspora
+
+47
+15 - Beginning Modern/Postmodern Dance
+
+47
+16 - Beginning Improvisation in Dance
+
+47
+59 - Intermediate World Arts Practices in North America and Diaspora
+
+47
+60 - Intermediate World Arts Practices in East Asia and Diaspora
+
+47
+63 - Intermediate World Arts Practices in Europe and Diaspora
+
+47
+65 - Intermediate Modern/Postmodern Dance
+
+47
+106A - Advanced World Arts Practices in Sub-Saharan Africa and Diaspora
+
+47
+113A - Advanced World Arts Practices in Europe and Diaspora
+
+47
+115 - Advanced Modern/Postmodern Dance
+
+47
+117C - Advanced Topics in Choreography
+
+47
+145 - Selected Topics in Dance Studies
+
+47
+159 - Movement Theories
+
+47
+167 - Creative Dance for Children
+
+47
+184 - Production Arts Seminar
+
+47
+211A - Advanced Choreography
+
+47
+211D - Advanced Choreography
+
+47
+243 - Production Arts Seminar
+
+47
+245 - Selected Topics in Dance Studies
+
+47
+406A - Advanced World Arts Practices in Sub-Saharan Africa and Diaspora
+
+47
+413A - Advanced World Art Practices in Europe and Diaspora
+
+47
+415 - Advanced Modern/Postmodern Dance
+
+47
+441 - Dance Production Practicum
+
+47
+490 - Projects in Choreography and Performance
+
+49
+9 - Art, Science, and Technology
+
+49
+10 - Design Culture
+
+49
+19 - Fiat Lux Freshman Seminars
+
+49
+21 - Color
+
+49
+22 - Form
+
+49
+23 - Drawing
+
+49
+24 - Motion
+
+49
+28 - Interactivity
+
+49
+101 - Media Arts: Introduction
+
+49
+153 - Video
+
+49
+154 - WORD + IMAGE
+
+49
+157 - Game Design
+
+49
+171 - Topics in Interactivity and Games
+
+49
+172 - Topics in Video and Animation
+
+49
+173 - Topics in Visual Communication and Image
+
+49
+195B - Community or Corporate Internships in Design | Media Arts
+
+49
+199 - Directed Research in Design | Media Arts
+
+49
+200 - Design | Media Arts Faculty Seminar
+
+49
+252A - Programming Media 1
+
+49
+375 - Teaching Apprentice Practicum
+
+49
+403 - Graduate Critique
+
+49
+404 - Graduate Tutorial
+
+49
+495 - Teaching Assistant Training Practicum
+
+50
+101 - Introduction to Digital Humanities
+
+50
+194 - Research Group Seminars: Digital Humanities
+
+50
+199 - Directed Research in Digital Humanities
+
+50
+201 - Introduction to Digital Humanities
+
+51
+115 - Enforcing Normalcy: Deaf and Disability Studies
+
+51
+157 - Rechoreographing Disability
+
+52
+103A - Elementary Dutch  
+
+53
+1 - Introduction to Earth Science  
+
+53
+1F - Earth Science With Fieldwork
+
+53
+3 - Astrobiology
+
+53
+7 - Perils of Space: Introduction to Space Weather
+
+53
+8 - Earthquakes  
+
+53
+9 - Solar System and Planets
+
+53
+15 - Blue Planet: Introduction to Oceanography
+
+53
+19 - Fiat Lux Freshman Seminars
+
+53
+51 - Mineralogy: Earth and Planetary Materials
+
+53
+103B - Sedimentary Petrology
+
+53
+107 - Geochemistry
+
+53
+112 - Structural Geology
+
+53
+150 - Remote Sensing for Earth Sciences
+
+53
+193A - Undergraduate Journal Club Seminar: Earth and Space Sciences
+
+53
+194N - Research Topics in Earth and Space Sciences: Martian Surface and Atmosphere
+
+53
+194Y - Research Topics in Earth and Space Sciences: Space Plasma Physics
+
+53
+200A - Introduction to Geophysics and Space Physics I: Solid Earth and Planets
+
+53
+207 - Geochemistry
+
+53
+216 - Evolutionary Biology
+
+53
+220 - Principles of Paleobiology  
+
+53
+221 - Field Geology  
+
+53
+224A - Elastodynamics
+
+53
+235A - Current Research in Geochemistry  
+
+53
+240 - Space Plasma Physics  
+
+53
+242 - Sandstone Petrology  
+
+53
+245A - Current Research in Tectonics
+
+53
+255 - Seminar: Structural Geology and Tectonics
+
+53
+259 - Seminar: Paleotectonics
+
+53
+286A - Seminar: Planetology
+
+53
+287A - Seminar: Seismology and Earth&#39;s Interior
+
+53
+288A - Seminar: Space Physics
+
+53
+293A - Space Physics Journal Club
+
+53
+295A - Current Research in Earth and Space Sciences
+
+53
+296C - Research Topics in Earth and Space Sciences: Seismology and Solid Earth Physics
+
+53
+296D - Research Topics in Earth and Space Sciences: Thermal Evolution of Lithosphere
+
+53
+296E - Research Topics in Earth and Space Sciences: Sedimentation and Tectonics
+
+53
+296H - Research Topics in Earth and Space Sciences: Space Plasma Physics
+
+53
+296J - Research Topics in Earth and Space Sciences: Metamorphic Petrology
+
+53
+296K - Research Topics in Earth and Space Sciences: Space Physics
+
+53
+296N - Research Topics in Earth and Space Sciences: Martian Surface and Atmosphere
+
+53
+296R - Research Topics in Earth and Space Sciences: Planetary and Space Physics
+
+53
+296S - Research Topics in Earth and Space Sciences: Precambrian Paleobiology
+
+53
+296V - Research Topics in Earth and Space Sciences: Cosmochemistry
+
+53
+298 - Advanced Topics in Earth and Space Sciences
+
+53
+375 - Teaching Apprentice Practicum
+
+53
+495 - Teaching Earth and Space Sciences
+
+54
+18 - Why Ecology Matters: Science Behind Environmental Issues
+
+54
+19 - Fiat Lux Freshman Seminars
+
+54
+96A - Communicating Science: Bringing Complex Concepts to Life
+
+54
+97X - PEERS Forum: Pathways in Science
+
+54
+100 - Introduction to Ecology and Behavior
+
+54
+100L - Introduction to Ecology and Behavior Laboratory
+
+54
+106 - Experimental Marine Invertebrate Biology
+
+54
+109 - Introduction to Marine Science
+
+54
+109L - Introduction to Marine Science Laboratory
+
+54
+120 - Evolution
+
+54
+123B - Field Marine Ecology
+
+54
+129 - Animal Behavior
+
+54
+139 - Introduction to Chemical Oceanography
+
+54
+148 - Biology of Marine Plants
+
+54
+153 - Ecological Responses to Environmental Challenges
+
+54
+163 - Biology of Marine Tetrapods
+
+54
+193 - Journal Club Seminars: Ecology and Evolutionary Biology
+
+54
+194B - Research Group or Internship Seminars: Ecology and Evolutionary Biology
+
+54
+200A - Evolutionary Biology
+
+54
+250 - Professional Skills for Biological Research
+
+54
+296 - Seminar: Ecology and Evolutionary Biology
+
+54
+297 - Selected Topics in Ecology and Evolutionary Biology
+
+54
+375 - Teaching Apprentice Practicum
+
+55
+1 - Principles of Economics  
+
+55
+2 - Principles of Economics
+
+55
+11 - Microeconomic Theory
+
+55
+19 - Fiat Lux Freshman Seminars
+
+55
+41 - Statistics for Economists
+
+55
+89 - Honors Seminars
+
+55
+101 - Microeconomic Theory
+
+55
+102 - Macroeconomic Theory  
+
+55
+103 - Introduction to Econometrics
+
+55
+103L - Econometrics Laboratory
+
+55
+106E - Economics of Entrepreneurship
+
+55
+106EL - Economics of Entrepreneurship Laboratory
+
+55
+106T - Economics of Technology and E-Commerce
+
+55
+106TL - Economics of Technology and E-Commerce Laboratory
+
+55
+106V - Investments
+
+55
+106VL - Investments Laboratory
+
+55
+121 - International Trade Theory  
+
+55
+122 - International Finance
+
+55
+130 - Public Economics
+
+55
+130L - Public Economics Laboratory
+
+55
+141 - Topics in Microeconomics: Mathematical Finance
+
+55
+160 - Money and Banking  
+
+55
+164 - Advanced Topics in Macroeconomics: Theory of Economic Growth
+
+55
+164L - Advanced Topics in Macroeconomics: Theory of Economic Growth Laboratory
+
+55
+170 - Industrial Organization: Theory and Tactics
+
+55
+183 - Development of Economic Institutions in U.S.
+
+55
+183L - Development of Economic Institutions in U.S. Laboratory
+
+55
+187 - Upper Division Research Seminar: Applications of Economic Theory
+
+55
+188 - Career Development
+
+55
+189 - Advanced Honors Seminars
+
+55
+200 - Mathematical Methods in Economics
+
+55
+201A - Microeconomics: Theory of Firm and Consumer
+
+55
+202A - Macroeconomics: Dynamics and Growth Theory
+
+55
+203A - Probability and Statistics for Econometrics  
+
+55
+204A - Applications of Economic Theory: California Population Research Topical Semin...
+
+55
+204E - Applications of Economic Theory
+
+55
+204L - Seminar: Pharmaceutical Economics and Policy
+
+55
+208 - Introduction to Demographic Methods
+
+55
+211A - Economics of Uncertainty, Information, and Games  
+
+55
+211B - Economics of Uncertainty, Information, and Games  
+
+55
+212A - Topics in Advanced Theory: Search Theory  
+
+55
+218A - Proseminar: Economic Theory
+
+55
+219A - Workshop: Economic Theory and Mathematical Economics  
+
+55
+221A - Monetary Economics I  
+
+55
+228A - Proseminar: Monetary Economics
+
+55
+229A - Workshop: Monetary Economics
+
+55
+231A - Econometrics: Single Equation Models  
+
+55
+231B - System Models  
+
+55
+232M - Topics in Econometrics
+
+55
+238A - Proseminar: Econometrics
+
+55
+239A - Workshop: Econometrics  
+
+55
+241 - Economic History of Western Europe  
+
+55
+246A - Seminar: Economic History
+
+55
+248A - Proseminar: Economic History
+
+55
+251B - Cost-Benefit Analysis of Public Projects and Programs  
+
+55
+261A - Labor Economics I  
+
+55
+262A - Topics in Labor Economics
+
+55
+262P - Topics in Labor Economics
+
+55
+268A - Proseminar: Labor and Population
+
+55
+269A - Workshop: Labor Economics  
+
+55
+271A - Industrial Organization, Price Policies, and Regulation I  
+
+55
+278A - Proseminar: Industrial Organization and Regulation
+
+55
+279A - Workshop: Business Organization  
+
+55
+285A - Seminar: International Economics
+
+55
+286B - Cost-Benefit Analysis of Development Projects
+
+55
+287C - Topics in Development Economics: Economic Development
+
+55
+288A - Proseminar: International and Development Economics
+
+55
+298A - Proseminar: Asset Pricing
+
+55
+375 - Teaching Apprentice Practicum
+
+55
+495 - Teaching College Economics
+
+56
+19 - Fiat Lux Freshman Seminars
+
+56
+92B - Practicum in Higher Education
+
+56
+92F - Academic Success in Undergraduate Experience
+
+56
+102 - Mexican Americans and Schools
+
+56
+104 - Introduction to Arts Education: Theory and Practice
+
+56
+122 - Perspectives on American College
+
+56
+125 - Politics of Education  
+
+56
+127 - Educational Psychology
+
+56
+129 - Education and Law
+
+56
+130 - Race, Class, and Education Inequality in U.S.
+
+56
+133 - Topics in Child Development and Social Policies
+
+56
+137 - Public Policy in Higher Education
+
+56
+145A - Restoring Civility: Understanding, Using, and Resolving Conflict
+
+56
+150 - Student Development in Theory and Practice
+
+56
+182A - Language, Literacy, and Human Development Ethnography
+
+56
+182B - Culture, Gender, and Human Development Ethnography
+
+56
+183A - Language, Literacy, and Human Development Ethnography
+
+56
+183B - Culture, Gender, and Human Development Ethnography
+
+56
+186 - Equal Rights and Unequal Education
+
+56
+187 - Variable Topics in Education
+
+56
+190 - Arts Education Undergraduate Practicum: Preparation, Observation, and Practice
+
+56
+194A - Language, Literacy, and Human Development Research Group Seminars
+
+56
+194B - Culture, Gender, and Human Development Research Group Seminars
+
+56
+196C - Instructional Apprenticeship in Teaching and Learning
+
+56
+201C - History of American Education
+
+56
+202 - Evaluation Theory  
+
+56
+204A - Introduction to Education and Social Sciences
+
+56
+206A - Philosophy of Education: Introduction  
+
+56
+207 - Politics of Education  
+
+56
+209A - History of Higher Education  
+
+56
+211C - Advanced Item Response Theory
+
+56
+217B - Cognitive Development and Education
+
+56
+220A - Inquiry into Schooling: Organization and Change  
+
+56
+222A - Introduction to Qualitative Methods and Design Issues in Educational Research
+
+56
+227C - Research on Behavioral and Social Characteristics of Exceptional Individuals  
+
+56
+229 - Seminar: Special Topics in Urban Schooling
+
+56
+230A - Introduction to Research Design and Statistics
+
+56
+230AL - Introduction to Research Design and Statistics: Computer Laboratory
+
+56
+231A - Toolkit for Quantitative Methods Research
+
+56
+250A - Fundamentals of U.S Higher Education System
+
+56
+253B - Seminar: African Education
+
+56
+256B - Seminar: Special Topics in Development
+
+56
+261E - Higher Education Seminar: Diversity Issues and Research Perspectives
+
+56
+261F - Seminar: Cognitive and Personal Development of College Students  
+
+56
+263 - Seminar: Higher Education
+
+56
+284 - Critical Theory in Education: Power, Politics, and Liberation
+
+56
+288 - Research Apprenticeship Course
+
+56
+299A - Research Practicum: Education
+
+56
+299B - Research Practicum: Education
+
+56
+299C - Research Practicum: Education
+
+57
+1 - Electrical Engineering Physics I
+
+57
+10 - Circuit Theory I
+
+57
+16 - Logic Design of Digital Systems
+
+57
+100 - Electrical and Electronic Circuits  
+
+57
+101 - Engineering Electromagnetics  
+
+57
+102 - Systems and Signals
+
+57
+103 - Applied Numerical Computing  
+
+57
+110 - Circuit Analysis II  
+
+57
+110L - Circuit Measurements Laboratory
+
+57
+113 - Digital Signal Processing
+
+57
+113D - Digital Signal Processing Design
+
+57
+115A - Analog Electronic Circuits I
+
+57
+115AL - Analog Electronics Laboratory I
+
+57
+115BL - Analog Electronics Laboratory II
+
+57
+116C - Computer Systems Architecture
+
+57
+116L - Introductory Digital Design Laboratory
+
+57
+123A - Fundamentals of Solid-State I  
+
+57
+131A - Probability  
+
+57
+132B - Data Communications and Telecommunication Networks
+
+57
+150 - Introduction to Micromachining and Microelectromechanical Systems (MEMS)
+
+57
+150L - Introduction to Micromachining and Microelectromechanical Systems (MEMS) Labo...
+
+57
+161 - Electromagnetic Waves
+
+57
+163A - Introductory Microwave Circuits
+
+57
+180D - Systems Design
+
+57
+184DA - Independent Group Project Design
+
+57
+185 - Introduction to Plasma Electronics
+
+57
+201A - VLSI Design Automation
+
+57
+202A - Embedded Systems
+
+57
+205A - Matrix Analysis for Scientists and Engineers
+
+57
+209AS - Special Topics in Circuits and Embedded Systems
+
+57
+210A - Adaptive Filtering
+
+57
+211A - Digital Image Processing I
+
+57
+212A - Theory and Design of Digital Filters
+
+57
+215A - Analog Integrated Circuit Design
+
+57
+216A - Design of VLSI Circuits and Systems
+
+57
+218 - Network Economics and Game Theory
+
+57
+221A - Physics of Semiconductor Devices I  
+
+57
+221C - Microwave Semiconductor Devices  
+
+57
+222 - Integrated Circuits Fabrication Processes  
+
+57
+223 - Solid-State Electronics I  
+
+57
+230A - Estimation and Detection in Communication and Radar Engineering  
+
+57
+238 - Multimedia Communications and Processing
+
+57
+239AS - Special Topics in Signals and Systems
+
+57
+240A - Linear Dynamic Systems  
+
+57
+241A - Stochastic Processes  
+
+57
+250A - Introduction to Micromachining and Microelectromechanical Systems (MEMS)
+
+57
+250L - Introduction to Micromachining and Microelectromechanical Systems (MEMS) Labo...
+
+57
+256A - Evaluation of Research Literature in Neuroengineering
+
+57
+260A - Advanced Engineering Electrodynamics
+
+57
+270 - Applied Quantum Mechanics
+
+57
+274 - Fiber Optic System Design
+
+57
+279AS - Special Topics in Physical and Wave Electronics
+
+57
+279CS - Clean Green IGERT Brown-Bag Seminar
+
+57
+295 - Academic Technical Writing for Electrical Engineers
+
+57
+296 - Seminar: Research Topics in Electrical Engineering
+
+57
+297 - Seminar Series: Electrical Engineering
+
+57
+299 - M.S. Project Seminar
+
+57
+375 - Teaching Apprentice Practicum
+
+58
+87 - Introduction to Engineering Disciplines  
+
+58
+95 - Internship Studies in Engineering
+
+58
+98 - What Students Need to Know about Careers in Engineering
+
+58
+101 - Principles of Nanoscience and Nanotechnology
+
+58
+110 - Introduction to Technology Management and Economics for Engineers
+
+58
+111 - Introduction to Finance and Marketing for Engineers
+
+58
+183EW - Engineering and Society
+
+58
+185EW - Art of Engineering Endeavors
+
+58
+195 - Internship Studies in Engineering
+
+58
+200 - Program Management Principles for Engineers and Professionals
+
+58
+201 - Systems Engineering
+
+58
+299 - Capstone Project
+
+58
+375 - Teaching Apprentice Practicum
+
+58
+495C - Supervised Teaching Preparation
+
+59
+4HW - Critical Reading and Writing (Honors)
+
+59
+4W - Critical Reading and Writing
+
+59
+10A - Literatures in English to 1700
+
+59
+10B - Literatures in English, 1700 to 1850
+
+59
+10C - Literatures in English, 1850 to Present
+
+59
+19 - Fiat Lux Freshman Seminars
+
+59
+85 - American Novel
+
+59
+89 - Honors Seminars
+
+59
+90 - Shakespeare
+
+59
+91C - Introduction to Fiction
+
+59
+102B - Contemporary Asian American Literary Issues and Criticism
+
+59
+104A - Early African American Literature
+
+59
+105C - Chicana/Chicano Literature since el Movimiento, 1970s to Present
+
+59
+105E - Studies in Chicana/Chicano and/or Latina/Latino Literature
+
+59
+107A - Studies in Women&#39;s Writing
+
+59
+115E - Science Fiction
+
+59
+116A - Experimental Fiction
+
+59
+118C - Studies in Visual Culture
+
+59
+120 - History of Aesthetics and Critical Theory
+
+59
+126 - Feminist and Queer Theory
+
+59
+129 - Topics in Genre Studies, Interdisciplinary Studies, and Critical Theory
+
+59
+131 - Studies in Postcolonial Literatures
+
+59
+133 - Transatlantic Literatures and Cultures
+
+59
+134 - Nationalism and Transnationalism
+
+59
+136 - Creative Writing: Poetry
+
+59
+137 - Creative Writing: Short Story
+
+59
+138 - Creative Writing: Screenplay
+
+59
+140A - Chaucer: &quot;Canterbury Tales&quot;
+
+59
+141 - Early Medieval Literature
+
+59
+148 - Cultures of Middle Ages
+
+59
+150A - Shakespeare: Poems and Early Plays
+
+59
+150B - Shakespeare: Later Plays
+
+59
+150C - Topics in Shakespeare
+
+59
+151 - Milton
+
+59
+155 - Renaissance Subjects
+
+59
+162A - Earlier Romantic Literature
+
+59
+163B - Transatlantic Romanticism
+
+59
+164B - 19th-Century Critical Prose
+
+59
+166B - American Literature, 1776 to 1832
+
+59
+167B - American Fiction to 1900
+
+59
+168 - Major American Writers
+
+59
+170A - American Literature, 1865 to 1900
+
+59
+170B - American Literature, 1900 to 1945
+
+59
+173A - American Poetry, 1900 to 1945
+
+59
+177 - Interdisciplinary Studies of American Culture
+
+59
+179 - Topics in Literature, circa 1850 to Present
+
+59
+181B - Topics in Interdisciplinary Studies
+
+59
+181D - Topics in Imperial, Transnational, and Postcolonial Studies
+
+59
+182A - Topics in Medieval Literature
+
+59
+182B - Topics in Renaissance and Early Modern Literature
+
+59
+183A - Topics in Colonial American Literature
+
+59
+183B - Topics in 19th-Century American Literature
+
+59
+183C - Topics in 20th- and 21st-Century American Literature
+
+59
+184 - Capstone Seminar: English
+
+59
+190H - Honors Research Colloquia in English
+
+59
+191A - Topics in African American Literature
+
+59
+191B - Topics in Chicana/Chicano and/or Latina/Latino Literature
+
+59
+191C - Topics in Asian American Literature
+
+59
+195CE - Community and Corporate Internships in English
+
+59
+197 - Individual Studies in English
+
+59
+198A - Honors Research in English
+
+59
+210 - History of English Language
+
+59
+250 - Restoration and 18th-Century Literature  
+
+59
+252 - Victorian Literature  
+
+59
+254 - American Literature to 1900  
+
+59
+255 - Contemporary American Literature  
+
+59
+257 - Studies in Poetry  
+
+59
+260A - Topics in Asian American Literature  
+
+59
+265 - Postcolonial Literatures
+
+59
+375 - Teaching Apprentice Practicum
+
+59
+495B - Supervised Teaching Preparation
+
+60
+33B - Intermediate English for Academic Purposes
+
+60
+33C - Advanced English for Academic Purposes
+
+60
+33G - Advanced English for Academic Purposes for Graduate Students
+
+60
+35 - Approaches to University Writing for ESL Students
+
+60
+38A - Pronunciation: Stress and Intonation in English
+
+60
+39C - Presentation and Discussion-Leading Skills for International Teaching Assistants
+
+61
+2 - Approaches to University Writing  
+
+61
+2I - Approaches to University Writing
+
+61
+3 - English Composition, Rhetoric, and Language
+
+61
+131B - Specialized Writing: Business and Social Policy
+
+61
+495A - Supervised Teaching Preparation
+
+61
+495B - Supervised Teaching Preparation
+
+61
+495C - Supervised Teaching Preparation
+
+61
+495D - Supervised Teaching Preparation
+
+61
+495F - Supervised Teaching Preparation
+
+62
+1A - Global Environment: Multidisciplinary Perspective I
+
+62
+10 - Introduction to Environmental Science
+
+62
+111 - Earth and Its Environment
+
+62
+164 - Environmental Politics and Governance
+
+62
+166 - Leadership in Water Management
+
+62
+180A - Practicum in Environmental Science
+
+62
+185A - Education for Sustainable Living Program Speaker Series
+
+62
+400A - Environmental Science and Engineering Problems Course
+
+62
+410A - Environmental Science and Engineering Workshop
+
+62
+412 - Effective Technical Writing
+
+63
+99 - Student Research Program
+
+63
+100 - Introduction to Environmental Health  
+
+63
+185A - Foundations of Environmental Health Sciences
+
+63
+200A - Foundations of Environmental Health Sciences
+
+63
+201 - Seminar: Health Effects of Environmental Contaminants  
+
+63
+203 - Seminar: Ecotoxicology
+
+63
+204 - Seminar: Exposure Assessment
+
+63
+214 - Children&#39;s Environmental Health: Prenatal and Postnatal
+
+63
+255 - Control of Airborne Contaminants in Industry  
+
+63
+296A - Research Topics in Environmental Health Sciences: Coastal Ecological Processe...
+
+63
+296B - Research Topics in Environmental Health Sciences: Teratogenesis
+
+63
+296C - Research Topics in Environmental Health Sciences: Toxicology and Environmenta...
+
+63
+296E - Research Topics in Environmental Health Sciences: Molecular Topics in Boron B...
+
+63
+296F - Research Topics in Environmental Health Sciences: Toxicology and Exposure Ass...
+
+63
+296G - Research Topics in Environmental Health Sciences: Advances in Aerosol Technology
+
+63
+296H - Research Topics in Environmental Health Sciences: Occupational and Environmen...
+
+63
+296I - Research Topics in Environmental Health Sciences: Industrial and Environmenta...
+
+63
+296J - Research Topics in Environmental Health Sciences: Germ Cell Cytogenetic/Genet...
+
+63
+296K - Research Topics in Environmental Health Sciences: Aquatic Chemistry
+
+63
+296L - Research Topics in Environmental Health Sciences: Water Science and Health
+
+63
+296N - Research Topics in Environmental Health Sciences: Genetic Toxicology
+
+63
+400 - Field Studies in Environmental Health Sciences  
+
+63
+411 - Environmental Health Sciences Seminar
+
+63
+412 - Effective Technical Writing
+
+63
+461 - Water Quality and Health  
+
+64
+200A - Methods I: Basic Concepts and Study Designs
+
+64
+204 - Logic, Causation, and Probability
+
+64
+218 - Questionnaire Design and Administration  
+
+64
+220 - Principles of Infectious Disease Epidemiology  
+
+64
+229 - Epidemiology of Foodborne Illnesses
+
+64
+232 - Methods in STI/HIV Epidemiology
+
+64
+242 - Cancer Epidemiology
+
+64
+246 - Epidemiology of Aging
+
+64
+268 - Introduction to Pharmacoepidemiology
+
+64
+272 - Social Epidemiology  
+
+64
+291 - Seminar: Special Topics in Epidemiology
+
+64
+292 - Advanced Seminar: Epidemiology
+
+64
+293 - International HIV/AIDS Seminar  
+
+64
+295 - Seminar: Epidemiology -- Cancer
+
+64
+400 - Field Studies in Epidemiology
+
+64
+403 - Computer Management and Analysis of Health Data Using SAS
+
+65
+7A - Introduction to Music: History, Culture, Creativity
+
+65
+20C - Musical Cultures of World: Asia
+
+65
+25 - Global Pop
+
+65
+50A - Jazz in American Culture: Late 19th Century through 1940s
+
+65
+71 - Instruction in Jazz Performance
+
+65
+91B - World Music Performance Organizations: Music of Bali  
+
+65
+91C - World Music Performance Organizations: Music and Dance of Balkans
+
+65
+91D - World Music Performance Organizations: Music of China  
+
+65
+91E - World Music Performance Organizations: Music and Dance of Ghana  
+
+65
+91F - World Music Performance Organizations: Music of India  
+
+65
+91J - World Music Performance Organizations: Music of Korea
+
+65
+91K - World Music Performance Organizations: Music of Mexico  
+
+65
+91N - World Music Performance Organizations: Music of Near East
+
+65
+91P - World Music Performance Organizations: Music of African Americans
+
+65
+91T - World Music Performance Organizations: Jazz Orchestra
+
+65
+91Z - World Music Performance Organizations: Open Ensemble
+
+65
+92 - Private Instruction in Music
+
+65
+106A - Traditional North American Indian Music
+
+65
+108B - Music of Latin America: Latin South America
+
+65
+122A - Jazz Styles and Analysis: Early Jazz to Swing Era
+
+65
+127A - Jazz Keyboard Harmony I
+
+65
+129A - Jazz Theory and Improvisation
+
+65
+136B - Music of Africa
+
+65
+147 - Survey of Classical Music in India  
+
+65
+161B - Advanced World Music Performance Organizations: Music of Bali
+
+65
+161C - Advanced World Music Performance Organizations: Music and Dance of Balkans
+
+65
+161D - Advanced World Music Performance Organizations: Music of China
+
+65
+161E - Advanced World Music Performance Organizations: Music and Dance of Ghana
+
+65
+161F - Advanced World Music Performance Organizations: Music of India
+
+65
+161J - Advanced World Music Performance Organizations: Music of Korea
+
+65
+161K - Advanced World Music Performance Organizations: Music of Mexico
+
+65
+161N - Advanced World Music Performance Organizations: Music of Near East
+
+65
+161P - Advanced World Music Performance Organizations: Music of African Americans
+
+65
+161T - Advanced World Music Performance Organizations: Jazz Orchestra
+
+65
+161Z - Advanced World Music Performance Organizations: Open Ensemble
+
+65
+162 - Advanced Private Instruction in Music
+
+65
+165 - Selected Topics in Composition
+
+65
+171 - Instruction in Advanced Jazz Performance
+
+65
+175 - Sociology of Music
+
+65
+176 - Psychology of Film Music
+
+65
+177 - Jazz Combo
+
+65
+186 - Senior Recital or Project
+
+65
+188 - Special Courses in Ethnomusicology
+
+65
+195A - Community or Corporate Internships in Ethnomusicology
+
+65
+201 - History of Ethnomusicology
+
+65
+222A - Jazz Styles and Analysis: Early Jazz to Swing Era
+
+65
+236B - Music of Africa
+
+65
+240 - Music of Arabic-Speaking Near East  
+
+65
+270 - Selected Topics in Composition
+
+65
+276 - Psychology of Film Music
+
+65
+279 - Seminar: Systematic Musicology
+
+65
+282 - Seminar: Analysis
+
+65
+289 - Research Design and Grant Writing in Ethnomusicology
+
+65
+291 - Ethnomusicology Colloquium Series
+
+65
+292A - Seminar: Special Topics in Ethnomusicology
+
+65
+292B - Seminar: Special Topics in Ethnomusicology
+
+65
+375 - Teaching Apprentice Practicum
+
+65
+495A - Teaching Apprentice Practicum
+
+67
+1 - Introductory Filipino
+
+67
+4 - Intermediate Filipino
+
+68
+100A - Junior Symposium
+
+68
+100B - Senior Symposium
+
+68
+106A - History of American Motion Picture
+
+68
+108 - History of Documentary Film  
+
+68
+115 - Stylistic Studies for Moving Image: Theory and Practice
+
+68
+118 - Intermediate Cinematography
+
+68
+120 - Digital Cinematography
+
+68
+122B - Introduction to Art and Technique of Filmmaking
+
+68
+122E - Digital Cinematography
+
+68
+132 - Screenwriting Fundamentals
+
+68
+133 - In-Depth Introduction to Fundamentals of Screenwriting
+
+68
+135A - Advanced Screenwriting Workshop
+
+68
+152 - Film and Television Sound Recording  
+
+68
+153 - Motion Picture Lighting
+
+68
+154B - Advanced Film Editing
+
+68
+175A - Undergraduate Film Production
+
+68
+178 - Film and Television Production Laboratory
+
+68
+181A - Introduction to Animation
+
+68
+181B - Writing for Animation  
+
+68
+183A - Producing I: Film and Television Development
+
+68
+184A - Overview of Contemporary Film Industry
+
+68
+185 - Undergraduate Television and Video Production  
+
+68
+186A - Introduction to Documentary Production
+
+68
+188A - Special Courses in Film, Television, and Digital Media
+
+68
+195 - Corporate Internships in Film, Television, and Digital Media
+
+68
+200 - Seminar: Bibliography and Methods of Research in Film and Television
+
+68
+201A - Seminar: Media Industries and Cultures of Production -- Foundations
+
+68
+206A - Seminar: European Film History
+
+68
+206C - Seminar: American Film History
+
+68
+208A - Seminar: Film Structure  
+
+68
+208C - Seminar: Contemporary Film Theory  
+
+68
+209A - Seminar: Documentary Film  
+
+68
+212 - Cinema and Media Studies Graduate Colloquium
+
+68
+215 - Seminar: Theory and Method  
+
+68
+218 - Seminar: Culture, Media, and Society
+
+68
+222 - Seminar: Film Genres  
+
+68
+246 - Seminar: Issues in Electronic Culture
+
+68
+247 - Planning Independent Feature Production
+
+68
+274 - Seminar: Research Design  
+
+68
+276 - Seminar: Non-Western Films  
+
+68
+283A - Developing Comedy Series
+
+68
+283B - Writing Television Comedy Scripts
+
+68
+284A - Developing Drama Series
+
+68
+287A - Introduction to Art and Business of Producing I
+
+68
+288A - Feature Film Development I
+
+68
+289A - Current Business Practices in Film and Television  
+
+68
+290A - Research and Development I
+
+68
+292A - Overview of Network Television Management
+
+68
+292C - Running Shows: Producing for Broadcast and Cable
+
+68
+294C - International Financing and Distribution
+
+68
+295C - Advanced Producing: Role of Successful Producer
+
+68
+298A - Special Studies in Film and Television  
+
+68
+375 - Teaching Apprentice Practicum
+
+68
+401 - Film Analysis for Filmmakers
+
+68
+402A - Advanced Narrative Directing Workshop
+
+68
+403A - Advanced Documentary Workshop  
+
+68
+409 - Directing Actors for Camera Workshop
+
+68
+410A - Symposium
+
+68
+410B - Cinematography
+
+68
+410C - Postproduction
+
+68
+410D - Postproduction Sound
+
+68
+417 - Lighting for Film and Television  
+
+68
+418 - Cinematography and Directing  
+
+68
+420 - Digital Cinematography
+
+68
+423A - Direction of Actors for Film and Television  
+
+68
+430 - Screenwriting Fundamentals
+
+68
+431 - Introduction to Film and Television Screenwriting
+
+68
+433 - Writing Short Screenplays
+
+68
+434 - Advanced Screenwriting  
+
+68
+435 - Advanced Writing for Short Film and Television Screenplays
+
+68
+454B - Advanced Film Editing
+
+68
+454C - Advanced Film Editing: Postproduction Pathways
+
+68
+476 - Video I  
+
+68
+482B - Advanced Animation Workshop  
+
+68
+483A - Advanced Computer Animation
+
+68
+484A - Visual Thinking and Organization for Animation
+
+68
+486 - Directed Individual Study: Preparation to Advance to Candidacy for M.F.A. in ...
+
+68
+487 - Directed Individual Study: Postproduction Laboratory
+
+68
+488A - Interactive Animation
+
+68
+488B - Advanced Interactive Animation
+
+68
+489A - Computer Animation in Film and Video  
+
+68
+495A - Practice of Teaching Film and Television
+
+68
+496 - Practice of Teaching Film and Television  
+
+68
+498 - Professional Internship in Film and Television  
+
+69
+1 - Elementary French  
+
+69
+1G - Elementary French for Graduate Students  
+
+69
+2 - Elementary French  
+
+69
+3 - Elementary French  
+
+69
+4 - Intermediate French  
+
+69
+5 - Intermediate French  
+
+69
+6 - Intermediate French  
+
+69
+12 - Introduction to Study of French and Francophone Literature
+
+69
+14W - Introduction to French Culture and Civilization in English
+
+69
+41 - French Cinema and Culture
+
+69
+100 - Written Expression: Techniques of Description and Narration
+
+69
+114B - Survey of French Literature: 17th and 18th Centuries  
+
+69
+117 - Studies in 17th-Century French Culture and Literature
+
+69
+118 - Studies in 18th-Century French Culture and Literature
+
+69
+119 - Studies in 19th-Century French Culture and Literature
+
+69
+120 - Studies in 20th-Century French Culture and Literature
+
+69
+121 - Studies in Francophone Cultures and Literatures
+
+69
+132 - French and Francophone Poetry
+
+69
+191B - Variable Topics Research Seminars
+
+69
+201 - Techniques of Literary Analysis  
+
+69
+203 - Contemporary Francophone Literature
+
+69
+217 - 17th Century
+
+69
+375 - Teaching Apprentice Practicum
+
+69
+495 - Teaching French at College Level
+
+70
+10 - Introduction to Women&#39;s Studies: Feminist Perspectives on Women and Society
+
+70
+19 - Fiat Lux Freshman Seminars
+
+70
+102 - Power
+
+70
+104 - Bodies
+
+70
+107A - Studies in Women&#39;s Writing
+
+70
+114 - Introduction to Lesbian, Gay, Bisexual, and Transgender Studies
+
+70
+126 - Feminist and Queer Theory
+
+70
+136 - Music and Gender
+
+70
+144 - Women&#39;s Movement in Latin America
+
+70
+147C - Transnational Women&#39;s Organizing in Americas
+
+70
+147D - History of Women in U.S., 1860 to 1980
+
+70
+149 - Media: Gender, Race, Class, and Sexuality
+
+70
+151 - Marriage, Family, and Kinship
+
+70
+162 - Sociology of Gender
+
+70
+164 - Politics of Reproduction
+
+70
+170 - Alternate Traditions: In Search of Female Voices in Contemporary Literature
+
+70
+174 - Sociology of Family
+
+70
+185 - Special Topics in Women&#39;s Studies
+
+70
+186A - Women and Gender, Prehistory to 1792
+
+70
+186B - Global Feminism, 1850 to Present
+
+70
+187 - Senior Research Seminar: Women&#39;s Studies
+
+70
+204 - Current Research in Women&#39;s Studies
+
+70
+210 - Topics in Women and Public Policy
+
+70
+252 - Selected Topics in Sociology of Gender
+
+70
+375 - Teaching Apprentice Practicum
+
+70
+495 - Feminist Pedagogy
+
+71
+1A - Global Environment: Multidisciplinary Perspective I
+
+71
+20A - Interracial Dynamics in American Culture and Society
+
+71
+21A - History of Modern Thought
+
+71
+26A - Poverty and Health in Latin America
+
+71
+30A - Never-Ending Stories: Multidisciplinary Perspectives on Myth
+
+71
+60A - America in Sixties: Politics, Society, and Culture, 1954 to 1974
+
+71
+66A - Los Angeles: The Cluster
+
+71
+70A - Evolution of Cosmos and Life
+
+71
+72A - Sex from Biology to Gendered Society
+
+71
+73A - Mind over Matter: History, Science, and Philosophy of Brain
+
+71
+80A - Frontiers in Human Aging: Biomedical, Social, and Policy Perspectives
+
+72
+1 - Earth&#39;s Physical Environment
+
+72
+3 - Cultural Geography  
+
+72
+4 - Globalization: Regional Development and World Economy
+
+72
+5 - People and Earth&#39;s Ecosystems
+
+72
+7 - Introduction to Geographic Information Systems
+
+72
+106 - Applied Climatology: Principles of Climate Impact on Natural Environment
+
+72
+108 - World Vegetation  
+
+72
+112 - Analytical Animal Geography  
+
+72
+133 - Cultural Geography of Modern World
+
+72
+144 - Ethnicity in American Cities
+
+72
+151 - Cities and Social Difference
+
+72
+155 - Industrial Location and Regional Development  
+
+72
+158 - Korean Urban Experience
+
+72
+167 - Cartography  
+
+72
+168 - Intermediate Geographic Information Systems
+
+72
+169 - Satellite Remote Sensing and Imaging Geographic Information Systems
+
+72
+182A - Spanish South America  
+
+72
+194A - Research Group Seminars: Controversies in Earth System Science
+
+72
+228 - Human Security and Environmental Change
+
+72
+232 - Advanced Cultural Geography  
+
+72
+268 - Advanced Projects in Geographic Information Systems (GIS)/Remote Sensing
+
+72
+296A - Research Group Seminars: Controversies in Earth System Science
+
+72
+296E - Research Group Seminars: Human Geography
+
+72
+297A - History and Structure of Modern Geography
+
+72
+299C - Qualitative Methods and Methodology
+
+72
+375 - Teaching Apprentice Practicum
+
+72
+495 - Teaching College Geography
+
+73
+1 - Elementary German  
+
+73
+3 - Elementary German  
+
+73
+4 - Intermediate German  
+
+73
+19 - Fiat Lux Freshman Seminars
+
+73
+56 - Figures Who Changed World
+
+73
+115 - 19th-Century German Philosophy
+
+73
+140 - Language and Linguistics
+
+73
+152 - Conversation and Composition on Contemporary German Culture and Society I
+
+73
+166 - Introduction to Contemporary Literature  
+
+73
+187 - Undergraduate Seminar
+
+73
+201C - Theories of Literary Interpretation
+
+73
+233 - Old Saxon  
+
+73
+256 - Seminar: Enlightenment
+
+73
+258 - Seminar: Romanticism
+
+73
+375 - Teaching Apprentice Practicum
+
+73
+495 - Approaches to Foreign Language Pedagogy
+
+74
+108 - Biomedical, Social, and Policy Frontiers in Human Aging
+
+75
+1 - Introduction to Global Studies
+
+75
+191 - Variable Topics Research Seminars: Global Studies -- Senior Seminar
+
+75
+192 - Undergraduate Practicum in Global Studies
+
+75
+194 - Research Group Seminars: Global Studies
+
+76
+1 - Elementary Greek  
+
+76
+20 - Intermediate Greek
+
+76
+111 - Herodotus  
+
+76
+200A - History of Greek Literature  
+
+76
+207A - Euripides  
+
+76
+242 - Greek Dialects and Historical Grammar  
+
+77
+100 - Health Services Organization
+
+77
+200A - Health Systems Organization and Financing
+
+77
+202 - Qualitative Research Design and Methodology for Indigenous Communities
+
+77
+204A - Seminar: Pharmaceutical Economics and Policy
+
+77
+215A - Healthcare Quality and Performance Management
+
+77
+225A - Health Services Research Design
+
+77
+226A - Readings in Health Services Research
+
+77
+227A - Special Topics in Health Services: Current Research Issues
+
+77
+239A - Special Topics in Health Services: Introduction to Decision Analysis and Cost...
+
+77
+249R - Special Topics in Health Services: Cancer Prevention and Control Research
+
+77
+255 - Obesity, Physical Activity, and Nutrition Seminar
+
+77
+266A - Community-Based Participatory Health Research: Methods and Applications
+
+77
+286 - American Political Institutions and Health Policy
+
+77
+400 - Field Studies in Health Services
+
+77
+403 - Healthcare Financial Accounting
+
+77
+411 - Issues in Cancer Prevention and Control
+
+77
+420 - Children with Special Healthcare Needs: Systems Perspective
+
+77
+428 - Child and Family Health Program Community Leadership Seminar
+
+77
+435 - Innovations and Current Trends in Ambulatory Care
+
+77
+440A - Healthcare Information Systems and Technology
+
+78
+1A - Elementary Hebrew  
+
+78
+102A - Intermediate Hebrew
+
+78
+103A - Advanced Hebrew  
+
+78
+111A - Israeli Society through Hebrew Song and Video
+
+78
+230 - Rabbinic Hebrew Literature
+
+79
+1 - Introductory Hindi-Urdu
+
+79
+4 - Intermediate Hindi-Urdu
+
+80
+1A - Introduction to Western Civilization: Ancient Civilizations, Prehistory to Ci...
+
+80
+1C - Introduction to Western Civilization: Circa 1715 to Present
+
+80
+3C - Introduction to History of Science: History of Modern Science, Relativity to DNA
+
+80
+8A - Colonial Latin America
+
+80
+9D - Introduction to Asian Civilizations: History of the Near and Middle East  
+
+80
+11A - History of China: To 1000
+
+80
+13A - History of the U.S. and Its Colonial Origins: Colonial Origins and First Nati...
+
+80
+19 - Fiat Lux Freshman Seminars
+
+80
+22 - Contemporary World History, 1760 to Present
+
+80
+96W - Introduction to Historical Practice
+
+80
+97C - Introduction to Historical Practice: Variable Topics in European History
+
+80
+97D - Introduction to Historical Practice: Variable Topics in U.S. History
+
+80
+97E - Introduction to Historical Practice: Variable Topics in Latin American History
+
+80
+97G - Introduction to Historical Practice: Variable Topics in East Asian History
+
+80
+103A - Ancient Egyptian Civilization
+
+80
+104B - Sumerians
+
+80
+105A - Survey of Middle East, 500 to Present: 500 to 1300
+
+80
+107A - Armenian History: Armenia in Ancient and Medieval Times, 2nd Millennium B.C. ...
+
+80
+111C - Topics in Middle Eastern History: Modern
+
+80
+113A - History of Ancient Greece: Rise of Greek City-State
+
+80
+114A - History of Rome to Death of Caesar
+
+80
+121A - History of Modern Europe: Renaissance and Reformation, 1450 to 1660
+
+80
+127A - History of Russia, Origins to Rise of Muscovy
+
+80
+127B - History of Russia: Imperial Russia from Peter the Great to Nicholas II
+
+80
+127C - History of Russia: Revolutionary Russia and Soviet Union
+
+80
+128C - History of Italy, 1848 to Present
+
+80
+136A - History of Britain: Tudor-Stuart Times, 1485 to 1715
+
+80
+138A - Colonial America, 1600 to 1763
+
+80
+140B - 20th-Century U.S. History, 1929 to 1960
+
+80
+141A - American Economic History, 1790 to 1910
+
+80
+147D - History of Women in U.S., 1860 to 1980
+
+80
+150C - Introduction to Afro-American History
+
+80
+151A - History of Chicano Peoples
+
+80
+156 - Topics in U.S. History
+
+80
+161 - Topics in Latin American History
+
+80
+166A - History of West Africa: West Africa, Earliest Times to 1800
+
+80
+173A - Japanese Popular Culture  
+
+80
+175A - Cultural and Political History of Contemporary South Asia
+
+80
+176C - Philippine History
+
+80
+179A - History of Medicine: Historic Roots of Healing Arts
+
+80
+185D - Religions of Ancient Near East
+
+80
+186C - Jesus of Nazareth in Historical Research
+
+80
+187A - Women and Gender, Prehistory to 1792
+
+80
+187B - Global Feminism, 1850 to Present
+
+80
+189 - Advanced Honors Seminars
+
+80
+191C - Capstone Seminar: History -- Europe
+
+80
+191D - Capstone Seminar: History -- U.S.
+
+80
+191DC - CAPPP Washington, DC, Research Seminars
+
+80
+191E - Capstone Seminar: History -- Latin America
+
+80
+191F - Capstone Seminar: History -- Near East
+
+80
+191I - Capstone Seminar: History -- Science/Technology
+
+80
+191J - Capstone Seminar: History -- Africa
+
+80
+191K - Capstone Seminar: History -- Religion
+
+80
+191N - Capstone Seminar: History -- India
+
+80
+191O - Capstone Seminar: History -- World History
+
+80
+195 - Community or Corporate Internships in History
+
+80
+195CE - Community and Corporate Internships in History
+
+80
+195DC - CAPPP Washington, DC, Internships
+
+80
+198B - Honors Research in History
+
+80
+199 - Directed Research in History
+
+80
+200D - Advanced Historiography: Europe
+
+80
+200U - Advanced Historiography: Psychohistory  
+
+80
+201D - Topics in History: Early Modern Europe
+
+80
+201H - Topics in History: U.S.
+
+80
+201I - Topics in History: Latin America
+
+80
+201J - Topics in History: Near East
+
+80
+201K - Topics in History: India
+
+80
+201N - Topics in History: Africa
+
+80
+201O - Topics in History: Science/Technology
+
+80
+201P - Topics in History: History of Religions
+
+80
+203A - Social Theory and Comparative History
+
+80
+204 - Departmental Seminar: Approaches, Methods, Debates, Practices
+
+80
+214 - Topics in World History
+
+80
+230A - Seminar: Modern European History
+
+80
+230B - Seminar: Modern European History
+
+80
+246A - Introduction to U.S. History: Colonial Period
+
+80
+282A - Seminar: Chinese History  
+
+80
+375 - Teaching Apprentice Practicum
+
+80
+495 - Teaching History  
+
+81
+2 - Comparative Genocide  
+
+81
+6 - Energy Issues: Before and Now
+
+81
+12 - Sacred Form: Literature and Poetry in India from Bronze Age to Premodern Times
+
+81
+17 - Art, Entertainment, and Social Change
+
+81
+19 - Fiat Lux Freshman Seminars
+
+81
+21W - Rise and Fall of Modernism
+
+81
+57 - Language, Performance, and Culture
+
+81
+73 - Elementary Particles in the Universe  
+
+81
+84 - Conflicts between Languages
+
+81
+101C - UCLA Undergraduate Journal for Humanities and Social Sciences
+
+81
+101I - Information and Research in Social and Behavioral Sciences
+
+81
+102 - Culture, Media, and Los Angeles
+
+81
+111 - Stress and Coping
+
+81
+158 - Justice and Moral Responsibility in Literature
+
+81
+173A - Liberty, Government, and Society in European Thought
+
+81
+193A - Journal Club Seminars: McNair Research Scholars
+
+82
+144 - Genomic Technology
+
+82
+207A - Theoretical Genetic Modeling
+
+82
+229S - Seminar: Current Topics in Bioinformatics
+
+82
+236A - Advanced Human Genetics A: Molecular Aspects
+
+82
+244 - Genomic Technology
+
+82
+252 - Seminar: Advanced Methods in Computational Biology
+
+82
+260A - Introduction to Bioinformatics
+
+82
+282 - Human Genetics Seminar and Journal Club
+
+83
+187E - Advanced Tutorial Instruction in Hungarian
+
+83
+187F - Advanced Tutorial Instruction in Hungarian
+
+84
+18A - Elementary Quechua  
+
+85
+150 - Introduction to Indo-European Linguistics
+
+85
+205 - Indo-European Phonology
+
+85
+260 - Indo-European Comparative Mythology and Poetics
+
+85
+280A - Seminar: Indo-European Linguistics  
+
+86
+1 - Introductory Indonesian
+
+86
+4 - Intermediate Indonesian
+
+86
+100A - Advanced Indonesian
+
+87
+139 - Letterpress Laboratory
+
+87
+200 - Information in Society  
+
+87
+238 - Environmental Protection of Collections
+
+87
+239 - Letterpress Laboratory
+
+87
+254 - Medical Information Infrastructures and Internet Technologies
+
+87
+260 - Information Structures  
+
+87
+281 - Historical Methodology of Information Studies
+
+87
+288 - Research Apprenticeship Course
+
+87
+289 - Seminar: Special Issues in Information Studies
+
+87
+290 - Research Seminar: Information Studies
+
+87
+291A - Doctoral Seminar: Theoretical Traditions in Information Studies
+
+87
+298A - Doctoral Seminar: Research Methods and Design
+
+87
+400 - Professional Development and Portfolio Design
+
+87
+426 - Library Services and Literature for Youth  
+
+87
+430 - Collection Development and Acquisition of Library Materials  
+
+87
+431 - American Archives and Manuscripts  
+
+87
+438B - Seminar: Advanced Issues in Archival Science -- Archival Description and Acce...
+
+87
+448 - Information Literacy Instruction: Theory and Technique
+
+87
+497 - Fieldwork in Libraries or Information Organizations  
+
+87
+498 - Internship
+
+88
+1 - Introduction to International and Area Studies
+
+88
+188 - Special Courses in International and Area Studies
+
+88
+193 - Colloquia and Speaker Series
+
+88
+375 - Teaching Apprentice Practicum
+
+89
+100A - Introduction to Development Studies: Economic Development and Culture Change
+
+89
+191 - Variable Topics Research Seminars: International Development Studies -- Senio...
+
+90
+1A - Elementary Persian  
+
+90
+20A - Accelerated Elementary Persian
+
+90
+102A - Intermediate Persian  
+
+90
+103A - Advanced Persian: Introduction to Classical Persian Poetry
+
+90
+103B - Advanced Persian: Introduction to Classical Persian Prose
+
+90
+105A - Baha&#39;i Faith in Iran: Historical and Sociological Survey
+
+90
+120 - Comparative Study of Six Major Persian Poets
+
+90
+141 - Persian Analytical Prose
+
+90
+187 - Variable Topics in Iranian Studies
+
+93
+1 - Elementary Italian -- Beginning
+
+93
+2 - Elementary Italian -- Continued
+
+93
+3 - Elementary Italian -- Continued
+
+93
+4 - Intermediate Italian  
+
+93
+5 - Intermediate Italian  
+
+93
+6 - Intermediate Italian
+
+93
+42C - Italy Through the Ages in English: Food and Literature in Italy
+
+93
+46 - Italian Cinema and Culture in English
+
+93
+100 - Composition and Style
+
+93
+102C - Italian Cultural Experience in English
+
+93
+110 - Dante in English
+
+93
+180 - History of Italian Language
+
+93
+191 - Variable Topics Research Seminars: Italian Studies
+
+93
+221A - Studies in 20th-Century Literature: Variable Topics
+
+93
+225 - Cultural History of Italian Language
+
+93
+252 - Seminar: Boccaccio  
+
+93
+260A - Alternative Perspectives in Italian Culture: Studies of Folk Tradition in Ita...
+
+93
+298 - Variable Topics in Italian Studies  
+
+93
+375 - Teaching Apprentice Practicum
+
+93
+495A - Teaching Italian at College Level
+
+94
+1 - Elementary Modern Japanese
+
+94
+4 - Intermediate Modern Japanese
+
+94
+50 - Japanese Civilization
+
+94
+100A - Advanced Modern Japanese
+
+94
+100R - Third-Year Advanced Reading in Modern Japanese
+
+94
+101A - Kanji for Advanced Reading
+
+94
+103A - Fourth-Year Japanese: Advanced Speaking I
+
+94
+104 - Business Japanese
+
+94
+110A - Introduction to Classical Japanese: Basic Grammar
+
+94
+120 - Introduction to Japanese Linguistics
+
+94
+155 - Topics in Japanese Cinema
+
+94
+191B - Variable Topics Research Seminars: Modern Japan
+
+94
+200 - Japanese Studies Seminar
+
+94
+241A - Seminar: Japanese Classics
+
+94
+265A - Seminar: Japanese Buddhist Texts
+
+95
+10 - Social, Cultural, and Religious Institutions of Judaism
+
+95
+177 - Variable Topics in Jewish Studies
+
+96
+1 - Elementary Modern Korean
+
+96
+1A - Elementary Korean for Korean-Heritage Speakers
+
+96
+3 - Elementary Modern Korean
+
+96
+4 - Intermediate Modern Korean
+
+96
+50 - Korean Civilization
+
+96
+100A - Advanced Modern Korean
+
+96
+101A - Advanced Readings in Modern Korean
+
+96
+103A - Readings in Sino-Korean Characters
+
+96
+104A - Korean Writing for Advanced Learners
+
+96
+105A - Reading Korean Academic Texts
+
+96
+154 - Introduction to Korean Cinema
+
+96
+155 - Topics in Korean Cinema
+
+96
+160 - Korean Buddhism
+
+96
+180A - Cultural History of Korea: Through 1259
+
+96
+184A - Women of Premodern Korea
+
+96
+203 - Variable Topics in Korean Culture
+
+96
+205A - Reading Korean Academic Texts
+
+96
+243 - Translation Workshop: Premodern Korean Texts
+
+96
+265A - Seminar: Korean Buddhist Texts
+
+97
+19 - Fiat Lux Freshman Seminars
+
+97
+144 - Women&#39;s Movement in Latin America
+
+97
+149 - Media: Gender, Race, Class, and Sexuality
+
+97
+166A - Immigrant Rights, Labor, and Higher Education
+
+97
+167 - Worker Center Movement: Next Wave Organizing for Justice for Immigrant Workers
+
+97
+175 - Agitational Communication
+
+97
+188 - Special Courses in Labor and Workplace Studies
+
+97
+195B - Community or Corporate Internships in Labor and Workplace Studies
+
+98
+1 - Elementary Latin  
+
+98
+20 - Intermediate Latin
+
+98
+104 - Ovid  
+
+98
+114 - Roman Epistolography: Cicero and Pliny  
+
+99
+205 - Latin Americanist Scholarship  
+
+100
+100 - Contracts
+
+100
+120 - Criminal Law
+
+100
+130 - Property
+
+100
+145 - Civil Procedure
+
+100
+150 - Public Interest Seminar
+
+100
+201 - Constitutional Law II
+
+100
+202 - Constitutional Criminal Procedure
+
+100
+205 - Wills and Trusts
+
+100
+207 - Community Property
+
+100
+211 - Evidence
+
+100
+217 - Introduction to Legal Philosophy
+
+100
+220 - Introduction to Federal Income Tax
+
+100
+224 - Tax and the Global Economy
+
+100
+228 - Mergers and Acquisitions
+
+100
+230 - Business Associations
+
+100
+234 - Accounting for Lawyers
+
+100
+236 - Securities Regulation
+
+100
+240 - Antitrust Law I
+
+100
+252 - Business Torts
+
+100
+257 - Transition to Practice
+
+100
+259 - International Commercial Arbitration
+
+100
+266 - Critical Race Theory
+
+100
+267 - Federal Indian Law I
+
+100
+270 - Public International Law
+
+100
+279 - Empirical Legal Studies: Theory and Methods
+
+100
+282 - Education and the Law
+
+100
+292 - Water Law
+
+100
+293 - Public Natural Resources Law and Policy
+
+100
+300 - Remedies
+
+100
+302 - Copyright Law
+
+100
+305 - Entertainment Law
+
+100
+306 - Patent Law
+
+100
+312 - Professional Responsibility
+
+100
+317 - Family Law
+
+100
+325 - Public Benefits Law &amp; Antipoverty Policy
+
+100
+329 - Women and the Law
+
+100
+331 - Immigration Law
+
+100
+336 - Legal Philosophy Meets the Israeli Legal System
+
+100
+338 - Islamic Jurisprudence (Sharia Law)
+
+100
+348 - European Union Law
+
+100
+358 - Financial Analysis
+
+100
+362 - Investment Companies &amp; Investment Advisors
+
+100
+364 - Motion Picture Distribution
+
+100
+367 - Law and Terrorism
+
+100
+369 - Anti-Terrorism and Criminal Enforcement
+
+100
+376 - Law and Dissent
+
+100
+397 - Advanced Legal Research
+
+100
+399 - Advanced Real Estate Transactions
+
+100
+403 - Contracts for Foreign Lawyers
+
+100
+420 - Statutory Interpretation
+
+100
+427 - The Law &amp; Your Life: Aligning Personal Values with the Practice of Law/Fundam...
+
+100
+491 - Transactional Lawyering: A Competitive Approach
+
+100
+500 - Constitutional Law Theory
+
+100
+501 - Tax Policy: Tax &amp; Democracy
+
+100
+510 - Rebellious Lawyering Workshop &amp; Speaker Series
+
+100
+514 - Seminar: Cultural Property Law
+
+100
+526 - Seminar: Housing Segregation, Housing Discrimination, and Evolution of Public...
+
+100
+528 - Tribal Legal Systems
+
+100
+532 - Youth and Justice
+
+100
+541 - Seminar: Problem Solving in the Public Interest
+
+100
+546A - Colloquium: Entertainment, Media, and Intellectual Property
+
+100
+555 - Legal Theory Workshop
+
+100
+556 - Animals in Agriculture and the Law
+
+100
+557 - Seminar: Contemporary Philosophy of Law
+
+100
+561A - Perspectives on Law and Lawyering
+
+100
+569A - Advanced Seminar: Academic Legal Writing
+
+100
+570 - Seminar: American Law in a Global Context
+
+100
+572A - Seminar: Lawyering Skills Writing Advisor/Lawyering Skills
+
+100
+575A - Seminar: Bankrupcty &amp; Commercial Law Empiricism (yearlong)
+
+100
+578 - Digital Wars
+
+100
+584 - Human Rights and Sexual Politics
+
+100
+591 - Seminar: Climate Change
+
+100
+602 - Judicial Decision-making: Remedies
+
+100
+604 - Accounting, Finance, and the law
+
+100
+608 - Intersection of Law, Health, and Public Policy: Medical-Legal Partnerships
+
+100
+611A - Climate Change and Energy Law
+
+100
+612 - Medical Ethics, Reproduction, and the Law
+
+100
+613 - Criminal Law Excuse Theory-Moral Culpability
+
+100
+617 - Special Topics in Family Law - Children of Lesbian, Gay, Bisexual, and Transg...
+
+100
+634 - Food Law and Policy
+
+100
+644 - Presidential Power
+
+100
+645 - Seminar: Race Conscious Remedies
+
+100
+648A - Law and Economics Workshop
+
+100
+697 - Gun Control
+
+100
+700 - Pretrial Civil Litigation
+
+100
+701A - 9th Circuit Appellate Advocacy Clinic
+
+100
+702 - Depositions &amp; Discovery Clinic
+
+100
+705 - Cappello Trial Advocacy Clinic: Simulated Civil Trial Advocacy
+
+100
+707 - Mediation
+
+100
+710A - Yearlong Trial Advocacy
+
+100
+720 - Criminal Trial Advocacy
+
+100
+721A - Real Estate Law Clinic
+
+100
+728 - Tribal Legal Development Clinic
+
+100
+739 - Community Economic Development
+
+100
+745 - Secured Financing Transactions
+
+100
+850A - Advanced Judicial Process
+
+100
+851A - Variable Topics Course (Agency Externships)
+
+100
+851B - Variable Topics Course (Agency Externships)
+
+102
+114 - Introduction to Lesbian, Gay, Bisexual, and Transgender Studies
+
+102
+126 - Feminist and Queer Theory
+
+102
+183 - Variable Topics in Queer Subjectivities/Theories/History
+
+102
+184 - Variable Topics in Science, Health, and Genetics
+
+102
+187 - Selected Topics in Lesbian, Gay, Bisexual, and Transgender Studies
+
+103
+1 - Evolution, Ecology, and Biodiversity
+
+103
+2 - Cells, Tissues, and Organs
+
+103
+3 - Introduction to Molecular Biology
+
+103
+3A - Introduction to Molecular Biology Laboratory
+
+103
+4 - Genetics
+
+103
+10H - Research Training in Genes, Genetics, and Genomics
+
+103
+15 - Life: Concepts and Issues
+
+103
+23L - Introduction to Laboratory and Scientific Methodology
+
+103
+192A - Undergraduate Practicum in Life Sciences
+
+103
+192B - Undergraduate Practicum in Life Sciences
+
+103
+375 - Teaching Apprentice Practicum
+
+104
+1 - Introduction to Study of Language  
+
+104
+19 - Fiat Lux Freshman Seminars
+
+104
+20 - Introduction to Linguistics  
+
+104
+103 - Introduction to General Phonetics
+
+104
+104 - Experimental Phonetics  
+
+104
+105 - Morphology
+
+104
+114 - American Indigenous Linguistics
+
+104
+116 - Introduction to Japanese Linguistics
+
+104
+120A - Phonology I  
+
+104
+120B - Syntax I
+
+104
+120C - Semantics I
+
+104
+130 - Language Development
+
+104
+150 - Introduction to Indo-European Linguistics
+
+104
+180 - Mathematical Structures in Language I
+
+104
+200A - Phonological Theory I
+
+104
+200B - Syntactic Theory I
+
+104
+208 - Mathematical Structures in Language I
+
+104
+210A - Field Methods I  
+
+104
+212 - Learnability Theory
+
+104
+237 - Linguistic Methods Laboratory
+
+104
+251A - Topics in Phonetics and Phonology
+
+104
+251B - Topics in Phonetics and Phonology
+
+104
+252A - Topics in Syntax and Semantics
+
+104
+252B - Topics in Syntax and Semantics
+
+104
+260A - Seminar: Phonetics  
+
+104
+261A - Seminar: Phonology  
+
+104
+262A - Seminar: Syntax and Semantics  
+
+104
+264A - Seminar: Psycholinguistics/Neurolinguistics
+
+104
+265A - American Indian Linguistics Seminar
+
+104
+275 - Linguistics Colloquium
+
+104
+276 - Linguistics Colloquium  
+
+104
+375 - Teaching Apprentice Practicum
+
+104
+403 - Practical Phonetics Training  
+
+104
+411A - Research Orientation  
+
+104
+422 - Practicum: Phonetic Data Analysis  
+
+104
+444 - M.A. Thesis Preparation Seminar  
+
+106
+1A - Principles of Accounting
+
+106
+1B - Principles of Accounting
+
+106
+108 - Business Law  
+
+106
+120A - Intermediate Financial Accounting I  
+
+106
+120B - Intermediate Financial Accounting II  
+
+106
+122 - Management Accounting
+
+106
+123 - Auditing  
+
+106
+126 - Financial Statement Analysis
+
+106
+127A - Tax Principles and Policy
+
+106
+127B - Corporate and Partnership Taxation
+
+106
+180 - Special Topics in Management
+
+106
+195 - Community or Corporate Internships in Management
+
+106
+201A - Business Forecasting: Turning Numbers into Knowledge
+
+106
+213C - Introduction to Multivariate Analysis  
+
+106
+224 - Business Law for Managers and Entrepreneurs
+
+106
+227 - Taxation and Management Decisions
+
+106
+229X - Accounting Workshop  
+
+106
+231E - Managing Finance and Financing Emerging Enterprises
+
+106
+232A - Security Analysis and Investment Management
+
+106
+232D - Option Markets  
+
+106
+232E - Market and Credit Risk Management
+
+106
+236A - Research Topics in Finance
+
+106
+238 - Special Topics in Finance  
+
+106
+239X - Finance Workshop  
+
+106
+243X - Seminar: Decisions, Operations, and Technology Management Systems
+
+106
+245 - Special Topics in Decisions, Operations, and Technology Management
+
+106
+250D - Thinking on Your Feet
+
+106
+258 - Research Seminar: Human Resources and Organizational Behavior
+
+106
+260B - Marketing Strategy and Planning
+
+106
+264A - Market Research
+
+106
+267 - One-to-One Marketing
+
+106
+269D - Behavioral Research in Marketing
+
+106
+269X - Workshop: Marketing
+
+106
+270C - Web Business
+
+106
+279A - Cases in Real Estate Investments
+
+106
+279B - Entrepreneurial Real Estate Development
+
+106
+281B - People in Organizations
+
+106
+286 - Negotiations Behavior
+
+106
+293A - Political Environment of American Business
+
+106
+293C - Ethical Considerations in Business
+
+106
+295A - Entrepreneurship and Venture Initiation  
+
+106
+295C - Corporate Entrepreneurship  
+
+106
+295D - Business Plan Development
+
+106
+296A - International Business Management  
+
+106
+298D - Special Topics in Management  
+
+106
+298X - Management Strategy and Policy Workshop  
+
+106
+299M - Theory and Research Methods in Organizations and Management
+
+106
+402 - Data and Decisions
+
+106
+403 - Financial Accounting  
+
+106
+405 - Managerial Economics
+
+106
+407 - Spreadsheet Modeling
+
+106
+408 - Foundations of Finance
+
+106
+409 - Organizational Behavior
+
+106
+410 - Operations Technology Management
+
+106
+411 - Marketing Management
+
+106
+414A - Leadership Foundations
+
+106
+414B - Introduction to Business Field Studies
+
+106
+420 - Business Strategy
+
+106
+421A - Communication Development for Leaders I
+
+106
+427 - Global Access Program
+
+106
+454 - Fieldwork in Organizations
+
+106
+455E - International Exchange Program
+
+106
+458I - International Studies
+
+106
+459E - International Exchange
+
+106
+471B - Management Practicum
+
+106
+488 - Business Plan Development
+
+107
+10 - Freshman Seminar: New Materials
+
+107
+104 - Science of Engineering Materials
+
+107
+105 - Principles of Nanoscience and Nanotechnology
+
+107
+110 - Introduction to Materials Characterization A (Crystal Structure, Nanostructur...
+
+107
+110L - Introduction to Materials Characterization A Laboratory
+
+107
+120 - Physics of Materials
+
+107
+130 - Phase Relations in Solids  
+
+107
+143A - Mechanical Behavior of Materials
+
+107
+160 - Introduction to Ceramics and Glasses  
+
+107
+180 - Introduction to Biomaterials
+
+107
+200 - Principles of Materials Science I
+
+107
+221 - Science of Electronic Materials
+
+107
+223 - Materials Science of Thin Films
+
+107
+225 - Materials Science of Surfaces
+
+107
+252 - Organic Polymer Electronic Materials
+
+107
+270 - Computer Simulations of Materials
+
+107
+280 - Introduction to Biomaterials
+
+107
+282 - Exploration of Advanced Topics in Materials Science and Engingeering
+
+107
+296 - Seminar: Advanced Topics in Materials Science and Engineering
+
+107
+298 - Seminar: Engineering  
+
+107
+375 - Teaching Apprentice Practicum
+
+108
+1 - Precalculus  
+
+108
+3A - Calculus for Life Sciences Students  
+
+108
+3B - Calculus for Life Sciences Students
+
+108
+3C - Probability for Life Sciences Students
+
+108
+31A - Differential and Integral Calculus
+
+108
+31B - Integration and Infinite Series
+
+108
+32A - Calculus of Several Variables
+
+108
+32AH - Calculus of Several Variables (Honors)
+
+108
+32B - Calculus of Several Variables
+
+108
+33A - Linear Algebra and Applications
+
+108
+33B - Differential Equations
+
+108
+61 - Introduction to Discrete Structures
+
+108
+98XA - PEERS Collaborative Learning Workshops for Life Sciences Majors
+
+108
+98XB - PEERS Collaborative Learning Workshops for Physical Sciences and Engineering ...
+
+108
+100 - Problem Solving
+
+108
+103A - Observation and Participation: Mathematics Instruction
+
+108
+105A - Mathematics and Pedagogy for Teaching Secondary School Mathematics
+
+108
+110A - Algebra  
+
+108
+110AH - Algebra (Honors)  
+
+108
+115A - Linear Algebra  
+
+108
+115AH - Linear Algebra (Honors)
+
+108
+120A - Differential Geometry
+
+108
+131A - Analysis
+
+108
+131AH - Analysis (Honors)
+
+108
+132 - Complex Analysis for Applications  
+
+108
+134 - Linear and Nonlinear Systems of Differential Equations
+
+108
+135 - Ordinary Differential Equations  
+
+108
+142 - Mathematical Modeling
+
+108
+151A - Applied Numerical Methods  
+
+108
+164 - Optimization
+
+108
+170A - Probability Theory
+
+108
+172A - Introduction to Financial Mathematics
+
+108
+180 - Combinatorics
+
+108
+191 - Variable Topics Research Seminars: Mathematics
+
+108
+205A - Number Theory  
+
+108
+206A - Combinatorial Theory  
+
+108
+207A - Topics in Number Theory
+
+108
+210A - Algebra  
+
+108
+215A - Commutative Algebra  
+
+108
+218A - Discrete Mathematics: Probabilistic Methods
+
+108
+220A - Mathematical Logic
+
+108
+223C - Topics in Computability Theory
+
+108
+225A - Differential Topology
+
+108
+226A - Differential Geometry  
+
+108
+227A - Algebraic Topology  
+
+108
+245A - Real Analysis  
+
+108
+246A - Complex Analysis  
+
+108
+247A - Classical Fourier Analysis  
+
+108
+252A - Topics in Complex Analysis  
+
+108
+255A - Functional Analysis  
+
+108
+259A - Operator Algebras in Hilbert Space  
+
+108
+266A - Applied Ordinary Differential Equations  
+
+108
+269A - Advanced Numerical Analysis  
+
+108
+270A - Mathematical Aspects of Scientific Computing: Techniques of Scientific Comput...
+
+108
+274A - Asymptotic Methods
+
+108
+275A - Probability Theory
+
+108
+285C - Seminar: Algebra
+
+108
+285J - Seminar: Applied Mathematics
+
+108
+290B - Seminar: Current Literature in Number Theory
+
+108
+290C - Seminar: Current Literature in Algebra
+
+108
+290D - Seminar: Current Literature in Logic
+
+108
+290E - Seminar: Current Literature in Geometry
+
+108
+290F - Seminar: Current Literature in Topology
+
+108
+290G - Seminar: Current Literature in Analysis
+
+108
+290I - Seminar: Current Literature in Functional Analysis
+
+108
+290J - Seminar: Current Literature in Applied Mathematics
+
+108
+290M - Seminar: Current Literature in Mathematics
+
+108
+290N - Seminar: Current Literature in Combinatorics
+
+108
+296B - Participating Seminar: Number Theory
+
+108
+296D - Participating Seminar: Logic
+
+108
+296E - Participating Seminar: Geometry
+
+108
+296F - Participating Seminar: Topology
+
+108
+296G - Participating Seminar: Analysis
+
+108
+296I - Participating Seminar: Functional Analysis
+
+108
+296J - Participating Seminar: Applied Mathematics
+
+108
+296K - Participating Seminar: Probability
+
+108
+296N - Participating Seminar: Combinatorics
+
+108
+375 - Teaching Apprentice Practicum
+
+108
+495 - Teaching College Mathematics
+
+109
+94 - Introduction to Computer-Aided Design and Drafting  
+
+109
+101 - Statics and Strength of Materials
+
+109
+102 - Dynamics of Particles and Rigid Bodies
+
+109
+103 - Elementary Fluid Mechanics  
+
+109
+105A - Introduction to Engineering Thermodynamics  
+
+109
+105D - Transport Phenomena  
+
+109
+107 - Introduction to Modeling And Analysis of Dynamic Systems
+
+109
+131A - Intermediate Heat Transfer
+
+109
+150A - Intermediate Fluid Mechanics  
+
+109
+150P - Aircraft Propulsion Systems
+
+109
+154B - Design of Aerospace Structures  
+
+109
+154S - Flight Mechanics, Stability, and Control of Aircraft  
+
+109
+155 - Intermediate Dynamics  
+
+109
+156A - Advanced Strength of Materials
+
+109
+157 - Basic Mechanical Engineering Laboratory
+
+109
+161A - Introduction to Astronautics  
+
+109
+162A - Introduction to Mechanisms and Mechanical Systems  
+
+109
+166A - Analysis of Flight Structures  
+
+109
+166C - Design of Composite Structures
+
+109
+168 - Introduction to Finite Element Methods
+
+109
+169A - Introduction to Mechanical Vibrations  
+
+109
+171A - Introduction to Feedback and Control Systems: Dynamic Systems Control I
+
+109
+175A - Probability and Stochastic Processes in Dynamical Systems
+
+109
+180 - Introduction to Micromachining and Microelectromechanical Systems (MEMS)
+
+109
+180L - Introduction to Micromachining and Microelectromechanical Systems (MEMS) Labo...
+
+109
+182A - Mathematics of Engineering  
+
+109
+182C - Numerical Methods for Engineering Applications  
+
+109
+187L - Nanoscale Fabrication, Characterization, and Biodetection Laboratory
+
+109
+194 - Research Group Seminars: Mechanical and Aerospace Engineering
+
+109
+231C - Phase Change Heat Transfer and Two-Phase Flow
+
+109
+239H - Special Topics in Fusion Physics, Engineering, and Technology
+
+109
+250C - Compressible Flows  
+
+109
+250M - Introduction to Microfluids/Nanofluids
+
+109
+256A - Linear Elasticity
+
+109
+257A - Elastodynamics
+
+109
+260 - Current Topics in Mechanical Engineering
+
+109
+261A - Energy and Computational Methods in Structural Mechanics
+
+109
+262 - Mechanics of Intelligent Material Systems
+
+109
+269D - Aeroelastic Effects in Structures  
+
+109
+270A - Linear Dynamic Systems  
+
+109
+270B - Linear Optimal Control
+
+109
+271A - Probability and Stochastic Processes in Dynamical Systems
+
+109
+280A - Introduction to Micromachining and Microelectromechanical Systems (MEMS)
+
+109
+280L - Introduction to Micromachining and Microelectromechanical Systems (MEMS) Labo...
+
+109
+281 - Microsciences
+
+109
+287L - Nanoscale Fabrication, Characterization, and Biodetection Laboratory
+
+109
+295C - Radio Frequency Identification Systems: Analysis, Design, and Applications
+
+109
+375 - Teaching Apprentice Practicum
+
+109
+495 - Teaching Assistant Training Seminar
+
+110
+169 - History of Neurosciences
+
+111
+19 - Fiat Lux Freshman Seminars
+
+111
+160A - Health Outreach and Education for At-Risk Populations
+
+111
+160B - Health Outreach and Education for At-Risk Populations
+
+111
+199 - Directed Research in Medicine
+
+111
+260A - Methodology in Clinical Research I
+
+111
+260C - Methodology in Clinical Research III
+
+111
+261 - Responsible Conduct of Research Involving Humans
+
+112
+101 - Introductory Microbiology
+
+112
+103AL - Research Immersion Laboratory in Virology
+
+112
+103BL - Advanced Research Analysis in Virology
+
+112
+105 - Biological Microscopy
+
+112
+109AL - Research Immersion Laboratory in Microbiology
+
+112
+168 - Molecular Parasitology
+
+112
+180A - Scientific Analysis and Communication I
+
+112
+185A - Immunology
+
+112
+194A - Research Group Seminars: Microbiology, Immunology, and Molecular Genetics
+
+112
+199 - Directed Research in Microbiology, Immunology, and Molecular Genetics
+
+112
+262A - Seminar: Current Topics in Immunobiology of Cancer  
+
+112
+296 - Seminar: Research Topics in Microbiology, Immunology, and Molecular Genetics
+
+112
+375 - Teaching Apprentice Practicum
+
+112
+495 - Preparation for Teaching Microbiology in Higher Education
+
+113
+50A - First Civilizations
+
+114
+11 - Foundations of Officership
+
+114
+21 - Individual Leadership Development
+
+114
+131 - Tactical Planning and Analysis
+
+114
+141 - Leadership and Management
+
+115
+200 - Introduction to Laboratory Research
+
+115
+237 - Research Frontiers in Cellular and Molecular Pharmacology
+
+115
+251 - Seminar: Pharmacology
+
+115
+252A - Molecular Mechanisms of Human Diseases I
+
+115
+252B - Seminar: Molecular Mechanisms of Human Diseases I
+
+115
+286 - Business of Science: Exploring Entrepreneurship Seminar
+
+115
+287 - Business of Science: Exploring Entrepreneurship
+
+115
+291 - Special Topics in Pharmacology  
+
+115
+375 - Teaching Apprentice Practicum
+
+116
+298 - Current Topics in Molecular Biology
+
+118
+40 - AIDS and Other Sexually Transmitted Diseases
+
+118
+50 - Stem Cell Biology, Politics, and Ethics: Teasing Apart Issues
+
+118
+60 - Biomedical Ethics
+
+118
+104AL - Research Immersion Laboratory in Developmental Biology
+
+118
+138 - Developmental Biology
+
+118
+144 - Molecular Biology of Cellular Processes and Experimental Applications of Theory
+
+118
+150 - Plant Communication
+
+118
+175A - Neuroscience: From Molecules to Mind -- Cellular and Systems Neuroscience
+
+118
+187AL - Research Immersion Laboratory in Genomic Biology
+
+118
+192A - Undergraduate Practicum in Molecular, Cell, and Developmental Biology
+
+118
+192B - Undergraduate Practicum: CityLab
+
+118
+193 - Journal Club Seminars: Molecular, Cell, and Developmental Biology
+
+118
+194A - Research Group Seminars: Molecular, Cell, and Developmental Biology
+
+118
+196A - Research Apprenticeship I in Molecular, Cell, and Developmental Biology
+
+118
+198A - Honors Research in Molecular, Cell, and Developmental Biology
+
+118
+199 - Special Studies Directed Research in Molecular, Cell, and Developmental Biology
+
+118
+220 - Cell, Developmental, and Molecular Neurobiology
+
+118
+296 - Advanced Topics in Molecular, Cellular, and Developmental Biology
+
+118
+375 - Teaching Apprentice Practicum
+
+118
+495 - Preparation for Teaching Molecular, Cell, and Developmental Biology in Higher...
+
+119
+252A - Molecular Mechanisms of Human Diseases I
+
+119
+252B - Seminar: Molecular Mechanisms of Human Diseases I
+
+119
+290A - Tutorials: Cellular and Molecular Physiology
+
+119
+290B - Tutorials: Biophysics
+
+119
+290C - Tutorials: Integrative and Comparative Physiology
+
+119
+296 - Research Seminar
+
+117
+211A - Molecular Toxicology Seminar
+
+117
+296B - Research Topics in Molecular Toxicology: Molecular Carcinogenesis
+
+117
+296C - Research Topics in Molecular Toxicology: Teratogenesis
+
+117
+296D - Research Topics in Molecular Toxicology: Molecular Topics in Boron Biology
+
+117
+296E - Research Topics in Molecular Toxicology: Germ Cell Cytogenetic/Genetic Biomar...
+
+117
+296F - Research Topics in Molecular Toxicology: Genetic Toxicology
+
+120
+200 - Moving Image Archiving: History, Philosophy, Practice
+
+120
+210 - Moving Image Preservation and Restoration
+
+120
+498 - Individual Directed Studies: Practicum in Moving Image Archiving
+
+121
+10A - Introduction to Music: History, Culture, Creativity
+
+121
+20A - Music Theory I
+
+121
+60AF - Undergraduate Instruction in Performance: Violin
+
+121
+60BF - Undergraduate Instruction in Performance: Viola
+
+121
+60CF - Undergraduate Instruction in Performance: Cello
+
+121
+60DF - Undergraduate Instruction in Performance: String Bass
+
+121
+60EF - Undergraduate Instruction in Performance: Harp
+
+121
+60FF - Undergraduate Instruction in Performance: Classical Guitar
+
+121
+61AF - Undergraduate Instruction in Performance: Flute
+
+121
+61BF - Undergraduate Instruction in Performance: Oboe
+
+121
+61CF - Undergraduate Instruction in Performance: Clarinet
+
+121
+61DF - Undergraduate Instruction in Performance: Bassoon
+
+121
+61EF - Undergraduate Instruction in Performance: Saxophone
+
+121
+62AF - Undergraduate Instruction in Performance: Trumpet
+
+121
+62BF - Undergraduate Instruction in Performance: French Horn
+
+121
+62CF - Undergraduate Instruction in Performance: Trombone
+
+121
+62DF - Undergraduate Instruction in Performance: Tuba
+
+121
+63F - Undergraduate Instruction in Performance: Percussion
+
+121
+64AF - Undergraduate Instruction in Performance: Piano
+
+121
+64BF - Undergraduate Instruction in Performance: Organ
+
+121
+65F - Undergraduate Instruction in Performance: Voice
+
+121
+90A - UCLA Chorale
+
+121
+90B - University Chorus
+
+121
+90C - Chamber Singers  
+
+121
+90D - Opera Workshop  
+
+121
+90E - Symphony Orchestra  
+
+121
+90F - Symphonic Band  
+
+121
+90G - Wind Ensemble
+
+121
+90M - Marching and Varsity Bands  
+
+121
+90P - Alexander Technique
+
+121
+90Q - Piano/Keyboard Accompanying
+
+121
+90R - Guitar Accompanying
+
+121
+90S - Harp Accompanying
+
+121
+90T - Early Music Ensemble
+
+121
+100B - Music in American Education: Choral Music
+
+121
+100C - Music in American Education: Instrumental Music
+
+121
+106A - Orchestration I  
+
+121
+112 - Guided Field Experiences in Music Education
+
+121
+114A - Study of Instrumental and Vocal Techniques: High Strings
+
+121
+114B - Study of Instrumental and Vocal Techniques: Low Strings
+
+121
+114I - Study of Instrumental and Vocal Techniques: Voice  
+
+121
+116 - Introduction to Conducting  
+
+121
+118A - Advanced Choral Conducting
+
+121
+119 - Vocal Techniques for Music Education
+
+121
+120A - Music Theory IV  
+
+121
+123A - Composition  
+
+121
+140A - History and Analysis of Western Music to 1700
+
+121
+160AF - Undergraduate Instruction in Performance for Performance Specialist: Violin
+
+121
+160BF - Undergraduate Instruction in Performance for Performance Specialist: Viola
+
+121
+160CF - Undergraduate Instruction in Performance for Performance Specialist: Cello
+
+121
+160DF - Undergraduate Instruction in Performance for Performance Specialist: String Bass
+
+121
+160EF - Undergraduate Instruction in Performance for Performance Specialist: Harp
+
+121
+160FF - Undergraduate Instruction in Performance for Performance Specialist: Classica...
+
+121
+161AF - Undergraduate Instruction in Performance for Performance Specialist: Flute
+
+121
+161BF - Undergraduate Instruction in Performance for Performance Specialist: Oboe
+
+121
+161CF - Undergraduate Instruction in Performance for Performance Specialist: Clarinet
+
+121
+161DF - Undergraduate Instruction in Performance for Performance Specialist: Bassoon
+
+121
+161EF - Undergraduate Instruction in Performance for Performance Specialist: Saxophone
+
+121
+162AF - Undergraduate Instruction in Performance for Performance Specialist: Trumpet
+
+121
+162BF - Undergraduate Instruction in Performance for Performance Specialist: French Horn
+
+121
+162CF - Undergraduate Instruction in Performance for Performance Specialist: Trombone
+
+121
+162DF - Undergraduate Instruction in Performance for Performance Specialist: Tuba
+
+121
+163F - Undergraduate Instruction in Performance for Performance Specialist: Percussion
+
+121
+164AF - Undergraduate Instruction in Performance for Performance Specialist: Piano
+
+121
+164BF - Undergraduate Instruction in Performance for Performance Specialist: Organ
+
+121
+165F - Undergraduate Instruction in Performance for Performance Specialist: Voice
+
+121
+167 - Selected Topics in Keyboard Literature
+
+121
+175 - Chamber Ensembles  
+
+121
+176 - Electronic Music Composition  
+
+121
+177 - Gluck Chamber Ensembles
+
+121
+201 - Repertory and Analysis
+
+121
+203 - Notation and Performance
+
+121
+204 - Music Bibliography for Performers  
+
+121
+218A - Advanced Choral Conducting
+
+121
+226 - Electronic Music Composition  
+
+121
+251 - Seminar: Orchestration
+
+121
+252 - Seminar: Composition
+
+121
+254 - Advanced Music Analysis: Pre-Tonal Music
+
+121
+255 - Advanced Music Analysis: Tonal Music
+
+121
+260A - Seminar: Composition for Motion Pictures and Television
+
+121
+260B - Seminar: Composition for Motion Pictures and Television
+
+121
+261D - Problems in Performance Practices: Classical  
+
+121
+261E - Problems in Performance Practices: Romantic  
+
+121
+267 - Selected Topics in Keyboard Literature
+
+121
+292 - Seminar: Special Topics in Music
+
+121
+375 - Teaching Apprentice Practicum
+
+121
+401 - New Music Forum
+
+121
+460A - Graduate Instruction in Performance: Violin
+
+121
+460B - Graduate Instruction in Performance: Viola
+
+121
+460C - Graduate Instruction in Performance: Cello
+
+121
+460D - Graduate Instruction in Performance: String Bass
+
+121
+460E - Graduate Instruction in Performance: Harp
+
+121
+460F - Graduate Instruction in Performance: Classical Guitar
+
+121
+461A - Graduate Instruction in Performance: Flute
+
+121
+461B - Graduate Instruction in Performance: Oboe
+
+121
+461C - Graduate Instruction in Performance: Clarinet
+
+121
+461D - Graduate Instruction in Performance: Bassoon
+
+121
+461E - Graduate Instruction in Performance: Saxophone
+
+121
+462A - Graduate Instruction in Performance: Trumpet
+
+121
+462B - Graduate Instruction in Performance: French Horn
+
+121
+462C - Graduate Instruction in Performance: Trombone
+
+121
+462D - Graduate Instruction in Performance: Tuba
+
+121
+463 - Graduate Instruction in Performance: Percussion
+
+121
+464A - Graduate Instruction in Performance: Piano
+
+121
+464B - Graduate Instruction in Performance: Organ
+
+121
+465 - Graduate Instruction in Performance: Voice
+
+121
+466 - Graduate Instruction in Performance: Jazz
+
+121
+469 - Instrumental Pedagogy
+
+121
+470 - Opera Studio for Graduate Students  
+
+121
+472 - Master Class in Opera  
+
+121
+475 - Master Class in Conducting  
+
+121
+477 - Gluck Chamber Ensembles
+
+121
+480 - UCLA Chorale
+
+121
+481 - Symphony Orchestra
+
+121
+482 - Wind Ensemble
+
+121
+485 - Chamber Ensembles  
+
+121
+486 - Jazz Ensemble
+
+121
+495 - Introductory Practicum for Teaching Apprentices in Music
+
+122
+10A - Introduction to Music: History, Culture, Creativity
+
+122
+60 - American Musical
+
+122
+65 - Blues in American Music
+
+122
+68 - Beatles
+
+122
+72 - Sacred Music
+
+122
+90T - Early Music Ensemble
+
+122
+125D - Music, History, and Culture, 1800 to 1900
+
+122
+135A - History of Opera: Baroque and Classical Periods
+
+122
+136 - Music and Gender
+
+122
+160 - Selected Topics in American Musical
+
+122
+191T - Capstone Seminar: Music History
+
+123
+102 - Internet Marketing and Branding for Musicians
+
+123
+104 - Music and Law
+
+123
+107 - Audio Technology for Musicians
+
+123
+195 - Community or Corporate Internships in Music Industry and Technology
+
+124
+200A - Introduction to Music Scholarship
+
+124
+250 - Seminar: Theoretical Topics
+
+124
+251 - Audit Seminar: Theoretical Topics
+
+124
+375 - Teaching Apprentice Practicum
+
+124
+490T - Early Music Ensemble
+
+125
+1A - Introduction to Naval Science  
+
+125
+1B - Naval Ship Systems I
+
+125
+102C - Leadership and Ethics
+
+126
+375 - Teaching Apprentice Practicum
+
+127
+169 - History of Neurosciences
+
+127
+197 - Individual Studies in Neurobiology
+
+127
+199 - Directed Research in Neurobiology
+
+127
+200B - Cell, Developmental, and Molecular Neurobiology
+
+127
+200F - Cellular Neurophysiology
+
+129
+10 - Brain Made Simple: Neuroscience for 21st Century
+
+129
+19 - Fiat Lux Freshman Seminars
+
+129
+101A - Neuroscience: From Molecules to Mind -- Cellular and Systems Neuroscience
+
+129
+102 - Introduction to Functional Anatomy of Central Nervous System
+
+129
+191C - Variable Topics Research Seminars: Neuroscience -- Molecular, Cell, and Devel...
+
+131
+99 - Student Research Program
+
+132
+10 - Introduction to Nursing and Social Justice I
+
+132
+50 - Fundamentals of Epidemiology
+
+132
+54B - Pathophysiology II
+
+132
+150A - Theoretical Foundations of Nursing B.S. Role and Fundamentals of Professional...
+
+132
+152W - Human Development/Health Promotion in Culturally Diverse Populations
+
+132
+155 - Global Health Elective: Globalization, Social Justice, and Human Rights
+
+132
+161 - Psychiatric Mental Health Nursing
+
+132
+162A - Foundational Concepts for Tertiary Prevention and Care of Medical-Surgical Pa...
+
+132
+162D - Human Responses to Critical Illness: Introduction to Critical Care
+
+132
+168 - Advanced Leadership and Role Integration
+
+132
+200 - Health Promotion and Assessment across Lifespan
+
+132
+202 - Philosophy of Nursing Science
+
+132
+204 - Research Design and Critique
+
+132
+205A - Introduction to Qualitative Methods in Research
+
+132
+207 - Quantitative Research Designs of Clinical Phenomena
+
+132
+209 - Human Diversity in Health and Illness
+
+132
+210 - Nursing Science
+
+132
+212 - Health-Related Family Theory
+
+132
+213 - Occupational and Environmental Health Nursing Role, Theory, and Research
+
+132
+214B - Seminar: Advanced Concepts in Oncology Nursing II
+
+132
+216C - Adult/Gerontology Concepts for Advanced Practice Nurses in Acute Care III
+
+132
+218B - Nursing Administration Theory
+
+132
+220 - Theories of Instruction and Learning in Nursing
+
+132
+221 - Qualitative Research Design and Methodology for Indigenous Communities
+
+132
+229A - System-Based Healthcare I
+
+132
+230A - Advanced Pathophysiology I
+
+132
+231 - Pathophysiology for Advanced Practice Nurses
+
+132
+232 - Human Responses to Aging and Chronic Illness
+
+132
+232F - Human Responses to Aging and Chronic Illness
+
+132
+238B - Assessment and Management in Pediatric Healthcare II
+
+132
+239C - Assessment and Management in Adult Healthcare III
+
+132
+250 - Ethical Issues, Social Justice, and History of Nursing
+
+132
+252 - Health Promotion/Risk Reduction Systems: Population Level
+
+132
+254A - Theoretical Foundations of M.S.N./MECN Role and Fundamentals of Professional ...
+
+132
+255 - Global Health Elective: Globalization, Social Justice, and Human Rights
+
+132
+268 - Systems (Hospital Unit): Individual Level
+
+132
+295A - Nursing Science Seminar
+
+132
+299D - Nursing Education Seminar
+
+132
+375 - Teaching Apprentice Practicum
+
+132
+416C - Adult/Gerontology Acute Care Nurse Practitioner Practicum III
+
+132
+418B - Nursing Administration Practicum
+
+132
+429C - Family Nurse Practitioner Practicum III
+
+132
+438B - Pediatric Nurse Practitioner Clinical Practicum II
+
+132
+439C - Adult/Gerontology Primary Care Nurse Practitioner Practicum III
+
+132
+440 - Advanced Assessment and Clinical Diagnosis Practicum
+
+132
+445 - Advanced Practice Nursing: Clinical Nurse Specialist Practicum
+
+132
+464 - Pediatric Nursing
+
+132
+465C - Tertiary Prevention and Care of Medical-Surgical Patients and Families
+
+132
+495 - Nursing Education Practicum
+
+135
+205B - Methodology in Evidence-Based Dentistry
+
+135
+212 - Proseminar: Oral Biology Research
+
+135
+215A - Fundamentals of Immunology
+
+135
+226 - Craniofacial Growth and Development  
+
+135
+229A - Culture, Ethnicity, and Health: Implications for Oral Biology and Medicine
+
+135
+260 - Oral Biology Seminar
+
+135
+275 - Molecular and Cell Biology for Oral Biology Graduate Students
+
+137
+110 - Introduction to Cytogenetics
+
+137
+296 - Research Topics in Pathology
+
+139
+7 - Introduction to Philosophy of Mind  
+
+139
+8 - Introduction to Philosophy of Science  
+
+139
+21 - Skepticism and Rationality
+
+139
+31 - Logic, First Course
+
+139
+100A - History of Greek Philosophy  
+
+139
+107 - Topics in Medieval Philosophy  
+
+139
+111 - Leibniz  
+
+139
+115 - Kant  
+
+139
+127A - Philosophy of Language  
+
+139
+127B - Philosophy of Language  
+
+139
+127C - Philosophy of Language
+
+139
+135 - Introduction to Metalogic
+
+139
+151A - History of Ethics: Selected Classics in Ancient Ethical Theories -- Plato, Ar...
+
+139
+154 - Topics in Value Theory: Rationality and Action
+
+139
+154B - Topics in Value Theory: Moral Responsibility and Free Will
+
+139
+166 - Philosophy of Law
+
+139
+170 - Philosophy of Mind  
+
+139
+174 - Topics in Theory of Knowledge  
+
+139
+177A - Existentialism  
+
+139
+184 - Topics in Metaphysics  
+
+139
+185 - Major Philosophers of 20th Century
+
+139
+200A - Seminar for First-Year Graduate Students  
+
+139
+220 - Seminar: Topics in History of Philosophy  
+
+139
+246 - Seminar: Ethical Theory  
+
+139
+248 - Problems in Moral Philosophy  
+
+139
+254 - Legal Theory Workshop
+
+139
+258 - Contemporary Philosophy of Law
+
+139
+375 - Teaching Apprentice Practicum
+
+139
+495 - Teaching College Philosophy
+
+140
+1A - Physics for Scientists and Engineers: Mechanics
+
+140
+1B - Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magne...
+
+140
+1C - Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Re...
+
+140
+4AL - Physics Laboratory for Scientists and Engineers: Mechanics
+
+140
+4BL - Physics Laboratory for Scientists and Engineers: Electricity and Magnetism
+
+140
+6A - Physics for Life Sciences Majors: Mechanics
+
+140
+6B - Physics for Life Sciences Majors: Waves, Electricity, and Magnetism
+
+140
+6C - Physics for Life Sciences Majors: Light, Fluids, Thermodynamics, Modern Physics
+
+140
+10 - Physics  
+
+140
+17 - Elements of Quantum Mechanics and Statistical Mechanics
+
+140
+19 - Fiat Lux Freshman Seminars
+
+140
+98XA - PEERS Collaborative Learning Workshops for Life Sciences Majors
+
+140
+98XB - PEERS Collaborative Learning Workshops for Physical Sciences and Engineering ...
+
+140
+105B - Analytic Mechanics  
+
+140
+110B - Electricity and Magnetism
+
+140
+112 - Thermodynamics  
+
+140
+115A - Quantum Mechanics
+
+140
+115B - Quantum Mechanics
+
+140
+122 - Introduction to Plasma Electronics
+
+140
+124 - Nuclear Physics  
+
+140
+131 - Mathematical Methods of Physics  
+
+140
+140A - Introduction to Solid-State Physics  
+
+140
+180F - Elementary Particle Laboratory  
+
+140
+192 - Undergraduate Practicum in Physics
+
+140
+194 - Research Group Seminars: Physics and Astronomy
+
+140
+215B - Advanced Statistical Mechanics
+
+140
+220 - Classical Mechanics
+
+140
+221A - Quantum Mechanics  
+
+140
+222A - Plasma Physics  
+
+140
+226A - Elementary Particle Physics  
+
+140
+226D - Beyond the Standard Model  
+
+140
+230A - Quantum Field Theory
+
+140
+231A - Methods of Mathematical Physics
+
+140
+232A - Relativity  
+
+140
+241A - Solid-State Physics
+
+140
+262 - Seminar: Physics of the Solid State  
+
+140
+269B - Seminar: Elementary Particle Physics  
+
+140
+292 - Research Tutorial: Spectroscopy, Low-Temperature, and Solid-State Physics  
+
+140
+293 - Research Tutorial: Current Topics in Physics  
+
+140
+294 - Research Tutorial: Accelerator Physics
+
+140
+296 - Research Topics in Physics
+
+140
+297 - Research Tutorial: Astroparticle Physics
+
+140
+375 - Teaching Apprentice Practicum
+
+140
+495 - Teaching College Physics
+
+141
+5 - Issues in Human Physiology: Diet and Exercise
+
+141
+19 - Fiat Lux Freshman Seminars
+
+141
+102 - Basic Human Biology for Bioengineers I
+
+141
+107 - Systems Anatomy
+
+141
+111L - Physiological Science Laboratory
+
+141
+126 - Biological Clocks
+
+141
+135 - Dynamical Systems Modeling of Physiological Processes
+
+141
+138 - Neuromuscular Physiology and Adaptation
+
+141
+143 - Neurobiology of Skilled Hand Function
+
+141
+144 - Neural Control of Physiological Systems
+
+141
+147 - Neurobiology of Learning and Memory
+
+141
+155 - Development and Structure of Musculoskeletal System
+
+141
+177 - Neuroethology
+
+141
+180A - Neuroscience: From Molecules to Mind -- Cellular and Systems Neuroscience
+
+141
+192 - Practicum in Systems Anatomy for Undergraduate Assistants
+
+141
+193 - Journal Club Seminars: Physiological Science
+
+141
+194A - Research Group Seminars: Physiological Science
+
+141
+198A - Honors Research in Physiological Science
+
+141
+199 - Directed Research or Senior Project in Physiological Science
+
+141
+202 - Cellular Neurophysiology
+
+141
+204 - Basic Human Biology for Bioengineers I
+
+141
+226 - Biological Clocks
+
+141
+235 - Advanced Dynamical Systems Modeling of Physiological Processes
+
+141
+244 - Neural Control of Physiological Systems
+
+141
+296 - Research Seminar: Physiological Science
+
+141
+375 - Teaching Apprentice Practicum
+
+141
+495 - In-Service Practicum for Teaching Assistants in Physiological Science
+
+142
+19 - Fiat Lux Freshman Seminars
+
+142
+100 - Elements of Human Physiology  
+
+143
+102A - Advanced Polish
+
+143
+187G - Advanced Tutorial Instruction in Polish
+
+143
+187I - Advanced Tutorial Instruction in Polish
+
+144
+6 - Introduction to Data Analysis
+
+144
+10 - Introduction to Political Theory  
+
+144
+20 - World Politics  
+
+144
+30 - Politics and Strategy
+
+144
+40 - Introduction to American Politics
+
+144
+50 - Introduction to Comparative Politics  
+
+144
+99 - Student Research Program
+
+144
+113B - Politics, Theory, and Film
+
+144
+120A - Foreign Relations of U.S.
+
+144
+121A - Studies in Formulation of American Foreign Policy  
+
+144
+124A - International Political Economy  
+
+144
+137A - International Relations Theory  
+
+144
+139 - Special Studies in International Relations
+
+144
+140B - National Institutions: The Presidency
+
+144
+141A - Electoral Politics: Political Psychology
+
+144
+145B - Public Law and Judicial Process: Constitutional Law -- Separation of Powers
+
+144
+145E - Public Law and Judicial Process: Constitutional Law -- Rights of Accused
+
+144
+147C - American Political Development: Institutional Development
+
+144
+156A - Government and Politics of Post-Communist States: Russia
+
+144
+158 - Southeast Asian Politics
+
+144
+168 - Comparative Political Analysis  
+
+144
+169 - Special Studies in Comparative Politics
+
+144
+171B - Collective Choice and Majority Rule
+
+144
+171C - Legislative Strategy
+
+144
+179 - Special Topics in Methods and Models
+
+144
+180C - Malcolm X and Black Liberation
+
+144
+183 - Equal Rights and Unequal Education
+
+144
+184A - Black Experience in Latin America and Caribbean I
+
+144
+189 - Advanced Honors Seminars
+
+144
+191DC - CAPPP Washington, DC, Research Seminars
+
+144
+191H - Research Design Seminar for Honors Thesis
+
+144
+194DC - CAPPP Washington, DC, Research Seminars
+
+144
+195 - Community or Corporate Internships in Political Science
+
+144
+195CE - Community and Corporate Internships in Political Science
+
+144
+195DC - CAPPP Washington, DC, Internships
+
+144
+198 - Honors Research in Political Science
+
+144
+199 - Directed Research in Political Science
+
+144
+200A - Statistical Methods I
+
+144
+201A - Introduction to Formal Political Analysis  
+
+144
+209 - Special Topics in Formal Theory and Quantitative Methods
+
+144
+217 - Selected Texts in Political Theory
+
+144
+220A - International Relations Core Seminar I
+
+144
+231 - International Political Economy I
+
+144
+240A - Seminar: Comparative Politics
+
+144
+241 - African Politics
+
+144
+252 - Parties and Party Systems  
+
+144
+260A - Survey Course in American Politics: Political Parties and Electoral Process
+
+144
+269 - Seminar: Political Behavior
+
+144
+289B - Current Research on Race, Ethnicity, and Politics
+
+144
+292B - Introduction to Political Inquiry: Research Design
+
+144
+375 - Teaching Apprentice Practicum
+
+144
+495 - Teaching Political Science
+
+145
+1 - Elementary Portuguese  
+
+145
+11A - Intensive Portuguese
+
+145
+25 - Advanced Portuguese
+
+145
+40B - Portuguese, Brazilian, and African Literature in Translation: Brazilian Liter...
+
+145
+46 - Brazil and Portuguese-Speaking World
+
+145
+130A - Introduction to Literature in Portuguese
+
+145
+130B - Introduction to Literature in Portuguese
+
+145
+142B - Brazil and Portugal in Comparative Perspective
+
+145
+143B - Transatlantic Literature in Portuguese
+
+145
+143D - Contemporary Literature in Portuguese
+
+145
+201A - Literary Theory and Criticism  
+
+145
+255 - Studies in Modern Brazilian Literature
+
+145
+375 - Teaching Apprentice Practicum
+
+146
+10A - Introduction to Programming  
+
+146
+40A - Introduction to Programming for Internet
+
+146
+375 - Teaching Apprentice Practicum
+
+147
+19 - Fiat Lux Freshman Seminars
+
+147
+236A - Psychology Interns Seminar  
+
+147
+264 - Health and Mental Health Disparities from Psychosocial and Cultural Perspectives
+
+147
+270 - Neural Basis of Memory
+
+147
+274A - Research Seminar: Psychoneuroimmunology
+
+147
+281A - Behavioral Therapy in Educational Settings
+
+147
+284A - Principles of Neuroimaging I
+
+147
+291 - Functional Magnetic Resonance Imaging and Consciousness Journal Club
+
+147
+292 - Functional Neuroanatomy for Neuropsychologists
+
+147
+295A - Substantive Issues in Substance Abuse I
+
+147
+407A - Clinical Hypnosis Seminar
+
+147
+431A - Pediatric Neuropsychology: Assessment, Diagnosis, and Treatment Planning
+
+147
+454 - Advanced Topics in Neuropsychology
+
+147
+482 - Clinical Practicum in Childhood Anxiety and Related Disorders
+
+147
+485 - Human Genetics Seminar
+
+148
+10 - Introductory Psychology  
+
+148
+15 - Introductory Psychobiology  
+
+148
+19 - Fiat Lux Freshman Seminars
+
+148
+85 - Introduction to Cognitive Science  
+
+148
+99 - Student Research Program
+
+148
+100A - Psychological Statistics  
+
+148
+100B - Research Methods in Psychology  
+
+148
+101 - General Psychology Laboratory
+
+148
+110 - Fundamentals of Learning  
+
+148
+115 - Principles of Behavioral Neuroscience
+
+148
+116 - Behavioral Neuroscience Laboratory
+
+148
+117A - Neuroscience: From Molecules to Mind -- Cellular and Systems Neuroscience
+
+148
+118 - Comparative Psychobiology  
+
+148
+119C - Cognitive Neuroscience
+
+148
+119D - Behavioral Neuropharmacology
+
+148
+119G - Brain, Mind, and Motion Pictures
+
+148
+119X - Biology and Behavioral Neuroscience of Aging
+
+148
+120B - Sensation and Perception
+
+148
+121 - Laboratory in Cognitive Psychology  
+
+148
+124C - Human Memory  
+
+148
+125A - Developmental Psychopathology
+
+148
+126 - Clinical Psychology Laboratory
+
+148
+127A - Abnormal Psychology
+
+148
+127B - Abnormal Psychology: Biological Bases
+
+148
+130 - Developmental Psychology  
+
+148
+132B - Mental Health in Schools: Policy and Practice
+
+148
+133E - Perceptual Development
+
+148
+134A - Applied Developmental Psychology: Infant/Toddler Care and Education
+
+148
+134D - Fieldwork in Applied Developmental Psychology
+
+148
+135 - Social Psychology  
+
+148
+136B - Nonexperimental Methods in Social Psychology
+
+148
+137A - Sport Psychology
+
+148
+138 - Electoral Politics: Political Psychology
+
+148
+150 - Introduction to Health Psychology  
+
+148
+185 - Research Practicum in Psychology
+
+148
+186D - Laboratory in Functional Neuroimaging
+
+148
+187A - Psychology and Law
+
+148
+189 - Advanced Honors Seminars
+
+148
+190 - Research Colloquia in Psychology
+
+148
+191AH - Departmental Honors Research Seminars
+
+148
+192 - Educational Practices in Psychology
+
+148
+193 - Journal Club Seminars: Psychology
+
+148
+194A - Internship Seminars: Psychology
+
+148
+194D - Research Group Seminars: Practicum
+
+148
+195A - Community Internships in Psychology
+
+148
+195B - Corporate Internships in Cognitive Science
+
+148
+196A - Research Apprenticeship in Psychology
+
+148
+199B - Senior Project in Psychology
+
+148
+200A - Pavlovian Processes
+
+148
+201 - Current Issues in Learning and Behavior  
+
+148
+212 - Evaluation of Research Literature in Physiological Psychology
+
+148
+215B - Human Physiology in Social and Behavioral Science
+
+148
+216A - Psychology of Chronic Disease
+
+148
+220A - Social Psychology  
+
+148
+226A - Current Literature in Social Psychology  
+
+148
+241 - Current Developments in Developmental Psychology  
+
+148
+248 - Culture, Brain, and Development Forum
+
+148
+250A - Advanced Psychological Statistics
+
+148
+251C - Research Methods
+
+148
+255A - Quantitative Aspects of Assessment  
+
+148
+260A - Proseminar: Cognitive Psychology  
+
+148
+262 - Human Learning and Memory
+
+148
+265 - Computational Methods for Neuroimaging
+
+148
+269 - Seminar: Cognitive Psychology
+
+148
+270A - Foundations of Clinical Psychology  
+
+148
+271A - Clinical Psychological Methods  
+
+148
+271D - Clinical Research Laboratory  
+
+148
+273A - Professional and Ethical Issues in Clinical Psychology
+
+148
+289A - Current Issues in Clinical Psychology
+
+148
+290 - History and Systems of Psychology
+
+148
+296A - Research Topics in Psychology
+
+148
+296B - Research Group Seminars: Practicum
+
+148
+298 - Special Problems in Psychology
+
+148
+375 - Teaching Apprentice Practicum
+
+148
+401 - Fieldwork in Clinical Psychology  
+
+148
+410A - Clinical Teaching and Supervision
+
+148
+410D - Clinical Assessment Supervision
+
+148
+425 - Health Psychology Lecture Series  
+
+148
+451 - Internship in Clinical Psychology  
+
+148
+495 - Presentation of Psychological Materials
+
+149
+150 - Contemporary Health Issues
+
+149
+160A - Health Outreach and Education for At-Risk Populations
+
+149
+160B - Health Outreach and Education for At-Risk Populations
+
+150
+10A - Introduction to Public Policy
+
+150
+19 - Fiat Lux Freshman Seminars
+
+150
+120 - Race, Inequality, and Public Policy
+
+150
+186 - Equal Rights and Unequal Education
+
+150
+201 - Principles of Microeconomic Theory I
+
+150
+203 - Statistical Methods of Policy Analysis I
+
+150
+211 - Normative Issues in Policy Analysis
+
+150
+212 - Child Welfare Policy
+
+150
+213 - Mental Health Policy
+
+150
+218 - Research Design and Methods for Social Policy
+
+150
+223 - Transportation and Environmental Issues
+
+150
+224A - Introduction to Geographic Information Systems
+
+150
+228 - Leadership, Development, and Governance of Nonprofit Organizations
+
+150
+244 - Transportation Policy and Planning
+
+150
+253 - Lesbian, Gay, Bisexual, and Transgender Law and Public Policy Research
+
+150
+281 - Political Environment of American Business
+
+150
+290 - Special Topics in Public Policy
+
+150
+297C - Public Policy Analysis Lectures
+
+150
+298A - Applied Policy Project I
+
+150
+298B - Applied Policy Project II
+
+150
+298C - Applied Policy Project III
+
+150
+375 - Teaching Apprentice Practicum
+
+152
+10 - Social, Cultural, and Religious Institutions of Judaism
+
+152
+11 - Religions in Los Angeles
+
+152
+40 - Christianities East and West
+
+152
+60W - Introduction to Buddhism
+
+152
+105A - Baha&#39;i Faith in Iran: Historical and Sociological Survey
+
+152
+120 - Abrahamic Religions: Traditions in Tension
+
+152
+140 - Undergraduate Seminar: Study of Religion
+
+152
+161C - Korean Buddhism
+
+152
+177 - Variable Topics in Religion
+
+152
+185D - Religions of Ancient Near East
+
+152
+186C - Jesus of Nazareth in Historical Research
+
+154
+1 - Elementary Russian  
+
+154
+4 - Intermediate Russian  
+
+154
+90B - Russian Civilization in 20th Century
+
+154
+100A - Literacy in Russian
+
+154
+101A - Third-Year Russian: Russia and the West
+
+154
+102A - Topics in Advanced/Superior Russian
+
+154
+103A - Russian for Native and Near-Native Speakers: Russian National Identity
+
+154
+118 - History of Russia, Origins to Rise of Muscovy
+
+154
+124C - Studies in Russian Literature: Chekhov
+
+154
+124N - Studies in Russian Literature: Nabokov
+
+154
+130C - Russian Poetry: Russian Poetry in the 20th Century
+
+154
+213A - 20th-Century Russian Literature, 1890 to 1929
+
+154
+277 - Studies in Russian Literature: Nabokov
+
+154
+293 - Seminar: 20th-Century Russian Literature  
+
+155
+1 - Elementary Swedish  
+
+155
+14 - Intermediate Norwegian  
+
+155
+19 - Fiat Lux Freshman Seminars
+
+155
+50 - Introduction to Scandinavian Literatures and Cultures
+
+155
+50W - Introduction to Scandinavian Literatures and Cultures
+
+155
+132A - Elementary Old Norse
+
+155
+141A - Theory of Scandinavian Novel
+
+155
+141C - Short Story in Scandinavia
+
+155
+143C - Scandinavian Crime Literature
+
+155
+163A - Introduction to Danish Cinema
+
+155
+187FL - Special Studies: Readings in Scandinavian
+
+155
+241A - Theory of Scandinavian Novel
+
+155
+263A - Introduction to Danish Cinema
+
+155
+375 - Teaching Apprentice Practicum
+
+156
+1SL - Classroom Practices in Elementary School Science
+
+156
+10SL - Classroom Practices in Middle School Science
+
+156
+100SL - Classroom Practices in High School Science
+
+157
+141 - Advanced Akkadian  
+
+157
+230 - Seminar: Northwest Semitic Languages and Literatures  
+
+158
+102A - Advanced Serbian/Croatian
+
+158
+187G - Advanced Tutorial Instruction in Serbian/Croatian
+
+158
+187I - Advanced Tutorial Instruction in Serbian/Croatian
+
+159
+40 - Christianities East and West
+
+159
+90 - Introduction to Slavic Civilization  
+
+159
+200A - Literary Proseminar
+
+159
+375 - Teaching Apprentice Practicum
+
+160
+190A - Research Colloquia in Social Thought I
+
+161
+108 - Biomedical, Social, and Policy Frontiers in Human Aging
+
+161
+195 - Community Internships in Social Welfare
+
+161
+201A - Dynamics of Human Behavior
+
+161
+203A - Integrative Seminar
+
+161
+203C - Integrative Seminar
+
+161
+229A - Craft of Social Welfare Scholarship I
+
+161
+230A - Theory of Social Welfare Practice with Individuals, Families, and Groups I
+
+161
+231A - Advanced Theory of Social Welfare Practice with Individuals, Families, and Gr...
+
+161
+231F - Advanced Theory of Social Welfare Practice with Individuals, Families, and Gr...
+
+161
+231P - Advanced Theory of Social Welfare Practice with Individuals, Families, and Gr...
+
+161
+240A - Theory of Social Welfare Practice in Organizations, Communities, and Policy S...
+
+161
+241E - Leadership, Development, and Governance of Nonprofit Organizations
+
+161
+241G - Advanced Theory of Social Welfare Practice in Organizations, Communities, and...
+
+161
+241I - Advanced Theory of Social Welfare Practice in Organizations, Communities, and...
+
+161
+241K - Advanced Theory of Social Welfare Practice in Organizations, Communities, and...
+
+161
+249A - Foundations of Scientific Inquiry I
+
+161
+249B - Foundations of Scientific Inquiry II
+
+161
+258 - Critical Problems in Social Welfare  
+
+161
+280A - Knowledge Acquisition, Evidence-Based Practice, and Research in Social Welfare
+
+161
+281A - Advanced Social Welfare Research  
+
+161
+285D - Research in Child Welfare
+
+161
+286C - Research Internship
+
+161
+290J - Child Welfare Policy
+
+161
+290K - Mental Health Policy
+
+161
+375 - Teaching Apprentice Practicum
+
+161
+401A - Practicum: Social Work
+
+161
+402A - Advanced Practicum: Social Work
+
+162
+5 - Integrative Approaches to Human Biology and Society
+
+162
+105A - Ways of Knowing in Life and Human Sciences
+
+162
+188 - Special Courses in Society and Genetics
+
+162
+193 - Journal Club Seminars: Society and Genetics
+
+162
+375 - Teaching Apprentice Practicum
+
+163
+1 - Introductory Sociology  
+
+163
+19 - Fiat Lux Freshman Seminars
+
+163
+20 - Introduction to Sociological Research Methods
+
+163
+89 - Honors Seminars
+
+163
+101 - Development of Sociological Theory
+
+163
+102 - Contemporary Sociological Theory
+
+163
+111 - Social Networks
+
+163
+113 - Statistical and Computer Methods for Social Research
+
+163
+124A - Conversational Structures I
+
+163
+151 - Comparative Immigration
+
+163
+162 - Sociology of Gender
+
+163
+164 - Politics of Reproduction
+
+163
+172 - Entrepreneurship
+
+163
+174 - Sociology of Family
+
+163
+176 - Sociology of Mass Communication  
+
+163
+180A - Special Topics in Sociology
+
+163
+189 - Advanced Honors Seminars
+
+163
+191DC - CAPPP Washington, DC, Research Seminars
+
+163
+191N - Undergraduate Seminar: Urban and Suburban Sociology
+
+163
+191V - Variable Topics Research Seminars: Sociology
+
+163
+194DC - CAPPP Washington, DC, Research Seminars
+
+163
+195 - Community or Corporate Internships in Sociology
+
+163
+195CE - Community and Corporate Internships in Sociology
+
+163
+195DC - CAPPP Washington, DC, Internships
+
+163
+198A - Honors Research in Sociology
+
+163
+201A - Proseminar: Sociology
+
+163
+202A - Theory and Research in Sociology
+
+163
+204 - Topics in Sociological Theorizing
+
+163
+210A - Intermediate Statistical Methods I
+
+163
+211A - Comparative and Historical Methods: Strategies of Research and Conceptualization
+
+163
+213A - Introduction to Demographic Methods
+
+163
+236A - International Migration
+
+163
+244A - Conversation Analysis I
+
+163
+246 - Sociology of Culture
+
+163
+248 - Selected Topics in Culture and Society
+
+163
+252 - Selected Topics in Sociology of Gender
+
+163
+275 - Contemporary Issues of American Indians
+
+163
+285A - Special Topics in Sociology
+
+163
+285B - Special Topics in Sociology
+
+163
+289A - Practicum in Conversation Analysis: Data Analysis
+
+163
+295 - Working Group in Sociology
+
+163
+297 - Urban and Suburban Sociology
+
+163
+375 - Teaching Apprentice Practicum
+
+163
+495 - Supervised Teaching of Sociology
+
+164
+110A - Elementary Sanskrit
+
+166
+1 - Elementary Spanish
+
+166
+2 - Elementary Spanish
+
+166
+3 - Elementary Spanish
+
+166
+4 - Intermediate Spanish
+
+166
+5 - Intermediate Spanish
+
+166
+11A - Catalan Language and Culture I
+
+166
+25 - Advanced Conversation and Composition
+
+166
+27 - Composition for Spanish Speakers  
+
+166
+42 - Iberian Culture
+
+166
+100B - Introduction to Study of Spanish Grammar: Syntax
+
+166
+119 - Structure of Literary Work
+
+166
+135 - Topics in Early Modern Studies
+
+166
+150 - Topics in Contemporary Studies
+
+166
+155 - Topics in U.S. Latino Studies
+
+166
+160 - Topics in Spanish Linguistics
+
+166
+170 - Topics in Media, Interdisciplinary, and Transhistorical Studies
+
+166
+191C - Senior Capstone Seminar
+
+166
+200 - Research Resources  
+
+166
+201A - Literary Theory and Criticism  
+
+166
+204A - Generative Syntax and Semantics  
+
+166
+229 - Romanticism  
+
+166
+243A - Contemporary Spanish-American Poetry  
+
+166
+244A - Contemporary Spanish-American Novel  
+
+166
+245 - Contemporary Spanish-American Essay  
+
+166
+247 - Chicano Literature  
+
+166
+256A - Studies in Spanish Linguistics  
+
+166
+280A - Studies in Contemporary Spanish-American Literature
+
+166
+290 - Special Topics
+
+166
+291A - Colonial Studies Research Group
+
+166
+375 - Teaching Apprentice Practicum
+
+166
+495 - Teaching Spanish at College Level
+
+167
+10 - Introduction to Statistical Reasoning
+
+167
+13 - Introduction to Statistical Methods for Life and Health Sciences
+
+167
+19 - Fiat Lux Freshman Seminars
+
+167
+100A - Introduction to Probability
+
+167
+100B - Introduction to Mathematical Statistics
+
+167
+101A - Introduction to Design and Analysis of Experiment
+
+167
+102A - Introduction to Computational Statistics with R
+
+167
+112 - Statistical Methods for Social Sciences
+
+167
+130 - Getting Up to Speed with SPSS, Stata, SAS, and R
+
+167
+140SL - Practice of Statistical Consulting
+
+167
+200A - Applied Probability
+
+167
+201A - Research Design, Sampling, and Analysis
+
+167
+202A - Statistics Programming
+
+167
+231 - Pattern Recognition and Machine Learning
+
+167
+243 - Logic, Causation, and Probability
+
+167
+254 - Statistical Methods in Computational Biology
+
+167
+290 - Current Literature in Statistics
+
+167
+296 - Participating Seminar: Statistics
+
+167
+375 - Teaching Apprentice Practicum
+
+168
+99 - Student Research Program
+
+168
+199 - Directed Research in Surgery
+
+169
+1 - Introductory Thai
+
+169
+4 - Intermediate Thai
+
+169
+100A - Advanced Thai
+
+170
+1A - Introduction to Dance for Music Theater
+
+170
+12 - Introduction to Performance  
+
+170
+13 - Play Reading and Analysis
+
+170
+14A - Introduction to Design  
+
+170
+20 - Acting Fundamentals  
+
+170
+25A - Movement and Combat I
+
+170
+27 - From Vaudeville to Standup Comedy
+
+170
+30 - Dramatic Writing
+
+170
+34A - Dance for Musical Theater I
+
+170
+35A - Singing for Musical Theater I
+
+170
+50 - Theater Production
+
+170
+101A - Making Tradition
+
+170
+103C - Origins and Evolution of Chicano Theater  
+
+170
+103D - Contemporary Chicano Theater: Beginning of Chicano Theater Movement
+
+170
+103F - Native American Theater
+
+170
+116A - Acting II
+
+170
+118A - Creative Dramatics
+
+170
+118D - ArtsBridge Teaching Practicum
+
+170
+120A - Acting and Performance in Film
+
+170
+121 - Acting Workshop  
+
+170
+124A - Voice and Speech II
+
+170
+124D - Voice and Speech III
+
+170
+125A - Movement and Combat II
+
+170
+125D - Movement and Combat III
+
+170
+126A - Acting III
+
+170
+131A - Intermediate Playwriting: Play Strategies and Styles
+
+170
+134A - Dance for Musical Theater II
+
+170
+134D - Dance for Musical Theater III
+
+170
+135A - Singing for Musical Theater II
+
+170
+135D - Singing for Musical Theater III
+
+170
+136 - Advanced Acting for Stage
+
+170
+146A - Art and Process of Entertainment Design
+
+170
+147A - Drafting  
+
+170
+149 - Introduction to Design
+
+170
+150 - Theater Production and Performance  
+
+170
+152A - Lighting Design  
+
+170
+153A - Costume Design  
+
+170
+154A - Sound Design
+
+170
+154C - Sound for Film and Television
+
+170
+155A - Graphic Representation of Design: Perspective Drawing
+
+170
+157A - Costume Construction Techniques
+
+170
+174B - Project in Stage Management  
+
+170
+174C - Project in Stage Management  
+
+170
+180 - Senior Project  
+
+170
+195 - Community or Corporate Internships in Theater, Film, and Television
+
+170
+210 - Topics in World Theater and Drama  
+
+170
+220 - Graduate Forum  
+
+170
+230A - Writing for Contemporary Theater: One-Act Play
+
+170
+231 - Special Topics in Playwriting
+
+170
+243A - Scenic Design  
+
+170
+260 - Directing I  
+
+170
+266 - Theatrical Conceptualization  
+
+170
+272 - Production Practice in Theater, Film, Video, and Digital Media
+
+170
+298A - Special Studies in Theater Arts
+
+170
+375 - Teaching Apprentice Practicum
+
+170
+422 - Advanced Acting for Theater, Film, and Television
+
+170
+424G - Advanced Voice and Speech III
+
+170
+425G - Advanced Movement III
+
+170
+430A - Advanced Studies in Playwriting  
+
+170
+433C - Script Development Workshop  
+
+170
+435AF - Problems in Advanced Writing for Stage
+
+170
+441A - Lighting Design  
+
+170
+442A - Costume Design  
+
+170
+446A - Art and Process of Entertainment Design
+
+170
+452A - Lighting Design  
+
+170
+453A - Costume Design  
+
+170
+454A - Sound Design
+
+170
+454C - Sound for Film and Television
+
+170
+455A - Graphic Representation of Design: Perspective Drawing
+
+170
+457A - Costume Construction Techniques
+
+170
+460AF - Contemporary Issues in Direction
+
+170
+472 - Production Practice in Theater, Film, Video, and Digital Media
+
+170
+474 - Advanced Projects in Design and Production
+
+170
+498 - Professional Internship in Theater, Film, and Television  
+
+171
+101A - Elementary Turkish  
+
+171
+102A - Advanced Turkish
+
+172
+187G - Advanced Tutorial Instruction in Ukrainian
+
+172
+187I - Advanced Tutorial Instruction in Ukrainian
+
+173
+19 - Fiat Lux Freshman Seminars
+
+173
+121 - Urban Policy and Planning
+
+173
+141 - Planning for Minority Communities  
+
+173
+160 - Environmental Politics and Governance
+
+173
+203B - Seminar: Housing Segregation, Housing Discrimination, and Evolution of Public...
+
+173
+204 - Research Design and Methods for Social Policy
+
+173
+205A - M.U.R.P. Comprehensive Examination: Applied Planning Research Project I
+
+173
+206A - Introduction to Geographic Information Systems
+
+173
+207 - Applied Microeconomics for Urban Planning
+
+173
+208A - Colloquium in Planning Research
+
+173
+208C - Advanced Research Design
+
+173
+218 - Graphics and Urban Information  
+
+173
+219 - Special Topics in Built Environment
+
+173
+220A - Quantitative Analysis in Urban Planning I
+
+173
+222A - Introduction to Planning History and Theory
+
+173
+229 - Special Topics in Planning Methods
+
+173
+235A - Urbanization in Developing World
+
+173
+237A - Sectoral Analysis
+
+173
+239 - Special Topics in Regional and International Development
+
+173
+249 - Special Topics in Transportation Policy and Planning
+
+173
+254 - Bicycle and Pedestrian Planning
+
+173
+255 - Transportation Policy and Planning
+
+173
+258 - Transportation and Environmental Issues
+
+173
+269 - Special Topics in Environmental Analysis and Policy
+
+173
+271 - Community Economic Development
+
+173
+273 - Site Planning  
+
+173
+280 - Affordable Housing Development
+
+173
+288 - Leadership, Development, and Governance of Nonprofit Organizations
+
+173
+375 - Teaching Apprentice Practicum
+
+173
+496 - Field Projects
+
+175
+1 - Introductory Vietnamese
+
+175
+1A - Introductory Vietnamese for Heritage Learners
+
+175
+4 - Intermediate Vietnamese
+
+175
+100A - Advanced Vietnamese
+
+176
+1 - Introduction to World Arts and Cultures
+
+176
+5 - Beginning Global and Transcultural Forms
+
+176
+23 - Introduction to American Indian Studies
+
+176
+51W - Aliens, Psychics, and Ghosts
+
+176
+70 - Production Practicum
+
+176
+78 - Private Instruction in World Arts and Cultures
+
+176
+85 - Sophomore-Year Proposal
+
+176
+100B - Art as Moral Action
+
+176
+114 - Performance Practicum
+
+176
+125A - Beyond Mexican Mural: Beginning Muralism and Community Development
+
+176
+126 - Whose Monument Where: Course on Public Art
+
+176
+144 - Make Art/Stop AIDS
+
+176
+160 - Performing Sexual Health: UCLA Sex Squad
+
+176
+170 - Advanced Production
+
+176
+174A - Projects in World Arts and Cultures
+
+176
+178 - Advanced Private Instruction in World Arts and Cultures
+
+176
+180 - Variable Topics in Video Production/Practice
+
+176
+200 - Theories of Culture
+
+176
+204 - Theories of Corporeality
+
+176
+220 - Seminar: Culture and Performance
+
+176
+280 - Variable Topics in Video Production/Practice
+
+176
+375 - Teaching Apprentice Practicum
+
+176
+451 - Teaching Assistant Seminar
+
+176
+478 - Advanced Private Instruction in World Arts and Cultures
+
+177
+101A - Elementary Yiddish  
+
+177
+121C - Special Topics in Yiddish Literature in English Translation  
+
