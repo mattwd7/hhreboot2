@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
+  
+  before_filter :authenticate_user!
+  
   def index
     @users = User.all
 
@@ -33,8 +36,13 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1/edit
-  def edit
-    @user = User.find(params[:id])
+  def modify_profile
+    current_user.update_attributes(:building_id => params[:user][:building_id], :major => params[:user][:major], :major2 => params[:user][:major2], :minor => params[:user][:minor], :minor2 => params[:user][:minor2], :year => params[:user][:year], :about_me => params[:about_me])
+
+    respond_to do |format|
+      format.html {redirect_to user_profile_path(:user => current_user.id)}
+      format.js
+    end
   end
 
   # POST /users
@@ -80,4 +88,62 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def profile
+  if params[:user]
+    @user = User.find(params[:user])
+    @topics = @user.topics(:order => "created_at DESC")
+    @posts = @user.posts.order("created_at DESC")
+  else
+    @user = current_user
+  end
+  
+  respond_to do |format|
+    format.html
+  end
+  end
+  
+  def classmates
+  @my_courses = current_user.courses.where("quarters.term='Fall 2012'")
+  @classmates = []
+  @course = Course.find(params[:course])
+  relevent_quarters = Quarter.where(:term => "Fall 2012")
+  relevent_quarters.each do |q|
+    q.courses.each do |c|
+      if @course.id == c.id
+        unless q.user == current_user
+          @classmates << q.user
+        end
+      end
+    end
+  end
+  
+  respond_to do |format|
+    format.html
+  end
+  end
+
+  def alt_profile
+    if params[:user]
+      @user = User.find(params[:user])
+      @topics = @user.topics(:order => "created_at DESC")
+      @posts = @user.posts.order("created_at DESC")
+    else
+      @user = current_user
+    end
+      @quarters = @user.quarters
+      @this_quarter = @quarters.where(:term => "Fall 2012").first
+    
+    respond_to do |format|
+      format.html
+    end
+  end
+
+  def add_major_minors
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
+  
 end
