@@ -1,0 +1,35 @@
+<div id="classes_wrapper">
+
+<body class="main">
+	<span id="quarter">
+		Fall 2012
+	</span>
+	
+	<div id="classes">
+		<table>
+			<col width="800" />
+			<col width="" />
+				<%= render :partial => "my_courses" %>
+		</table>
+	</div>
+	
+	<div>
+		<span><button id="show_fields">Add Classes</button></span>
+		<span>Change Quarter</span>
+		<span><%= link_to "Back", :back %></span>
+	</div>
+	
+	<div class="hidden_element" id="errors">
+		You are already enrolled in that class!
+	</div>
+
+	<div id="selections">
+		<%= form_tag(add_course_to_quarter_path, :remote => true) do %>
+			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+			<%= collection_select(:new_class, :course, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+			<%= submit_tag("Add") %>
+		<% end %>
+	</div>
+</body>
+
+</div>

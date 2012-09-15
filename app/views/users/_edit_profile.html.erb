@@ -1,0 +1,38 @@
+<%= form_tag modify_profile_path do |f| %>
+ 
+  <div>
+  Building:</br>
+  <%= collection_select(:user, :building_id, Building.all, :id, :name) %>
+  </div></br>
+  
+  <div>
+  Major:</br>
+  <%= collection_select(:user, :major, Field.all, :title, :title) %></br>
+  <%= link_to "Add additional major or minors...", add_major_minors_path, :remote => true, :class => "add_major_minors" %>
+  </div>
+
+  <div id="major_minors", style="display:none;">
+    Major 2:</br>
+    <%= collection_select(:user, :major2, Field.all, :title, :title, {:include_blank => "Select if applicable"}) %></br>
+    Minor:</br>
+    <%= collection_select(:user, :minor, Field.all, :title, :title, {:include_blank => "Select if applicable"}) %></br>
+    Minor 2:</br>
+    <%= collection_select(:user, :minor2, Field.all, :title, :title, {:include_blank => "Select if applicable"}) %></br>
+  </div>
+  
+  <div>
+  Year:</br>
+  <%= select(:user, :year, [1, 2, 3, 4, 5, 6]) %>
+  </div>
+
+  <div>
+    About Me:</br>
+    <%= text_area_tag "about_me", current_user.about_me %>
+  </div>
+  </br>
+
+  <span><%= submit_tag "Update" %></span>
+
+<% end %>
+
+<span id="cancel_edit"><%= button_tag "Back" %></span>

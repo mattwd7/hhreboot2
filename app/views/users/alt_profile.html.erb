@@ -1,0 +1,108 @@
+<div id="profile_wrapper">
+
+<body class="main">
+	<span class="profile_title">User: <%= @user.username %></span>
+	<% if @user != current_user %>
+		<% if current_user.friends.include?(@user) %>
+			<span>Friended.</span></br>
+		<% else %>
+			<span id="friend_link"><%= link_to "Add as friend", add_friend_path(:friend_id => @user.id), :remote => true %></span></br>
+		<% end %>
+	<% else %>
+		</br>
+	<% end %>
+
+	<div class="user_information">
+		<div id="display_information">
+			<div>Building:
+				<div class="info"><%= @user.building.name %></div>
+			</div>
+			<div>Area of Study:
+				<div class="info">Majoring in <%= @user.major %>
+			
+				<% if @user.major2 && @user.major.size > 0%>
+					<em>and</em> <%= @user.major2 %></div>
+				<% else %>
+					</div>
+				<% end %>
+				<% if @user.minor && @user.minor2 && @user.minor.size > 0 && @user.minor2.size > 0 %>
+					<div class="info">Minoring in <%= @user.minor %> <em>and</em> <%= @user.minor2 %></div>
+				<% elsif @user.minor && @user.minor.size > 0%>
+						<div class="info">Minoring in <%= @user.minor %></div>
+				<% end %>
+				
+			</div>
+
+				
+
+			<div>Year:
+				<div class="info"><%= @user.year %></div>
+			</div>
+			<div>Hill Hero since:
+				<div class="info"><%= @user.created_at.strftime("%B #{@user.created_at.day.ordinalize}, %Y") %></div>
+			</div>
+			<div>About Me:</div>
+				<div class="info"><%= @user.about_me %></div>
+			<% if @user == current_user %>
+				<div class="profile_link"><%= link_to "Edit Information", modify_profile_path, :id => "edit_information_link", :remote => true %></div>
+			<% end %>
+		</div>
+
+		<div id="edit_information" style="display:none;">
+			<%= render :partial => "edit_profile" %>
+		</div>
+
+	</div>
+
+	<div class="tabbed-menu">
+
+		<div class="content">
+
+			<!-- FORUM ACTIVITY -->
+
+			<div class="page" id="page1" style="display:block;">
+				<div style="text-align:right">Hottest Topics</div>
+				<hr>
+				<% @topics.each do |t| %>
+					<%= link_to t.subject, forem.forum_topic_path(t.forum.id, t) %> in <%= t.forum.title %></br>
+				<% end %>
+			</br></br>
+				<div style="text-align:right">Recent Posts</div>
+				<hr>
+				<% @posts.each do |p| %>
+					<%= link_to "#{p.text[0..35]}...", forem.forum_topic_path(p.topic.forum.id, p.topic) %> in <%= p.topic.forum.title %> <%= time_ago_in_words(p.created_at) %> ago</br>
+				<% end %>
+			</div>
+
+			<!-- CLASSES -->
+
+			<div class="page" id="page2" style="display:none;">
+				<div style="font-size:30pt; font-weight:bold; text-align:right; margin:15px 5px 0 0;"><%= @this_quarter.term %></div>
+			</br>
+				<hr>
+				<% @this_quarter.courses.each do |c| %>
+					<%= c.field.abbr %> <%= c.title %></br>
+				<% end %>
+
+				<% if @user == current_user %>
+					<div class="profile_link" id="manage_classes">
+						<%= link_to "Manage Classes", manage_classes_path %>
+					</div>
+					<div class="profile_link" id="manage_textbooks">
+						<%= link_to "Manage Textbooks", manage_textbooks_path %>
+					</div>
+				<% end %>
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+	<ul class="tabs">
+		<li id="page1" class="selected">Forum Activity</li>
+		<li id="page2">Classes</li>
+	</ul>
+
+</body>
+

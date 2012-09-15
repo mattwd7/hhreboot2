@@ -1,0 +1,107 @@
+<% if @user == current_user %>
+
+	<h1>User Profile: <%= @user.username %></h1>
+	
+	Residence: 
+	<% if @user.building %>
+		<%= link_to @user.building.name, building_page_path(:building => @user.building.id) %></br>
+	<% else %>
+		</br>
+	<% end %>
+	Year: <%= @user.year %></br>
+	Major: <%= @user.major %></br>
+	<%= link_to "Edit account information", main_app.edit_user_registration_path %>
+
+	<h2>Classes</h2>
+
+	<% if @user.quarters.empty? %>
+		You haven't added your classes!
+	<% else %>
+		<% @user.quarters.each do |qtr| %></br>
+			<%= qtr.term %>
+			<hr>
+			<table align="center">
+			<col width="800" />
+			<col width="400" />
+				<% qtr.courses.each do |crs| %>
+					<tr><td><%= crs.field.abbr %> <%= crs.title  %></td>
+					<% if qtr.term == "Fall 2012" %>
+						<td><%= link_to "Classmates", classmates_path(:course => crs.id) %>
+						| <%= link_to "Textbooks", find_books_path(:book => crs.id) %></td></tr>
+					<% else %>
+						<td></td></tr>
+					<% end %>
+				<% end %>
+			</table>
+			<hr>
+			<div align="right"><%= link_to "Remove Quarter", destroy_quarter_path(:id => qtr.id) %></div>
+		<% end %>
+	<% end %>
+	</br><%= link_to "Manage Classes", manage_classes_path %>
+	
+	<h2>Forum Activity</h2>
+	
+	Topics
+	<hr>
+	<% @topics.each do |t| %>
+		<%= link_to t.subject, forem.forum_topic_path(t.forum.id, t) %> in <%= t.forum.title %></br>
+	<% end %>
+	<hr>
+	Posts
+	<hr>
+	<% @posts.each do |p| %>
+		<%= link_to "#{p.text[0..35]}...", forem.forum_topic_path(p.topic.forum.id, p.topic) %> in <%= p.topic.forum.title %> <%= time_ago_in_words(p.created_at) %> ago</br>
+	<% end %>
+	<hr>
+
+<% else %>
+
+	<h1>User Profile: <%= @user.username %></h1>
+
+	<% if @user.building %>
+		<%= link_to @user.building.name, building_page_path(:building => @user.building.id) %></br>
+	<% else %>
+		</br>
+	<% end %>
+	Year: <%= @user.year %></br>
+	Major: <%= @user.major %></br>
+	Send <%= @user.username %> a <%= link_to "message!", new_message_path(:recipient => @user.id) %></br>
+	Add <%= @user.username %> as a <%= link_to "friend!", friendships_path(:friend_id => @user.id), :method => :post %></br>
+
+	<h2>Classes</h2>
+
+	<% if @user.quarters.empty? %>
+		<%= @user.username %> hasn't added any classes!
+	<% else %>
+		<% @user.quarters.each do |qtr| %></br>
+			<%= qtr.term %>
+			<hr>
+			<table align="center">
+			<col width="800" />
+			<col width="400" />
+				<% qtr.courses.each do |crs| %>
+					<tr><td><%= crs.field.abbr %> <%= crs.title  %></td>
+					<td><%= link_to "Classmates", classmates_path(:course => crs.id) %>
+					| <%= link_to "Books" %></td>
+				<% end %>
+			</table>
+			<hr>
+		<% end %>
+	<% end %>
+	
+	<h2>Forum Activity</h2>
+	
+	Topics
+	<hr>
+	<% @user.topics.each do |t| %>
+		<%= link_to t.subject, forem.forum_topic_path(t.forum.id, t) %> in <%= t.forum.title %></br>
+	<% end %>
+	<hr>
+	Posts
+	<hr>
+	<% @user.posts.each do |p| %>
+		<%= link_to "#{p.text[0..35]}...", forem.forum_topic_path(p.topic.forum.id, p.topic) %> in <%= p.topic.forum.title %> <%= time_ago_in_words(p.created_at) %> ago</br>
+	<% end %>
+	<hr>
+
+<% end %>

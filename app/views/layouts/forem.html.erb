@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HHeroes</title>
+  <%= stylesheet_link_tag    "style" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</head>
+<body>
+
+<header>
+    <nav>
+        <% if user_signed_in? %>
+            <div align="right">
+			<%= link_to "Home", main_app.homepage_path %>
+			| <%= link_to "Profile", main_app.alt_profile_path(:user => current_user.id) %>
+			| <%= link_to "Friends", main_app.friendships_path %>
+			<% if current_user.new_messages == false %>
+				| <%= link_to(image_tag('mail.gif', :size => "20x16"), main_app.my_messages_path) %>
+			<% else %>
+				| <%= link_to(image_tag('new_mail.gif', :size => "20x16"), main_app.my_messages_path) %>
+			<% end %>
+            | <b><%= current_user.username %></b>
+			(<%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>)
+            <% if current_user.forem_admin %>
+                | <%= link_to "Administrate", forem.admin_root_url %></div>
+            <% end %>
+        <% else %>
+            <div align="right"><%= link_to "Sign in", main_app.new_user_session_path %>
+			| <%= link_to "Sign up", main_app.new_user_registration_path %></div>
+        <% end %>
+    </nav>
+</header></br>
+
+<%= yield %>
+
+</body>
+</html>

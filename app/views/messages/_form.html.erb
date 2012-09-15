@@ -1,0 +1,22 @@
+<%= form_tag create_message_path do %>
+	 
+	Subject: </br>
+	<% if @reply %>
+		<%= text_field_tag :subject, "#{@reply}" %></br></br>
+	<% elsif @subject %>
+		<%= text_field_tag :subject, @subject %></br></br>
+	<% else %>
+		<%= text_field_tag :subject %></br></br>
+	<% end %>
+	
+	Message Body: </br>
+	<% if @template %>
+		<%= text_area_tag :text, "#{render :partial => @template}", :size => "30x20" %></br></br>
+	<% else %>
+		<%= text_area_tag :text, "", :size => "30x20" %></br></br>
+	<% end %>
+	<%= hidden_field_tag :recipient_id, params[:recipient] %>
+	<%= hidden_field_tag :return_url, params[:return_url] %>
+	<%= submit_tag("Send") %></br>
+
+<% end %>

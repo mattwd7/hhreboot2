@@ -1,0 +1,8 @@
+<% field = Field.find(params[:field]) %>
+Field ID = <%= field.id %>
+<h1><%= link_to "ADD COURSES", input_course_data_path(:f_id => field.id) %></h1>
+<h2>Choose a <%= field.abbr %> course to add:</h2>
+
+<% field.courses.each do |t| %>
+	<%= link_to t.title, add_course_to_quarter_path(:crs_id => t.id, :qtr_id => params[:qtr_id]) %></br>
+<% end %>

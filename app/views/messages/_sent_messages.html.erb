@@ -1,0 +1,27 @@
+<% if @sent_messages.count > 0 %>
+
+	<table align="center">
+		<col width="100" />
+		<col width="300" />
+		<col width="150" />
+		<col width="50" />
+			<tr>
+				<th>To</th>
+				<th>Subject</th>
+				<th>Sent</th>
+				<th></th>
+			</tr>
+
+		<%= content_tag_for(:tr, @sent_messages) do |m| %>
+			<% @recipient = User.find(m.recipient_id) %>
+			<td><%= link_to @recipient.username, user_profile_path(:user => @recipient.id) %></td>
+			<td class="subject"><%= link_to m.subject, view_message_path(:msg_id => m.id) %></td>
+			<td><%= time_ago_in_words(m.created_at) %> ago</td>
+		<% end %>
+	</table>
+
+<% else %>
+
+	<div class="empty_statement">You have no sent messages!</div>
+
+<% end %>
