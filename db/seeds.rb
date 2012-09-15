@@ -12,6 +12,13 @@ File.open("db_fields.txt", "r") do |infile|
 		Field.create(:title => line)
 	end
 end
+File.open("db_abbrs.txt", "r") do |infile|
+	f_id = 1
+	while (line = infile.gets)
+		Field.find(f_id).update_attributes(:abbr => line)
+		f_id = f_id + 1;
+	end
+end
 
 Course.delete_all
 File.open("db_courses.txt", "r") do |infile|
