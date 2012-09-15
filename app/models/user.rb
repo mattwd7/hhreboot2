@@ -22,4 +22,8 @@ class User < ActiveRecord::Base
   
   validates :username, :presence => true, :uniqueness => true
   validates :email, :presence => true, :uniqueness => true#, :format => {:with => /^([^@\s]+)@ucla.edu$/i}
+
+  def to_s
+    username
+  end
 end
