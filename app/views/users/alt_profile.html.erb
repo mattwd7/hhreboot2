@@ -14,9 +14,11 @@
 
 	<div class="user_information">
 		<div id="display_information">
-			<div>Building:
-				<div class="info"><%= @user.building.name %></div>
-			</div>
+			<% if @user.building %>
+				<div>Building:
+					<div class="info"><%= @user.building.name %></div>
+				</div>
+			<% end %>
 			<div>Area of Study:
 				<div class="info">Majoring in <%= @user.major %>
 			
