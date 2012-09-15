@@ -13,7 +13,7 @@ File.open("db_fields.txt", "r") do |infile|
 	end
 end
 File.open("db_abbrs.txt", "r") do |infile|
-	f_id = 1
+	f_id = Field.first.id
 	while (line = infile.gets)
 		Field.find(f_id).update_attributes(:abbr => line)
 		f_id = f_id + 1;
