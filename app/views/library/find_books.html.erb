@@ -9,7 +9,7 @@
 	<h4>My <%= @current_term %> classes</h4>
 
 	<div id="my_classes">
-		<% if @my_classes.size == 0 %>
+		<% if !@my_classes || @my_classes.size == 0 %>
 			You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
 		<% else %>
 			<% @my_classes.each do |c| %>
