@@ -29,7 +29,7 @@ File.open("db_courses.txt", "r") do |infile|
 			every_three = every_three + 1
 		else
 			every_three = 1
-			f_id = line + first_id - 1
+			f_id = integer(line) + first_id - 1
 			next
 		end
 		if every_three == 3
