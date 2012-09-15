@@ -14,11 +14,12 @@
 
 	<div class="user_information">
 		<div id="display_information">
-			<% if @user.building %>
-				<div>Building:
+			
+			<div>Building:
+				<% if @user.building %>
 					<div class="info"><%= @user.building.name %></div>
-				</div>
-			<% end %>
+				<% end %>
+			</div>			
 			<div>Area of Study:
 				<div class="info">Majoring in <%= @user.major %>
 			
