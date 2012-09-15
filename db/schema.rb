@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120914182658) do
+ActiveRecord::Schema.define(:version => 20120915191311) do
 
   create_table "buildings", :force => true do |t|
     t.string  "name"
@@ -19,7 +19,8 @@ ActiveRecord::Schema.define(:version => 20120914182658) do
   end
 
   create_table "courses", :force => true do |t|
-    t.string "title"
+    t.string  "title"
+    t.integer "field_id"
   end
 
   create_table "courses_quarters", :id => false, :force => true do |t|
@@ -192,6 +193,7 @@ ActiveRecord::Schema.define(:version => 20120914182658) do
     t.string   "minor"
     t.string   "minor2"
     t.text     "about_me"
+    t.integer  "building_id"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true

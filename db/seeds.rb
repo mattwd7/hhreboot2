@@ -6,12 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Field.delete_all
 File.open("db_fields.txt", "r") do |infile|
 	while (line = infile.gets)
 		Field.create(:title => line)
 	end
 end
 
+Course.delete_all
 File.open("db_courses.txt", "r") do |infile|
 	every_three = 3
 	while (line = infile.gets)
@@ -26,7 +28,7 @@ File.open("db_courses.txt", "r") do |infile|
 			next
 		end
 
-		Course.create(:field_id => f_id, :title => line)
+		Course.create(:title => line, :field_id => f_id)
 
 	end
 end
