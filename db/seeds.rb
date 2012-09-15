@@ -21,6 +21,7 @@ File.open("db_abbrs.txt", "r") do |infile|
 end
 
 Course.delete_all
+first_id = Field.first.id
 File.open("db_courses.txt", "r") do |infile|
 	every_three = 3
 	while (line = infile.gets)
@@ -28,7 +29,7 @@ File.open("db_courses.txt", "r") do |infile|
 			every_three = every_three + 1
 		else
 			every_three = 1
-			f_id = line + Field.first.id - 1
+			f_id = line + first_id - 1
 			next
 		end
 		if every_three == 3
