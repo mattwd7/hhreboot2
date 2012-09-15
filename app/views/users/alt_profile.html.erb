@@ -77,11 +77,13 @@
 			<!-- CLASSES -->
 
 			<div class="page" id="page2" style="display:none;">
-				<div style="font-size:30pt; font-weight:bold; text-align:right; margin:15px 5px 0 0;"><%= @this_quarter.term %></div>
-			</br>
-				<hr>
-				<% @this_quarter.courses.each do |c| %>
-					<%= c.field.abbr %> <%= c.title %></br>
+				<% if @this_quarter %>
+					<div style="font-size:30pt; font-weight:bold; text-align:right; margin:15px 5px 0 0;"><%= @this_quarter.term %></div>
+					</br>
+					<hr>
+					<% @this_quarter.courses.each do |c| %>
+						<%= c.field.abbr %> <%= c.title %></br>
+					<% end %>
 				<% end %>
 
 				<% if @user == current_user %>
