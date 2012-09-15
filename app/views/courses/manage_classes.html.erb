@@ -2,15 +2,19 @@
 
 <body class="main">
 	<span id="quarter">
-		Fall 2012
+		<%= @current_term %>
 	</span>
 	
 	<div id="classes">
-		<table>
-			<col width="800" />
-			<col width="" />
-				<%= render :partial => "my_courses" %>
-		</table>
+		<% if @my_courses %>
+			<table>
+				<col width="800" />
+				<col width="" />
+					<%= render :partial => "my_courses" %>
+			</table>
+		<% else %>
+			<div style="text-align: center;">You haven't established your classes for this quarter!</div>
+		<% end %>
 	</div>
 	
 	<div>

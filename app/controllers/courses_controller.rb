@@ -124,7 +124,7 @@ class CoursesController < ApplicationController
   end
 
   def manage_classes
-    if current_user.quarters.where(:term => "Fall 2012")
+    if current_user.quarters.where(:term => "Fall 2012").first
       @my_courses = current_user.quarters.where(:term => "Fall 2012").first.courses
     end
     @fields = Field.all
