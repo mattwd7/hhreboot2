@@ -11,5 +11,3 @@
  *= require_self
  *= require_directory .
 */
-
-*= require "forem/base/style"
