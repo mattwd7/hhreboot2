@@ -1,0 +1,72 @@
+#messages_wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+#messages_title{
+	color:#FFB000;
+	font-size: 40px;
+	font-family: Helvetica;
+	border-radius:5px 5px 0px 0px;
+	padding:1px 10px 1px 10px;
+	margin: 0 0 20px 0;
+}
+ul.my_messages_tabs {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    line-height: 26px;
+    color: black;
+    margin-bottom: -5px
+}
+ul.my_messages_tabs li{
+    margin-bottom: -1px;
+    padding: 3px 10px 0 10px;
+    border: 1px solid black;
+    border-bottom: none;
+    background: #FFF;
+    width: 200px;
+
+    display: inline-block;
+
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px;
+}
+ul.my_messages_tabs li.selected {
+    background: #DDD;
+    border-bottom-color: transparent;
+
+}
+/* This defines how a tab looks when your mouse hovers above it */
+ul.my_messages_tabs li:hover {
+    cursor: pointer;
+    background: #DDD;
+}
+.messages_content{
+	background: #ddd;
+	border-radius:5px 5px 5px 5px;
+	padding:10px 10px 10px 10px;
+	margin:5px 0 10px 0;
+	color:black;
+}
+.page table{
+	border-spacing: 20px;
+	width: 700px;
+}
+.page table a{
+	text-decoration: none;
+}
+.page table td{
+	text-align: center;
+}
+.page table td.subject{
+	text-align: left;
+}
+.page table td.subject a{
+	text-decoration: underline;
+}
+.empty_statement{
+	text-align: center;
+}
+.unread_message{
+	font-weight: bold;
+}

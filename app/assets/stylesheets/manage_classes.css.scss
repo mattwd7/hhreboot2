@@ -1,0 +1,44 @@
+#classes_wrapper{
+	margin: 0 auto;
+	width: 800px;
+	min-height: 300px;
+	margin-top: 30px;
+}
+
+button {
+	color:black;
+	border-radius:5px;
+}
+li {
+	list-style: none;
+}
+select{
+	width:340px;
+}
+.main {
+	background:#536895;
+}
+
+#quarter{
+	color:#FFB000;
+	font-size: 40px;
+	font-family: Helvetica;
+	background:#444;
+	border-radius:5px 5px 0px 0px;
+	padding:1px 10px 1px 10px;
+	margin-bottom: 10px;
+
+}
+#classes{
+	background: #CCCCCC;
+	border-radius:0px 5px 5px 5px;
+	padding:10px 10px 10px 10px;
+	margin:5px 0 10px 0;
+	color:black;
+	&:hover{
+		box-shadow: 0 0 5px yellow;
+	}
+}
+#show_fields{
+	margin-bottom: 10px;
+}

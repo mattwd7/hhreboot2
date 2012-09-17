@@ -1,0 +1,30 @@
+#about_wrapper{
+	margin-right: 15%;
+	margin-left: 15%;
+	background: #ddd;
+	padding: 5px 20px;
+	border-radius: 5px;
+	p {
+		text-indent: 50px;
+		font-family: Helvetica;
+	    font-size: 12pt;
+	    line-height: 125%;
+	    padding: 0 30px;
+	    text-align: justify;
+	}
+	a {
+		color: blue;
+	}
+	li {
+		padding: 0 30px;
+		list-style-type: circle;
+	}
+}
+
+#ending{
+	text-align: right;
+	font-family: Helvetica;
+    font-size: 12pt;
+    line-height: 125%;
+    padding: 0 30px;
+}

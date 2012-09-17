@@ -1,0 +1,121 @@
+#homepage_wrapper{
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+#background_image{
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	position: absolute;
+	top:-50px;
+	right: -150px;
+	z-index: -1;
+}
+
+.title{
+	font-family: Helvetica;
+	font-size: 50pt;
+	margin-bottom:10px;
+	color: #ffb000;
+}
+.subtitle{
+	font-size: 14pt;
+	color:black;
+	font-family: arial;
+	font-style: italic;
+}
+#navigation{
+	background: #555;
+	width: 96%;
+	font-size: 16pt;
+	align: left;
+	padding: 10px;
+	border: 2px solid black;
+	color: black;
+	opacity: 0.8;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	position: relative;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, rgb(68,68,68)),
+		color-stop(0.50, rgb(85,85,85))
+	);
+}
+#navigation a {
+	text-decoration: none;
+	&:hover{
+	    outline:none;
+	    text-shadow:0 0 7px #ffb000;
+	    transition: all 0.25s ease-in-out;
+	    -webkit-transition: all 0.25s ease-in-out;
+	    -moz-transition: all 0.25s ease-in-out;
+  	};
+}
+.left{
+	background:#DDD;
+	width:60%;
+	opacity: 0.8;
+	min-height:600px;
+	float:left;
+	
+	/*border-radius: 5px;
+	border: 1px solid black;
+	&:hover{
+		-moz-box-shadow:    inset 0 0 10px #000000;
+		-webkit-box-shadow: inset 0 0 10px #000000;
+		box-shadow:         inset 0 0 10px #000000;
+	}*/
+	
+}
+#accordion #height{
+	height: 325px;
+	position: relative;
+}
+#accordion #top{
+	margin-top: 0px;
+}
+#accordion #height img{
+	position: absolute;
+	left: -15px;
+	top: -25px;
+}
+.right{
+	background:#DDD;
+	opacity: 0.8;
+	width:32%;
+	min-height:600px;
+	float: left;
+	margin-left: 20px;
+	padding: 5px 15px;
+	/*border-radius: 5px;
+	border: 1px solid black;
+		&:hover{
+		-moz-box-shadow:    inset 0 0 10px #000000;
+		-webkit-box-shadow: inset 0 0 10px #000000;
+		box-shadow:         inset 0 0 10px #000000;
+	}*/
+}
+.right_widget{
+	margin: 10px 0;
+	border: 1px solid black;
+}
+.right_widget #title{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, rgb(68,68,68)),
+		color-stop(0.50, rgb(85,85,85))
+	);
+
+}
+#top_posters tr{
+	text-align: center;
+}

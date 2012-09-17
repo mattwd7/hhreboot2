@@ -1,0 +1,48 @@
+#roadmap_wrapper{
+	margin: 0 20%;
+	background: #ccc;
+	padding: 5px 20px;
+	border-radius: 5px;
+	&:hover{
+		-moz-box-shadow:    inset 0 0 10px #000000;
+		-webkit-box-shadow: inset 0 0 10px #000000;
+		box-shadow:         inset 0 0 10px #000000;
+	}
+	p{
+		text-indent: 50px;
+		margin-left: 50px;
+	}
+	h3{
+		margin-top: 30px;
+	}
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		};
+	}
+	li{
+		text-align: justify;
+	}
+}
+#sublist{
+	text-indent: 25px;
+}
+#green{
+	color: green;
+	font-weight: bold;
+}
+#yellow{
+	color: #ffbb00;
+	font-weight: bold;
+}
+#red{
+	color: red;
+	font-weight: bold;
+}
+.thumbs{
+	text-align: justify;
+}
+#NOT li{
+	list-style-type: decimal;
+}
