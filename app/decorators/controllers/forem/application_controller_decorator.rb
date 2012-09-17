@@ -1,5 +1,6 @@
 Forem::ApplicationController.class_eval do
 
-  layout "Forem"
+	protected
+	layout "forem"
 
  end
