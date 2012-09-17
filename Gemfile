@@ -26,6 +26,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'forem', :git => "git://github.com/radar/forem.git"
 gem 'kaminari'
+gem 'forem-theme-twist', :git => "git://github.com/radar/forem-theme-twist.git"
 
 group :production do
 	gem 'pg', '0.12.2'
