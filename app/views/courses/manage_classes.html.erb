@@ -18,16 +18,17 @@
 	</div>
 	
 	<div>
-		<span><button id="show_fields">Add Classes</button></span>
+		<span><%= link_to "Back", :back %></span>
 		
 		<%= form_tag(manage_classes_path) do %>
 			<span><%= collection_select(nil, :qtr_id, current_user.quarters, :id, :term, {:prompt => "View Another Quarter..."}) %></span>
 			<span><%= submit_tag("Go") %></span>
 		<% end %>
 
-		<span><%= link_to "Back", :back %></span>
 	</div>
 	
+	<span><button id="show_fields">Add Classes</button></span>
+
 	<div class="hidden_element" id="errors">
 		You are already enrolled in that class!
 	</div>
