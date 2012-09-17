@@ -1,4 +1,4 @@
-$default-text: #000;
+$default-text: #444;
 $lighter-text: #888;
 $bar1-midbg: #222;
 $bar1-bottombg: #222;
@@ -10,18 +10,13 @@ $visited-text: black;
 body{
   font: 12pt Helvetica;
   color: $default-text;
-  margin-left: 15%;
-  margin-right: 15%;
-  background: #536895;
-}
-
-header{
-  margin-right: -20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: #ddd;
 }
 
 a {
-  color:black;
-  text-decoration: none;
+  color: #0074FF;
 }
 
 #forums, .topics {
@@ -143,9 +138,6 @@ form {
       color: white;
       .username{
         padding-bottom: .7em;
-        &a{
-          color: white;
-        }
       }
       .icon{
         background: transparent url(http://placekitten.com/50/50) no-repeat;
@@ -159,16 +151,12 @@ form {
       width: 75%;
       border-left: 1px solid $mid-bg1;
       padding: 1em 1em;
-      float: left;
+      float: right;
 
       span.in_reply_to {
         font-size: 80%;
       }
 
-      a {
-        text-decoration: underline;
-        color: blue;
-      }
       p, ul, pre, blockquote, span.in_reply_to {
         clear: both;
         float: left;
@@ -210,12 +198,10 @@ form {
       &:hover .actions{
       }
       .actions{
-        right: 10px;
-        top: 0px;
-        margin: 0 0 0 5px;
-        float: right;
         position: absolute;
-        display: block;
+        top: -10px;
+        right: 0px;
+        float: right;
         -webkit-border-radius: 5px;
         list-style-type: none;
         li{
@@ -303,13 +289,13 @@ table.subdued{
 .lock.icon{
   width: 24px;
   height: 24px;
-  background: transparent url(lock_icon.png) 0 0;
+  background: transparent url(/assets/forem/lock_icon.png) 0 0;
   display: inline-block;
 }
 
 .pin.icon{
-  width: 16px;
-  height: 23px;
-  background: transparent url(pin_icon.png) 0 0;
+  width: 9px;
+  height: 15px;
+  background: transparent url(/assets/forem/pin_icon.png) 0 0;
   display: inline-block;
 }
