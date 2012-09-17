@@ -26,4 +26,9 @@ class User < ActiveRecord::Base
   def to_s
     username
   end
+
+  after_create :default_quarter
+  def default_quarter
+    Quarter.create(:user_id => self.id, :term => "Fall 2012")
+  end
 end

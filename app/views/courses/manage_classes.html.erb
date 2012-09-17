@@ -2,7 +2,7 @@
 
 <body class="main">
 	<span id="quarter">
-		<%= @current_term %>
+		<%= @term %>
 	</span>
 	
 	<div id="classes">
@@ -19,7 +19,12 @@
 	
 	<div>
 		<span><button id="show_fields">Add Classes</button></span>
-		<span>Change Quarter</span>
+		
+		<%= form_tag(manage_classes_path) do %>
+			<span><%= collection_select(nil, :qtr_id, current_user.quarters, :id, :term, {:prompt => "View Another Quarter..."}) %></span>
+			<span><%= submit_tag("Go") %></span>
+		<% end %>
+
 		<span><%= link_to "Back", :back %></span>
 	</div>
 	
@@ -31,6 +36,7 @@
 		<%= form_tag(add_course_to_quarter_path, :remote => true) do %>
 			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
 			<%= collection_select(:new_class, :course, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+			<%= hidden_field_tag :term, @term %>
 			<%= submit_tag("Add") %>
 		<% end %>
 	</div>

@@ -98,11 +98,14 @@ class CoursesController < ApplicationController
 
     if params[:new_class]
       @course = Course.find(params[:new_class][:course])
-        if current_user.quarters.where(:term => @current_term).first.courses.where(:id => @course.id).count > 0 #ADD QUARTER = FALL 2012 CHECK
-          @error = true
-        else
-          @course.quarters << Quarter.where(:term => "Fall 2012").where("user_id = ?", current_user.id) 
-          @my_courses = current_user.quarters.where(:term => "Fall 2012").first.courses
+      @quarter = current_user.quarters.where(:term => params[:term]).first
+        if @quarter.courses
+          if @quarter.courses.where(:id => @course.id).count > 0 #ADD QUARTER = FALL 2012 CHECK
+            @error = true
+          else
+            @course.quarters << @quarter
+            @my_courses = current_user.quarters.where(:term => params[:term]).first.courses
+          end
         end
     else
   	   Course.find(params[:crs_id]).quarters << Quarter.find(params[:qtr_id])
@@ -124,8 +127,15 @@ class CoursesController < ApplicationController
   end
 
   def manage_classes
-    if current_user.quarters.where(:term => "Fall 2012").first
-      @my_courses = current_user.quarters.where(:term => "Fall 2012").first.courses
+    if params[:qtr_id]
+      @quarter = Quarter.find(params[:qtr_id])
+      @my_courses = @quarter.courses
+      @term = @quarter.term
+    elsif current_user.quarters.where(:term => @current_term).first
+      @term = @current_term
+      @my_courses = current_user.quarters.where(:term => @current_term).first.courses
+    else
+      @term = @current_term
     end
     @fields = Field.all
     @courses = Course.all
