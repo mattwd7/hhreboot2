@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/radar/forem-theme-twist.git
+  revision: f08ab243ee695bd5485d589c1177d99d00602150
+  specs:
+    forem-theme-twist (0.0.1)
+
+GIT
   remote: git://github.com/radar/forem.git
   revision: 4980952541d36723fdbf3868b9fbb821ac8ce4db
   specs:
@@ -149,6 +155,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   forem!
+  forem-theme-twist!
   jquery-rails
   kaminari
   pg (= 0.12.2)
