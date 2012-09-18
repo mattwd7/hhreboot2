@@ -30,6 +30,7 @@ class LibraryController < ApplicationController
 	def destroy
 		@book = Textbook.find(params[:book])
 		@book.destroy
+		@my_books = current_user.textbooks.where(:own_it => true)
 		
 		respond_to do |format|
 			format.html {redirect_to my_library_path}

@@ -12,23 +12,10 @@
 	</div>
 </br>
 
-<% if @my_books.size > 0 %>
-	<table border=1, id="my_classes">
-		<col width="50" />
-		<col width="200" />
-		<col width="300" />
-		<col width="75" />
-		<tr>
-			<th>Price</th>
-			<th>Course</th>
-			<th>Details</th>
-			<th>Condition</th>
-		</tr>
-		<%= render :partial  => "my_textbooks" %>
-	</table>
-<% else %>
-	<div style="text-align: center;">You have 0 textbooks listed in the <%= link_to "Textbook Exchange", find_books_path %>.</div>
-<% end %>
+		<div id="my_textbooks_for_exchange">
+			<%= render :partial  => "my_textbooks" %>
+		</div>
+
 
 	</br></br>
 

@@ -1,1 +1,5 @@
 $("#<%= params[:d_id] %>").remove();
+<% if @my_books.size == 0 %>
+	$("#my_textbooks_for_exchange").empty()
+	$("#my_textbooks_for_exchange").append($("<div style='text-align: center;'>You have 0 textbooks listed in the Textbook Exchange.</div>"))
+<% end %>
