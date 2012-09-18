@@ -5,20 +5,22 @@
 	<div id="textbook_exchange_title">
 		<h3>Hill Heroes Textbook Exchange</h3>
 	</div>
-	<%= link_to "Manage My Textbooks", manage_textbooks_path %>
-	<h4>My <%= @current_term %> classes</h4>
 
-	<div id="my_classes">
-		<% if !@my_classes || @my_classes.size == 0 %>
-			You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
-		<% else %>
-			<% @my_classes.each do |c| %>
-				<%= link_to "#{c.field.abbr} #{c.title}", find_books_path(:book => c.id) %></br>
+	<% unless !current_user %>
+		<%= link_to "Manage My Textbooks", manage_textbooks_path %>
+		<h4>My <%= @current_term %> classes</h4>
+
+		<div id="my_classes">
+			<% if !@my_classes || @my_classes.size == 0 %>
+				You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
+			<% else %>
+				<% @my_classes.each do |c| %>
+					<%= link_to "#{c.field.abbr} #{c.title}", find_books_path(:book => c.id) %></br>
+				<% end %>
 			<% end %>
-		<% end %>
-	</div>
-
-	<h4>Other:</h4>
+		</div>
+	<% end %>
+	<h4>Select a Course:</h4>
 
 	<div id="other">
 		<%= form_tag(find_books_path) do %>
