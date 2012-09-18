@@ -1,7 +1,7 @@
 $("#<%= params[:d_id] %>").remove();
 <% if @trashed_messages.count == 0 %>
-	$("div #trashed_messages").empty()
-	$("div #trashed_messages").append($("<div class='empty_statement'>Your trash is empty!</div>"))
+	$(".page #trashed_messages").empty()
+	$(".page #trashed_messages").append($("<div class='empty_statement'>Your trash is empty!</div>"))
 <% end %>
-$("div #new_messages").empty();
-$("div #new_messages").append("<%= escape_javascript(render :partial => 'new_messages') %>")
+$(".page #new_messages").empty();
+$(".page #new_messages").append("<%= escape_javascript(render :partial => 'new_messages') %>")

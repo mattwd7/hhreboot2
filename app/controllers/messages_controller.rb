@@ -94,6 +94,11 @@ class MessagesController < ApplicationController
 	@new_messages = Message.where(:recipient_id => current_user.id).where(:trashed => false).order("created_at DESC")
   @sent_messages = Message.where(:user_id => current_user.id).where(:trashed => false).order("created_at DESC")
   @trashed_messages = Message.where(:recipient_id => current_user.id).where(:trashed => true).order("created_at DESC")
+  if @new_messages.where(:unread => true).count > 0
+    current_user.update_attributes(:new_messages => true)
+  else
+    current_user.update_attributes(:new_messages => false)
+  end
   #Clean out all users week-old, trashed messages
   #@old_trash = Message.where(:trashed => true).where("(? - trash_time) < ?", Time.now, 30000)
   
@@ -119,6 +124,11 @@ class MessagesController < ApplicationController
     @message = Message.find(params[:msg_id]).update_attributes(:trashed => true, :trash_time => Time.now)
     @trashed_messages = Message.where(:recipient_id => current_user.id).where(:trashed => true).order("created_at DESC")
     @new_messages = Message.where(:recipient_id => current_user.id).where(:trashed => false).order("created_at DESC")
+    if @new_messages.where(:unread => true).count > 0
+      current_user.update_attributes(:new_messages => true)
+    else
+      current_user.update_attributes(:new_messages => false)
+    end
   
     
     respond_to do |format|
@@ -131,6 +141,11 @@ class MessagesController < ApplicationController
     @message = Message.find(params[:msg_id]).update_attributes(:trashed => false, :trash_time => nil)
     @new_messages = Message.where(:recipient_id => current_user.id).where(:trashed => false).order("created_at DESC")
     @trashed_messages = Message.where(:recipient_id => current_user.id).where(:trashed => true).order("created_at DESC")
+    if @new_messages.where(:unread => true).count > 0
+      current_user.update_attributes(:new_messages => true)
+    else
+      current_user.update_attributes(:new_messages => false)
+    end
 
     respond_to do |format|
       format.html {redirect_to my_messages_path}
