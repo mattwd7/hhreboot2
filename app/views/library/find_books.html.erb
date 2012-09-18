@@ -66,7 +66,11 @@
 				<td align="center"><%= book.description %></td>
 				<td align="center">$<%= book.price %></td>
 				<td align="center"><%= book.condition %></td>
-				<td align="center"><%= book.user.building.name %></td>
+				<% if book.user.building %>
+					<td align="center"><%= book.user.building.name %></td>
+				<% else %>
+					<td align="center"> </td>
+				<% end %>
 				<td align="center"><%= link_to "Message!", new_message_path(:recipient => book.user.id, :msg_template => "/messages/templates/textbook", :course => book.course.title, :return_url => request.fullpath) %></td>
 			</tr>
 		<% end %>
