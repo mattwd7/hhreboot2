@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   has_many :textbooks
   
   validates :username, :presence => true, :uniqueness => true
-  validates :email, :presence => true, :uniqueness => true#, :format => {:with => /^([^@\s]+)@ucla.edu$/i}
+  validates :email, :presence => true, :uniqueness => true
 
   def to_s
     username
