@@ -1,12 +1,15 @@
 Hello <%= @recipient.username %>!
 
-I am interested in your textbook(s) for <%= @course %>
+I am interested in your textbook:
 
-If it is still available, message me back and we can discuss additional details to complete a transaction.
+<%= @book %>
+for <%= @course.field.abbr %><%= @course.field.title %>
+
+Please message me back and we can discuss additional details to complete a transaction.
 
 Thanks, and hear from you soon!
 <%= current_user.username %>
 
-CONTACT INFO
+MY CONTACT INFO
 ---------------------------
 (email, cell, facebook link, etc)

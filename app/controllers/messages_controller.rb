@@ -1,8 +1,6 @@
 class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
-  before_filter :authenticate_user!
-  
   def index
     @messages = current_user.messages
 	current_user.update_attributes(:new_messages => false)
@@ -32,8 +30,9 @@ class MessagesController < ApplicationController
 	@template = params[:msg_template]
   @recipient = User.find(params[:recipient])
   if params[:course]
-    @course = params[:course]
-    @subject = "I want your #{@course} textbook(s)!"
+    @book = params[:book_desc]
+    @course = Course.find(params[:course])
+    @subject = "I want your #{@course.title} textbook!"
   end
 
     respond_to do |format|
