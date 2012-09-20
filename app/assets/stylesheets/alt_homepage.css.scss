@@ -45,13 +45,7 @@
 }
 #navigation a {
 	text-decoration: none;
-	&:hover{
-	    outline:none;
-	    text-shadow:0 0 7px #ffb000;
-	    transition: all 0.25s ease-in-out;
-	    -webkit-transition: all 0.25s ease-in-out;
-	    -moz-transition: all 0.25s ease-in-out;
-  	};
+	text-shadow: 0 0 7px white;
 }
 .left{
 	background:#DDD;
@@ -117,6 +111,12 @@
 		color-stop(0.50, rgb(85,85,85))
 	);
 
+}
+.right a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	};
 }
 #top_posters tr{
 	text-align: center;
