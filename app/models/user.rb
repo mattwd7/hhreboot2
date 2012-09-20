@@ -31,4 +31,8 @@ class User < ActiveRecord::Base
   def default_quarter
     Quarter.create(:user_id => self.id, :term => "Fall 2012")
   end
+
+  def custom_avatar_url
+    "/superbear_avatar.png"  #default Avatar
+  end
 end
