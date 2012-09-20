@@ -99,6 +99,11 @@ $(document).ready(function() {
   $("#user_email").focus();
 
 //HOMEPAGE FUNCTIONS
+  var leftWidth = $(".left").width();
+  var rightWidth = $(".right").width();
+  var totalWidth = leftWidth + rightWidth + 20;
+  $("#navigation").css("width", (totalWidth) + 'px');
+
   $(function() {
     $( "#accordion" ).accordion({
       collapsible: false
