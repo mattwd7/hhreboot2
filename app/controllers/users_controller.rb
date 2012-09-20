@@ -37,7 +37,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def modify_profile
-    current_user.update_attributes(:building_id => params[:user][:building_id], :major => params[:user][:major], :major2 => params[:user][:major2], :minor => params[:user][:minor], :minor2 => params[:user][:minor2], :year => params[:user][:year], :about_me => params[:about_me])
+    current_user.update_attributes(:building_id => params[:user][:building_id], :major => params[:user][:major], :major2 => params[:user][:major2], :minor => params[:user][:minor], :minor2 => params[:user][:minor2], :year => params[:user][:year], :about_me => params[:about_me], :avatar_path => params[:avatar_path])
 
     respond_to do |format|
       format.html {redirect_to user_profile_path(:user => current_user.id)}
@@ -90,37 +90,37 @@ class UsersController < ApplicationController
   end
   
   def profile
-  if params[:user]
-    @user = User.find(params[:user])
-    @topics = @user.topics(:order => "created_at DESC")
-    @posts = @user.posts.order("created_at DESC")
-  else
-    @user = current_user
-  end
+	if params[:user]
+		@user = User.find(params[:user])
+		@topics = @user.topics(:order => "created_at DESC")
+		@posts = @user.posts.order("created_at DESC")
+	else
+		@user = current_user
+	end
   
-  respond_to do |format|
-    format.html
-  end
+	respond_to do |format|
+		format.html
+	end
   end
   
   def classmates
-  @my_courses = current_user.courses.where("quarters.term='Fall 2012'")
-  @classmates = []
-  @course = Course.find(params[:course])
-  relevent_quarters = Quarter.where(:term => "Fall 2012")
-  relevent_quarters.each do |q|
-    q.courses.each do |c|
-      if @course.id == c.id
-        unless q.user == current_user
-          @classmates << q.user
-        end
-      end
-    end
-  end
+	@my_courses = current_user.courses.where("quarters.term='Fall 2012'")
+	@classmates = []
+	@course = Course.find(params[:course])
+	relevent_quarters = Quarter.where(:term => "Fall 2012")
+	relevent_quarters.each do |q|
+		q.courses.each do |c|
+			if @course.id == c.id
+				unless q.user == current_user
+					@classmates << q.user
+				end
+			end
+		end
+	end
   
-  respond_to do |format|
-    format.html
-  end
+	respond_to do |format|
+		format.html
+	end
   end
 
   def alt_profile

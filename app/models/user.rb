@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :forem_admin
   attr_accessible :building_id, :contact, :major, :major2, :minor, :minor2
-  attr_accessible :about_me, :year, :new_messages, :confirmed_at
+  attr_accessible :about_me, :year, :new_messages, :confirmed_at, :avatar_path
   
   has_many :posts, :class_name => "Forem::Post"
   has_many :topics, :class_name => "Forem::Topic"
@@ -33,6 +33,10 @@ class User < ActiveRecord::Base
   end
 
   def custom_avatar_url
-    "/superbear_avatar.png"  #default Avatar
+    if self.avatar_path
+        avatar_path
+    else
+      "/superbear_avatar.png"  #default Avatar
+    end
   end
 end

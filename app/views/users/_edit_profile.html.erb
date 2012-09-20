@@ -29,6 +29,11 @@
     About Me:</br>
     <%= text_area_tag "about_me", current_user.about_me %>
   </div>
+
+  <div>
+    Forum Avatar (URL):</br>
+    <%= text_field_tag :avatar_path, current_user.avatar_path %>
+  </div>
   </br>
 
   <span><%= submit_tag "Update" %></span>
