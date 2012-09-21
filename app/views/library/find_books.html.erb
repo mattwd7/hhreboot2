@@ -45,12 +45,14 @@
 <% if @textbooks.size > 0 %>
 	<table align="center" id="find_books_table">
 	<col width="100" />
+	<col width="100" />
 	<col width="300" />
 	<col width="100" />
 	<col width="100" />
 	<col width="100" />
 	<col width="100" />
 		
+		<th></th>
 		<th><%= link_to "Hill Hero", find_books_path(:book => params[:book], :order => (@current_order == "by_username" ? "by_username_desc" : "by_username")) %></th>
 		<th>Details</th>
 		<th><%= link_to "Price", find_books_path(:book => params[:book], :order => (@current_order == "by_price" ? "by_price_desc" : "by_price")) %></th>
@@ -60,6 +62,7 @@
 	
 		<% @textbooks.each do |book| %>
 			<tr>
+				<td align="center"><%= image_tag book.cover_image %></td>
 				<td align="center"><%= link_to book.user.username, user_profile_path(:user => book.user) %></td>
 				<td align="center"><%= book.description %></td>
 				<td align="center">$<%= book.price %></td>

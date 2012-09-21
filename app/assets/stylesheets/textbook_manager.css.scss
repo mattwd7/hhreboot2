@@ -10,6 +10,10 @@
 #manage_books_wrapper body{
 	margin-bottom: 10px;
 }
+#manage_books_wrapper img{
+	max-height: 125px;
+	max-width: 100px;
+}
 #manage_books_wrapper table{
 	margin: 0 auto;
 }
@@ -34,4 +38,8 @@
 
 .book{
 	text-align: center;
+}
+#find_books_wrapper img{
+	max-height: 125px;
+	max-width: 100px;
 }

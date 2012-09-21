@@ -42,6 +42,9 @@
 				<div>
 					Asking Price: $<%= number_field_tag "price", :price, :min => 0 %>
 				</div>
+				<div>
+					Cover Image URL: <%= text_field_tag :image_path %>
+				</div>
 				<%= hidden_field_tag :own_it, true %>
 				<%= submit_tag "Add Book" %>
 			<% end %>

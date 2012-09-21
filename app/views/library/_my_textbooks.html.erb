@@ -1,16 +1,19 @@
 <% if @my_books.size > 0 %>
 	<table border=1, id="my_classes">
 		<col width="50" />
+		<col width="50" />
 		<col width="200" />
 		<col width="300" />
 		<col width="75" />
 		<tr>
+			<th></th>
 			<th>Price</th>
 			<th>Course</th>
 			<th>Details</th>
 			<th>Condition</th>
 		</tr>
 		<%= content_tag_for(:tr, @my_books) do |book| %>
+			<td class="book"><%= image_tag book.cover_image %></td>
 			<td class="book">$<%= book.price %></td>
 			<td class="book"><%= book.course.field.abbr %> <%= book.course.title[0..15] %>..</td>
 			<td class="book"><%= book.description %></td>

@@ -12,7 +12,7 @@ class LibraryController < ApplicationController
 	end
 	
 	def add_book
-		@book = Textbook.new(:user_id => current_user.id, :course_id => params[:course_id], :own_it => params[:own_it], :description => params[:description], :terms_of_exchange => params[:terms_of_exchange], :price => params[:price], :condition => params[:condition])
+		@book = Textbook.new(:user_id => current_user.id, :course_id => params[:course_id], :own_it => params[:own_it], :description => params[:description], :terms_of_exchange => params[:terms_of_exchange], :price => params[:price], :condition => params[:condition], :image_path => params[:image_path])
 		@my_books = current_user.textbooks.where(:own_it => true)
 	
 		respond_to do |format|
@@ -39,10 +39,8 @@ class LibraryController < ApplicationController
 	end
 	
 	def find_books
-		unless !current_user
-			if current_user.quarters.where(:term => @current_term).first
-				@my_classes = current_user.quarters.where(:term => @current_term).first.courses
-			end
+		if current_user.quarters.where(:term => @current_term).first
+			@my_classes = current_user.quarters.where(:term => @current_term).first.courses
 		end
 		@current_order
 		@fields = Field.all
@@ -53,13 +51,8 @@ class LibraryController < ApplicationController
 		if params["field"]
       		@course_list = Field.find(params["field"]).courses
     	end
-    	if !current_user
-    		@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book])
-    	else
-    		@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book]).where("user_id != ?", current_user.id)
-    	end
 	#	@users_with_books = User.where("username != ?", current_user.username).includes(:textbooks).joins(:textbooks).where("textbooks.course_id = ?", params[:book]).where("textbooks.own_it = ?", true)
-		
+		@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book]).where("user_id != ?", current_user.id)
 
 		if params[:book]
 			@course = Course.find(params[:book])
