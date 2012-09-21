@@ -40,11 +40,13 @@ class LibraryController < ApplicationController
 	
 	def find_books
 		if current_user
+			@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book]).where("user_id != ?", current_user.id)
 			if current_user.quarters.where(:term => @current_term).first
 				@my_classes = current_user.quarters.where(:term => @current_term).first.courses
 			end
+		else
+			@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book])
 		end
-
 		@current_order
 		@fields = Field.all
 		@courses = Course.all
@@ -57,7 +59,7 @@ class LibraryController < ApplicationController
 	#	@users_with_books = User.where("username != ?", current_user.username).includes(:textbooks).joins(:textbooks).where("textbooks.course_id = ?", params[:book]).where("textbooks.own_it = ?", true)
 		@new_textbooks = Textbook.all
 		@new_textbooks.sort! { |a,b| b.created_at <=> a.created_at }
-		@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book]).where("user_id != ?", current_user.id)
+		
 
 		if params[:book]
 			@course = Course.find(params[:book])

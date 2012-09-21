@@ -1,35 +1,55 @@
 <div id="find_books_wrapper">
 <body class="main">
 
-<div id="choose_class_panel">
-	<div id="textbook_exchange_title">
-		<h3>Hill Heroes Textbook Exchange</h3>
-	</div>
-	<%= link_to "Manage My Textbooks", manage_textbooks_path %>
-	<h4>My <%= @current_term %> classes</h4>
+<% if current_user %>
+	<div id="choose_class_panel">
+		<div id="textbook_exchange_title">
+			<h3>Hill Heroes Textbook Exchange</h3>
+		</div>
+		<%= link_to "Manage My Textbooks", manage_textbooks_path %>
+		<h4>My <%= @current_term %> classes</h4>
 
-	<div id="my_classes">
-		<% if !@my_classes || @my_classes.size == 0 %>
-			You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
-		<% else %>
-			<% @my_classes.each do |c| %>
-				<%= link_to "#{c.field.abbr} #{c.title}", find_books_path(:book => c.id) %></br>
+		<div id="my_classes">
+			<% if !@my_classes || @my_classes.size == 0 %>
+				You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
+			<% else %>
+				<% @my_classes.each do |c| %>
+					<%= link_to "#{c.field.abbr} #{c.title}", find_books_path(:book => c.id) %></br>
+				<% end %>
 			<% end %>
-		<% end %>
-	</div>
+		</div>
 
-	<h4>Other:</h4>
+		<h4>Other:</h4>
 
-	<div id="other">
-		<%= form_tag(find_books_path) do %>
-			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
-			<%= collection_select(nil, :book, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
-			<%= submit_tag("Find it!") %>
-		<% end %>
+		<div id="other">
+			<%= form_tag(find_books_path) do %>
+				<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+				<%= collection_select(nil, :book, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+				<%= submit_tag("Find it!") %>
+			<% end %>
+		</div>
 	</div>
-</div>
+<% else %>
+	<div id="choose_class_panel">
+
+		<h3 id="textbook_exchange_title">Hill Heroes Textbook Exchange</h3>
+
+		<h4>Choose a class to view available textbooks:</h4>
+
+		<div id="other">
+			<%= form_tag(find_books_path) do %>
+				<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+				<%= collection_select(nil, :book, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+				<%= submit_tag("Find it!") %>
+			<% end %>
+		</div>
+	</div>
+<% end %>
+
 <div style="text-align: left;">Select a course above to view available textbooks on the Hill.</div>
 <hr>
+
+<!-- Recent listings feed -->
 
 <div id="book_on_display">
 	<% if params[:book] %>
@@ -43,7 +63,8 @@
 		<table align="center" id="find_books_table">
 				<col width="100" />
 				<col width="100" />
-				<col width="300" />
+				<col width="200" />
+				<col width="200" />
 				<col width="100" />
 				<col width="100" />
 				<col width="100" />
@@ -51,6 +72,7 @@
 					
 					<th></th>
 					<th>Hill Hero</th>
+					<th>Course</th>
 					<th>Details</th>
 					<th>Price</th>
 					<th>Condition</th>
@@ -62,6 +84,7 @@
 					<tr>
 						<td align="center"><%= image_tag book.cover_image %></td>
 						<td align="center"><%= link_to book.user.username, user_profile_path(:user => book.user) %></td>
+						<td align="center"><%= book.course.field.abbr %> <%= book.course.title %></td>
 						<td align="center"><%= book.description %></td>
 						<td align="center">$<%= book.price %></td>
 						<td align="center"><%= book.condition %></td>
@@ -74,6 +97,7 @@
 					<tr>
 						<td align="center"><%= image_tag @new_textbooks[i].cover_image %></td>
 						<td align="center"><%= link_to @new_textbooks[i].user.username, user_profile_path(:user => @new_textbooks[i].user) %></td>
+						<td align="center"><%= @new_textbooks[i].course.field.abbr %> <%= @new_textbooks[i].course.title %></td>
 						<td align="center"><%= @new_textbooks[i].description %></td>
 						<td align="center">$<%= @new_textbooks[i].price %></td>
 						<td align="center"><%= @new_textbooks[i].condition %></td>
@@ -88,7 +112,9 @@
 
 </br></br>
 
-<% if @textbooks.size > 0 %>
+<!-- Specific search listings -->
+
+<% if @textbooks && @textbooks.size > 0 %>
 	<table align="center" id="find_books_table">
 	<col width="100" />
 	<col width="100" />
