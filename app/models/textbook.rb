@@ -10,11 +10,13 @@ class Textbook < ActiveRecord::Base
    belongs_to :course
 
    def cover_image
-		if self.image_path.size > 0
-			self.image_path
-		else
-			"/no-image.png"
-		end
+   	if self.image_path
+         if self.image_path.size > 0
+   			self.image_path
+   		else
+   			"/no-image.png"
+   		end
+      end
    end
 
 end
