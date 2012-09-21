@@ -12,7 +12,7 @@ class LibraryController < ApplicationController
 	end
 	
 	def add_book
-		@book = Textbook.new(:user_id => current_user.id, :course_id => params[:course_id], :own_it => params[:own_it], :description => params[:description], :terms_of_exchange => params[:terms_of_exchange], :price => params[:price], :condition => params[:condition], :image_path => params[:image_path])
+		@book = Textbook.new(:user_id => current_user.id, :course_id => params[:course_id], :own_it => params[:own_it], :description => params[:description], :terms_of_exchange => params[:terms_of_exchange], :price => params[:price], :condition => params[:condition], :image_path => params[:image_path], :created_at => Time.now)
 		@my_books = current_user.textbooks.where(:own_it => true)
 	
 		respond_to do |format|
@@ -52,6 +52,8 @@ class LibraryController < ApplicationController
       		@course_list = Field.find(params["field"]).courses
     	end
 	#	@users_with_books = User.where("username != ?", current_user.username).includes(:textbooks).joins(:textbooks).where("textbooks.course_id = ?", params[:book]).where("textbooks.own_it = ?", true)
+		@new_textbooks = Textbook.all
+		@new_textbooks.sort! { |a,b| b.created_at <=> a.created_at }
 		@textbooks = Textbook.where(:own_it => true).where(:course_id => params[:book]).where("user_id != ?", current_user.id)
 
 		if params[:book]

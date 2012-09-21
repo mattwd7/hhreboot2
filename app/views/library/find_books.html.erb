@@ -28,7 +28,7 @@
 		<% end %>
 	</div>
 </div>
-
+<div style="text-align: left;">Select a course above to view available textbooks on the Hill.</div>
 <hr>
 
 <div id="book_on_display">
@@ -36,7 +36,53 @@
 		Showing textbooks for</br>
 		<b><%= "#{@course.field.abbr} #{@course.title}" %>:</b>
 	<% else %>
-		<div style="text-align: center;">Select a course above to view available textbooks on the Hill.</div>
+	</br>
+		<div style="text-align: left; font-size: 16pt; font-weight: bold;">Recent Listings:</div>
+	</br></br></br>
+
+		<table align="center" id="find_books_table">
+				<col width="100" />
+				<col width="100" />
+				<col width="300" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+					
+					<th></th>
+					<th>Hill Hero</th>
+					<th>Details</th>
+					<th>Price</th>
+					<th>Condition</th>
+					<th>Residence</th>
+					<th></th>
+		<% if @new_textbooks.count < 5 %>
+							
+				<% @new_textbooks.each do |book| %>
+					<tr>
+						<td align="center"><%= image_tag book.cover_image %></td>
+						<td align="center"><%= link_to book.user.username, user_profile_path(:user => book.user) %></td>
+						<td align="center"><%= book.description %></td>
+						<td align="center">$<%= book.price %></td>
+						<td align="center"><%= book.condition %></td>
+						<td align="center"><%= book.user.building.name %></td>
+						<td align="center"><%= link_to "Message!", new_message_path(:recipient => book.user.id, :msg_template => "/messages/templates/textbook", :course => book.course, :book_desc => book.description, :return_url => request.fullpath) %></td>
+					</tr>
+				<% end %>
+		<% else %>
+				<% for i in 0..4 %>
+					<tr>
+						<td align="center"><%= image_tag @new_textbooks[i].cover_image %></td>
+						<td align="center"><%= link_to @new_textbooks[i].user.username, user_profile_path(:user => @new_textbooks[i].user) %></td>
+						<td align="center"><%= @new_textbooks[i].description %></td>
+						<td align="center">$<%= @new_textbooks[i].price %></td>
+						<td align="center"><%= @new_textbooks[i].condition %></td>
+						<td align="center"><%= @new_textbooks[i].user.building.name %></td>
+						<td align="center"><%= link_to "Message!", new_message_path(:recipient => @new_textbooks[i].user.id, :msg_template => "/messages/templates/textbook", :course => @new_textbooks[i].course, :book_desc => @new_textbooks[i].description, :return_url => request.fullpath) %></td>
+					</tr>
+				<% end %>
+		<% end %>
+		</table>
 	<% end %>
 </div>
 
