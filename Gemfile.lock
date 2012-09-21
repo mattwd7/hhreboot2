@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/forem.git
-  revision: 4980952541d36723fdbf3868b9fbb821ac8ce4db
+  revision: bd7d3d4e6c8554d7a69e46758a7efdcdc09218e8
   specs:
     forem (1.0.0.beta1)
       cancan (= 1.6.7)
@@ -80,10 +80,9 @@ GEM
       railties (>= 3.1.0, < 5.0)
       thor (~> 0.14)
     json (1.7.5)
-    kaminari (0.13.0)
+    kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-      railties (>= 3.0.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
