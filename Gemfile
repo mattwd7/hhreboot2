@@ -30,6 +30,7 @@ gem 'forem-theme-twist', :git => "git://github.com/radar/forem-theme-twist.git"
 
 group :production do
 	gem 'pg', '0.12.2'
+	gem 'thin'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
