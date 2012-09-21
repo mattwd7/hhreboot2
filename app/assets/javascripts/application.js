@@ -48,27 +48,36 @@ $(document).ready(function() {
   });
 
   //Edit Profile animation
+  var prev_height = $(".user_information").height() + "px"
   $("#edit_information_link").click(function(){
     var prev_width = $(".content").width();
       $(".user_information").siblings().fadeTo("slow", "0.25")
+      $(".tabs").fadeTo("slow", "0.25")
+      $(".tabs").css({
+        "position": "absolute",
+        "top": "351px",
+        "left": "1060px"
+      })
       $(".tabbed-menu").css({
         "position": "absolute",
-        "top": "107px",
-        "left": "293px",
+        "top": "26px",
+        "left": "198px",
         "width": (prev_width)
       })
       $("#display_information").fadeOut("slow", function(){
         $("#edit_information").fadeIn("slow");
       });
-      $(".user_information").animate({width: "50%"}, 1000);
+      $(".user_information").animate({"width": "50%", "height": "400px"}, 1000);
     });
 
   $(".add_major_minors").click(function(){
       $("#major_minors").show();
+      $(".user_information").css("height", "")
   })
 
   $("#cancel_edit button").click(function(){
       $(".user_information").siblings().fadeTo("slow", "1.0");
+      $(".tabs").fadeTo("slow", "1.0")
       $("#edit_information").fadeOut("slow", function(){
         $("#display_information").fadeIn("slow")
       });
@@ -78,8 +87,9 @@ $(document).ready(function() {
             "top": "",
             "left": ""
         })
+        $("#major_minors").hide();
       }, 1000)
-      $(".user_information").animate({width: "20%"}, 1000);
+      $(".user_information").animate({"width": "20%", "height": prev_height}, 1000);
   })
 
 // MESSAGING FUNCTIONS
