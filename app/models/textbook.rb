@@ -16,6 +16,8 @@ class Textbook < ActiveRecord::Base
    		else
    			"/no-image.png"
    		end
+      else
+         self.image_path = "/no-image.png"
       end
    end
 
