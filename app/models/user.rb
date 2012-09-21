@@ -32,6 +32,11 @@ class User < ActiveRecord::Base
     Quarter.create(:user_id => self.id, :term => "Fall 2012")
   end
 
+  after_create :default_building
+  def default_building
+    self.update_attributes(:building_id => Building.where(:name => "Residence Unknown").first.id)
+  end
+
   def custom_avatar_url
     if self.avatar_path
         avatar_path
@@ -39,4 +44,5 @@ class User < ActiveRecord::Base
       "/superbear_avatar.png"  #default Avatar
     end
   end
+
 end
