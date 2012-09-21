@@ -39,7 +39,11 @@ class User < ActiveRecord::Base
 
   def custom_avatar_url
     if self.avatar_path
-        avatar_path
+        if self.avatar_path.size > 0
+          avatar_path
+        else
+          "/superbear_avatar.png"  #default Avatar
+        end
     else
       "/superbear_avatar.png"  #default Avatar
     end
