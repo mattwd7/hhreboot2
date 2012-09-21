@@ -39,9 +39,12 @@ class LibraryController < ApplicationController
 	end
 	
 	def find_books
-		if current_user.quarters.where(:term => @current_term).first
-			@my_classes = current_user.quarters.where(:term => @current_term).first.courses
+		if current_user
+			if current_user.quarters.where(:term => @current_term).first
+				@my_classes = current_user.quarters.where(:term => @current_term).first.courses
+			end
 		end
+
 		@current_order
 		@fields = Field.all
 		@courses = Course.all
