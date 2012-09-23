@@ -104,23 +104,34 @@ class UsersController < ApplicationController
   end
   
   def classmates
-	@my_courses = current_user.courses.where("quarters.term='Fall 2012'")
-	@classmates = []
-	@course = Course.find(params[:course])
-	relevent_quarters = Quarter.where(:term => "Fall 2012")
-	relevent_quarters.each do |q|
-		q.courses.each do |c|
-			if @course.id == c.id
-				unless q.user == current_user
-					@classmates << q.user
-				end
-			end
-		end
-	end
-  
-	respond_to do |format|
-		format.html
-	end
+  	@my_classes = current_user.quarters.where("term = ?", @current_term).first.courses
+    if params[:course]
+  	   @course = Course.find(params[:course])
+       @classmates = @course.users
+    end
+    @fields = Field.all
+    @courses = Course.all
+      if params["field"]
+          @course_list = Field.find(params["field"]).courses
+      end
+    @current_order
+    if params[:order] && @classmates
+      @current_order = params[:order]
+      if params[:order] == "by_building"
+        @classmates.sort! { |a,b| a.building.name <=> b.building.name }
+      elsif params[:order] == "by_building_desc"
+        @classmates.sort! { |a,b| b.building.name <=> a.building.name }
+      elsif params[:order] == "by_username"
+        @classmates.sort! { |a,b| a.username <=> b.username }
+      elsif params[:order] == "by_username_desc"
+        @classmates.sort! { |a,b| b.username <=> a.username }
+      end
+    end
+
+  	respond_to do |format|
+  		format.html
+      format.js
+  	end
   end
 
   def alt_profile
