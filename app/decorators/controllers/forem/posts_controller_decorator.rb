@@ -20,4 +20,8 @@ Forem::PostsController.class_eval do
         render :action => "new"
       end
     end
+
+    def last_page
+      (@topic.posts.count.to_f / Forem.per_page.to_f).ceil
+    end
 end

@@ -14,6 +14,6 @@
 
 <%= simple_form_for [@topic, @post] do |f| %>
   <%= render :partial => "form", :locals => { :f => f } %>
-  Post as Anonymous<%= check_box_tag "anonymous_post" %></br>
+	Post as Anonymous<%= check_box_tag "anonymous_post" %></br>
   <%= f.submit t("forem.post.buttons.reply") %>
 <% end %>
