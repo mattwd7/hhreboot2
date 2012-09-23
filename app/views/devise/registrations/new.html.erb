@@ -1,21 +1,23 @@
-<h2>Sign up</h2>
+<div id="devise_wrapper">
+  <h2>Sign up</h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div>Email Address (e.g. JohnDoe@ucla.edu):</br>
-  <%= f.text_field :email %></div></br>
+    <div>Email Address (e.g. JohnDoe@ucla.edu):</br>
+    <%= f.text_field :email %></div></br>
 
-  <div>Username:</br>
-  <%= f.text_field :username %></div></br>
-  
-  <div>Account password:</br>
-  <%= f.password_field :password %></div></br>
+    <div>Username:</br>
+    <%= f.text_field :username %></div></br>
+    
+    <div>Account password:</br>
+    <%= f.password_field :password %></div></br>
 
-  <div>Password Confirmation:</br>
-  <%= f.password_field :password_confirmation %></div></br>
+    <div>Password Confirmation:</br>
+    <%= f.password_field :password_confirmation %></div></br>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+    <div><%= f.submit "Sign up" %></div>
+  <% end %>
 
-<%= render "devise/shared/links" %>
+  <%= render "devise/shared/links" %>
+</div>
