@@ -6,7 +6,7 @@
 	<% elsif @subject %>
 		<%= text_field_tag :subject, @subject, :size => "75x15" %></br></br>
 	<% else %>
-		<%= text_field_tag :subject, :size => "75x15" %></br></br>
+		<%= text_field_tag :subject, @subject, :size => "75x15" %></br></br>
 	<% end %>
 	
 	Message Body: </br>

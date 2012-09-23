@@ -31,6 +31,7 @@ class MessagesController < ApplicationController
 	@reply = params[:re]
 	@template = params[:msg_template]
   @recipient = User.find(params[:recipient])
+  @subject
   if params[:course]
     @book = params[:book_desc]
     @course = Course.find(params[:course])
