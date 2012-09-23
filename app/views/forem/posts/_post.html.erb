@@ -3,8 +3,13 @@
 
   <div class='user'>
     <div class='username'>
-      <%= link_to post.user.username, main_app.user_profile_path(:user => post.user) %></br>
-	  <%= post.user.building.name %>
+      <% if post.user.username != "Anonymous" %>
+         <%= link_to post.user.username, main_app.user_profile_path(:user => post.user) %></br>
+      <% else %>
+          Anonymous</br>
+      <% end %>
+      <%= post.user.building.name %>
+
     </div>
     <div class='icon'><%= forem_avatar(post.user, :size => 60) %></div>
   </div>

@@ -1,5 +1,5 @@
 <!-- Top Posters -->
-<% users = User.all %>
+<% users = User.where("username != ?", "Anonymous") %>
 <% users.sort! { |a,b| b.posts.count <=> a.posts.count } %>
 <% list_num = 1 %>
 
