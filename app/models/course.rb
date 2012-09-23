@@ -4,5 +4,6 @@ class Course < ActiveRecord::Base
    belongs_to :field
    has_and_belongs_to_many :quarters, :join_table => "courses_quarters"
    has_one :textbook
+   has_many :users, :through => :quarters
 
 end

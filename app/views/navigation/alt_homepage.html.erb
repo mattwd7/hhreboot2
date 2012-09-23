@@ -4,10 +4,11 @@
 	<span class="subtitle"><%= @rand_subtitle %></span>
 	
 		<div id="navigation">
-			<%= link_to "About" %> | 
+			<%= link_to "About", about_path %> | 
 			<a href="/forums">Forum</a> | 
 			<a href="http://menu.ha.ucla.edu/foodpro/default.asp" target="_blank">Dining Menu</a> | 
-			<%= link_to "Textbooks", find_books_path %> |
+			<%= link_to "Textbooks", find_books_path %> | 
+			<%= link_to "Classmates", classmates_path %> | 
 			<a href="/roadmap">Roadmap</a>
 		</div>
 	
@@ -15,7 +16,7 @@
 			<div id="accordion">
 				<h3 id="top" class="cyclotron"><a href="#">Welcome!</a></h3>
 				<div id="height" style="padding: 0 5px 0 5px;">
-					<a href=""><img src="doItLive.png" title="And what that means for YOU!" /></a>
+					<a href="/about"><img src="doItLive.png" title="And what that means for YOU!" /></a>
 				</div>
 				<h3><a href="#">Announcements</a></h3>
 				<div>

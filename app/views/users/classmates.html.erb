@@ -1,34 +1,63 @@
-<h2>Classmates</h2>
+<div id="find_books_wrapper">
+	<body class="main">
+	<div id="choose_class_panel">
+	
+	<h3 id="textbook_exchange_title">My Classmates</h3>
+	
+	<%= link_to "Manage My Classes", manage_classes_path %>
+	<h4>My <%= @current_term %> classes</h4>
 
-<h4>Showing classmates for <%= @course.field.abbr %><%= @course.title %></h4>
-<% if @my_courses.empty? %>
-	You must <%= link_to "enter your classes", user_profile_path %> to find classmates!
-<% else %>
-Find classmates in</br>
+	<div id="my_classes">
+		<% if !@my_classes || @my_classes.size == 0 %>
+			You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
+		<% else %>
+			<% @my_classes.each do |c| %>
+				<%= link_to "#{c.field.abbr} #{c.title}", classmates_path(:course => c.id) %></br>
+			<% end %>
+		<% end %>
+	</div>
 
-<% @my_courses.each do |c| %>
-	<%= link_to "#{c.field.abbr}#{c.title}", classmates_path(:course => c.id) %></br>
-<% end %>
+	<h4>View Hill Heroes enrolled in a particular class for the <%= @current_term %> term:</h4>
+
+	<div id="other">
+		<%= form_tag(classmates_path) do %>
+			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+			<%= collection_select(nil, :course, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+			<%= submit_tag("Go!") %>
+		<% end %>
+	</div>
 
 </br>
 
-<table width="100%">
-<col width="200" />
-<col width="200" />
-<col width="200" />
-<tr>
-    <th>User</th>
-    <th>Building</th>
-    <th>Contact</th>
-</tr>
-<tr>
-<% @classmates.each do |t| %>
-	<tr align="center">
-	<td><%= t.username %></td>
-	<td><%= t.building.name %></td>
-	<td><%= link_to "Message!", new_message_path(:recipient => t.id, :msg_template => "/messages/templates/classmate"), :target => "_blank" %></td>
-	</tr>
+<% if @course %>
+	<% if @classmates.size == 0 %>
+		<div style="text-align: center;">There are no Hill Heroes enrolled in <%= @course.field.abbr %> <%= @course.title %></div>
+	<% else %>
+		<h3>Hill Heroes enrolled in <%= @course.field.abbr %> <%= @course.title %></h3>
+		<table width="50%" align="center">
+		<col width="200" />
+		<col width="200" />
+		<col width="200" />
+		<tr>
+			<th><%= link_to "Hill Hero", classmates_path(:course => params[:course], :order => (@current_order == "by_username" ? "by_username_desc" : "by_username")) %></th>
+			<th><%= link_to "Residence", classmates_path(:course => params[:course], :order => (@current_order == "by_building" ? "by_building_desc" : "by_building")) %></th>
+			<th></th>
+		</tr>
+		<tr>
+		<% @classmates.each do |t| %>
+			<tr align="center">
+			<td><%= t.username %></td>
+			<td><%= t.building.name %></td>
+			<td><%= link_to "Message!", new_message_path(:recipient => t.id) %></td>
+			</tr>
+		<% end %>
+		</tr>
+		</table>
+	<% end %>
+<% else %>
+	Select a course above to view those Hill Heroes enrolled.
 <% end %>
-</tr>
-</table>
-<% end %>
+
+</div>
+</body>
+</div>
