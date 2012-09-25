@@ -3,11 +3,10 @@ class ExamsController < ApplicationController
 	before_filter :authenticate_user!
 
 	def test_bank
-		@my_classes = @my_classes = current_user.quarters.where(:term => @current_term).first.courses
+		@my_classes = @my_classes = current_user.quarters.where(:term => @current_term).first.courses if current_user.quarters.where(:term => @current_term).first
 		@exams = Exam.where("user_id != ?", current_user.id)
 		@exams.sort! {|a,b| b.created_at <=> a.created_at}
 		@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
-
 		
 		@fields = Field.all
 		@courses = Course.all
@@ -21,7 +20,12 @@ class ExamsController < ApplicationController
     	end
 
     	if params[:new_entries]
-    		@exams = Exam.where("quality < ?", @premium_exam_benchmark).where("user_id != ?", current_user.id)
+    		@exams_voted_on = Examrecord.where(:user_id => current_user.id).collect(&:exam_id)
+    		if @exams_voted_on.size > 0
+    			@exams = Exam.where("quality < ?", @premium_exam_benchmark).where("user_id != ?", current_user.id).where("id NOT IN (?)", @exams_voted_on)
+    		else
+    			@exams = Exam.where("quality < ?", @premium_exam_benchmark).where("user_id != ?", current_user.id)
+    		end
     		@exams.sort! {|a,b| b.created_at <=> a.created_at}
     	end
 
@@ -66,6 +70,10 @@ class ExamsController < ApplicationController
 					@downloaded_exams.sort! { |a,b| a.exam.document_file_name <=> b.exam.document_file_name }
 				elsif params[:order] == "by_filename_desc"
 					@downloaded_exams.sort! { |a,b| b.exam.document_file_name <=> a.exam.document_file_name }
+				elsif params[:order] == "by_course"
+					@downloaded_exams.sort! { |a,b| a.exam.course.title <=> b.exam.course.title }
+				elsif params[:order] == "by_course_desc"
+					@downloaded_exams.sort! { |a,b| b.exam.course.title <=> a.exam.course.title }
 				end
 		end
 		respond_to do |format|
@@ -129,28 +137,45 @@ class ExamsController < ApplicationController
 		@exam = Exam.find(params[:exam])
 		@record = Examrecord.where(:user_id => current_user.id, :exam_id => @exam.id, :downloaded => true).first
 
+
 		respond_to do |format|
 			if @record
 				if params[:vote] == "up"
-					new_quality = @exam.quality + 1
-					@exam.update_attributes(:quality => new_quality)
+					@exam.quality += 1
+					@exam.save
 				end
 				if params[:vote] == "down"
-					new_quality = @exam.quality - 1
+					@exam.quality -= 1
 					if params[:downvote_reason] == "Irrelevant"
-						count_incrementer = @exam.irrelevant_count + 1
-						@exam.update_attributes(:quality => new_quality, :irrelevant_count => count_incrementer)
+						@exam.irrelevant_count += 1
+						if @exam.irrelevant_count >= @irrelevant_count_threshold && @exam.quality < 0
+							@exam.examrecords.delete_all
+							@exam.destroy
+						end	
 					elsif params[:downvote_reason] == "Duplicate"
-						count_incrementer = @exam.duplicate_count + 1
-						@exam.update_attributes(:quality => new_quality, :duplicate_count => count_incrementer)
+						@exam.duplicate_count += 1
+						if @exam.irrelevant_count >= @duplicate_count_threshold && @exam.quality < 0
+							@exam.examrecords.delete_all
+							@exam.destroy
+						end	
 					elsif params[:downvote_reason] == "Misplaced"
-						count_incrementer = @exam.misplaced_count + 1
-						@exam.update_attributes(:quality => new_quality, :misplaced_count => count_incrementer)
-					else
-						@exam.update_attributes(:quality => new_quality)
+						@exam.misplaced_count += 1
+						if @exam.irrelevant_count >= @misplaced_count_threshold && @exam.quality < 0
+							@exam.examrecords.delete_all
+							@exam.destroy
+						end	
 					end
+					@exam.save
 				end
 				@record.update_attributes(:vote => params[:vote])
+				current_user.exam_votes += 1
+				current_user.test_tokens += 1 if current_user.exam_votes % @exam_votes_per_token == 0
+				current_user.save
+				if @exam.quality % @upvotes_per_token == 0 && @exam.quality > @exam.prev_best
+					@exam.user.test_tokens += 1
+					@exam.user.save
+					@exam.update_attributes(:prev_best => @exam.quality)
+				end
 				if params[:route] == "my_vault_path"
 					format.html {redirect_to my_vault_path}
 				elsif params[:route] == "new_entries"
@@ -158,6 +183,7 @@ class ExamsController < ApplicationController
 				else
 					format.html {redirect_to test_bank_path}
 				end
+
 			else
 				flash[:notice] = "You must download a file before judging its quality."
 				if params[:route] == "my_vault_path"

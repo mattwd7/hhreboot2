@@ -57,11 +57,16 @@
 	<div>
 		<% if params[:new_entries] %>
 			<h2>Newer Entries Requiring Review:</h2>
+			<% if @exams.count == 0 %>
+				<div style="text-align: center;">You have already reviewed all newer entries. Thank you!</div>
+			<% else %>
+				<%= render :partial => "new_tests_table" %>
+			<% end %>
 		<% else %>
 			<h2>Recently Uploaded:</h2>
+			<%= render :partial => "new_tests_table" %>
 		<% end %>
 	</div>
-	<%= render :partial => "new_tests_table" %>
 <% end %>
 
 </body>

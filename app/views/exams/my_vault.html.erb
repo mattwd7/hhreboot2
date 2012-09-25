@@ -10,21 +10,26 @@
 <h2>Downloaded Exams:</h2>
 <table align="center">
 	<col width="200" />
-	<col width="200" />
-	<col width="200" />
+	<col width="300" />
 	<col width="100" />
 	<col width="100" />
+	<col width="100" />
+	<col width="100" />
+	<col width="75" />
 		
 		<th><%= link_to "Filename", my_vault_path(:order => (@current_order == "by_filename" ? "by_filename_desc" : "by_prof")) %></th>
+		<th><%= link_to "Course", my_vault_path(:order => (@current_order == "by_course" ? "by_course_desc" : "by_course")) %></th>
 		<th><%= link_to "Professor", my_vault_path(:order => (@current_order == "by_prof" ? "by_prof_desc" : "by_prof")) %></th>
 		<th>Details</th>
 		<th>Term</th>
 		<th><%= link_to "Quality", my_vault_path(:order => (@current_order == "by_quality" ? "by_quality_desc" : "by_quality")) %></th>
+		<th></th>
 
 		<% @downloaded_exams.each do |record| %>
 			<% exam = record.exam %>
 			<tr>
 				<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id) %></td>
+				<td><%= exam.course.field.abbr %> <%= exam.course.title %></td>
 				<td class="center"><%= exam.professor %></td>
 				<td class="center"><%= exam.description %></td>
 				<td><%= exam.term %></td>
@@ -46,7 +51,6 @@
 							</td>
 							<td style="display:none;" id="downvote_submission">
 								<%= form_tag(submit_vote_path) do %>
-									Test 2
 									<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
 									<%= hidden_field_tag :exam, exam.id %>
 									<%= hidden_field_tag :vote, "down" %>
@@ -68,7 +72,6 @@
 						</td>
 						<td style="display:none;" id="downvote_submission">
 							<%= form_tag(submit_vote_path) do %>
-								Test 2
 								<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
 								<%= hidden_field_tag :exam, exam.id %>
 								<%= hidden_field_tag :vote, "down" %>
@@ -108,5 +111,6 @@
 </table>
 
 <%= link_to "Upload an Exam", upload_exam_path %>
+
 </body>
 </div>

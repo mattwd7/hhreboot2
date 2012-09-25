@@ -1,13 +1,15 @@
 class ApplicationController < ActionController::Base
 
-  before_filter :set_current_term
-	before_filter :set_premium_exam_benchmark
-	def set_current_term
+  before_filter :set_global_variables
+	def set_global_variables
 		@current_term = "Fall 2012"
-	end
-  def set_premium_exam_benchmark
     @premium_exam_benchmark = 4
-  end
+    @irrelevant_count_threshold = 2
+    @misplaced_count_threshold = 2
+    @duplicate_count_threshold = 2
+    @upvotes_per_token = 2
+    @exam_votes_per_token = 3
+	end
 
 	def forem_user
 		current_user
