@@ -1,0 +1,47 @@
+#testbank_wrapper{
+	width: 80%;
+	margin: 0 auto;
+	background: #ccc;
+	min-height: 450px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	position: relative;
+	h1{
+		color:#FFB000;
+		font-size: 40px;
+		font-family: Helvetica;
+		background:#444;
+		padding: 15px;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+	.center{
+		text-align: center;
+	}
+	#token_count{
+		font-size: 55pt;
+		position: relative;
+		top: -22px;
+		left: 10px;
+	}
+}
+#token_panel{
+	float: right;
+	position: relative;
+	top: -25px;
+	left: -100px;
+}
+#upload_wrapper{
+	display: block;
+	background: #ccc;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	border-radius: 5px;
+	padding: 0 10px 10px 10px;
+	font-family: sans-serif;
+	border: 1px solid black;
+	a:visited{
+		color: black;
+	}
+}
