@@ -125,18 +125,6 @@ class ExamsController < ApplicationController
 		end
 	end
 
-	def upvote	
-		respond_to do |format|
-			format.js
-		end	
-	end
-
-	def downvote	
-		respond_to do |format|
-			format.js
-		end		
-	end
-
 	def submit_vote
 		@exam = Exam.find(params[:exam])
 		@record = Examrecord.where(:user_id => current_user.id, :exam_id => @exam.id, :downloaded => true).first
