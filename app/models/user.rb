@@ -8,7 +8,9 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :forem_admin
   attr_accessible :building_id, :contact, :major, :major2, :minor, :minor2
-  attr_accessible :about_me, :year, :new_messages, :confirmed_at, :avatar_path
+  attr_accessible :about_me, :year, :new_messages, :confirmed_at, :avatar_path, :test_tokens
+
+  
   
   has_many :posts, :class_name => "Forem::Post"
   has_many :topics, :class_name => "Forem::Topic"
@@ -19,12 +21,14 @@ class User < ActiveRecord::Base
   has_many :friendships
   has_many :friends, :through => :friendships
   has_many :textbooks
+  has_many :exams
+  has_many :examrecords
   
   validates :username, :presence => true, :uniqueness => true
-  validates :email, :presence => true, :uniqueness => true
-
+  validates :email, :presence => true, :uniqueness => true#, :format => {:with => /^([^@\s]+)@ucla.edu$/i}
+  
   def to_s
-    username
+	 username
   end
 
   after_create :default_quarter
@@ -32,10 +36,6 @@ class User < ActiveRecord::Base
     Quarter.create(:user_id => self.id, :term => "Fall 2012")
   end
 
-  after_create :default_building
-  def default_building
-    self.update_attributes(:building_id => Building.where(:name => "Residence Unknown").first.id)
-  end
 
   def custom_avatar_url
     if self.avatar_path
@@ -48,5 +48,10 @@ class User < ActiveRecord::Base
       "/superbear_avatar.png"  #default Avatar
     end
   end
-
+  
+  after_create :default_building
+  def default_building
+    self.update_attributes(:building_id => Building.where(:name => "Residence Unknown").first.id)
+  end
+  
 end
