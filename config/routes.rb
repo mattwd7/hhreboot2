@@ -26,6 +26,16 @@ Hhreboot2::Application.routes.draw do
   match 'about' => 'navigation#about'
   match 'roadmap' => 'navigation#roadmap'
 
+  match 'test_bank' => 'exams#test_bank'
+  match 'upvote' => 'exams#upvote'
+  match 'downvote' => 'exams#downvote'
+  match 'submit_vote' => 'exams#submit_vote'
+  match 'my_vault' => 'exams#my_vault'
+  match 'upload_exam' => 'exams#upload_exam'
+  match 'upload_page' => 'exams#upload_page'
+  match 'download_exam' => 'exams#download_exam'
+  match 'inspect_exams' => 'exams#inspect_exams'
+
   match 'my_messages' => 'messages#my_messages'
   match 'create_message' => 'messages#create'
   match 'view_message' => 'messages#view_message'
