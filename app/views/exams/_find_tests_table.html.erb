@@ -29,7 +29,7 @@
 						<% elsif activity[1] == "down" %>
 							<td style="text-align: center;" id="quality"><%= image_tag("/upvote_neutral.png") %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%=image_tag("/downvote.png") %></td>
 						<% else %>
-							<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+							<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :class => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :class => "downvote", :remote => true %></td>
 							<td style="display:none;" id="upvote_submission">
 								<%= form_tag(submit_vote_path) do %>
 									<%= hidden_field_tag :exam, exam.id %>
@@ -49,7 +49,7 @@
 						<% end %>
 						<% break %>
 					<% elsif @exam_activity.last == activity %>
-						<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+						<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :class => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :class => "downvote", :remote => true %></td>
 						<td style="display:none;" id="upvote_submission">
 							<%= form_tag(submit_vote_path) do %>
 								<%= hidden_field_tag :exam, exam.id %>
@@ -70,7 +70,7 @@
 				<% end %>
 
 				<% if @exam_activity.size == 0 %>
-					<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+					<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :class => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :class => "downvote", :remote => true %></td>
 					<td style="display:none;" id="upvote_submission">
 						<%= form_tag(submit_vote_path) do %>
 							<%= hidden_field_tag :exam, exam.id %>
