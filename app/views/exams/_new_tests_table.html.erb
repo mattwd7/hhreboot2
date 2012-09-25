@@ -1,0 +1,105 @@
+<table align="center">
+	<col width="200" />
+	<col width="300" />
+	<col width="100" />
+	<col width="200" />
+	<col width="100" />
+	<col width="100" />
+		
+		<th>Filename</th>
+		<th>Course</th>
+		<th>Professor</th>
+		<th>Details</th>
+		<th>Term</th>
+		<th>Quality</th>
+
+		<% @exams.each do |exam| %>
+			<tr>
+				<% if exam.quality >= @premium_exam_benchmark && Examrecord.where(:user_id => current_user.id).where(:exam_id => exam.id).where(:downloaded => true).count == 0 %>
+					<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id), :confirm => "This exam has a quality value > 3, requiring a test token to download.  Are you sure you want to download?" %></td>
+				<% else %>
+					<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id) %></td>
+				<% end %>
+				<td><%= exam.course.field.abbr %> <%= exam.course.title %></td>
+				<td class="center"><%= exam.professor %></td>
+				<td class="center"><%= exam.description %></td>
+				<td><%= exam.term %></td>
+
+				<% @exam_activity.each do |activity| %>
+					<% if activity[0] == exam.id %>
+						<% if activity[1] == "up" %>
+							<td style="text-align: center;" id="quality"><%= image_tag("/upvote.png") %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= image_tag("/downvote_neutral.png") %></td>
+						<% elsif activity[1] == "down" %>
+							<td style="text-align: center;" id="quality"><%= image_tag("/upvote_neutral.png") %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%=image_tag("/downvote.png") %></td>
+						<% else %>
+							<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+							<td style="display:none;" id="upvote_submission">
+								<%= form_tag(submit_vote_path) do %>
+									<%= hidden_field_tag :exam, exam.id %>
+									<%= hidden_field_tag :vote, "up" %>
+									<%= hidden_field_tag :route, (params[:new_entries] ? "new_entries" : "") %>
+									<%= submit_tag("Submit Vote") %>
+								<% end %>
+							</td>
+							<td style="display:none;" id="downvote_submission">
+								<%= form_tag(submit_vote_path) do %>
+									Test 2
+									<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
+									<%= hidden_field_tag :exam, exam.id %>
+									<%= hidden_field_tag :vote, "down" %>
+									<%= hidden_field_tag :route, (params[:new_entries] ? "new_entries" : "") %>
+									<%= submit_tag("Submit Vote") %>
+								<% end %>
+							</td>
+						<% end %>
+						<% break %>
+					<% elsif @exam_activity.last == activity %>
+						<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+						<td style="display:none;" id="upvote_submission">
+							<%= form_tag(submit_vote_path) do %>
+								<%= hidden_field_tag :exam, exam.id %>
+								<%= hidden_field_tag :vote, "up" %>
+								<%= hidden_field_tag :route, (params[:new_entries] ? "new_entries" : "") %>
+								<%= submit_tag("Submit Vote") %>
+							<% end %>
+						</td>
+						<td style="display:none;" id="downvote_submission">
+							<%= form_tag(submit_vote_path) do %>
+								Test 2
+								<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
+								<%= hidden_field_tag :exam, exam.id %>
+								<%= hidden_field_tag :vote, "down" %>
+								<%= hidden_field_tag :route, (params[:new_entries] ? "new_entries" : "") %>
+								<%= submit_tag("Submit Vote") %>
+							<% end %>
+						</td>
+					<% end %>
+				<% end %>
+
+				<% if @exam_activity.size == 0 %>
+					<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+					<td style="display:none;" id="upvote_submission">
+						<%= form_tag(submit_vote_path) do %>
+							<%= hidden_field_tag :exam, exam.id %>
+							<%= hidden_field_tag :vote, "up" %>
+							<%= hidden_field_tag :route, (params[:new_entries] ? "new_entries" : "") %>
+							<%= submit_tag("Submit Vote") %>
+						<% end %>
+					</td>
+					<td style="display:none;" id="downvote_submission">
+						<%= form_tag(submit_vote_path) do %>
+							Test 2
+							<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
+							<%= hidden_field_tag :exam, exam.id %>
+							<%= hidden_field_tag :vote, "down" %>
+							<%= hidden_field_tag :route, (params[:new_entries] ? "new_entries" : "") %>
+							<%= submit_tag("Submit Vote") %>
+						<% end %>
+					</td>
+				<% end %>
+
+			</tr>
+		<% end %>
+
+
+</table>

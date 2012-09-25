@@ -1,0 +1,112 @@
+<div id="testbank_wrapper">
+<body class="main">
+
+<h1>My Exams</h1>
+
+<div>
+	<%= link_to "Back to Test Bank", test_bank_path %></br>
+</div>
+
+<h2>Downloaded Exams:</h2>
+<table align="center">
+	<col width="200" />
+	<col width="200" />
+	<col width="200" />
+	<col width="100" />
+	<col width="100" />
+		
+		<th><%= link_to "Filename", my_vault_path(:order => (@current_order == "by_filename" ? "by_filename_desc" : "by_prof")) %></th>
+		<th><%= link_to "Professor", my_vault_path(:order => (@current_order == "by_prof" ? "by_prof_desc" : "by_prof")) %></th>
+		<th>Details</th>
+		<th>Term</th>
+		<th><%= link_to "Quality", my_vault_path(:order => (@current_order == "by_quality" ? "by_quality_desc" : "by_quality")) %></th>
+
+		<% @downloaded_exams.each do |record| %>
+			<% exam = record.exam %>
+			<tr>
+				<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id) %></td>
+				<td class="center"><%= exam.professor %></td>
+				<td class="center"><%= exam.description %></td>
+				<td><%= exam.term %></td>
+				<% @exam_activity.each do |activity| %>
+					<% if activity[0] == exam.id %>
+						<% if activity[1] == "up" %>
+							<td style="text-align: center;" id="quality"><%= image_tag("/upvote.png") %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= image_tag("/downvote_neutral.png") %></td>
+						<% elsif activity[1] == "down" %>
+							<td style="text-align: center;" id="quality"><%= image_tag("/upvote_neutral.png") %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%=image_tag("/downvote.png") %></td>
+						<% else %>
+							<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+							<td style="display:none;" id="upvote_submission">
+								<%= form_tag(submit_vote_path) do %>
+									<%= hidden_field_tag :exam, exam.id %>
+									<%= hidden_field_tag :vote, "up" %>
+									<%= hidden_field_tag :route, "my_vault_path" %>
+									<%= submit_tag("Submit Vote") %>
+								<% end %>
+							</td>
+							<td style="display:none;" id="downvote_submission">
+								<%= form_tag(submit_vote_path) do %>
+									Test 2
+									<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
+									<%= hidden_field_tag :exam, exam.id %>
+									<%= hidden_field_tag :vote, "down" %>
+									<%= hidden_field_tag :route, "my_vault_path" %>
+									<%= submit_tag("Submit Vote") %>
+								<% end %>
+							</td>
+						<% end %>
+						<% break %>
+					<% elsif @exam_activity.last == activity %>
+						<td style="text-align: center;" id="quality"><%= link_to image_tag("/upvote_neutral.png"), upvote_path, :id => "upvote", :remote => true %> <%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %> <%= link_to image_tag("/downvote_neutral.png"), downvote_path, :id => "downvote", :remote => true %></td>
+						<td style="display:none;" id="upvote_submission">
+							<%= form_tag(submit_vote_path) do %>
+								<%= hidden_field_tag :exam, exam.id %>
+								<%= hidden_field_tag :vote, "up" %>
+								<%= hidden_field_tag :route, "my_vault_path" %>
+								<%= submit_tag("Submit Vote") %>
+							<% end %>
+						</td>
+						<td style="display:none;" id="downvote_submission">
+							<%= form_tag(submit_vote_path) do %>
+								Test 2
+								<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
+								<%= hidden_field_tag :exam, exam.id %>
+								<%= hidden_field_tag :vote, "down" %>
+								<%= hidden_field_tag :route, "my_vault_path" %>
+								<%= submit_tag("Submit Vote") %>
+							<% end %>
+						</td>
+					<% end %>
+				<% end %>
+			</tr>
+		<% end %>
+</table>
+
+<h2>Uploaded Exams:</h2>
+<table align="center">
+	<col width="200" />
+	<col width="200" />
+	<col width="200" />
+	<col width="100" />
+	<col width="100" />
+		
+		<th>Filename</th>
+		<th>Professor</th>
+		<th>Details</th>
+		<th>Term</th>
+		<th>Quality</th>
+
+		<% @uploaded_exams.each do |exam| %>
+			<tr>
+				<td><%= exam.document_file_name %></td>
+				<td class="center"><%= exam.professor %></td>
+				<td class="center"><%= exam.description %></td>
+				<td><%= exam.term %></td>
+				<td class="center"><%= exam.quality %></td>
+			</tr>
+		<% end %>
+</table>
+
+<%= link_to "Upload an Exam", upload_exam_path %>
+</body>
+</div>

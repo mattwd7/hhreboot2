@@ -1,0 +1,68 @@
+<div id="testbank_wrapper">
+<body class="main">
+
+<h1 id="testbank_title">Hill Heroes Test Bank</h1>
+
+<div>
+	<%= link_to "View My Exams", my_vault_path %> | 
+	<%= link_to "Upload An Exam", upload_exam_path %> | 
+	<%= link_to "Review Newer Entries", test_bank_path(:new_entries => true) %> | 
+	<%= link_to "Test Bank FAQs" %>
+</div>
+
+<% if current_user %>
+	<div id="token_panel">
+		<h2>My Test Tokens:</h2>
+		<div id="tokens">
+			<%= image_tag "/token.png" %> <span id="token_count">X <%= current_user.test_tokens %></span>
+		</div>
+	</div>
+
+	<h4>My <%= @current_term %> classes</h4>
+	<div id="my_classes">
+		<% if !@my_classes || @my_classes.size == 0 %>
+			You haven't established your <%= @current_term %> classes yet...<%= link_to "do it now!", manage_classes_path %>
+		<% else %>
+			<% @my_classes.each do |c| %>
+				<%= link_to "#{c.field.abbr} #{c.title}", test_bank_path(:course => c.id) %></br>
+			<% end %>
+		<% end %>
+	</div>
+<% end %>
+
+
+<h4>Other:</h4>
+<div id="other">
+	<%= form_tag(test_bank_path) do %>
+		<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+		<%= collection_select(nil, :course, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+		<%= submit_tag("Find it!") %>
+	<% end %>
+</div>
+
+</br></br>
+
+<% if params[:course] %>
+	<div>
+		Showing exams for <b><%= @course.field.abbr %> <%= @course.title %></b>
+	</div></br>
+	<% if @exams.size == 0 %>
+		<div style="text-align: center;">
+			No exams available for the chosen class. <%= link_to "Upload one of your own!", upload_exam_path %>
+		</div></br>
+	<% else %>
+		<%= render :partial => "find_tests_table" %>
+	<% end %>
+<% else %>
+	<div>
+		<% if params[:new_entries] %>
+			<h2>Newer Entries Requiring Review:</h2>
+		<% else %>
+			<h2>Recently Uploaded:</h2>
+		<% end %>
+	</div>
+	<%= render :partial => "new_tests_table" %>
+<% end %>
+
+</body>
+</div>
