@@ -24,6 +24,19 @@
 		top: -22px;
 		left: 10px;
 	}
+	#downvote_submission select{
+		width: 100px;
+	}
+	.upvote{
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.downvote{
+		&:hover{
+			cursor: pointer;
+		}
+	}
 }
 #token_panel{
 	float: right;
