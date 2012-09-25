@@ -1,8 +1,0 @@
-$("#downvote img").click(function(){
-	$(this).attr("src", "/downvote.png");
-	var quality = $(this).parent().parent().text();
-	var new_quality = parseInt(quality) - 1;
-	new_quality = (new_quality > 0 ? "+" + new_quality : new_quality)
-	$(this).parent().parent().next().next().show()
-	$(this).parent().parent().html($("<div><%= escape_javascript(link_to image_tag('/upvote_neutral.png'), upvote_path, :id => 'upvote', :remote => true) %> " + new_quality + " <%= escape_javascript(image_tag('/downvote.png')) %></div>"))
-})
