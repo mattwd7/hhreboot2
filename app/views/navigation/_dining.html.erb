@@ -1,0 +1,57 @@
+<% url = "http://menu.ha.ucla.edu/foodpro/default.asp" %>
+<% doc = Nokogiri::HTML(open(url)) %>
+
+<div id="dining_wrapper">
+
+	<div class="lunch">
+		<div id="mealtime">Lunch</div>
+		<hr>
+
+		<div class="dhall">
+			<div class="dhall_names">Covel</div>
+			<% doc.css("#menuwrapper :nth-child(1) .menugridtable .menugridcell:nth-child(1)").css(".level5 a").each do |menu_item| %>
+				-<%= menu_item.text %></br>
+			<% end %>
+		</div>
+
+		<div class="dhall">
+			<div class="dhall_names">De Neve</div>
+			<% doc.css("#menuwrapper :nth-child(1) .menugridtable .menugridcell:nth-child(2)").css(".level5 a").each do |menu_item| %>
+				-<%= menu_item.text %></br>
+			<% end %>
+		</div>
+
+		<div class="dhall">
+			<div class="dhall_names">Feast</div>
+			<% doc.css("#menuwrapper :nth-child(1) .menugridtable .menugridcell_last").css(".level5 a").each do |menu_item| %>
+				-<%= menu_item.text %></br>
+			<% end %>
+		</div>		
+	</div>
+
+	<div class="dinner">
+		<div id="mealtime">Dinner</div>
+		<hr>
+		<div class="dhall">
+			<div class="dhall_names">Covel</div>
+			<% doc.css("#menuwrapper :nth-child(4) .menugridtable .menugridcell:nth-child(1)").css(".level5 a").each do |menu_item| %>
+					-<%= menu_item.text %></br>
+			<% end %>
+		</div>
+
+		<div class="dhall">
+			<div class="dhall_names">De Neve</div>
+			<% doc.css("#menuwrapper :nth-child(4) .menugridtable .menugridcell:nth-child(2)").css(".level5 a").each do |menu_item| %>
+				-<%= menu_item.text %></br>
+			<% end %>
+		</div>
+
+		<div class="dhall">
+			<div class="dhall_names">Feast</div>
+			<% doc.css("#menuwrapper :nth-child(4) .menugridtable .menugridcell_last").css(".level5 a").each do |menu_item| %>
+				-<%= menu_item.text %></br>
+			<% end %>
+		</div>
+	</div>
+
+</div>
