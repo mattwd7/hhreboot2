@@ -29,6 +29,8 @@ gem 'kaminari'
 gem 'forem-theme-twist', :git => "git://github.com/radar/forem-theme-twist.git"
 gem 'paperclip'
 gem 'nokogiri'
+gem 'dropbox'
+gem 'paperclipdropbox'
 
 group :production do
 	gem 'pg', '0.12.2'

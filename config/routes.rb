@@ -35,6 +35,7 @@ Hhreboot2::Application.routes.draw do
   match 'upload_page' => 'exams#upload_page'
   match 'download_exam' => 'exams#download_exam'
   match 'inspect_exams' => 'exams#inspect_exams'
+  match 'grant_access' => 'exams#grant_access'
 
   match 'my_messages' => 'messages#my_messages'
   match 'create_message' => 'messages#create'

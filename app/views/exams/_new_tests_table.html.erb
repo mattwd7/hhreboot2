@@ -15,10 +15,10 @@
 
 		<% @exams.each do |exam| %>
 			<tr>
-				<% if exam.quality >= @premium_exam_benchmark && Examrecord.where(:user_id => current_user.id).where(:exam_id => exam.id).where(:downloaded => true).count == 0 %>
-					<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id), :confirm => "This exam has a quality value > 3, requiring a test token to download.  Are you sure you want to download?" %></td>
+				<% if @accessible_exams && @accessible_exams.size > 0 && @accessible_exams.include?(params[:course]) %>
+					<td><%= link_to exam.document_file_name, "http://dl.dropbox.com/u/108716796#{exam.document.path}" %></td>
 				<% else %>
-					<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id) %></td>
+					<td><%= exam.document_file_name %></td>
 				<% end %>
 				<td><%= exam.course.field.abbr %> <%= exam.course.title %></td>
 				<td class="center"><%= exam.professor %></td>

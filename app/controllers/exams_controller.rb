@@ -7,6 +7,12 @@ class ExamsController < ApplicationController
 		@exams = Exam.where("user_id != ?", current_user.id)
 		@exams.sort! {|a,b| b.created_at <=> a.created_at}
 		@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
+		@accessible_exams
+		if current_user.accessible_exams != nil
+			@accessible_exams = current_user.accessible_exams.split(" ")
+		end
+		@test = params[:test]
+
 		
 		@fields = Field.all
 		@courses = Course.all
@@ -106,6 +112,8 @@ class ExamsController < ApplicationController
 		end
 	end
 
+	#downloading file from /public: send_file @exam.document.path, :filename => @exam.document_file_name, :type => @exam.document_content_type, :disposition => "attachment"
+
 	def download_exam
 		@exam = Exam.find(params[:exam_id])
 		@new_download_count = @exam.download_count + 1
@@ -124,7 +132,7 @@ class ExamsController < ApplicationController
 				#error message on Tokens
 			end
 		else
-			send_file @exam.document.path, :filename => @exam.document_file_name,
+			send_file "#{@exam.document.path}", :filename => @exam.document_file_name,
 				:type => @exam.document_content_type, :disposition => "attachment"
 			@exam.update_attributes(:download_count => @new_download_count)
 			unless Examrecord.where(:user_id => current_user.id).where(:exam_id => @exam.id).size > 0
@@ -195,6 +203,20 @@ class ExamsController < ApplicationController
 				end
 			end
 		end	
+	end
+
+	def grant_access
+		if current_user.accessible_exams != nil
+			current_user.accessible_exams += " #{params[:course]}"
+		else
+			current_user.accessible_exams = params[:course]
+		end
+		current_user.test_tokens -= 1
+		current_user.save
+		respond_to do |format|
+			format.html {redirect_to test_bank_path(:course => params[:course])}
+		end
+		
 	end
 
 end
