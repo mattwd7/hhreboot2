@@ -1,4 +1,5 @@
 #dining_wrapper{
+	background: #ccc;
 	font-size: 10pt;
 	h2{
 		text-align: left;
@@ -18,4 +19,22 @@
 		font-size: 10pt;
 		text-align: center;
 	}
+	.lunch{
+		float:left;
+	}
+	.dinner{
+		float:left;
+		clear: both;
+	}
+}
+#dining_menu{
+	background: #fff;
+	width: 70%;
+	position: absolute;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+	top: 0px;
+	left: 15%;
+	display: none;
 }

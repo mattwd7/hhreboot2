@@ -1,7 +1,5 @@
 class NavigationController < ApplicationController
 
-	require 'open-uri'
-
 	def homepage
 		respond_to do |format|
 			format.html
@@ -13,10 +11,11 @@ class NavigationController < ApplicationController
 			["Taking back The Hill",
 			"Your Hill, Your Way",
 			"A New Kind Of Hill",
-			"Your Hill Headquarters"]
-		@rand_subtitle = @subtitles[rand(@subtitles.count)]
+			"Head Quarters For The Hill"]
+		@rand_subtitle = @subtitles[Random.rand(0..@subtitles.count-1)]
 		respond_to do |format|
 			format.html
+			format.js
 		end
 	end
 	
@@ -79,6 +78,12 @@ class NavigationController < ApplicationController
 			format.html
 			format.json { render :json => @users}
 			format.js
+		end
+	end
+
+	def dining_menu
+		respond_to do |format|
+			format.html
 		end
 	end
 	

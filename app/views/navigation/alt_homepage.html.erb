@@ -6,7 +6,7 @@
 		<div id="navigation">
 			<%= link_to "About", about_path %> | 
 			<a href="/forums">Forum</a> | 
-			<a href="http://menu.ha.ucla.edu/foodpro/default.asp" target="_blank">Dining Menu</a> | 
+			<span id="dining_menu_link"><%= link_to "Dining Menu", homepage_path, :remote => true %></span> | 
 			<%= link_to "Textbooks", find_books_path %> | 
 			<%= link_to "Classmates", classmates_path %> | 
 			<%= link_to "Test Bank", test_bank_path %>
@@ -20,7 +20,7 @@
 				</div>
 				<h3><a href="#">Dining Menu</a></h3>
 				<div>
-					<%= render :partial => "/navigation/dining" %>
+					Blah blah blah
 				</div>
 				<h3><a href="#">Hot Topics</a></h3>
 				<div>
@@ -39,5 +39,7 @@
 	</div>
 
 	<div id="background_image"><img src="superbear.jpg" /></div>
+
+	<div id="dining_menu"><%= render :partial => "/navigation/dining" %></div>
 </div>
 </body>
