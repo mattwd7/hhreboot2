@@ -14,7 +14,7 @@
 		<% @exams.each do |exam| %>
 			<tr>
 				<% if @accessible_exams && @accessible_exams.size > 0 && @accessible_exams.include?(params[:course]) %>
-					<td><%= link_to exam.document_file_name, "http://dl.dropbox.com/u/108716796#{exam.document.path}" %></td>
+					<td><%= link_to exam.document_file_name, "http://dl.dropbox.com/u/108716796#{exam.document.path}", :target => "_blank" %></td>
 				<% else %>
 					<td><%= exam.document_file_name %></td>
 				<% end %>
