@@ -1,6 +1,6 @@
 class NavigationController < ApplicationController
 
-	include 'open-uri'
+	require 'open-uri'
 
 	def homepage
 		respond_to do |format|
