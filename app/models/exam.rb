@@ -3,7 +3,7 @@ class Exam < ActiveRecord::Base
   	attr_accessible :irrelevant_count, :duplicate_count, :misplaced_count, :download_count
   	attr_accessible :document_file_name, :document_content_type, :document_file_size
 
-  	has_attached_file :document
+  	has_attached_file :document, :storage => :Dropboxstorage, :path => "/:attachment/:attachment/:id/:style/:filename"
 
   	belongs_to :user
   	belongs_to :course
