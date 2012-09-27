@@ -12,7 +12,7 @@ class NavigationController < ApplicationController
 			"Your Hill, Your Way",
 			"A New Kind Of Hill",
 			"Head Quarters For The Hill"]
-		@rand_subtitle = @subtitles[Random.rand(0..@subtitles.count-1)]
+		@rand_subtitle = @subtitles[rand(@subtitles.count)]
 		respond_to do |format|
 			format.html
 			format.js
