@@ -193,7 +193,7 @@ class ExamsController < ApplicationController
 				end
 
 			else
-				flash[:notice] = "You must download a file before judging its quality."
+				flash[:alert] = "You must download a file before judging its quality."
 				if params[:route] == "my_vault_path"
 					format.html {redirect_to my_vault_path}
 				elsif params[:route] == "new_entries"

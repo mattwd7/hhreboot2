@@ -6,8 +6,12 @@
   <%= javascript_include_tag "application" %>
   <link rel="shortcut icon" href="/superbear_avatar.png"
   <%= csrf_meta_tags %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice %>
+    <span id="header_image"><%= image_tag "/notice_img.png", :size => "25x25" %></span><span class="notice">  &nbsp;&nbsp;&nbsp;<%= notice %>&nbsp;&nbsp;</span>
+  <% end %>
+  <% if alert %>
+    <span id="header_image"><%= image_tag "/alert_img.png", :size => "25x25" %></span><span class="alert">  &nbsp;&nbsp;&nbsp;<%= alert %>&nbsp;&nbsp;</span>
+  <% end %>
 </head>
 <body>
 
