@@ -56,7 +56,7 @@ $(document).ready(function() {
   })
 
   $("#close").click(function(){
-    $("#dining_menu").siblings().fadeTo("slow", "1.0")
+    $("#dining_menu").siblings().fadeTo("slow", "0.8")
     $("#dining_menu").fadeTo("slow", "0", function(){
       $(this).hide()
     })
