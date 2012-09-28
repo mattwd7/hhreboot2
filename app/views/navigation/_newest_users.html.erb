@@ -1,4 +1,4 @@
-<% users = User.all %>
+<% users = User.where("username != ?", "Anonymous") %>
 <% users.sort! { |a,b| b.created_at <=> a.created_at } %>
 <% list_num = 1 %>
 
