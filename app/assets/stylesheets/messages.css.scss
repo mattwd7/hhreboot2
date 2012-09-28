@@ -1,6 +1,7 @@
 #messages_wrapper{
 	width: 70%;
 	margin: 0 auto;
+	color:black;
 }
 #messages_title{
 	color:#FFB000;
@@ -69,4 +70,18 @@ ul.my_messages_tabs li:hover {
 }
 .unread_message{
 	font-weight: bold;
+}
+#new_message_wrapper{
+	background: #ccc;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+#view_message_wrapper{
+	width: 70%;
+	margin: 0 auto;
+	background: #ccc;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
 }

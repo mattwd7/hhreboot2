@@ -1,3 +1,10 @@
+<div id="messages_wrapper">
+<div id="new_message_wrapper">
+<body class="main">
+<h1>New message</h1>
+	 To <%= User.find(params[:recipient]).username %>:
+	</br>
+	</br>  
 <%= form_tag create_message_path do %>
 	 
 	Subject: </br>
@@ -20,3 +27,7 @@
 	<%= submit_tag("Send") %></br>
 
 <% end %>
+
+</body>
+</div>
+</div>

@@ -1,3 +1,18 @@
 // Place all the styles related to the Friendships controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#friendships_wrapper{
+	margin: 0 auto;
+	width: 20%;
+	background: #ccc;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	#friend_username a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		};
+	}
+}

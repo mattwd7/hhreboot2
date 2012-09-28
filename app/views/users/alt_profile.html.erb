@@ -4,9 +4,9 @@
 	<span class="profile_title">User: <%= @user.username %></span>
 	<% if @user != current_user %>
 		<% if current_user.friends.include?(@user) %>
-			<span>Friended.</span></br>
+			<span>Friended</span><span> | <%= link_to "Message", new_message_path(:recipient => @user.id) %></span></br>
 		<% else %>
-			<span id="friend_link"><%= link_to "Add as friend", add_friend_path(:friend_id => @user.id), :remote => true %></span></br>
+			<span id="friend_link"><%= link_to "Add as friend", add_friend_path(:friend_id => @user.id), :remote => true %></span><span> | <%= link_to "Message", new_message_path(:recipient => @user.id) %></span></br>
 		<% end %>
 	<% else %>
 		</br>

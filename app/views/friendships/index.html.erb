@@ -1,9 +1,16 @@
-<h2>Friends</h2>
-<ul>
-	<% for friendship in @user.friendships %>
-		<li>
-			<%= link_to friendship.friend.username, user_profile_path(:user => friendship.friend.id) %>
-			<%= link_to "remove", friendship, :method => :delete %>
-		</li>
-	<% end %>
-</ul>
+<div id="friendships_wrapper">
+<body class="main">
+
+	<h2>Friend List</h2>
+
+	<ul>
+		<% for friendship in @user.friendships %>
+			<li>
+				<span id="friend_username"><%= link_to friendship.friend.username, user_profile_path(:user => friendship.friend.id) %></span>
+				<%= link_to "remove", friendship, :method => :delete %>
+			</li>
+		<% end %>
+	</ul>
+
+</body>
+</div>
