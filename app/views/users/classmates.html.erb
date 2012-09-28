@@ -45,11 +45,13 @@
 		</tr>
 		<tr>
 		<% @classmates.each do |t| %>
-			<tr align="center">
-			<td><%= t.username %></td>
-			<td><%= t.building.name %></td>
-			<td><%= link_to "Message!", new_message_path(:recipient => t.id) %></td>
-			</tr>
+			<% unless t.id == current_user.id %>
+				<tr align="center">
+				<td><%= t.username %></td>
+				<td><%= t.building.name %></td>
+				<td><%= link_to "Message!", new_message_path(:recipient => t.id) %></td>
+				</tr>
+			<% end %>
 		<% end %>
 		</tr>
 		</table>
