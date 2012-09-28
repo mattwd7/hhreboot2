@@ -2,7 +2,8 @@
 <% doc = Nokogiri::HTML(open(url)) %>
 
 <div id="dining_wrapper">
-
+	<span id="close">X</span>
+	<div id="title"><%= Date.today.to_formatted_s(:long_ordinal) %></div>
 	<div class="lunch">
 		<div id="mealtime">Lunch</div>
 		<hr>

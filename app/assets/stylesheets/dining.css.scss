@@ -1,5 +1,5 @@
 #dining_wrapper{
-	background: #ccc;
+	background: #fff;
 	font-size: 10pt;
 	h2{
 		text-align: left;
@@ -26,6 +26,21 @@
 		float:left;
 		clear: both;
 	}
+	#close{
+		text-align: right;
+		background: #fff;
+		float: right;
+		&:hover{
+			text-shadow: 0 0 7px white;
+			cursor: pointer;
+			color: black;
+		};
+	}
+	#title{
+		font-size: 12pt;
+		font-weight: bold;
+		text-align: center;
+	}
 }
 #dining_menu{
 	background: #fff;
@@ -34,7 +49,7 @@
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid black;
-	top: 0px;
+	top: -30px;
 	left: 15%;
 	display: none;
 }

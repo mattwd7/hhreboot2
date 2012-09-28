@@ -54,11 +54,19 @@ $(document).ready(function() {
     $("#dining_menu").siblings().fadeTo("slow", "0.25")
     $("#dining_menu").fadeTo("slow", "1.0")
   })
-  $("#dining_menu").click(function(){
+
+  $("#close").click(function(){
     $("#dining_menu").siblings().fadeTo("slow", "1.0")
     $("#dining_menu").fadeTo("slow", "0", function(){
       $(this).hide()
     })
-  })
+  })  
+
+  /*$("#dining_menu").click(function(){
+    $("#dining_menu").siblings().fadeTo("slow", "1.0")
+    $("#dining_menu").fadeTo("slow", "0", function(){
+      $(this).hide()
+    })
+  })*/
 
 })
