@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var leftWidth = $(".left").width();
   var rightWidth = $(".right").width();
-  var totalWidth = leftWidth + rightWidth + 20;
+  var totalWidth = leftWidth + rightWidth + 30;
   $("#navigation").css("width", (totalWidth) + 'px');
 
   $(function() {

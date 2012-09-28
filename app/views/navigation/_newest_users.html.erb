@@ -1,0 +1,24 @@
+<% users = User.all %>
+<% users.sort! { |a,b| b.created_at <=> a.created_at } %>
+<% list_num = 1 %>
+
+<div class="right_widget" id="top_contributors">
+	<div id="title">Newest Members</div>
+
+<table align="center">
+	<col width="10%" />
+	<col width="70%" />
+	<tr>
+	<td></td>
+	<td>Username</td>
+	</tr>
+	<% users.each do |u| %>
+		<tr>
+			<td><%= list_num %>. </td>
+			<td align="left"><%= link_to u.username, user_profile_path(:user => u.id) %></td>
+		</tr>
+		<% list_num = list_num + 1 %>
+		<% if list_num > 10; break; end %>
+	<% end %>
+</table>
+</div>
