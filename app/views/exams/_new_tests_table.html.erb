@@ -20,7 +20,7 @@
 				<% else %>
 					<td><%= exam.document_file_name %></td>
 				<% end %>
-				<td class="center"><%= exam.course.field.abbr %> <%= exam.course.title %></td>
+				<td class="center"><%= link_to "#{exam.course.field.abbr} #{exam.course.title}", test_bank_path(:course => exam.course.id) %></td>
 				<td class="center"><%= exam.professor %></td>
 				<td class="center"><%= exam.description %></td>
 				<td class="center"><%= exam.term %></td>

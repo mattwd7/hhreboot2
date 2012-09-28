@@ -47,6 +47,8 @@ class ExamsController < ApplicationController
 				elsif params[:order] == "by_quality_desc"
 					@exams.sort! { |a,b| a.quality <=> b.quality }
 				end
+		else
+			@exams.sort! {|a,b| b.created_at <=> a.created_at}
 		end
 
 		respond_to do |format|
@@ -61,7 +63,7 @@ class ExamsController < ApplicationController
 			@accessible_exams = current_user.accessible_exams.split(" ")
 		end
 		@downloaded_exams = Exam.where("course_id IN (?)", @accessible_exams)
-		@downloaded_exams.sort! {|a,b| b.quality <=> a.quality}
+		@downloaded_exams.sort! {|a,b| b.created_at <=> a.created_at}
 		@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
 
     	@current_order
@@ -83,8 +85,6 @@ class ExamsController < ApplicationController
 					@downloaded_exams.sort! { |a,b| a.course.title <=> b.course.title }
 				elsif params[:order] == "by_course_desc"
 					@downloaded_exams.sort! { |a,b| b.course.title <=> a.course.title }
-				else
-					@downloaded_exams.sort! { |a,b| b.created_at <=> a.created_at }
 				end
 		end
 		respond_to do |format|
