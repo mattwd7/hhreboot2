@@ -57,29 +57,34 @@ class ExamsController < ApplicationController
 
 	def my_vault
 		@uploaded_exams = Exam.where(:user_id => current_user.id)
-		@downloaded_exams = Examrecord.where(:user_id => current_user.id).where(:downloaded => true)
-		@downloaded_exams.sort! {|a,b| b.exam.quality <=> a.exam.quality}
+		if current_user.accessible_exams != nil
+			@accessible_exams = current_user.accessible_exams.split(" ")
+		end
+		@downloaded_exams = Exam.where("course_id IN (?)", @accessible_exams)
+		@downloaded_exams.sort! {|a,b| b.quality <=> a.quality}
 		@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
 
     	@current_order
 		if params[:order]
 			@current_order = params[:order]
 				if params[:order] == "by_prof"
-					@downloaded_exams.sort! { |a,b| a.exam.professor <=> b.exam.professor }
+					@downloaded_exams.sort! { |a,b| a.professor <=> b.professor }
 				elsif params[:order] == "by_prof_desc"
-					@downloaded_exams.sort! { |a,b| b.exam.professor <=> a.exam.professor }
+					@downloaded_exams.sort! { |a,b| b.professor <=> a.professor }
 				elsif params[:order] == "by_quality"
-					@downloaded_exams.sort! { |a,b| b.exam.quality <=> a.exam.quality }
+					@downloaded_exams.sort! { |a,b| b.quality <=> a.quality }
 				elsif params[:order] == "by_quality_desc"
-					@downloaded_exams.sort! { |a,b| a.exam.quality <=> b.exam.quality }
+					@downloaded_exams.sort! { |a,b| a.quality <=> b.quality }
 				elsif params[:order] == "by_filename"
-					@downloaded_exams.sort! { |a,b| a.exam.document_file_name <=> b.exam.document_file_name }
+					@downloaded_exams.sort! { |a,b| a.document_file_name <=> b.document_file_name }
 				elsif params[:order] == "by_filename_desc"
-					@downloaded_exams.sort! { |a,b| b.exam.document_file_name <=> a.exam.document_file_name }
+					@downloaded_exams.sort! { |a,b| b.document_file_name <=> a.document_file_name }
 				elsif params[:order] == "by_course"
-					@downloaded_exams.sort! { |a,b| a.exam.course.title <=> b.exam.course.title }
+					@downloaded_exams.sort! { |a,b| a.course.title <=> b.course.title }
 				elsif params[:order] == "by_course_desc"
-					@downloaded_exams.sort! { |a,b| b.exam.course.title <=> a.exam.course.title }
+					@downloaded_exams.sort! { |a,b| b.course.title <=> a.course.title }
+				else
+					@downloaded_exams.sort! { |a,b| b.created_at <=> a.created_at }
 				end
 		end
 		respond_to do |format|
@@ -143,76 +148,69 @@ class ExamsController < ApplicationController
 
 	def submit_vote
 		@exam = Exam.find(params[:exam])
-		@record = Examrecord.where(:user_id => current_user.id, :exam_id => @exam.id, :downloaded => true).first
-
+		@record = Examrecord.new(:user_id => current_user.id, :exam_id => @exam.id, :vote => params[:vote])
+		@record.save
 
 		respond_to do |format|
-			if @record
-				if params[:vote] == "up"
-					@exam.quality += 1
-					@exam.save
+			if params[:vote] == "up"
+				@exam.quality += 1
+				@exam.save
+			end
+			if params[:vote] == "down"
+				@exam.quality -= 1
+				if params[:downvote_reason] == "Irrelevant"
+					@exam.irrelevant_count += 1
+					if @exam.irrelevant_count >= @irrelevant_count_threshold && @exam.quality < 0
+						@exam.examrecords.delete_all
+						@exam.destroy
+					end	
+				elsif params[:downvote_reason] == "Duplicate"
+					@exam.duplicate_count += 1
+					if @exam.duplicate_count >= @duplicate_count_threshold && @exam.quality < 0
+						@exam.examrecords.delete_all
+						@exam.destroy
+					end	
+				elsif params[:downvote_reason] == "Misplaced"
+					@exam.misplaced_count += 1
+					if @exam.misplaced_count >= @misplaced_count_threshold && @exam.quality < 0
+						@exam.examrecords.delete_all
+						@exam.destroy
+					end	
 				end
-				if params[:vote] == "down"
-					@exam.quality -= 1
-					if params[:downvote_reason] == "Irrelevant"
-						@exam.irrelevant_count += 1
-						if @exam.irrelevant_count >= @irrelevant_count_threshold && @exam.quality < 0
-							@exam.examrecords.delete_all
-							@exam.destroy
-						end	
-					elsif params[:downvote_reason] == "Duplicate"
-						@exam.duplicate_count += 1
-						if @exam.irrelevant_count >= @duplicate_count_threshold && @exam.quality < 0
-							@exam.examrecords.delete_all
-							@exam.destroy
-						end	
-					elsif params[:downvote_reason] == "Misplaced"
-						@exam.misplaced_count += 1
-						if @exam.irrelevant_count >= @misplaced_count_threshold && @exam.quality < 0
-							@exam.examrecords.delete_all
-							@exam.destroy
-						end	
-					end
-					@exam.save
-				end
-				@record.update_attributes(:vote => params[:vote])
-				current_user.exam_votes += 1
-				current_user.test_tokens += 1 if current_user.exam_votes % @exam_votes_per_token == 0
-				current_user.save
-				if @exam.quality % @upvotes_per_token == 0 && @exam.quality > @exam.prev_best
-					@exam.user.test_tokens += 1
-					@exam.user.save
-					@exam.update_attributes(:prev_best => @exam.quality)
-				end
-				if params[:route] == "my_vault_path"
-					format.html {redirect_to my_vault_path}
-				elsif params[:route] == "new_entries"
-					format.html {redirect_to test_bank_path(:new_entries => true)}
-				else
-					format.html {redirect_to test_bank_path}
-				end
+				@exam.save
+			end
 
+			current_user.exam_votes += 1
+			current_user.test_tokens += 1 if current_user.exam_votes % @exam_votes_per_token == 0
+			current_user.save
+
+			if @exam.quality % @upvotes_per_token == 0 && @exam.quality > @exam.prev_best
+				@exam.user.test_tokens += 1
+				@exam.user.save
+				@exam.update_attributes(:prev_best => @exam.quality)
+			end
+			if params[:route] == "my_vault_path"
+				format.html {redirect_to my_vault_path}
+			elsif params[:route] == "new_entries"
+				format.html {redirect_to test_bank_path(:new_entries => true)}
 			else
-				flash[:alert] = "You must download a file before judging its quality."
-				if params[:route] == "my_vault_path"
-					format.html {redirect_to my_vault_path}
-				elsif params[:route] == "new_entries"
-					format.html {redirect_to test_bank_path(:new_entries => true)}
-				else
-					format.html {redirect_to test_bank_path}
-				end
+				format.html {redirect_to test_bank_path}
 			end
 		end	
 	end
 
 	def grant_access
-		if current_user.accessible_exams != nil
-			current_user.accessible_exams += " #{params[:course]}"
+		if current_user.test_tokens	> 0
+			if current_user.accessible_exams != nil
+				current_user.accessible_exams += " #{params[:course]}"
+			else
+				current_user.accessible_exams = params[:course]
+			end
+			current_user.test_tokens -= 1
+			current_user.save
 		else
-			current_user.accessible_exams = params[:course]
+			flash[:alert] = "You require a test token to access exams for this course."
 		end
-		current_user.test_tokens -= 1
-		current_user.save
 		respond_to do |format|
 			format.html {redirect_to test_bank_path(:course => params[:course])}
 		end

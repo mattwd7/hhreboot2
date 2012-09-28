@@ -48,7 +48,7 @@
 	</div>
 	<div>
 		<% if @accessible_exams == nil || !@accessible_exams.include?(params[:course]) %>
-			<%= button_to "Access exams for this course", grant_access_path(:course => params[:course]), :confirm => "Gaining access to exams for this course will use 1 test token.  Are you sure you want to continue?" %>
+			<%= button_to "Get access to exams for this course", grant_access_path(:course => params[:course]), :confirm => "Gaining access to exams for this course will use 1 test token.  Are you sure you want to continue?" %>
 		<% end %>
 	</div></br>
 	<% if @exams.size == 0 %>

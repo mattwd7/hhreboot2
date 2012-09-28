@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     @misplaced_count_threshold = 2
     @duplicate_count_threshold = 2
     @upvotes_per_token = 2
-    @exam_votes_per_token = 3
+    @exam_votes_per_token = 5
 	end
 
 	def forem_user
