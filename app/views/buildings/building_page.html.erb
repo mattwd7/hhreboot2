@@ -1,26 +1,25 @@
-<h1>Building Profile: <%= @building.name %></h1>
+<div id="profile_wrapper">
+<body class="main">
 
-<h3>By the numbers</h3>
-Total residents: <%= "CONTACT MICHELLE ABOUT THESE NUMBERS" %></br>
-Hill Heroes: <%= @building.users.count %></br>
-Percentage of Hill Heroes:</br>
+<span class="profile_title">Building Profile: <%= @building.name %></span>
 
-<% @topics.each do |t| %>
-	<%= t.user.building.name %>
-<% end %>
+<div id="building_content">
+	<h3>By the numbers</h3>
+	Total residents: <%= "CONTACT MICHELLE ABOUT THESE NUMBERS" %></br>
+	Hill Heroes: <%= @building.users.count %></br>
+	Percentage of Hill Heroes:</br>
 
-<h4>What <%= @building.name %> is talking about...</h4>
-<hr>
-<% if @topics.count < 10 %>
+	<h4>What <%= @building.name %> is talking about...</h4>
+	<hr>
+	<% counter = 1 %>
 	<% @topics.each do |t| %>
 		<% if t.user.building.id == @building.id %>
 			<%= link_to t.subject, forem.forum_topic_path(t.forum.id, t) %> in <%= t.forum.title %> by <%= t.user %></br>
+			<% counter += 1 %>
+			<% break if counter > 10 %>
 		<% end %>
 	<% end %>
-<% else %>
-	<% for i in 0..9 %>
-		<% if t.user.building.id == @building.id %>
-			<%= link_to @topics[i].subject, forem.forum_topic_path(@topics[i].forum.id, @topics[i]) %> in <%= @topics[i].forum.title %> by <%= @topics[i].user %></br>
-		<% end %>
-	<% end %>
-<% end %>
+</div>
+
+</body>
+</div>
