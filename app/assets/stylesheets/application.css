@@ -12,6 +12,9 @@
  *= require_directory .
 */
 
+.main {
+	background:#536895;
+}
 .notice{
 	background: #FFD942;
 	color: black;
