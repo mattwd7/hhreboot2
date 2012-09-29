@@ -1,4 +1,5 @@
 <%= content_tag_for(:tr, @my_courses) do |course| %>
 	<td class="course_title"><%= course.field.abbr %> <%= course.title %></td>
+	<td><%= link_to "Classmates", classmates_path(:course => course.id) %></td>
 	<td><%= link_to "Remove", remove_course_from_quarter_path(:crs_id => course.id, :qtr_id => current_user.quarters.where(:term => @current_term).first, :d_id => dom_id(course)), :remote => true %></td>
 <% end %>
