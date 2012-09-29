@@ -3,6 +3,7 @@
 	background: #ccc;
 	padding: 5px 20px;
 	border-radius: 5px;
+	border: 1px solid black;
 	&:hover{
 		-moz-box-shadow:    inset 0 0 10px #000000;
 		-webkit-box-shadow: inset 0 0 10px #000000;
@@ -11,9 +12,17 @@
 	p{
 		text-indent: 50px;
 		margin-left: 50px;
+		text-align: justify;
+		padding-right: 50px;
+	}
+	h1{
+		color: black;
+		font-size: 40pt;
+		text-align: center;
 	}
 	h3{
 		margin-top: 30px;
+		font-size: 25pt;
 	}
 	a{
 		text-decoration: none;
@@ -23,6 +32,22 @@
 	}
 	li{
 		text-align: justify;
+		padding-right: 50px;
+	}
+	#list_container{
+		padding-left: 40px;
+		img{
+			float: right;
+		}
+	}
+	.content_list{
+		text-align: justify;
+		list-style-type: disc;
+		padding-right: 40px;
+	}
+	img{
+		display: block;
+		margin: 0 auto;
 	}
 }
 #sublist{
@@ -33,15 +58,16 @@
 	font-weight: bold;
 }
 #yellow{
-	color: #ffbb00;
+	color:gold;
 	font-weight: bold;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #red{
 	color: red;
 	font-weight: bold;
 }
 .thumbs{
-	text-align: justify;
+
 }
 #NOT li{
 	list-style-type: decimal;
