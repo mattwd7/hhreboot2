@@ -127,7 +127,7 @@ class CoursesController < ApplicationController
   end
 
   def manage_classes
-    if params[:qtr_id]
+    if params[:qtr_id] && params[:qtr_id] != ""
       @quarter = Quarter.find(params[:qtr_id])
       @my_courses = @quarter.courses
       @term = @quarter.term
