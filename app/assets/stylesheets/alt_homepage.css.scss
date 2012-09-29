@@ -25,6 +25,7 @@
 	font-style: italic;
 }
 #navigation{
+	width: 100%;
 	background: #555;
 	font-size: 16pt;
 	align: left;
@@ -48,12 +49,13 @@
 	font-size: 16pt;
 	text-shadow: 0 0 7px white;
 }
-.left{
-	background:#DDD;
+.left1{
+	background:#fff;
 	width:70%;
 	opacity: 0.8;
-	min-height:600px;
+	height:400px;
 	float:left;
+	margin-bottom: 20px; 
 	
 	/*border-radius: 5px;
 	border: 1px solid black;
@@ -62,10 +64,37 @@
 		-webkit-box-shadow: inset 0 0 10px #000000;
 		box-shadow:         inset 0 0 10px #000000;
 	}*/
+	#right1{
+		float: left;
+		margin: 7% 0 0 3%;
+	}
+	#right2{
+		width: 50%;
+		float: left;
+		margin-left: -15px;
+		li{
+			
+			font-size: 16pt;
+			line-height: 100%;
+			list-style-type: disc;
+			margin-top: 20px;
+			#first{
+				font-size: 18pt;
+				margin-top: 0;
+			}
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	#title{
+		font-size: 14pt;
+		margin: 5px 0 0 5px;
+	}
 	
-}
-.left img{
-	margin-left: 10%;
 }
 #accordion #height{
 	height: 325px;
@@ -84,7 +113,7 @@
 	opacity: 0.8;
 	width:22%;
 	min-height:600px;
-	float: left;
+	float: right;
 	margin-left: 20px;
 	padding: 5px 15px;
 	/*border-radius: 5px;
@@ -121,4 +150,42 @@
 }
 #top_posters tr{
 	text-align: center;
+}
+#articles_div{
+	font-size: 16pt;
+	h1{
+		font-size: 18pt;
+		color: black;
+		margin-left: -20px;
+	}
+	#featured{
+		margin-top: -20px;;
+	}
+	a{
+		text-decoration: none;
+		margin-left: 20px;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.left2{
+	background:#DDD;
+	width:70%;
+	opacity: 0.8;
+	min-height:320px;
+	float: left;
+	h1{
+		font-size: 16pt;
+	}
+}
+#new_topics{
+	margin: 20px;
+	a{
+		font-size: 11.5pt;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }

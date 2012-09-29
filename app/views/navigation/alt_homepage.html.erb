@@ -12,19 +12,19 @@
 			<%= link_to "Test Bank", test_bank_path %>
 		</div>
 	
-	<div class="left">
-			<div id="accordion">
-				<h3 id="top" class="cyclotron"><a href="#">Welcome!</a></h3>
-				<div id="height" style="padding: 0 5px 0 5px;">
+	<div class="left1">
+			<div>
+				<div id="right1">
 					<a href=""><img src="doItLive.png" title="And what that means for YOU!" /></a>
 				</div>
-				<h3><a href="#">Articles</a></h3>
-				<div>
-					blah blah blah
-				</div>
-				<h3><a href="#">Hot Topics</a></h3>
-				<div>
-					<%= render :partial => "newest_topics" %>
+				<div id="right2">
+					<ul>
+						<li id="first"><%= link_to "Get away with drinking and smoking in the dorms at UCLA!", roadmap_path %></li>
+						<li>Download old quizzes, midterms, and finals from the Test Bank</li>
+						<li>Sell and buy old textbooks at better prices then Ackerman and Amazon</li>
+						<li>See what's for dinner</li>
+						<li>And much much more....</li>
+					</ul>
 				</div>
 			</div>
 	</div>
@@ -36,6 +36,10 @@
 		<div id="top_posters">
 			<%= render :partial => "building_leaders" %>
 		</div>
+	</div>
+
+	<div class="left2">
+		<%= render :partial => "newest_topics" %>
 	</div>
 
 	<div id="background_image"><img src="superbear.jpg" /></div>
