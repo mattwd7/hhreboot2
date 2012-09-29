@@ -39,7 +39,6 @@
 								</td>
 								<td style="display:none;" id="downvote_submission">
 									<%= form_tag(submit_vote_path) do %>
-										Test 2
 										<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
 										<%= hidden_field_tag :exam, exam.id %>
 										<%= hidden_field_tag :vote, "down" %>
@@ -59,7 +58,6 @@
 							</td>
 							<td style="display:none;" id="downvote_submission">
 								<%= form_tag(submit_vote_path) do %>
-									Test 2
 									<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
 									<%= hidden_field_tag :exam, exam.id %>
 									<%= hidden_field_tag :vote, "down" %>
@@ -80,7 +78,6 @@
 						</td>
 						<td style="display:none;" id="downvote_submission">
 							<%= form_tag(submit_vote_path) do %>
-								Test 2
 								<%= select(nil, :downvote_reason, ["Irrelevant", "Duplicate", "Misplaced", "Other"]) %>
 								<%= hidden_field_tag :exam, exam.id %>
 								<%= hidden_field_tag :vote, "down" %>
