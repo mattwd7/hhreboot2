@@ -201,13 +201,17 @@ class ExamsController < ApplicationController
 
 	def grant_access
 		if current_user.test_tokens	> 0
-			if current_user.accessible_exams != nil
-				current_user.accessible_exams += " #{params[:course]}"
+			if Exam.where(:course_id => params[:course]).where("user_id != ?", current_user.id).count != 0
+				if current_user.accessible_exams != nil
+					current_user.accessible_exams += " #{params[:course]}"
+				else
+					current_user.accessible_exams = params[:course]
+				end
+				current_user.test_tokens -= 1
+				current_user.save
 			else
-				current_user.accessible_exams = params[:course]
+				flash[:alert] = "There are no exams to gain access to."
 			end
-			current_user.test_tokens -= 1
-			current_user.save
 		else
 			flash[:alert] = "You require a test token to access exams for this course."
 		end
