@@ -1,0 +1,13 @@
+<h1>Insert a class into the database</h1>
+
+<%= form_tag(insert_class_path) do %>
+Select course AFTER WHICH the new course will be inserted:</br>
+<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+<%= collection_select(nil, :course_id, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+
+</br>Title of new course:</br>
+<%= text_field_tag :new_course_title %></br>
+
+<%= submit_tag "Add the course" %>
+
+<% end %>

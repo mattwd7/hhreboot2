@@ -1,9 +1,6 @@
-Hhreboot2::Application.routes.draw do
-
-  mount Forem::Engine, :at => "/forums"
-  devise_for :users, :controllers => {:registrations => "registrations", confirmations: "confirmations"}
-
-  resources :users
+HHeroes::Application.routes.draw do
+  
+  
   resources :friendships
   resources :messages
   resources :fields
@@ -11,9 +8,19 @@ Hhreboot2::Application.routes.draw do
   resources :courses
   resources :buildings
 
+  mount Forem::Engine, :at => "/forums"
+  devise_for :users, :controllers => {:registrations => "registrations", confirmations: "confirmations"}
+
+  resources :users
+
+#  root :to => 'navigation#homepage'
   root :to => 'navigation#alt_homepage'
   
   match 'new_topics' => 'topics#new_topics'
+
+  match 'owner_area' => 'owner#owner_area'
+  match 'insert_class' => 'owner#insert_class'
+  match 'custom_script' => 'owner#custom_script'
   
   match 'homepage' => 'navigation#alt_homepage'
   match 'hot_topics' => 'navigation#hot_topics'
@@ -25,6 +32,7 @@ Hhreboot2::Application.routes.draw do
   match 'update_courses' => 'navigation#update_courses'
   match 'about' => 'navigation#about'
   match 'roadmap' => 'navigation#roadmap'
+  match 'dining_menu' => 'navigation#dining_menu'
 
   match 'test_bank' => 'exams#test_bank'
   match 'upvote' => 'exams#upvote'
@@ -71,5 +79,10 @@ Hhreboot2::Application.routes.draw do
 
   match 'building_page' => 'buildings#building_page'
 
- 
+  
+#  match 'add_courses' => 'courses#add_data'
+#  match 'add_buildings' => 'buildings#add_data'
+
+  
+  
 end

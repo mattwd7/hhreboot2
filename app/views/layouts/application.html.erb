@@ -4,7 +4,7 @@
   <title>Hill Heroes</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <link rel="shortcut icon" href="/superbear_avatar.png"
+  <link rel="shortcut icon" href="/superbear_avatar.png"/>
   <%= csrf_meta_tags %>
   <% if notice %>
     <span id="header_image"><%= image_tag "/notice_img.png", :size => "25x25" %></span><span class="notice">  &nbsp;&nbsp;&nbsp;<%= notice %>&nbsp;&nbsp;</span>
@@ -30,8 +30,12 @@
             | <b><%= current_user.username %></b>
 			(<%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>)
             <% if current_user.forem_admin %>
-                | <%= link_to "Administrate", forem.admin_root_url %></div>
+                | <%= link_to "Administrate", forem.admin_root_url %>
             <% end %>
+            <% if current_user.owner %>
+                | <%= link_to "Owner Area", owner_area_path %>
+            <% end %>
+            </div>
         <% else %>
             <div align="right"><%= link_to "Sign in", main_app.new_user_session_path %>
 			| <%= link_to "Sign up", main_app.new_user_registration_path %></div>

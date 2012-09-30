@@ -1,5 +1,6 @@
 class Course < ActiveRecord::Base
-   attr_accessible :title, :field_id
+   attr_accessible :title, :field_id, :queue
+   default_scope :order => :queue
    
    belongs_to :field
    has_and_belongs_to_many :quarters, :join_table => "courses_quarters"

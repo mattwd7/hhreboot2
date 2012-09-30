@@ -1,0 +1,2 @@
+$('#course_select').html("");
+$('#course_select').html("<%= escape_javascript(options_from_collection_for_select(@course_list, :id, :title)) %> ");
