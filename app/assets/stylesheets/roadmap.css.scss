@@ -1,4 +1,5 @@
 #roadmap_wrapper{
+	position: relative;
 	margin: 0 auto;
 	width: 700px;
 	background: #ccc;
@@ -52,8 +53,8 @@
 	}
 	#nametag{
 		position: absolute;
-		top: 225px;
-		right: 285px;
+		top: 175px;
+		right: 30px;
 	}
 }
 #sublist{

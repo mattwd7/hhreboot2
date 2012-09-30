@@ -15,7 +15,7 @@
       		<% next %>
       	<% end %>
       	<% if msg.include? "Document file size must be in between"  %>
-      		<li>Uploaded file size must be < 1 MB (1000 kB) </li>
+      		<li>Uploaded file size must be < 1 MB (1000 kB)</br>Compress your pdf using <%= link_to "this free service", "http://docupub.com/pdfcompress/", :target => "_blank" %> </li>
       		<% next %>
       	<% end %>
         <li><%= msg %></li>
