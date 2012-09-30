@@ -1,4 +1,4 @@
-HHeroes::Application.routes.draw do
+Hhreboot2::Application.routes.draw do
   
   
   resources :friendships
