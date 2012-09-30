@@ -23,7 +23,11 @@ class OwnerController < ApplicationController
 			if current_user.owner
 				if params[:new_course_title]
 					@course = Course.find(params[:course_id])
-					@new_course = Course.create(:field_id => @course.field.id, :title => params[:new_course_title], :queue => (@course.queue + 1))
+					
+					@new_course = Course.new(:field_id => @course.field.id, :title => params[:new_course_title])
+					@new_course.queue = @course.queue + 1
+					@new_course.save
+
 					@courses_after = Course.where(:field_id => @course.field.id).where("queue > ?", @course.queue).order(:queue)
 					@courses_after.each do |c|
 						c.queue += 1
