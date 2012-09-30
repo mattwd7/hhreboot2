@@ -18,7 +18,6 @@
 $(document).ready(function() {
 // CLASS MANAGEMENT FUNCITONS
   // Field -> courses selection lists
-  $("#selections").hide();
   $(".hidden_element").hide();
 
 	$("#show_fields").click(function(){
