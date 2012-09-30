@@ -62,7 +62,7 @@ class ExamsController < ApplicationController
 		if current_user.accessible_exams != nil
 			@accessible_exams = current_user.accessible_exams.split(" ")
 		end
-		@downloaded_exams = Exam.where("course_id IN (?)", @accessible_exams)
+		@downloaded_exams = Exam.where("course_id IN (?)", @accessible_exams).where("user_id != ?", current_user.id)
 		@downloaded_exams.sort! {|a,b| b.created_at <=> a.created_at}
 		@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
 
@@ -103,8 +103,14 @@ class ExamsController < ApplicationController
     			:professor => params[:professor], :term => params[:term], 
     			:document => params[:document], :description => params[:description])
 		    respond_to do |format|
-				if @exam.save
-					format.html { redirect_to test_bank_path, notice: 'Exam was successfully uploaded.' }
+		    	if current_user.legitimate_uploader == false && current_user.uploads >= @upload_limit
+		    		format.html { redirect_to upload_exam_path, alert: "You have reached your upload limit (#{@upload_limit}) this quarter without having your existing uploads legitimized." }
+				elsif @exam.save
+					#after upload actions
+					current_user.test_tokens += 1
+					current_user.uploads += 1
+					current_user.save
+					format.html { redirect_to my_vault_path, notice: 'Exam was successfully uploaded.' }
 				else
 					format.html { render action: "upload_exam" }
 				end
@@ -180,12 +186,14 @@ class ExamsController < ApplicationController
 				@exam.save
 			end
 
-			current_user.exam_votes += 1
-			current_user.test_tokens += 1 if current_user.exam_votes % @exam_votes_per_token == 0
-			current_user.save
+			#current_user.exam_votes += 1
+			#current_user.test_tokens += 1 if current_user.exam_votes % @exam_votes_per_token == 0
+			#current_user.save
 
 			if @exam.quality % @upvotes_per_token == 0 && @exam.quality > @exam.prev_best
 				@exam.user.test_tokens += 1
+				@exam.user.legitimate_uploader = true
+				@exam.user.uploads += 1
 				@exam.user.save
 				@exam.update_attributes(:prev_best => @exam.quality)
 			end

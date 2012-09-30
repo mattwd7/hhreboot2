@@ -13,4 +13,10 @@ $(document).ready(function() {
 		$(this).parent().next().next().show()
 		$(this).parent().html($("<img src='/upvote_neutral.png' > " + new_quality + " <img src='/downvote.png' >"))
 	})
+
+	$("#how_it_works").hover(function(){
+		$("#testbank_rules_wrapper").show();
+	}, function(){
+		$("#testbank_rules_wrapper").hide();
+	})
 })

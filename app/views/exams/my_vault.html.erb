@@ -28,7 +28,7 @@
 
 		<% @downloaded_exams.each do |exam| %>
 			<tr>
-				<td><%= link_to exam.document_file_name, download_exam_path(:exam_id => exam.id) %></td>
+				<td><%= link_to exam.document_file_name, "http://dl.dropbox.com/u/108716796#{exam.document.path}", :target => "_blank" %></td>
 				<td class="center"><%= link_to "#{exam.course.field.abbr} #{exam.course.title}", test_bank_path(:course => exam.course.id) %></td>
 				<td class="center"><%= exam.professor %></td>
 				<td class="center"><%= exam.description %></td>
@@ -134,7 +134,7 @@
 
 		<% @uploaded_exams.each do |exam| %>
 			<tr>
-				<td><%= exam.document_file_name %></td>
+				<td><%= link_to exam.document_file_name, "http://dl.dropbox.com/u/108716796#{exam.document.path}", :target => "_blank" %></td>
 				<td><%= exam.course.field.abbr %> <%= exam.course.title %></td>
 				<td class="center"><%= exam.professor %></td>
 				<td class="center"><%= exam.description %></td>

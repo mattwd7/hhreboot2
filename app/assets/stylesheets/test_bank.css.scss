@@ -58,3 +58,33 @@
 		color: black;
 	}
 }
+#testbank_rules_wrapper{
+	text-align: justify;
+	width: 300px;
+	background: #fff;
+	padding: 10px 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	position: absolute;
+	top: 100px;
+	left: 690px;
+	li{
+		list-style-type: disc;
+		text-align: left;
+
+	}
+	#last{
+		list-style-type: none;
+	}
+}
+#how_it_works{
+	text-decoration: underline;
+	color: black;
+	&:hover{
+		cursor: pointer;
+	}
+}
+#tokens:hover{
+	cursor: pointer;
+}

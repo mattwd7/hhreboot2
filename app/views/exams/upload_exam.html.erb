@@ -36,10 +36,10 @@
 		<tr><td>Exam Term (e.g. Spring, 2010):</td><td><%= text_field_tag :term, params[:term] %></td></tr>
 	</table>
 	<%= file_field_tag :document %></br>
-	<%= hidden_field_tag :go, :value => true %>
+  <%= hidden_field_tag :go, :value => true %>
 	<%= submit_tag("Upload") %>
 <% end %>
-<%= link_to "Back", test_bank_path %>
+<%= link_to "Back", my_vault_path %>
 
 </body>
 </div>

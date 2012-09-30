@@ -6,8 +6,7 @@
 <div>
 	<%= link_to "View My Exams", my_vault_path %> | 
 	<%= link_to "Upload An Exam", upload_exam_path %> | 
-	<%= link_to "Review Newer Entries", test_bank_path(:new_entries => true) %> | 
-	<%= link_to "Test Bank FAQs" %>
+	<span id="how_it_works">How it works...</span>
 </div>
 
 <% if current_user %>
@@ -74,6 +73,14 @@
 	</div>
 <% end %>
 
+<div id="testbank_rules_wrapper" style="display: none;">
+	<ul>
+		<li>1 test token / 1 upload</li>
+		<li>1 test token / 2 upvotes received by an uploaded exam</li>
+		<li>Limit of 2 uploads per user until existing uploads are legitimized via upvotes or the quarter changes</li>
+	</ul>
+	NOTICE: The Hill Heroes test bank is monitored daily. Garbage uploads and flagrant reuploading of existing material will result in a <b>permanent ban</b> on your account.
+</div>
 
 </body>
 </div>
