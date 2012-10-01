@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :forem_admin
   attr_accessible :building_id, :contact, :major, :major2, :minor, :minor2
   attr_accessible :about_me, :year, :new_messages, :confirmed_at, :avatar_path, :test_tokens
-  attr_accessible :exam_votes, :accessible_exams, :legitimate_uploader, :uploads, :owner
+  attr_accessible :exam_votes, :accessible_exams, :legitimate_uploader, :uploads, :owner, :is_ra
 
   
   
