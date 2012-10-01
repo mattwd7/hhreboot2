@@ -59,6 +59,7 @@ class ExamsController < ApplicationController
 
 	def my_vault
 		@uploaded_exams = Exam.where(:user_id => current_user.id)
+		@uploaded_exams.sort! {|a,b| b.created_at <=> a.created_at}
 		if current_user.accessible_exams != nil
 			@accessible_exams = current_user.accessible_exams.split(" ")
 		end
