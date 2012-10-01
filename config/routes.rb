@@ -5,8 +5,6 @@ Hhreboot2::Application.routes.draw do
   mount Forem::Engine, :at => "/forums"
   devise_for :users, :controllers => {:registrations => "registrations", confirmations: "confirmations"}
 
-  resources :users
-
 #  root :to => 'navigation#homepage'
   root :to => 'navigation#alt_homepage'
   
