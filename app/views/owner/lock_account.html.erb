@@ -1,0 +1,13 @@
+<h1>Lock an account</h1>
+
+<%= form_tag(lock_account_path) do %>
+	Username: <%= text_field_tag :lock_username %>
+	<%= submit_tag "Lock it"%>
+<% end %>
+
+</br></br>
+
+<h2>Locked accounts</h2>
+<% @locked_accounts.each do |t| %>
+	<%= t.id %> <%= t.username %> <%= link_to "Unlock Account", unlock_account_path(:user_id => t.id) %></br>
+<% end %>

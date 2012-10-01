@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
 
   before_filter :set_global_variables
+  
+
 	def set_global_variables
 		@current_term = "Fall 2012"
     @premium_exam_benchmark = 4
@@ -11,6 +13,14 @@ class ApplicationController < ActionController::Base
     @exam_votes_per_token = 5
     @upload_limit = 2
 	end
+
+  before_filter :check_locked_account
+  def check_locked_account
+      if current_user && current_user.locked_at != nil
+          flash[:alert] = "Your account has been locked.  If you feel this was done in error or you would like a second chance, email the admins: hillheroesmods@gmail.com"
+          sign_out(current_user)
+      end
+  end  
 
 	def forem_user
 		current_user

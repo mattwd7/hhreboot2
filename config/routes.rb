@@ -1,13 +1,5 @@
 Hhreboot2::Application.routes.draw do
   
-  
-  resources :friendships
-  resources :messages
-  resources :fields
-  resources :quarters
-  resources :courses
-  resources :buildings
-
   mount Forem::Engine, :at => "/forums"
   devise_for :users, :controllers => {:registrations => "registrations", confirmations: "confirmations"}
 
@@ -22,6 +14,8 @@ Hhreboot2::Application.routes.draw do
   match 'insert_class' => 'owner#insert_class'
   match 'custom_script' => 'owner#custom_script'
   match 'review_test_bank_entries' => 'owner#review_test_bank_entries'
+  match 'lock_account' => 'owner#lock_account'
+  match 'unlock_account' => 'owner#unlock_account'
   
   match 'homepage' => 'navigation#alt_homepage'
   match 'hot_topics' => 'navigation#hot_topics'

@@ -7,8 +7,8 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :forem_admin
-  attr_accessible :building_id, :contact, :major, :major2, :minor, :minor2
-  attr_accessible :about_me, :year, :new_messages, :confirmed_at, :avatar_path, :test_tokens
+  attr_accessible :building_id, :contact, :major, :major2, :minor, :minor2, :locked_at, :receive_textbook_emails
+  attr_accessible :about_me, :year, :new_messages, :confirmed_at, :avatar_path, :test_tokens, :current_sign_in_ip
   attr_accessible :exam_votes, :accessible_exams, :legitimate_uploader, :uploads, :owner, :is_ra
 
   

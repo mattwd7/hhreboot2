@@ -69,4 +69,37 @@ class OwnerController < ApplicationController
 		end
 	end
 
+	def lock_account
+		@locked_accounts = User.where("locked_at is not NULL")
+
+		respond_to do |format|
+			if current_user.owner
+				if params[:lock_username]
+					@user = User.where(:username => params[:lock_username])
+					if @user.count > 0
+						@user = @user.first
+						@user.update_attributes(:locked_at => Time.now)
+						flash[:notice] = "#{@user.username} account locked at #{@user.locked_at}."
+					else
+						flash[:alert] = "#{params[:lock_username]} does not exist."
+					end
+				end
+				format.html
+			else
+				format.html {redirect_to homepage_path}
+			end
+		end		
+	end
+
+	def unlock_account
+		respond_to do |format|
+			if current_user.owner
+				User.find(params[:user_id]).update_attributes(:locked_at => nil)
+				format.html {redirect_to lock_account_path}
+			else
+				format.html {redirect_to homepage_path}
+			end
+		end
+	end
+
 end
