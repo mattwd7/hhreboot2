@@ -1,0 +1,12 @@
+#owner_tests_wrapper{
+	td{
+		padding-bottom: 10px;
+	}
+	a{
+		color: blue;
+		&:visited{
+			color: green;
+		}
+
+	}
+}

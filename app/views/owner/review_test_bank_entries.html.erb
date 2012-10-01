@@ -1,0 +1,36 @@
+<div id="owner_tests_wrapper">
+
+<h1>Test Bank Entries - 1 week</h1>
+
+	<table align="center">
+			 <col width="50">
+
+			<th>ID</th>
+			<th>Upload Time</th>
+			<th>Filename</th>
+			<th>Uploader</th>
+			<th>Course</th>
+			<th>Professor</th>
+			<th>Details</th>
+			<th>Term</th>
+			<th>Quality</th>
+
+			<% @exams.each do |exam| %>
+				<tr>
+					<td><%= exam.id %></td>
+					<td><%= time_ago_in_words(exam.created_at) + " ago" %></td>
+					<td><%= link_to exam.document_file_name, "http://dl.dropbox.com/u/108716796#{exam.document.path}", :target => "_blank" %></td>
+					<td><%= exam.user.username %></td>
+					<td><%= "#{exam.course.field.abbr} #{exam.course.title.first(12)}" %></td>
+					<td style="text-align:center"><%= exam.professor %></td>
+					<td style="text-align:center"><%= exam.description %></td>
+					<td style="text-align:center"><%= exam.term %></td>
+					<td style="text-align:center"><%= exam.quality > 0 ? "+#{exam.quality}" : exam.quality %></td>
+
+				</tr>
+			<% end %>
+
+
+	</table>
+
+</div>

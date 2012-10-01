@@ -56,4 +56,17 @@ class OwnerController < ApplicationController
 		end
 	end
 
+	def review_test_bank_entries
+		respond_to do |format|
+			if current_user.owner
+				@exams = Exam.where("created_at > ?", 1.week.ago)
+				@exams.sort! {|a,b| a.created_at <=> b.created_at}
+
+				format.html
+			else
+				format.html {redirect_to homepage_path}
+			end
+		end
+	end
+
 end

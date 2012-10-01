@@ -21,6 +21,7 @@ Hhreboot2::Application.routes.draw do
   match 'owner_area' => 'owner#owner_area'
   match 'insert_class' => 'owner#insert_class'
   match 'custom_script' => 'owner#custom_script'
+  match 'review_test_bank_entries' => 'owner#review_test_bank_entries'
   
   match 'homepage' => 'navigation#alt_homepage'
   match 'hot_topics' => 'navigation#hot_topics'
