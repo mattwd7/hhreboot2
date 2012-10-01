@@ -8,6 +8,9 @@
       <% else %>
           Anonymous</br>
       <% end %>
+      <% if post.user.is_ra %>
+        <div style="color:red;">Resident Assistant</div>
+      <% end %>
       <%= post.user.building.name %>
 
     </div>

@@ -6,5 +6,5 @@ $(document).ready(function() {
 				$(this).next().css("height", $(this).height() + "px")
 			}
 		})
-	}, 300)
+	}, 500)
 })
