@@ -1,5 +1,7 @@
 Hhreboot2::Application.routes.draw do
   
+  resources :messages
+  
   mount Forem::Engine, :at => "/forums"
   devise_for :users, :controllers => {:registrations => "registrations", confirmations: "confirmations"}
 
