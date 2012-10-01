@@ -3,14 +3,27 @@
 	<span class="title">Hill Heroes</span>
 	<span class="subtitle"><%= @rand_subtitle %></span>
 	
+	<div class="close_resources">
 		<div id="navigation">
 			<%= link_to "About" %> | 
 			<a href="/forums">Forum</a> | 
 			<span id="dining_menu_link"><%= link_to "Dining Menu", homepage_path, :remote => true %></span> | 
 			<%= link_to "Textbooks", find_books_path %> | 
 			<%= link_to "Classmates", classmates_path %> | 
-			<%= link_to "Test Bank", test_bank_path %>
+			<%= link_to "Test Bank", test_bank_path %> | 
+			<%= link_to "Resources", "", :remote => true, :id => "resources_link" %>
 		</div>
+
+		<div id="resources_panel">
+			<ul>
+				<li><%= link_to "Submit a Maintenance Request", "http://www.housing.ucla.edu/workorder/", :target => "_blank" %></li>
+				<li><%= link_to "Deposit to BCard", "https://secure.bruincard.ucla.edu/bcw/app/webdeposit/TransactionRequest.aspx", :target => "_blank" %></li>
+				<li><%= link_to "Career Center", "https://secure.career.ucla.edu/BruinViewLogin/Login.aspx", :target => "_blank" %></li>
+				<li><%= link_to "CEC Free Sneaks", "http://campuseventsblog.com/category/films/", :target => "_blank" %></li>
+				<li><%= link_to "Melnitz Screenings", "http://gsa.asucla.ucla.edu/melnitz", :target => "_blank" %></li>
+			</ul>
+		</div>
+	</div>
 	
 	<div class="left1">
 			<div>
@@ -42,7 +55,7 @@
 		<%= render :partial => "newest_topics" %>
 	</div>
 
-	<div id="background_image"><img src="superbear.jpg" /></div>
+	<div id="background_image"><img src="superbear.png" /></div>
 
 	<div id="dining_menu"><%= render :partial => "/navigation/dining" %></div>
 </div>

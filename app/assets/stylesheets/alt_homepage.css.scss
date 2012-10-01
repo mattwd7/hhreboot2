@@ -36,6 +36,7 @@
 	margin-bottom: 15px;
 	margin-top: 5px;
 	position: relative;
+	z-index: 2;
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
@@ -171,12 +172,12 @@
 	}
 }
 .left2{
-	background:#DDD;
+	background:#eee;
 	width:70%;
 	opacity: 0.8;
 	min-height:320px;
-	margin-bottom: 20px;
 	float: left;
+	margin-bottom: 20px;
 	h1{
 		font-size: 16pt;
 	}
@@ -188,6 +189,30 @@
 		text-decoration: none;
 		&:hover{
 			text-decoration: underline;
+		}
+	}
+}
+#resources_panel{
+	position: absolute;
+	z-index: 2;
+	display: none;
+	opacity: 1.0;
+	top: 79px;
+	right: -1px;
+	background: #ccc;
+	width: 300px;
+	padding: 0;
+	border: 1px solid black;
+	border-radius: 0 0 5px 5px;
+	li{
+		line-height: 150%;
+		font-size: 12pt;
+		margin-left: -15px;
+	}
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
 		}
 	}
 }
