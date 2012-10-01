@@ -18,9 +18,9 @@
 	
 	Message Body: </br>
 	<% if @template %>
-		<%= text_area_tag :text, "#{render :partial => @template}", :size => "100x17" %></br></br>
+		<%= text_area_tag :text, "#{render :partial => @template}", :size => "75x17" %></br></br>
 	<% else %>
-		<%= text_area_tag :text, "", :size => "100x17" %></br></br>
+		<%= text_area_tag :text, "", :size => "75x17" %></br></br>
 	<% end %>
 	<%= hidden_field_tag :recipient_id, params[:recipient] %>
 	<%= hidden_field_tag :return_url, params[:return_url] %>

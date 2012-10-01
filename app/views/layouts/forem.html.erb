@@ -21,7 +21,6 @@
             <div align="right">
 			<%= link_to "Home", main_app.homepage_path %>
 			| <%= link_to "Profile", main_app.alt_profile_path(:user => current_user.id) %>
-			<!--| <%= link_to "Friends", main_app.friendships_path %>-->
 			<% if current_user.new_messages == false %>
 				| <%= link_to(image_tag('mail.gif', :size => "20x16"), main_app.my_messages_path) %>
 			<% else %>
