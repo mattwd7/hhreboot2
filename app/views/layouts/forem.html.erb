@@ -27,7 +27,7 @@
 			<% else %>
 				| <%= link_to(image_tag('new_mail.gif', :size => "20x16"), main_app.my_messages_path) %>
 			<% end %>
-            | <b><%= current_user.username %></b>
+            | <b style="color:black;"><%= current_user.username %></b>
 			(<%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>)
             <% if current_user.forem_admin %>
                 | <%= link_to "Administrate", forem.admin_root_url %></div>

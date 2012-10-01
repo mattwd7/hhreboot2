@@ -21,7 +21,8 @@ $(document).ready(function() {
   })
 
   $("#close").click(function(){
-    $("#dining_menu").siblings().fadeTo("slow", "0.8")
+    $("#dining_menu").siblings().not(".left1, .left2, .right, #background_image").fadeTo("slow", "1")
+    $(".left1, .left2, .right, #background_image").fadeTo("slow", "0.8")
     $("#dining_menu").fadeTo("slow", "0", function(){
       $(this).hide()
     })
