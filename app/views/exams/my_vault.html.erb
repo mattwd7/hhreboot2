@@ -112,6 +112,7 @@
 <% end %>
 
 <h2>Uploaded Exams:</h2>
+<%= link_to "Upload an Exam", upload_exam_path %></br>
 
 <% if @uploaded_exams.size == 0 %>
 	<div class="center">You have not uploaded any exams.</div>
@@ -144,8 +145,6 @@
 		<% end %>
 </table>
 <% end %>
-
-<%= link_to "Upload an Exam", upload_exam_path %>
 
 </body>
 </div>
