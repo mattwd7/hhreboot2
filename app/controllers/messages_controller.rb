@@ -38,6 +38,14 @@ class MessagesController < ApplicationController
     @course = Course.find(params[:course])
     @subject = "I want your #{@course.title} textbook!"
   end
+  if params[:classmates]
+      @message_course = params[:message_course]
+      @classmates_message = true
+  end
+  if params[:from_profile]
+    @from_profile = true
+    @user = User.find(params[:user_id])
+  end
 
     respond_to do |format|
       format.html # new.html.erb
@@ -62,8 +70,16 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        format.html { redirect_to my_messages_path, notice: 'Your message has been sent.' }
-        format.json { render json: @message, status: :created, location: @message }
+        if params[:about_a_book]
+          format.html { redirect_to find_books_path(:book => params[:course_id]), notice: 'Your message has been sent.' }
+          format.json { render json: @message, status: :created, location: @message }
+        elsif params[:classmates]
+          format.html {redirect_to classmates_path(:course => params[:course]), notice: 'Your message has been sent.' }
+        elsif params[:from_profile]
+          format.html { redirect_to user_profile_path(:user => params[:user_id]), notice: 'Your message has been sent.' }
+        else
+          format.html { redirect_to my_messages_path }
+        end          
       else
         format.html { render action: "new" }
         format.json { render json: @message.errors, status: :unprocessable_entity }

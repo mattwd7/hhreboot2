@@ -26,6 +26,15 @@
 	<%= hidden_field_tag :return_url, params[:return_url] %>
 	<% if params[:book_desc] %>
 		<%= hidden_field_tag :about_a_book, true %>
+		<%= hidden_field_tag :course_id, params[:course] %>
+	<% end %>
+	<% if @classmates_message %>
+		<%= hidden_field_tag :classmates, true %>
+		<%= hidden_field_tag :course, @message_course %>
+	<% end %>
+	<% if @from_profile %>
+		<%= hidden_field_tag :from_profile, true %>
+		<%= hidden_field_tag :user_id, @user.id %>
 	<% end %>
 	<%= submit_tag("Send") %></br>
 
