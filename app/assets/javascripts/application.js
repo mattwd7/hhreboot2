@@ -54,13 +54,13 @@ $(document).ready(function() {
       $(".tabs").fadeTo("slow", "0.25")
       $(".tabs").css({
         "position": "absolute",
-        "top": "351px",
-        "left": "1060px"
+        "top": "346px",
+        "left": "1066px"
       })
       $(".tabbed-menu").css({
         "position": "absolute",
         "top": "26px",
-        "left": "198px",
+        "left": "201px",
         "width": (prev_width)
       })
       $("#display_information").fadeOut("slow", function(){
