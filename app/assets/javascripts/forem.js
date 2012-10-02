@@ -7,4 +7,8 @@ $(document).ready(function() {
 			}
 		})
 	}, 500)
+
+	$("#markdown_link").click(function(){
+		$("#markdown_cheatsheet").toggle("fold");
+	})
 })

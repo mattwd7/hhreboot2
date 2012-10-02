@@ -1,9 +1,23 @@
 <%= simple_form_for [@forum, @topic] do |f| %>
   <%= f.input :subject %>
 
+  <div id="markdown_container">
+	<div id="markdown_cheatsheet" style="display:none;">
+		<h3>Post Formatting</h3>
+		<b>New Line:</b> [space]-[space]-[enter]</br>
+		<b>New Paragraph:</b> [enter]-[enter]</br>
+		<b>Italics:</b> *text*</br>
+		<b>Bold:</b> **text**</br>
+		<b>Link:</b> Here is a [link](http://example.com)</br>
+		<b>Image:</b> ![](http://imageaddress.com)</br></br>
+		<%= link_to "Additional formatting options", "http://daringfireball.net/projects/markdown/syntax", :target => "_blank" %>
+	</div>
+
   <%= f.simple_fields_for :posts do |post| %>
     <%= render :partial => "forem/posts/form", :locals => { :f => post }%>
   <% end %>
   
-  <%= f.submit %>
+  <%= f.submit %>&nbsp;&nbsp;&nbsp;<span id="markdown_link"><%= link_to "Formatting Options", "", :remote => true %></span>
+
 <% end %>
+</div>

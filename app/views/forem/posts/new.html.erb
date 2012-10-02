@@ -12,8 +12,21 @@
   </h3>
 <% end %>
 
+<div id="markdown_container">
+<div id="markdown_cheatsheet" style="display:none;">
+	<h3>Post Formatting</h3>
+	<b>New Line:</b> [space]-[space]-[enter]</br>
+	<b>New Paragraph:</b> [enter]-[enter]</br>
+	<b>Italics:</b> *text*</br>
+	<b>Bold:</b> **text**</br>
+	<b>Link:</b> Here is a [link](http://example.com)</br>
+	<b>Image:</b> ![](http://imageaddress.com)</br></br>
+	<%= link_to "Additional formatting options", "http://daringfireball.net/projects/markdown/syntax", :target => "_blank" %>
+</div>
+
 <%= simple_form_for [@topic, @post] do |f| %>
   <%= render :partial => "form", :locals => { :f => f } %>
-<!--	Post as Anonymous<%= check_box_tag "anonymous_post" %></br> -->
-  <%= f.submit t("forem.post.buttons.reply") %>
+ <!-- Post as Anonymous<%= check_box_tag "anonymous_post" %></br> -->
+  <%= f.submit t("forem.post.buttons.reply") %>&nbsp;&nbsp;&nbsp;<span id="markdown_link"><%= link_to "Formatting Options", "", :remote => true %></span>
 <% end %>
+</div>
