@@ -1,8 +1,9 @@
 class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
+
   before_filter :authenticate_user!
-  
+
   def index
     @messages = current_user.messages
 	current_user.update_attributes(:new_messages => false)
@@ -53,7 +54,11 @@ class MessagesController < ApplicationController
   # POST /messages.json
   def create
     @message = Message.new(:subject => params[:subject], :text => params[:text], :user_id => current_user.id, :recipient_id => params[:recipient_id])
-	   User.find(params[:recipient_id]).update_attributes(:new_messages => true)
+	  @user = User.find(params[:recipient_id])
+    @user.update_attributes(:new_messages => true)
+    if params[:about_a_book]
+      UserMailer.textbook_request(@user).deliver
+    end
 
     respond_to do |format|
       if @message.save
@@ -96,7 +101,7 @@ class MessagesController < ApplicationController
   
   def my_messages
 	@new_messages = Message.where(:recipient_id => current_user.id).where(:trashed => false).order("created_at DESC")
-  @sent_messages = Message.where(:user_id => current_user.id).where(:trashed => false).order("created_at DESC")
+  @sent_messages = Message.where(:user_id => current_user.id).where(:trashed => false).order("created_at DESC").first(10)
   @trashed_messages = Message.where(:recipient_id => current_user.id).where(:trashed => true).order("created_at DESC")
   if @new_messages.where(:unread => true).count > 0
     current_user.update_attributes(:new_messages => true)

@@ -24,6 +24,9 @@
 	<% end %>
 	<%= hidden_field_tag :recipient_id, params[:recipient] %>
 	<%= hidden_field_tag :return_url, params[:return_url] %>
+	<% if params[:book_desc] %>
+		<%= hidden_field_tag :about_a_book, true %>
+	<% end %>
 	<%= submit_tag("Send") %></br>
 
 <% end %>
