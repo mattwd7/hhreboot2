@@ -137,8 +137,10 @@ class UsersController < ApplicationController
   def alt_profile
     if params[:user]
       @user = User.find(params[:user])
-      @topics = @user.topics(:order => "created_at DESC")
-      @posts = @user.posts.order("created_at DESC")
+      @topics = @user.topics
+      @topics.sort! {|a,b| b.posts.count <=> a.posts.count}
+      @topics = @topics.first(7)
+      @posts = @user.posts.order("created_at DESC").first(15)
     else
       @user = current_user
     end

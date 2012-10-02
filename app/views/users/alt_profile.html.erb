@@ -6,7 +6,7 @@
 		<% if current_user.friends.include?(@user) %>
 			<span>Friended</span><span> | <%= link_to "Message", new_message_path(:recipient => @user.id) %></span></br>
 		<% else %>
-			<%= link_to "Message", new_message_path(:recipient => @user.id) %></span></br>
+		<%= link_to "Message", new_message_path(:recipient => @user.id) %></span></br>
 		<% end %>
 	<% else %>
 		</br>
@@ -62,8 +62,11 @@
 		<div class="content">
 
 			<!-- FORUM ACTIVITY -->
-
+			<% if @user == current_user %>
+			<div class="page" id="page1" style="display:none;">
+			<% else %>
 			<div class="page" id="page1" style="display:block;">
+			<% end %>
 				<div style="text-align:right">Hottest Topics</div>
 				<hr>
 				<% @topics.each do |t| %>
@@ -73,13 +76,17 @@
 				<div style="text-align:right">Recent Posts</div>
 				<hr>
 				<% @posts.each do |p| %>
-					<%= link_to "#{p.text[0..35]}...", forem.forum_topic_path(p.topic.forum.id, p.topic) %> in <%= p.topic.forum.title %> <%= time_ago_in_words(p.created_at) %> ago</br>
+					<%= link_to "#{p.text[0..55]}...", forem.forum_topic_path(p.topic.forum.id, p.topic) %> in <%= p.topic.forum.title %> <%= time_ago_in_words(p.created_at) %> ago</br>
 				<% end %>
 			</div>
 
 			<!-- CLASSES -->
 
+			<% if @user == current_user %>
+			<div class="page" id="page2" style="display:block;">
+			<% else %>
 			<div class="page" id="page2" style="display:none;">
+			<% end %>
 				<% if @this_quarter %>
 					<div style="font-size:30pt; font-weight:bold; text-align:right; margin:15px 5px 0 0;"><%= @this_quarter.term %></div>
 					</br>
@@ -105,8 +112,13 @@
 
 </div>
 	<ul class="tabs">
-		<li id="page1" class="selected">Forum Activity</li>
-		<li id="page2">Classes</li>
+		<% if current_user != @user %>
+			<li id="page1" class="selected">Forum Activity</li>
+			<li id="page2">Classes</li>
+		<% else %>
+			<li id="page1">Forum Activity</li>
+			<li id="page2" class="selected">Classes</li>
+		<% end %>
 	</ul>
 
 </body>
