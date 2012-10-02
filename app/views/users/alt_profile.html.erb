@@ -62,7 +62,7 @@
 		<div class="content">
 
 			<!-- FORUM ACTIVITY -->
-			<% if @user == current_user %>
+			<% if @user == current_user && @user.courses.count == 0 %>
 			<div class="page" id="page1" style="display:none;">
 			<% else %>
 			<div class="page" id="page1" style="display:block;">
@@ -82,7 +82,7 @@
 
 			<!-- CLASSES -->
 
-			<% if @user == current_user %>
+			<% if @user == current_user && @user.courses.count == 0 %>
 			<div class="page" id="page2" style="display:block;">
 			<% else %>
 			<div class="page" id="page2" style="display:none;">
@@ -112,12 +112,12 @@
 
 </div>
 	<ul class="tabs">
-		<% if current_user != @user %>
-			<li id="page1" class="selected">Forum Activity</li>
-			<li id="page2">Classes</li>
-		<% else %>
+		<% if current_user == @user && @user.courses.count == 0 %>
 			<li id="page1">Forum Activity</li>
 			<li id="page2" class="selected">Classes</li>
+		<% else %>
+			<li id="page1" class="selected">Forum Activity</li>
+			<li id="page2">Classes</li>
 		<% end %>
 	</ul>
 

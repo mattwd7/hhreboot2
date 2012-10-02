@@ -4,7 +4,7 @@
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
-    <div>Email Address (e.g. JohnDoe@ucla.edu):</br>
+    <div>Email Address (must be @ucla.edu):</br>
     <%= f.text_field :email %></div></br>
 
     <div>Username:</br>

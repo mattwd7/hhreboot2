@@ -1,5 +1,5 @@
 <% buildings = Building.where("name != ?", "Residence Unknown") %>
-<% buildings.sort! { |a,b| b.posts.count <=> a.posts.count } %>
+<% buildings.sort! { |a,b| a.name <=> b.name } %>
 
 <div class="right_widget" id="contributions_by_building">
 	<div id="title">Building Activity</div>
