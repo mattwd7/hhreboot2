@@ -1,10 +1,12 @@
 <div id="view_message_wrapper">
 <body class="main">
 
-<%= @message.text %>
+<p><%= forem_format(@message.text) %></p>
 </br>
 </br>
-<%= link_to "Reply to #{User.find(@message.user_id).username}", new_message_path(:recipient => @message.user_id, :re => "RE: #{@message.subject}") %> |
+<% if @message.recipient_id == current_user.id %>
+	<%= link_to "Reply to #{User.find(@message.user_id).username}", new_message_path(:recipient => @message.user_id, :re => "RE: #{@message.subject}") %> |
+<% end %>
 <%= link_to "Back", :back %>
 
 </body>
