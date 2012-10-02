@@ -74,6 +74,9 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.0.11)
+    forem-markdown_formatter (0.1.0)
+      forem
+      redcarpet (>= 2.0.0b4)
     forem-redcarpet (1.0.0)
       pygments.rb (= 0.2.4)
       redcarpet (= 2.0.1)
@@ -178,6 +181,7 @@ DEPENDENCIES
   devise
   dropbox
   forem!
+  forem-markdown_formatter
   forem-theme-twist!
   jquery-rails
   kaminari

@@ -31,6 +31,7 @@ gem 'paperclip'
 gem 'nokogiri'
 gem 'dropbox'
 gem 'paperclipdropbox'
+gem 'forem-markdown_formatter'
 
 group :production do
 	gem 'pg', '0.12.2'
