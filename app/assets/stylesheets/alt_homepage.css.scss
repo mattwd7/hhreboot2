@@ -103,10 +103,10 @@
 	
 }
 #accordion #height{
-	height: 325px;
+	height: 400px;
 	position: relative;
+	text-align: center;
 	a{
-		font-size: 30pt;
 		font-weight: bold;
 		text-decoration: none;
 		&:hover{
@@ -114,18 +114,22 @@
 		}
 	}
 	#roadmap_link{
-		width: 300px;
-		float: right;
+		display: inline-block;
 		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+	#roadmap_link_1{
+		font-size: 22pt;
+	}
+	#roadmap_link_2{
+		font-size: 18pt;
 	}
 }
 #accordion #top{
 	margin-top: 0px;
 }
 #accordion #height img{
-	position: absolute;
-	left: 0px;
-	top: 0px;
+	margin: 0 50px;
 }
 .right{
 	background:#DDD;

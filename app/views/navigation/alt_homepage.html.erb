@@ -29,12 +29,19 @@
 			<div id="accordion">
 				<h3 id="top" class="cyclotron"><a href="#">Welcome!</a></h3>
 				<div id="height" style="padding: 0 5px 0 5px;">
-					<a href=""><img src="doItLive.png" title="And what that means for YOU!" /></a>
-					<span id="roadmap_link"><b><%= link_to "Get away with Drinking and Smoking in the dorms at UCLA!", roadmap_path %></b></span>
+					<div id="roadmap_link"><span id="roadmap_link_1"><%= link_to "Drinking and Smoking in the dorms", roadmap_path %></span> <span id="roadmap_link_2"><%= link_to "and how to get away with it", roadmap_path %></span></div>
+						<a href=""><img src="doItLive.png" /></a>
 				</div>
 				<h3><a href="#">About</a></h3>
 				<div>
-					
+					<div id="right2">
+						<ul>
+							<li>Download old quizzes, midterms, and finals from the <%= link_to "Test Bank", test_bank_path %></li>
+							<li>Cut out the middle man and <%= link_to "exchange textbooks", find_books_path %> with students living right here on the Hill</li>
+							<li>See what's for dinner</li>
+							<li>And more!</li>
+						</ul>
+					</div>
 				</div>
 				<h3><a href="#">Hot Topics</a></h3>
 				<div>
