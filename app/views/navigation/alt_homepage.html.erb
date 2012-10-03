@@ -20,6 +20,7 @@
 				<li><%= link_to "Deposit to BCard", "https://secure.bruincard.ucla.edu/bcw/app/webdeposit/TransactionRequest.aspx", :target => "_blank" %></li>
 				<li><%= link_to "CEC Free Sneaks", "http://campuseventsblog.com/category/films/", :target => "_blank" %></li>
 				<li><%= link_to "Melnitz Screenings", "http://gsa.asucla.ucla.edu/melnitz", :target => "_blank" %></li>
+				<li><%= link_to "Student Jobs", "http://www.asucla.ucla.edu/jobs/student.asp", :target => "_blank" %></li>
 				<li><%= link_to "Career Center", "https://secure.career.ucla.edu/BruinViewLogin/Login.aspx", :target => "_blank" %></li>
 			</ul>
 		</div>
@@ -34,17 +35,17 @@
 				<h3><a href="#">About</a></h3>
 				<div>
 					<a href=""><img src="doItLive.png" /></a>
-					<div id="right2">
+					<div id="about_list">
 						<ul>
-							<li>Download old quizzes, midterms, and finals from the <%= link_to "Test Bank", test_bank_path %></li>
-							<li>Cut out the middle man and <%= link_to "exchange textbooks", find_books_path %> with students living right here on the Hill</li>
-							<li>See what's for dinner</li>
-							<li>And more!</li>
+							<li>-Download old quizzes, midterms, and finals from the <%= link_to "Test Bank", test_bank_path %></li>
+							<li>-Cut out the middle man and <%= link_to "exchange textbooks", find_books_path %> with students living right here on the Hill</li>
+							<li>-See <span id="pseudo_dining_menu_link"><%= link_to "what's for dinner", "", :remote => true %></span></li>
+							<li>-And <%= link_to "more", "/forums" %>!</li>
 						</ul>
 					</div>
 				</div>
 				<h3><a href="#">Hot Topics</a></h3>
-				<div>
+				<div id="topics">
 					<%= render :partial => "newest_topics" %>
 				</div>
 			</div>
@@ -60,5 +61,7 @@
 	</div>
 
 	<div id="background_image"><img src="superbear.jpg" /></div>
+
+	<div id="dining_menu"><%= render :partial => "/navigation/dining" %></div>
 </div>
 </body>
