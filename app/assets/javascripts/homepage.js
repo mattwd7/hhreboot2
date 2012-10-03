@@ -7,17 +7,21 @@ $(document).ready(function() {
   $("#navigation a").hover(function(){
     $(this).animate({
       color: "white"
-    }, 300)
+    }, 250)
   }, function(){
     $(this).animate({
       color: "black"
-    }, 300)
+    }, 250)
   })
 
   //Display dining menu
   $("#dining_menu_link").click(function(){
     $("#dining_menu").siblings().fadeTo("slow", "0.25")
     $("#dining_menu").fadeTo("slow", "1.0")
+  })
+
+  $("#pseudo_dining_menu_link").click(function(){
+    $("#dining_menu_link").click();
   })
 
   $("#close").click(function(){
@@ -74,16 +78,6 @@ $(document).ready(function() {
           cycleSections();
         }, 10000)
   });
-
-  $("#navigation a").hover(function(){
-    $(this).animate({
-      color: "white"
-    }, 300)
-  }, function(){
-    $(this).animate({
-      color: "black"
-    }, 300)
-  })
 
   /*$("#dining_menu").click(function(){
     $("#dining_menu").siblings().fadeTo("slow", "1.0")
