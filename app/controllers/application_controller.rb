@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
     @duplicate_count_threshold = 2
     @upvotes_per_token = 2
     @exam_votes_per_token = 5
-    @upload_limit = 2
+    @upload_limit = 3
 	end
 
   before_filter :check_locked_account
