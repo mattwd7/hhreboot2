@@ -16,7 +16,9 @@
   <%= f.simple_fields_for :posts do |post| %>
     <%= render :partial => "forem/posts/form", :locals => { :f => post }%>
   <% end %>
-  
+  <% if @topic.forum.title == "Counseling" %>
+  	Post as Anonymous<%= check_box_tag "anonymous_post" %></br>
+  <% end %>
   <%= f.submit %>&nbsp;&nbsp;&nbsp;<span id="markdown_link"><%= link_to "Formatting Options", "", :remote => true %></span>
 
 <% end %>
