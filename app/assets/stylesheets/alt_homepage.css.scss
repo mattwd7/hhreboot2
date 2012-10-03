@@ -129,8 +129,18 @@
 #accordion #top{
 	margin-top: 0px;
 }
-#accordion #height img{
-	margin: 0 50px;
+#accordion img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#accordion #right2{
+	ul{
+		width: 275px;
+		float: right;
+		margin-right: 15px;
+		list-style-type: disc;
+	}
 }
 .right{
 	background:#DDD;
