@@ -25,38 +25,33 @@
 		</div>
 	</div>
 	
-	<div class="left1">
-			<div>
-				<div id="right1">
-					<a href=""><img src="doItLive.gif" title="And what that means for YOU!" /></a>
+	<div class="left">
+			<div id="accordion">
+				<h3 id="top" class="cyclotron"><a href="#">Welcome!</a></h3>
+				<div id="height" style="padding: 0 5px 0 5px;">
+					<a href=""><img src="doItLive.png" title="And what that means for YOU!" /></a>
+					<span id="roadmap_link"><b><%= link_to "Get away with Drinking and Smoking in the dorms at UCLA!", roadmap_path %></b></span>
 				</div>
-				<div id="right2">
-					<ul>
-						<li id="first"><b><%= link_to "Learn how to Drink and Smoke in the dorms at UCLA!", roadmap_path %></b></li>
-						<li>Download old quizzes, midterms, and finals from the Test Bank</li>
-						<li>Cut out the middle man and exchange textbooks with students living right here on the Hill</li>
-						<li>See what's for dinner</li>
-						<li>And much much more....</li>
-					</ul>
+				<h3><a href="#">About</a></h3>
+				<div>
+					
+				</div>
+				<h3><a href="#">Hot Topics</a></h3>
+				<div>
+					<%= render :partial => "newest_topics" %>
 				</div>
 			</div>
 	</div>
 	
 	<div class="right">
 		<div id="top_posters">
-			<%= render :partial => "newest_users" %>
+			<%= render :partial => "test_bank_uploads" %>
 		</div>
 		<div id="top_posters">
-			<%= render :partial => "building_leaders" %>
+			<%= render :partial => "newest_users" %>
 		</div>
 	</div>
 
-	<div class="left2">
-		<%= render :partial => "newest_topics" %>
-	</div>
-
-	<div id="background_image"><img src="superbear.png" /></div>
-
-	<div id="dining_menu"><%= render :partial => "/navigation/dining" %></div>
+	<div id="background_image"><img src="superbear.jpg" /></div>
 </div>
 </body>

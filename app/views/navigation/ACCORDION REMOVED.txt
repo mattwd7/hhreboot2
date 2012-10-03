@@ -61,3 +61,250 @@ $(function() {
       color: "black"
     }, 300)
   })
+
+The accordion alternative:
+html.erb:
+  <div id="right1">
+          <a href=""><img src="doItLive.gif" title="And what that means for YOU!" /></a>
+        </div>
+        <div id="right2">
+          <ul>
+            <li id="first"><b><%= link_to "Learn how to Drink and Smoke in the dorms at UCLA!", roadmap_path %></b></li>
+            <li>Download old quizzes, midterms, and finals from the Test Bank</li>
+            <li>Cut out the middle man and exchange textbooks with students living right here on the Hill</li>
+            <li>See what's for dinner</li>
+            <li>And much much more....</li>
+          </ul>
+        </div>
+      </div>
+
+css.scss
+#homepage_wrapper{
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+#background_image{
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  position: absolute;
+  top:-50px;
+  right: -180px;
+  z-index: -1;
+}
+
+.title{
+  font-family: Helvetica;
+  font-size: 50pt;
+  margin-bottom:10px;
+  color: #ffb000;
+}
+.subtitle{
+  font-size: 14pt;
+  color:black;
+  font-family: arial;
+  font-style: italic;
+}
+#navigation{
+  width: 879px;
+  background: #555;
+  font-size: 16pt;
+  align: left;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+  opacity: 0.8;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -o-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -moz-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -webkit-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -ms-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, rgb(68,68,68)),
+    color-stop(0.50, rgb(85,85,85))
+  );
+}
+#navigation a {
+  text-decoration: none;
+  font-size: 16pt;
+  text-shadow: 0 0 7px white;
+}
+.left1{
+  background:#fff;
+  width:70%;
+  opacity: 0.8;
+  height:400px;
+  float:left;
+  margin-bottom: 20px; 
+  
+  /*border-radius: 5px;
+  border: 1px solid black;
+  &:hover{
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+  }*/
+  #right1{
+    float: left;
+    margin: 7% 0 0 3%;
+  }
+  #right2{
+    width: 50%;
+    float: left;
+    margin-left: -15px;
+    li{
+      
+      font-size: 16pt;
+      line-height: 110%;
+      list-style-type: disc;
+      margin-top: 20px;
+      #first{
+        font-size: 18pt;
+        margin-top: 0;
+      }
+    }
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  #title{
+    font-size: 14pt;
+    margin: 5px 0 0 5px;
+  }
+  
+}
+#accordion #height{
+  height: 325px;
+  position: relative;
+}
+#accordion #top{
+  margin-top: 0px;
+}
+#accordion #height img{
+  position: absolute;
+  left: -15px;
+  top: -25px;
+}
+.right{
+  background:#DDD;
+  opacity: 0.8;
+  width:22%;
+  min-height:600px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  /*border-radius: 5px;
+  border: 1px solid black;
+    &:hover{
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+  }*/
+}
+.right_widget{
+  margin: 10px 0;
+  border: 1px solid black;
+}
+.right_widget #title{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  background: #555;
+  background-image: linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -o-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -moz-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -webkit-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -ms-linear-gradient(bottom, rgb(68,68,68) 50%, rgb(85,85,85) 50%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, rgb(68,68,68)),
+    color-stop(0.50, rgb(85,85,85))
+  );
+
+}
+.right a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  };
+}
+#top_posters tr{
+  text-align: center;
+}
+#articles_div{
+  font-size: 16pt;
+  h1{
+    font-size: 18pt;
+    color: black;
+    margin-left: -20px;
+  }
+  #featured{
+    margin-top: -20px;;
+  }
+  a{
+    text-decoration: none;
+    margin-left: 20px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.left2{
+  background:#eee;
+  width:70%;
+  opacity: 0.8;
+  min-height:320px;
+  float: left;
+  margin-bottom: 20px;
+  h1{
+    font-size: 16pt;
+  }
+}
+#new_topics{
+  margin: 20px;
+  a{
+    font-size: 11.5pt;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+#resources_panel{
+  position: absolute;
+  z-index: 2;
+  display: none;
+  opacity: 1.0;
+  top: 79px;
+  right: -1px;
+  background: #ccc;
+  width: 300px;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  li{
+    line-height: 150%;
+    font-size: 12pt;
+    margin-left: -15px;
+  }
+  a{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
