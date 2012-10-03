@@ -1,19 +1,21 @@
 class ExamsController < ApplicationController
 	
-	before_filter :authenticate_user!
+	#before_filter :authenticate_user!
 
 	def test_bank
-		@my_classes = @my_classes = current_user.quarters.where(:term => @current_term).first.courses if current_user.quarters.where(:term => @current_term).first
-		@exams = Exam.where("user_id != ?", current_user.id)
-		@exams.sort! {|a,b| b.created_at <=> a.created_at}
-		@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
-		@accessible_exams
-		if current_user.accessible_exams != nil
-			@accessible_exams = current_user.accessible_exams.split(" ")
+		if current_user
+			@my_classes = @my_classes = current_user.quarters.where(:term => @current_term).first.courses if current_user.quarters.where(:term => @current_term).first
+			@exams = Exam.where("user_id != ?", current_user.id)
+			@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
+			@accessible_exams
+			if current_user.accessible_exams != nil
+				@accessible_exams = current_user.accessible_exams.split(" ")
+			end
+		else
+			@exams = Exam.all
 		end
-		@test = params[:test]
-
-		
+		@exams.sort! {|a,b| b.created_at <=> a.created_at}
+				
 		@fields = Field.all
 		@courses = Course.all
 		if params["field"]
@@ -22,7 +24,11 @@ class ExamsController < ApplicationController
 
     	if params[:course]
     		@course = Course.find(params[:course])
-    		@exams = Exam.where(:course_id => params[:course]).where("user_id != ?", current_user.id)
+    		if current_user
+    			@exams = Exam.where(:course_id => params[:course]).where("user_id != ?", current_user.id)
+    		else
+    			@exams = Exam.where(:course_id => params[:course])
+    		end
     	end
 
     	if params[:new_entries]
@@ -59,7 +65,6 @@ class ExamsController < ApplicationController
 
 	def my_vault
 		@uploaded_exams = Exam.where(:user_id => current_user.id)
-		@uploaded_exams.sort! {|a,b| b.created_at <=> a.created_at}
 		if current_user.accessible_exams != nil
 			@accessible_exams = current_user.accessible_exams.split(" ")
 		end
@@ -108,8 +113,8 @@ class ExamsController < ApplicationController
 		    		format.html { redirect_to upload_exam_path, alert: "You have reached your upload limit (#{@upload_limit}) this quarter without having your existing uploads legitimized." }
 				elsif @exam.save
 					#after upload actions
-					current_user.test_tokens += 1
 					current_user.uploads += 1
+					current_user.test_tokens += 1 if (current_user.uploads == 1 || current_user.uploads % 3 == 0)
 					current_user.save
 					format.html { redirect_to my_vault_path, notice: 'Exam was successfully uploaded.' }
 				else

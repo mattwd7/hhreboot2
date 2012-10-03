@@ -3,6 +3,7 @@
 
 <h1 id="testbank_title">Hill Heroes Test Bank</h1>
 
+<% if current_user %>
 <div>
 	<%= link_to "View My Exams", my_vault_path %> | 
 	<%= link_to "Upload An Exam", upload_exam_path %> | 
@@ -38,6 +39,20 @@
 		<%= submit_tag("Find it!") %>
 	<% end %>
 </div>
+<% else %>
+	<h4>Select a course to view available exams:</h4>
+	<div id="other">
+		<%= form_tag(test_bank_path) do %>
+			<%= collection_select(:new_class, :field, @fields, :id, :title, {:prompt => "Fields..."}, {:id => "field_select"}) %></br>
+			<%= collection_select(nil, :course, @courses, :id, :title, {:prompt => "Select A Field From The List Above"}, {:id => "course_select"}) %>
+			<%= submit_tag("Find it!") %>
+		<% end %>
+	</div>
+</br>
+	<div>
+		NOTE: You must be <%= link_to "signed in", new_user_session_path %> in order to access material in the test bank.
+	</div>
+<% end %>
 
 </br></br>
 
@@ -46,7 +61,7 @@
 		Showing exams for <b><%= @course.field.abbr %> <%= @course.title %></b>
 	</div>
 	<div>
-		<% if @accessible_exams == nil || !@accessible_exams.include?(params[:course]) %>
+		<% if current_user && (@accessible_exams == nil || !@accessible_exams.include?(params[:course])) %>
 			<%= button_to "Get access to exams for this course", grant_access_path(:course => params[:course]), :confirm => "Gaining access to exams for this course will use 1 test token.  Are you sure you want to continue?" %>
 		<% end %>
 	</div></br>
@@ -75,11 +90,12 @@
 
 <div id="testbank_rules_wrapper" style="display: none;">
 	<div id="title">How it works:</div>
+	<div>Gain access to material for a course using a test token. New accounts begin with 2 test tokens. You earn additional tokens by uploading material to the Test Bank.</div>
 	<ul>
-		<li>1 test token / 1 upload</li>
-		<li>1 test token / 2 upvotes received by an uploaded exam</li>
-		<li>Limit of 2 uploads per user until existing uploads are legitimized via upvotes or the quarter changes</li>
+		<li>1 token for your 1st and 3rd upload of each quarter</li>
+		<li>1 token per 2 upvotes received by an uploaded exam</li>
 	</ul>
+	You are limited to 2 uploads per quarter until your existing uploads increase in quality.
 	NOTICE: The Hill Heroes test bank is monitored daily. Garbage uploads and flagrant reuploading of existing material will result in a <b>permanent ban</b> on your account.
 </div>
 
