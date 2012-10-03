@@ -16,7 +16,7 @@
 	<% tests.each do |t| %>
 		<tr>
 			<td><%= list_num %>. </td>
-			<td align="left"><%= link_to t.document_file_name, test_bank_path(:course => t.course.id) %></td>
+			<td align="left"><%= link_to "#{t.document_file_name.first(18)}...", test_bank_path(:course => t.course.id) %></td>
 		</tr>
 		<% list_num = list_num + 1 %>
 		<% if list_num > 10; break; end %>
