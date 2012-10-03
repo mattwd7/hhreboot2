@@ -14,6 +14,10 @@ $(document).ready(function() {
     }, 250)
   })
 
+  $("#about_link").click(function(){
+    $("#about").click();
+  })
+
   //Display dining menu
   $("#dining_menu_link").click(function(){
     $("#dining_menu").siblings().fadeTo("slow", "0.25")
@@ -76,7 +80,7 @@ $(document).ready(function() {
 
       timer = setTimeout(function(){
           cycleSections();
-        }, 10000)
+        }, 15000)
   });
 
   /*$("#dining_menu").click(function(){

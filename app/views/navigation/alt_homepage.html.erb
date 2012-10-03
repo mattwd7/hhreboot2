@@ -5,7 +5,7 @@
 	
 	<div class="close_resources">
 		<div id="navigation">
-			<%= link_to "About" %> | 
+			<span id="about_link" ><%= link_to "About", "", :remote => true %> | 
 			<a href="/forums">Forum</a> | 
 			<span id="dining_menu_link"><%= link_to "Dining Menu", homepage_path, :remote => true %></span> | 
 			<%= link_to "Textbooks", find_books_path %> | 
@@ -32,9 +32,10 @@
 				<div id="height" style="padding: 0 5px 0 5px;">
 					<div id="roadmap_link"><div id="roadmap_link_1"><%= link_to "DRINKING & SMOKING IN THE DORMS", roadmap_path %></div> <div id="roadmap_link_2"><%= link_to "and how to get away with it", roadmap_path %></div></div>
 				</div>
-				<h3><a href="#">About</a></h3>
+				<h3 id="about"><a href="#">About</a></h3>
 				<div>
-					<a href=""><img src="doItLive.png" /></a>
+					<div id="about_title">Hill resident? Hill Heroes has you covered:</div>
+					<img src="doItLive.png" />
 					<div id="about_list">
 						<ul>
 							<li>-Download old quizzes, midterms, and finals from the <%= link_to "Test Bank", test_bank_path %></li>
