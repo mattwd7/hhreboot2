@@ -19,4 +19,16 @@ Forem::TopicsController.class_eval do
       end
     end
 
+    def destroy
+      @topic = @forum.topics.find(params[:id])
+      if forem_user == @topic.user || forem_user.forem_admin?
+        @topic.destroy
+        flash[:notice] = t("forem.topic.deleted")
+      else
+        flash.alert = t("forem.topic.cannot_delete")
+      end
+
+      redirect_to @topic.forum
+    end
+
 end

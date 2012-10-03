@@ -21,7 +21,22 @@ Forem::PostsController.class_eval do
       end
     end
 
-    def last_page
-      (@topic.posts.count.to_f / Forem.per_page.to_f).ceil
+    def destroy
+      @post = @topic.posts.find(params[:id])
+      if @post.owner_or_admin?(forem_user)
+        @post.destroy
+        if @post.topic.posts.count == 0
+          @post.topic.destroy
+          flash[:notice] = t("forem.post.deleted_with_topic")
+          redirect_to [@topic.forum]
+        else
+          flash[:notice] = t("forem.post.deleted")
+          redirect_to [@topic.forum, @topic]
+        end
+      else
+        flash[:alert] = t("forem.post.cannot_delete")
+        redirect_to [@topic.forum, @topic]
+      end
+
     end
 end
