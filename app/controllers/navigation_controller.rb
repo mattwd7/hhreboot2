@@ -10,7 +10,7 @@ class NavigationController < ApplicationController
 	
 	def alt_homepage
 		@subtitles = 
-			["Your Hill HeadQuarters"]
+			["Your ResHall Resource"]
 		@rand_subtitle = @subtitles[rand(@subtitles.count)]
 		respond_to do |format|
 			format.html
