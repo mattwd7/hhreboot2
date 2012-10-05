@@ -5,14 +5,14 @@ class ExamsController < ApplicationController
 	def test_bank
 		if current_user
 			@my_classes = @my_classes = current_user.quarters.where(:term => @current_term).first.courses if current_user.quarters.where(:term => @current_term).first
-			@exams = Exam.where("user_id != ?", current_user.id)
+			@exams = Exam.where("user_id != ?", current_user.id).first(5)
 			@exam_activity = Examrecord.where(:user_id => current_user.id).collect{|record| [record.exam_id, record.vote, record.downloaded]}
 			@accessible_exams
 			if current_user.accessible_exams != nil
 				@accessible_exams = current_user.accessible_exams.split(" ")
 			end
 		else
-			@exams = Exam.all
+			@exams = Exam.all.first(5)
 		end
 		@exams.sort! {|a,b| b.created_at <=> a.created_at}
 				
